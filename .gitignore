@@ -4,3 +4,6 @@ GameData/Squad/*
 KSP_Data/*
 PartDatabase.cfg
 GameData/ModuleManager.*
+saves/*/Ships/*/Auto-Saved Ship.craft
+thumbs/*Auto-Saved Ship.png
+Logs/*.log
