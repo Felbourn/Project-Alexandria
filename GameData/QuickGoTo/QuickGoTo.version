@@ -1,0 +1,22 @@
+{
+	"NAME": "QuickGoTo",
+	"URL": "https://raw.githubusercontent.com/malahx/QuickGoTo/master/QuickGoTo.version",
+	"CHANGE_LOG_URL": "https://raw.githubusercontent.com/malahx/QuickGoTo/master/README.md", 
+	"DOWNLOAD": "https://kerbalstuff.com/mod/653/QuickGoTo"
+	"VERSION":{"MAJOR":1,"MINOR":2,"PATCH":0,"BUILD":0},
+    "KSP_VERSION": {
+        "MAJOR": 1,
+        "MINOR": 0,
+        "PATCH": 4
+    },
+    "KSP_VERSION_MIN": {
+        "MAJOR": 1,
+        "MINOR": 0,
+        "PATCH": 0
+    },
+    "KSP_VERSION_MAX": {
+        "MAJOR": 1,
+        "MINOR": 0,
+        "PATCH": -1
+    }
+}

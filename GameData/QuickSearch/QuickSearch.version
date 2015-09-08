@@ -1,0 +1,22 @@
+{
+	"NAME": "QuickSearch",
+	"URL": "https://raw.githubusercontent.com/malahx/QuickSearch/master/QuickSearch.version",
+	"CHANGE_LOG_URL": "https://raw.githubusercontent.com/malahx/QuickSearch/master/README.md", 
+	"DOWNLOAD": "https://kerbalstuff.com/mod/472/QuickSearch"
+	"VERSION":{"MAJOR":1,"MINOR":1,"PATCH":3,"BUILD":0},
+    "KSP_VERSION": {
+        "MAJOR": 1,
+        "MINOR": 0,
+        "PATCH": 4
+    },
+    "KSP_VERSION_MIN": {
+        "MAJOR": 1,
+        "MINOR": 0,
+        "PATCH": 0
+    },
+    "KSP_VERSION_MAX": {
+        "MAJOR": 1,
+        "MINOR": 0,
+        "PATCH": -1
+    }
+}
