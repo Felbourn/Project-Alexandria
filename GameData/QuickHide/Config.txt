@@ -11,6 +11,7 @@ CanPin
 	Item = QuickGoTo
 	Item = PlanetShine
 	Item = FilterExtensions
+	Item = NodeHelper
 }
 CanHide
 {
@@ -19,6 +20,7 @@ CanHide
 	Item = QuickGoTo
 	Item = PlanetShine
 	Item = FilterExtensions
+	Item = NodeHelper
 }
 CanSetFalse
 {
@@ -27,6 +29,7 @@ CanSetFalse
 	Item = QuickGoTo
 	Item = PlanetShine
 	Item = FilterExtensions
+	Item = NodeHelper
 }
 ModHasFirstConfig
 {
@@ -35,4 +38,5 @@ ModHasFirstConfig
 	Item = QuickGoTo
 	Item = PlanetShine
 	Item = FilterExtensions
+	Item = NodeHelper
 }

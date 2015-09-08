@@ -95,6 +95,18 @@ toolbars
 			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,QuickGoToVAB.QuickGoToVAB,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC,QuickGoToTS.QuickGoToTS
 			visibleButtons = QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC
 		}
+		toolbar_1834510055
+		{
+			x = 1241
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = CIT_NodeHelper.NodeHelperButton
+		}
 	}
 	EDITOR
 	{
@@ -109,6 +121,18 @@ toolbars
 			useKSPSkin = False
 			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,QuickGoToVAB.QuickGoToVAB,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC,QuickGoToTS.QuickGoToTS
 			visibleButtons = QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC
+		}
+		toolbar_1834510055
+		{
+			x = 1241
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = CIT_NodeHelper.NodeHelperButton
 		}
 	}
 }

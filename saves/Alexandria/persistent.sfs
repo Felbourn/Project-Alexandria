@@ -378,10 +378,15 @@ GAME
 		{
 		}
 	}
+	SCENARIO
+	{
+		name = RFUpgradeManager
+		scene = 6, 5
+	}
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 53121.7067924511
+		UT = 74482.4467922865
 		activeVessel = 0
 		mapViewFiltering = 894
 		VESSEL
@@ -989,10 +994,10 @@ GAME
 				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 145.804470396547
-				LAN = 221.869490165796
-				MNA = 0
-				EPH = 53103.1067924541
+				LPE = 145.804507316901
+				LAN = 222.877734764461
+				MNA = -8.40714670366795
+				EPH = 53344.4067924154
 				REF = 1
 			}
 			PART
@@ -1390,13 +1395,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 145.808110415435
-				LAN = 221.869490165796
+				LPE = 145.808147327983
+				LAN = 222.877734764461
 				MNA = -8.40714670366795
-				EPH = 53103.1067924541
+				EPH = 53344.4067924154
 				REF = 1
 			}
 			PART
