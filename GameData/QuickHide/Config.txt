@@ -9,22 +9,26 @@ CanPin
 	Item = TextureReplacer
 	Item = DistantObject
 	Item = QuickGoTo
+	Item = PlanetShine
 }
 CanHide
 {
 	Item = TextureReplacer
 	Item = DistantObject
 	Item = QuickGoTo
+	Item = PlanetShine
 }
 CanSetFalse
 {
 	Item = TextureReplacer
 	Item = DistantObject
 	Item = QuickGoTo
+	Item = PlanetShine
 }
 ModHasFirstConfig
 {
 	Item = TextureReplacer
 	Item = DistantObject
 	Item = QuickGoTo
+	Item = PlanetShine
 }

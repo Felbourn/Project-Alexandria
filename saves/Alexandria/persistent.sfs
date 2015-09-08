@@ -91,8 +91,8 @@ GAME
 		{
 			RecordsAltitude
 			{
-				reached = 51463.1867927166
-				record = 83.0592106990516
+				reached = 52539.7867925443
+				record = 83.2872299002483
 			}
 			RecordsSpeed
 			{
@@ -356,7 +356,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 52329.126792578
+		UT = 52557.9267925414
 		activeVessel = 0
 		mapViewFiltering = 894
 		VESSEL
@@ -943,14 +943,14 @@ GAME
 			landedAt = KSC_LaunchPad_Platform
 			splashed = False
 			met = 0
-			lct = 52328.4667925781
+			lct = 52555.6667925418
 			root = 0
-			lat = 28.6087832597651
-			lon = -80.5997724534956
-			alt = 83.0592081518844
-			hgt = 0.2875275
-			nrm = 4.35585E-07,1,1.204939E-05
-			rot = -0.5102079,-0.1123513,-0.0168188,0.8525153
+			lat = 28.6087835937109
+			lon = -80.5997722181055
+			alt = 83.2872295826674
+			hgt = 0.2875292
+			nrm = 4.633419E-07,1,1.257151E-05
+			rot = -0.5102081,-0.1123509,-0.01681898,0.8525153
 			CoM = 0,0,0
 			stg = 1
 			prst = False
@@ -964,10 +964,10 @@ GAME
 				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 145.804509648256
-				LAN = 218.63312550187
+				LPE = 145.496785937298
+				LAN = 219.00063065064
 				MNA = -8.40714670366795
-				EPH = 52328.4867925781
+				EPH = 52555.6867925418
 				REF = 1
 			}
 			PART
@@ -992,8 +992,8 @@ GAME
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.8
-				temp = 288.059486232916
-				tempExt = 288.093577573537
+				temp = 288.072954758384
+				tempExt = 288.109128067126
 				expt = 0.5
 				state = 0
 				connected = True
@@ -1049,7 +1049,7 @@ GAME
 				{
 					name = ModuleReactionWheel
 					isEnabled = True
-					stateString = Running
+					stateString = Idle
 					WheelState = Active
 					EVENTS
 					{
@@ -1277,7 +1277,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 40.3209916207805
+					amount = 40.3116220205449
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -1303,7 +1303,7 @@ GAME
 				RCS = False, 0
 				SAS = False, 0
 				Brakes = False, 0
-				Abort = False, 0
+				Abort = False, 52544.7467925435
 				Custom01 = False, 0
 				Custom02 = False, 0
 				Custom03 = False, 0
@@ -1330,10 +1330,10 @@ GAME
 			{
 				pitch = 0
 				yaw = 0
-				roll = 0.032
+				roll = 0
 				trimPitch = 0
 				trimYaw = 0
-				trimRoll = 0.032
+				trimRoll = 0
 				mainThrottle = 0.5
 			}
 		}

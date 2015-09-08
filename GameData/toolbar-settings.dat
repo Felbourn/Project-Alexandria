@@ -4,10 +4,55 @@ toolbars
 	{
 		toolbar_467562744
 		{
+			x = -3
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = AmbientLightAdjustment.adjustLevels,test.buttonDOSettings,QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC
+		}
+	}
+	TRACKSTATION
+	{
+		toolbar_557081424
+		{
+			x = 210
+			y = 35
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = AmbientLightAdjustment.adjustLevels,QuickGoToSC.QuickGoToSC,QuickGoToSPH.QuickGoToSPH,QuickGoToTS.QuickGoToTS,QuickGoToVAB.QuickGoToVAB
+		}
+	}
+	FLIGHT
+	{
+		toolbar_558249692
+		{
+			x = 207
+			y = -3
+			width = 340
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = AmbientLightAdjustment.adjustLevels,EnhancedNavball.btnEnhancedNavballToolbarIcon,PlanetShine.Gui,test.buttonDOSettings,QuickHideConf.QuickHideConf,QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC
+		}
+	}
+	MAINMENU
+	{
+		toolbar_239931658
+		{
 			x = 300
 			y = 300
 			width = 250
-			height = 38
+			height = 0
 			autoHide = False
 			drawBorder = True
 			useKSPSkin = False
