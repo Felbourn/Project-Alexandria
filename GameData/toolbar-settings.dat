@@ -42,7 +42,19 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = AmbientLightAdjustment.adjustLevels,EnhancedNavball.btnEnhancedNavballToolbarIcon,PlanetShine.Gui,test.buttonDOSettings,QuickHideConf.QuickHideConf,QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC
+			visibleButtons = AmbientLightAdjustment.adjustLevels,EnhancedNavball.btnEnhancedNavballToolbarIcon,PlanetShine.Gui,test.buttonDOSettings,QuickHideConf.QuickHideConf
+		}
+		toolbar_24934541
+		{
+			x = 931
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,QuickGoToVAB.QuickGoToVAB,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC,QuickGoToTS.QuickGoToTS
+			visibleButtons = QuickGoToVAB.QuickGoToVAB,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC,QuickGoToTS.QuickGoToTS
 		}
 	}
 	MAINMENU
@@ -58,6 +70,45 @@ toolbars
 			useKSPSkin = False
 			buttonOrder = 
 			visibleButtons = 
+		}
+		toolbar_557081424
+		{
+			x = 210
+			y = 35
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = AmbientLightAdjustment.adjustLevels,QuickGoToSC.QuickGoToSC,QuickGoToSPH.QuickGoToSPH,QuickGoToTS.QuickGoToTS,QuickGoToVAB.QuickGoToVAB
+		}
+		toolbar_1778613784
+		{
+			x = 1078
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,QuickGoToVAB.QuickGoToVAB,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC,QuickGoToTS.QuickGoToTS
+			visibleButtons = QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC
+		}
+	}
+	EDITOR
+	{
+		toolbar_1778613784
+		{
+			x = 1078
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,QuickGoToVAB.QuickGoToVAB,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC,QuickGoToTS.QuickGoToTS
+			visibleButtons = QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC
 		}
 	}
 }
