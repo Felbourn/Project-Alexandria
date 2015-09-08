@@ -1,0 +1,26 @@
+﻿1.2.0, 2014-08-21
+- The plugin now also works in the tracking station.
+- The slider will now auto-hide automatically after a few seconds of inactivity.
+- The toolbar button is now only accessible in the relevant game scenes rather
+  than all game scenes.
+
+1.1.3, 2014-07-27
+- The plugin now does an automatic update check, and also gets KSP versions from
+  the update check server. In case the currently running KSP version is one of
+  those versions, the plugin will not complain about being incompatible with this
+  KSP version. This saves both players' and the plugin author's time.
+- Updated for KSP 0.24.2 and Toolbar Plugin 1.7.6 (included.)
+
+1.1.2, 2014-07-18
+- Updated for KSP 0.24.1 and Toolbar Plugin 1.7.5 (included.)
+
+1.1.1, 2014-07-18
+- Updated for KSP 0.24.0 and Toolbar Plugin 1.7.4 (included.)
+
+1.1.0, 2014-03-06
+- Added the ability to toggle between the current and the previous setting by
+  clicking the toolbar button using the middle mouse button.
+- Both settings are now persisted between scene changes and KSP restarts.
+
+1.0.0, 2014-03-05
+- Initial public release.

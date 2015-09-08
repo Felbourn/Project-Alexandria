@@ -91,13 +91,13 @@ GAME
 		{
 			RecordsAltitude
 			{
-				reached = 50830.7667928178
-				record = 82.5276982961223
+				reached = 51463.1867927166
+				record = 83.0592106990516
 			}
 			RecordsSpeed
 			{
-				reached = 50830.7867928178
-				record = 0.000594848853428857
+				reached = 50847.1867928152
+				record = 0.784028893348695
 			}
 			RecordsDistance
 			{
@@ -335,10 +335,28 @@ GAME
 			MaxDeltaTime = 21600
 		}
 	}
+	SCENARIO
+	{
+		name = TRScenario
+		scene = 5
+		reflectionType = REAL
+		isHelmetRemovalEnabled = True
+		isAtmSuitEnabled = True
+		Kerbals
+		{
+			Jebediah Kerman = M GENERIC GENERIC
+			Bill Kerman = M GENERIC GENERIC
+			Bob Kerman = M GENERIC GENERIC
+			Valentina Kerman = F GENERIC GENERIC
+		}
+		ClassSuits
+		{
+		}
+	}
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 50830.9867928178
+		UT = 51761.9267926688
 		activeVessel = 7
 		mapViewFiltering = 894
 		VESSEL
@@ -922,34 +940,34 @@ GAME
 			type = Ship
 			sit = PRELAUNCH
 			landed = True
-			landedAt = LaunchPad
+			landedAt = KSC_LaunchPad_Platform
 			splashed = False
 			met = 0
-			lct = 50830.9867928178
+			lct = 51761.9267926688
 			root = 0
-			lat = 28.6087825927711
-			lon = -80.599772909805
-			alt = 82.5276982961223
-			hgt = 0.3375302
-			nrm = 7.010654E-05,1,-1.811166E-07
-			rot = -0.5102006,-0.1122381,-0.01688644,0.8525333
-			CoM = 2.562571E-08,0.03205899,-1.374925E-07
+			lat = 28.6087832597643
+			lon = -80.5997724534941
+			alt = 83.0592075297609
+			hgt = 0.2875267
+			nrm = -8.704314E-08,1,1.214518E-05
+			rot = -0.5102079,-0.1123515,-0.01681899,0.8525152
+			CoM = 6.405154E-10,3.567414E-09,6.509566E-09
 			stg = 1
 			prst = False
 			ref = 2703776745
 			ctrl = True
-			cPch = 0.2
-			cHdg = 0.3
+			cPch = 0.6740003
+			cHdg = -0.396001
 			cMod = 0
 			ORBIT
 			{
-				SMA = 3189782.03964001
-				ECC = 0.997341034772105
-				INC = 28.6087825927937
-				LPE = 270
-				LAN = 141.960251924956
-				MNA = 3.14159346976098
-				EPH = 50830.9867928178
+				SMA = 3189782.29109132
+				ECC = 0.997341033898947
+				INC = 28.6087829258603
+				LPE = 269.999980681473
+				LAN = 145.849828961681
+				MNA = 3.14159265358979
+				EPH = 51761.9267926688
 				REF = 1
 			}
 			PART
@@ -974,14 +992,14 @@ GAME
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.8
-				temp = 287.610494492187
-				tempExt = 287.603803665163
+				temp = 287.893384358544
+				tempExt = 287.928964137889
 				expt = 0.5
 				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/NASA
-				rTrf = mk1pod
+				rTrf = mk1pod (Untitled Space Craft)
 				modCost = 0
 				crew = Jebediah Kerman
 				EVENTS
@@ -1031,7 +1049,7 @@ GAME
 				{
 					name = ModuleReactionWheel
 					isEnabled = True
-					stateString = Idle
+					stateString = Running
 					WheelState = Active
 					EVENTS
 					{
@@ -1259,7 +1277,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 50
+					amount = 44.6720189301982
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -1312,11 +1330,11 @@ GAME
 			{
 				pitch = 0
 				yaw = 0
-				roll = 0
+				roll = 0.032
 				trimPitch = 0
 				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
+				trimRoll = 0.032
+				mainThrottle = 0.5
 			}
 		}
 	}
