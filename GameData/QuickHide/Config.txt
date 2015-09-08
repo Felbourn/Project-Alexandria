@@ -1,0 +1,30 @@
+isHidden = False
+MouseHide = True
+TimeToKeep = 2
+StockToolBar = True
+BlizzyToolBar = True
+StockToolBar_ModApp = True
+CanPin
+{
+	Item = TextureReplacer
+	Item = DistantObject
+	Item = QuickGoTo
+}
+CanHide
+{
+	Item = TextureReplacer
+	Item = DistantObject
+	Item = QuickGoTo
+}
+CanSetFalse
+{
+	Item = TextureReplacer
+	Item = DistantObject
+	Item = QuickGoTo
+}
+ModHasFirstConfig
+{
+	Item = TextureReplacer
+	Item = DistantObject
+	Item = QuickGoTo
+}

@@ -1,0 +1,4 @@
+Enabled = True
+GameScene = 5
+editorFacility = True
+otherScenes = True
