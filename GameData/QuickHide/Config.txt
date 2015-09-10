@@ -12,6 +12,8 @@ CanPin
 	Item = PlanetShine
 	Item = FilterExtensions
 	Item = NodeHelper
+	Item = MechJeb2
+	Item = KSPAlternateResourcePanel
 }
 CanHide
 {
@@ -21,6 +23,8 @@ CanHide
 	Item = PlanetShine
 	Item = FilterExtensions
 	Item = NodeHelper
+	Item = MechJeb2
+	Item = KSPAlternateResourcePanel
 }
 CanSetFalse
 {
@@ -30,6 +34,8 @@ CanSetFalse
 	Item = PlanetShine
 	Item = FilterExtensions
 	Item = NodeHelper
+	Item = MechJeb2
+	Item = KSPAlternateResourcePanel
 }
 ModHasFirstConfig
 {
@@ -39,4 +45,6 @@ ModHasFirstConfig
 	Item = PlanetShine
 	Item = FilterExtensions
 	Item = NodeHelper
+	Item = MechJeb2
+	Item = KSPAlternateResourcePanel
 }

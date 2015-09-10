@@ -5,7 +5,9 @@ PartDatabase.cfg
 thumbs/*Auto-Saved Ship.png
 Logs/*.log
 KSP_Data/*
+thumbs/*
 saves/*/Ships/*/Auto-Saved Ship.craft
 GameData/Squad/*
 GameData/ModuleManager.*
 GameData/PlanetShine/Plugins/PlanetShine.log
+GameData/MechJeb2/Plugins/PluginData/MechJeb2/*
