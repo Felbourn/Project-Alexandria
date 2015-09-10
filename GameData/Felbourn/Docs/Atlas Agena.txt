@@ -1,0 +1,182 @@
+---------------------------------------------------------------------------------------------------
+Ranger 3 used Atlas LV-3B Agena-B
+
+Parts:
+	fuel
+		tapered tank
+		long tank
+	engines
+		main sustainer
+		engine fairing
+		2x boosters
+		2x verniers
+
+---------------------------------------------------------------------------------------------------
+references
+
+http://www.b14643.de/Spacerockets_2/United_States_4/Atlas-Agena/Versions/Atlas-Agena_big.jpg
+http://www.alternatewars.com/BBOW/Space_Engines/Rocketdyne_Engines.htm
+https://en.wikipedia.org/wiki/Ranger_3
+https://en.wikipedia.org/wiki/Atlas-Agena
+http://space.skyrocket.de/doc_lau/atlas_agena.htm
+
+---------------------------------------------------------------------------------------------------
+http://www.aerospaceprojectsreview.com/blog/wp-content/uploads/2014/08/Advanced-Atlas-Launch-Vehicle-Digest.pdf
+268930 lb fuel (121985 kg)
+287984 lb total (130627 kg)
+
+---------------------------------------------------------------------------------------------------
+http://www.astronautix.com/lvs/atlgenab.htm
+
+Gross mass: 127,367 kg (280,796 lb). 
+Payload: 850 kg (1,870 lb). 
+Height: 33.00 m (108.00 ft). 
+Diameter: 3.05 m (10.00 ft). 
+Thrust: 1,721.10 kN (386,919 lbf). 
+
+Stage 0.
+1 x Atlas MA-3. 
+Gross Mass: 3,174 kg (6,997 lb). 
+Empty Mass: 3,174 kg (6,997 lb). 
+Thrust (vac): 1,644.960 kN (369,802 lbf). 
+Isp: 290 sec. 
+Burn time: 120 sec. 
+Isp(sl): 256 sec. 
+Diameter: 4.90 m (16.00 ft). 
+Span: 4.90 m (16.00 ft). 
+Propellants: Lox/Kerosene. 
+No Engines: 2. 
+Engine: LR-89-5. 
+
+	Engine: LR-89-5. 
+	Thrust (sl): 726.000 kN (163,211 lbf). 
+	Engine: 720 kg (1,580 lb). 
+	Propellant Formulation: Lox/RP-1. 
+	Oxidizer to Fuel Ratio: 2.25.
+	Height: 3.40 m (11.10 ft). 
+	Diameter: 1.53 m (5.00 ft). 
+	Thrust: 822.50 kN (184,905 lbf). 
+	Specific impulse: 290 s. 
+	Specific impulse sea level: 256 s. 
+	Burn time: 120 s. 
+
+	https://github.com/KSP-RO/RealismOverhaul/blob/master/GameData/RealismOverhaul/RO_SuggestedMods/FASA/RO_FASA_Atlas.cfg
+	maxThrust = 758.7
+	key = 0 282
+	key = 1 248
+	mass = 0.720 * 0.89 = 0.64
+
+	http://www.aerospaceprojectsreview.com/blog/wp-content/uploads/2014/08/Advanced-Atlas-Launch-Vehicle-Digest.pdf
+	isp 259-297
+
+Stage 1.
+1 x Atlas Agena SLV-3. 
+Gross Mass: 117,026 kg (257,998 lb). 
+Empty Mass: 2,326 kg (5,127 lb). 
+Thrust (vac): 386.300 kN (86,844 lbf). 
+Isp: 316 sec. 
+Burn time: 265 sec. 
+Isp(sl): 220 sec.
+Diameter: 3.05 m (10.00 ft). 
+Span: 4.90 m (16.00 ft).
+Length: 20.67 m (67.81 ft). 
+Propellants: Lox/Kerosene. 
+No Engines: 1. 
+Engine: LR-105-5. 
+
+	Engine: LR-105-5. 
+	Thrust (sl): 269.000 kN (60,473 lbf). 
+	Engine: 460 kg (1,010 lb). 
+	Propellant Formulation: Lox/RP-1. 
+	Oxidizer to Fuel Ratio: 2.25. 
+	Height: 2.70 m (8.80 ft). 
+	Diameter: 3.05 m (10.00 ft). 
+	Thrust: 386.40 kN (86,866 lbf). 
+	Specific impulse: 316 s. 
+	Specific impulse sea level: 220 s. 	
+
+	http://www.alternatewars.com/BBOW/Space_Engines/Rocketdyne_Engines.htm
+	Thrust (sl): 57,000 lbf at 215 ISP (253 kN)
+	Thrust (vac): Unknown at 310 ISP
+	Weight (dry): 909 lbs (412 kg)
+
+	https://github.com/KSP-RO/RealismOverhaul/blob/master/GameData/RealismOverhaul/RO_SuggestedMods/FASA/RO_FASA_Atlas.cfg
+	@mass = 0.844
+	maxThrust = 352.2
+	key = 0 309
+	key = 1 215
+
+	http://www.aerospaceprojectsreview.com/blog/wp-content/uploads/2014/08/Advanced-Atlas-Launch-Vehicle-Digest.pdf
+	isp 215-309
+
+Stage 2. 
+1 x Agena B. 
+Gross Mass: 7,167 kg (15,800 lb). 
+Empty Mass: 867 kg (1,911 lb). 
+Thrust (vac): 71.166 kN (15,999 lbf). 
+Isp: 285 sec. 
+Burn time: 240 sec. 
+Isp(sl): 0.0000 sec. 
+Diameter: 1.52 m (4.98 ft). 
+Span: 1.52 m (4.98 ft). 
+Length: 7.09 m (23.26 ft). 
+Propellants: Nitric acid/UDMH. 
+No Engines: 1. 
+Engine: Bell 8081. 
+
+	Engine: Bell 8081. 
+	Engine: 130 kg (280 lb). 
+	Propellant Formulation: RFNA/UDMH. 
+	Oxidizer to Fuel Ratio: 2.55. 
+	Unfuelled mass: 130 kg (280 lb). 
+	Diameter: 1.52 m (4.98 ft). 
+	Thrust: 71.20 kN (16,006 lbf). 
+	Specific impulse: 285 s. 
+	Burn time: 240 s. 
+
+---------------------------------------------------------------------------------------------------
+http://www.b14643.de/Spacerockets_2/United_States_4/Agena/index.htm
+
+Propellant: IRFNA/UDMH
+Propellant mass: 6,112 kg
+O/F mix rate: 2.57
+Engine: Bell 8081 (XLR-81-BA-7)
+Thrust: 70.7 kN (15,890 lbf) 
+Specific impulse: 283 sec
+Flow rate: 25.47 kg/sec
+Burn time: 240 s
+
+---------------------------------------------------------------------------------------------------
+fairing
+https://github.com/KSP-RO/RealismOverhaul/blob/master/GameData/RealismOverhaul/RO_SuggestedMods/FASA/RO_FASA_Atlas.cfg
+@mass = 1.61
+
+http://www.aerospaceprojectsreview.com/blog/wp-content/uploads/2014/08/Advanced-Atlas-Launch-Vehicle-Digest.pdf
+7456 lb fairing + 2x engines dry (3382 kg)
+7536 lb core dry (3418 kg)
+
+---------------------------------------------------------------------------------------------------
+vernier
+LR101
+
+https://github.com/KSP-RO/RealismOverhaul/blob/master/GameData/RealismOverhaul/RO_SuggestedMods/FASA/RO_FASA_Atlas.cfg
+@mass = 0.0241
+maxThrust = 5.1144
+key = 0 238
+key = 1 207
+
+http://www.aerospaceprojectsreview.com/blog/wp-content/uploads/2014/08/Advanced-Atlas-Launch-Vehicle-Digest.pdf
+isp = 191-238
+
+---------------------------------------------------------------------------------------------------
+Agena B
+
+http://www.astronautix.com/stages/agenab.htm
+	Gross mass: 7,167 kg (15,800 lb). 
+	Unfuelled mass: 867 kg (1,911 lb). 
+	Height: 7.09 m (23.26 ft). 
+	Diameter: 1.52 m (4.98 ft). 
+	Span: 1.52 m (4.98 ft). 
+	Thrust: 71.17 kN (15,999 lbf). 
+	Specific impulse: 285 s. 
+	Burn time: 240 s. 
