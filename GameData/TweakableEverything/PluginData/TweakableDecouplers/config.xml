@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <vector2 name="bounds">
+        <x>-Infinity</x>
+        <y>Infinity</y>
+    </vector2>
+    <double name="stepMult">1</double>
+</config>
