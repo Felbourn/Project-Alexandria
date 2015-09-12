@@ -2,14 +2,14 @@ ship = Atlas
 version = 1.0.4
 description = 
 type = VAB
-size = 9.653189,33.20813,8.886364
+size = 9.485176,34.57556,8.786436
 PART
 {
 	part = Ranger3_4294522948
 	partName = Part
-	pos = -3.350596,29.17187,0.08329213
+	pos = 3.236205,30.53929,0.4028311
 	attPos = 0,0,0
-	attPos0 = -3.350596,29.17187,0.08329213
+	attPos0 = 3.236205,30.53929,0.4028311
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -35,8 +35,8 @@ PART
 	link = radPanelSm_4294452036
 	link = radPanelSm_4294451994
 	link = IRHingeOpenScaleable_4294451434
-	link = His.FASAGeminiLFTMed_4294406688
-	attN = bottom,His.FASAGeminiLFTMed_4294406688
+	link = His.FASAGeminiLFTMed_4294209766
+	attN = bottom,His.FASAGeminiLFTMed_4294209766
 	EVENTS
 	{
 	}
@@ -568,7 +568,7 @@ PART
 {
 	part = His.solarPanelsond1_4294507328
 	partName = Part
-	pos = -3.830912,28.57335,0.08329222
+	pos = 2.755888,29.94077,0.4028312
 	attPos = -0.1408332,-0.1930867,9.685755E-08
 	attPos0 = -0.3394827,-0.4054317,0
 	rot = 0.4691325,-0.5290697,0.4691325,0.5290697
@@ -697,7 +697,7 @@ PART
 {
 	part = His.solarPanelsond1_4294506102
 	partName = Part
-	pos = -2.87028,28.57335,0.08329199
+	pos = 3.71652,29.94077,0.402831
 	attPos = 0.1408332,-0.1930867,-1.41561E-07
 	attPos0 = 0.3394827,-0.4054317,0
 	rot = 0.4691325,0.5290697,-0.4691325,0.5290697
@@ -826,7 +826,7 @@ PART
 {
 	part = IRHingeOpenScaleable_4294494142
 	partName = Part
-	pos = -3.350596,28.5586,0.6715801
+	pos = 3.236205,29.92602,0.991119
 	attPos = 0,-0.5138073,0.1149034
 	attPos0 = 0,-0.09946251,0.4733846
 	rot = 0.5401953,-0.4562773,0.5401954,-0.4562773
@@ -987,11 +987,11 @@ PART
 			}
 			MovePlusAction
 			{
-				actionGroup = Custom02
+				actionGroup = Custom04
 			}
 			MoveMinusAction
 			{
-				actionGroup = Custom03
+				actionGroup = Custom02
 			}
 			MoveCenterAction
 			{
@@ -1015,7 +1015,7 @@ PART
 {
 	part = Fel.1byQuarterPanel_4294470570
 	partName = Part
-	pos = -3.354582,28.8097,0.6370991
+	pos = 3.232218,30.17712,0.9566381
 	attPos = -0.2077249,0.5106829,0.004060572
 	attPos0 = -0.04560195,-0.5186819,-0.008046213
 	rot = 0.4607091,0.534893,0.4518065,0.5454425
@@ -1074,10 +1074,10 @@ PART
 {
 	part = His.dishcomlar1_4294461496
 	partName = Part
-	pos = -3.350568,29.1431,0.6543365
+	pos = 3.236232,30.51052,0.9738755
 	attPos = 0.1202441,0.07382489,-0.002347058
 	attPos0 = 0.2055923,-0.001074007,-6.344819E-10
-	rot = -0.7639522,3.902121E-08,-1.616735E-07,0.6452729
+	rot = -0.7639522,3.902219E-08,-1.616726E-07,0.6452729
 	attRot = 0,0,0,1
 	attRot0 = -0.7139751,6.638128E-06,-0.7001712,-6.322027E-07
 	mir = 1,1,1
@@ -1211,7 +1211,7 @@ PART
 {
 	part = His.dishcomlar1_4294467254
 	partName = Part
-	pos = -3.499395,29.1255,-0.1594547
+	pos = 3.087406,30.49292,0.1600842
 	attPos = -0.1439109,0.1080342,0.1138448
 	attPos0 = 0,-0.1529713,-0.3484528
 	rot = -0.1262584,0.783242,-0.6010032,-0.09688154
@@ -1348,7 +1348,7 @@ PART
 {
 	part = radPanelSm_4294454220
 	partName = Part
-	pos = -3.52377,28.79279,-0.2166619
+	pos = 3.06303,30.16021,0.1028771
 	attPos = 0.002294302,-0.05445862,0.003973663
 	attPos0 = -0.1699164,-0.3124332,-0.2943037
 	rot = 1.267097E-07,-0.2588193,-3.39518E-08,-0.9659258
@@ -1411,7 +1411,7 @@ PART
 {
 	part = radPanelSm_4294452162
 	partName = Part
-	pos = -3.696957,28.79279,0.08329212
+	pos = 2.889843,30.16021,0.4028311
 	attPos = 0.004588366,-0.05445862,-9.126961E-08
 	attPos0 = -0.3398325,-0.3124332,8.009374E-08
 	rot = 9.275791E-08,-0.7071071,-9.275796E-08,-0.7071065
@@ -1474,7 +1474,7 @@ PART
 {
 	part = radPanelSm_4294452120
 	partName = Part
-	pos = -3.52377,28.79279,0.3832457
+	pos = 3.06303,30.16021,0.7027847
 	attPos = 0.002294064,-0.05445862,-0.003973752
 	attPos0 = -0.1699162,-0.3124332,0.2943038
 	rot = 3.395172E-08,-0.9659259,-1.267097E-07,-0.2588187
@@ -1537,7 +1537,7 @@ PART
 {
 	part = radPanelSm_4294452078
 	partName = Part
-	pos = -3.177422,28.79279,0.3832457
+	pos = 3.409378,30.16021,0.7027847
 	attPos = -0.002294302,-0.05445862,-0.003973663
 	attPos0 = 0.1699164,-0.3124332,0.2943037
 	rot = -3.395181E-08,-0.9659258,-1.267097E-07,0.2588194
@@ -1600,7 +1600,7 @@ PART
 {
 	part = radPanelSm_4294452036
 	partName = Part
-	pos = -3.004235,28.79279,0.08329212
+	pos = 3.582565,30.16021,0.4028311
 	attPos = -0.004588366,-0.05445862,9.126961E-08
 	attPos0 = 0.3398325,-0.3124332,-1.005828E-07
 	rot = -9.275798E-08,-0.7071065,-9.275791E-08,0.7071071
@@ -1663,7 +1663,7 @@ PART
 {
 	part = radPanelSm_4294451994
 	partName = Part
-	pos = -3.177422,28.79279,-0.2166618
+	pos = 3.409378,30.16021,0.1028772
 	attPos = -0.002294302,-0.05445862,0.003973752
 	attPos0 = 0.1699164,-0.3124332,-0.2943037
 	rot = -1.267097E-07,-0.2588188,-3.395173E-08,0.9659259
@@ -1726,7 +1726,7 @@ PART
 {
 	part = IRHingeOpenScaleable_4294451434
 	partName = Part
-	pos = -3.182612,28.85512,-0.2268165
+	pos = 3.404189,30.22254,0.09272248
 	attPos = -0.009430885,-0.1079063,0.01633486
 	attPos0 = 0.1717062,-0.1986847,-0.3159378
 	rot = -0.6123731,0.6123725,0.3535535,-0.353552
@@ -1887,7 +1887,7 @@ PART
 			}
 			MovePlusAction
 			{
-				actionGroup = Custom04
+				actionGroup = Custom03
 			}
 			MoveMinusAction
 			{
@@ -1915,7 +1915,7 @@ PART
 {
 	part = structuralIBeam2_4294425566
 	partName = Part
-	pos = -3.181952,29.22099,-0.2279583
+	pos = 3.404849,30.58841,0.09158057
 	attPos = 0.4773636,0.01736264,-9.420866E-07
 	attPos0 = -0.8432275,-0.01868159,1.574625E-06
 	rot = 8.387943E-07,-0.8660259,-1.622527E-07,0.4999993
@@ -1975,10 +1975,10 @@ PART
 {
 	part = structuralIBeam2_4294415300
 	partName = Part
-	pos = -3.181953,29.82242,-0.2279567
+	pos = 3.404848,31.18984,0.09158209
 	attPos = 2.410582E-07,-0.005914867,3.153604E-07
 	attPos0 = 7.5413E-07,0.6073458,-5.967117E-07
-	rot = -1.223063E-06,0.8660258,1.51973E-06,-0.4999995
+	rot = -1.223063E-06,0.8660257,1.51973E-06,-0.4999996
 	attRot = 0,0,0,1
 	attRot0 = 9.834765E-07,-3.278255E-07,1.011525E-06,-1
 	mir = 1,1,1
@@ -2035,10 +2035,10 @@ PART
 {
 	part = structuralIBeam2_4294411656
 	partName = Part
-	pos = -3.255454,30.3866,-0.1097549
+	pos = 3.331346,31.75402,0.209784
 	attPos = 0.1391159,-0.04316276,0.004553106
 	attPos0 = -8.757269E-07,0.6073455,1.953211E-08
-	rot = -0.1187969,-0.4772257,-0.2103292,-0.8449289
+	rot = -0.1187969,-0.4772256,-0.2103292,-0.8449289
 	attRot = -0.2339078,-0.9396544,0.06031147,0.2422799
 	attRot0 = 1.111168E-06,-0.9659257,8.483704E-09,0.2588198
 	mir = 1,1,1
@@ -2095,10 +2095,10 @@ PART
 {
 	part = His.ranger3LGA_4294465550
 	partName = Part
-	pos = -3.327816,30.70829,0.05791238
+	pos = 3.258984,32.07571,0.3774516
 	attPos = -0.01690464,-0.09833455,0.02461282
 	attPos0 = 1.310083E-07,0.4536723,2.966892E-08
-	rot = 0.01599973,0.0307735,0.00821536,-0.9993647
+	rot = 0.01599977,0.03077366,0.008215339,-0.9993647
 	attRot = -0.01797235,0.4646822,0.0007156166,0.885295
 	attRot0 = -3.023468E-08,0.4917893,-4.450213E-08,-0.8707143
 	mir = 1,1,1
@@ -2151,11 +2151,11 @@ PART
 }
 PART
 {
-	part = His.FASAGeminiLFTMed_4294406688
+	part = His.FASAGeminiLFTMed_4294209766
 	partName = Part
-	pos = -3.350596,25.7577,0.08329213
+	pos = 3.236205,27.12513,0.4028311
 	attPos = 0,0,0
-	attPos0 = 0,-3.394135,0
+	attPos0 = 0,-3.41416,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -2167,21 +2167,20 @@ PART
 	sqor = 0
 	sepI = 0
 	attm = 0
-	modCost = 4901.716
+	modCost = 4901.565
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = His.radialRCSTank_4294592618
-	link = His.radialRCSTank_4294393040
-	link = His.radialRCSTank_4294392994
-	link = His.radialRCSTank_4294392948
-	link = His.FASAUmbilicalTower_4294589238
-	link = His.GeminiNosecone1m_4294483470
-	link = RLA.rcs45.2way_4292047062
-	link = RLA.rcs45.2way_4292046990
-	link = RLA.rcs.micro.linear_4292046096
-	link = RLA.rcs.micro.linear_4292044448
 	link = His.FASAAgena.Engine_4294445878
-	attN = top,His.GeminiNosecone1m_4294483470
+	link = His.FASAApolloStrJ2Fairing_4294509246
+	link = His.radialRCSTank_4294392948
+	link = His.radialRCSTank_4294207552
+	link = His.radialRCSTank_4294207506
+	link = His.radialRCSTank_4294207460
+	link = His.FASAUmbilicalTower_4294342908
+	link = His.AgenaRCS_4293541952
+	link = His.AgenaRCS_4293541812
+	link = His.GeminiNosecone1m_4294335806
+	attN = top,His.GeminiNosecone1m_4294335806
 	attN = payload,Ranger3_4294522948
 	attN = engine,His.FASAAgena.Engine_4294445878
 	attN = bottom,His.FASAApolloStrJ2Fairing_4294509246
@@ -2316,8 +2315,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 5727.34196436405
-			maxAmount = 5727.34196436405
+			amount = 5727
+			maxAmount = 5727
 		}
 		TANK
 		{
@@ -2372,8 +2371,8 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 1066.65803563595
-			maxAmount = 1066.65803563595
+			amount = 1067
+			maxAmount = 1067
 		}
 	}
 	MODULE
@@ -2506,9 +2505,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = IRFNA
-		amount = 1066.65803563595
-		maxAmount = 1066.65803563595
+		name = UDMH
+		amount = 5727
+		maxAmount = 5727
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2516,9 +2515,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = UDMH
-		amount = 5727.34196436405
-		maxAmount = 5727.34196436405
+		name = IRFNA
+		amount = 1067
+		maxAmount = 1067
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2527,945 +2526,11 @@ PART
 }
 PART
 {
-	part = His.radialRCSTank_4294592618
-	partName = Part
-	pos = -2.939786,22.93342,0.08329215
-	attPos = 0.8658199,0.06973076,2.235174E-08
-	attPos0 = -0.4550102,-2.894003,1.862645E-09
-	rot = -0.4999993,-0.5000008,-0.5,0.4999999
-	attRot = 0,0,0.7071067,-0.7071067
-	attRot0 = 0.4999999,-0.4999999,-0.4999993,-0.5000008
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = -175
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = His.radialRCSTank_4294393040
-	sym = His.radialRCSTank_4294392994
-	sym = His.radialRCSTank_4294392948
-	srfN = srfAttach,His.FASAGeminiLFTMed_4294406688
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 50
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 25
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.radialRCSTank_4294393040
-	partName = Part
-	pos = -3.350596,22.93342,0.4941018
-	attPos = 0,0.06973076,-0.04420048
-	attPos0 = 0,-2.894003,0.4550101
-	rot = 4.425419E-07,-0.7071073,-0.7071063,-5.900559E-07
-	attRot = 0,0,0.7071067,-0.7071067
-	attRot0 = 4.425419E-07,-0.7071073,-0.7071063,-5.900559E-07
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = -175
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = His.radialRCSTank_4294592618
-	sym = His.radialRCSTank_4294392994
-	sym = His.radialRCSTank_4294392948
-	srfN = srfAttach,His.FASAGeminiLFTMed_4294406688
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 50
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 25
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.radialRCSTank_4294392994
-	partName = Part
-	pos = -3.350596,22.93342,-0.3275175
-	attPos = -0.4550102,0.06973076,-0.4108096
-	attPos0 = 0.4550102,-2.894003,-4.097819E-08
-	rot = -0.7071063,-5.591473E-07,-4.116333E-07,0.7071073
-	attRot = 0,0,0.7071067,-0.7071067
-	attRot0 = -0.4999993,-0.5000008,-0.4999999,0.5
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = -175
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = His.radialRCSTank_4294592618
-	sym = His.radialRCSTank_4294393040
-	sym = His.radialRCSTank_4294392948
-	srfN = srfAttach,His.FASAGeminiLFTMed_4294406688
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 50
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 25
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.radialRCSTank_4294392948
-	partName = Part
-	pos = -3.761406,22.93342,0.08329215
-	attPos = -0.4108098,0.06973076,0.4550102
-	attPos0 = 0,-2.894003,-0.4550101
-	rot = -0.5,0.4999999,0.4999993,0.5000008
-	attRot = 0,0,0.7071067,-0.7071067
-	attRot0 = -0.7071063,-5.900559E-07,-4.425419E-07,0.7071073
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = -175
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = His.radialRCSTank_4294592618
-	sym = His.radialRCSTank_4294393040
-	sym = His.radialRCSTank_4294392994
-	srfN = srfAttach,His.FASAGeminiLFTMed_4294406688
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 50
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 25
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.FASAUmbilicalTower_4294589238
-	partName = Part
-	pos = -3.279182,25.37954,5.674439
-	attPos = 0,0,0
-	attPos0 = 0.07141399,-0.3781586,5.591147
-	rot = 3.432669E-14,1,-2.519097E-07,1.362658E-07
-	attRot = 0,0,0,1
-	attRot0 = 3.432669E-14,1,-2.519097E-07,1.362658E-07
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 1
-	dstg = 10
-	sidx = 0
-	sqor = 1
-	sepI = 1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	srfN = srfAttach,His.FASAGeminiLFTMed_4294406688
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = LaunchClamp
-		isEnabled = True
-		scaleFactor = 13.68977
-		height = 27.37954
-		towerRot = -3.432669E-14,-1,2.519097E-07,1.362658E-07
-		EVENTS
-		{
-			Release
-			{
-				active = False
-				guiActive = True
-				guiIcon = Release Clamp
-				guiName = Release Clamp
-				category = Release Clamp
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ReleaseClamp
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleGenerator
-		isEnabled = True
-		generatorIsActive = False
-		throttle = 0
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Generator
-				guiName = Power On
-				category = Activate Generator
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = True
-				guiActive = True
-				guiIcon = Shutdown Generator
-				guiName = Power Off
-				category = Shutdown Generator
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = LCFix
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.GeminiNosecone1m_4294483470
-	partName = Part
-	pos = -3.350596,28.5477,0.08329213
-	attPos = 0,0.02334023,0
-	attPos0 = 0,2.789999,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	attN = bottom,His.FASAGeminiLFTMed_4294406688
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleFairingDecoupler
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		ejectionForcePercent_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleSeeThroughObject
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 350
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = RLA.rcs45.2way_4292047062
-	partName = Part
-	pos = -3.665927,22.89477,-0.2320386
-	attPos = 0.1687195,-0.1654186,0.1687199
-	attPos0 = -0.4840508,-2.697515,-0.4840507
-	rot = 2.872502E-08,0.3826838,-6.934826E-08,-0.9238794
-	attRot = 0,0,0,1
-	attRot0 = 2.872502E-08,0.3826838,-6.934826E-08,-0.9238794
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RLA.rcs45.2way_4292046990
-	srfN = srfAttach,His.FASAGeminiLFTMed_4294406688
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableRCS
-		isEnabled = True
-		startEnabled = True
-		thrustLimit = 1
-		startEnabled_UIFlight
-		{
-			controlEnabled = True
-		}
-		thrustLimit_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			incrementSlide = 0.025
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionEnableThruster
-			{
-				actionGroup = None
-			}
-			ActionDisableThruster
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = RLA.rcs45.2way_4292046990
-	partName = Part
-	pos = -3.035265,22.89477,0.3986229
-	attPos = -0.1687195,-0.1654186,-0.1687199
-	attPos0 = 0.4840508,-2.697515,0.4840506
-	rot = -6.934826E-08,-0.9238794,-2.872501E-08,-0.3826838
-	attRot = 0,0,0,1
-	attRot0 = -6.934826E-08,-0.9238794,-2.872501E-08,-0.3826838
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RLA.rcs45.2way_4292047062
-	srfN = srfAttach,His.FASAGeminiLFTMed_4294406688
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableRCS
-		isEnabled = True
-		startEnabled = True
-		thrustLimit = 1
-		startEnabled_UIFlight
-		{
-			controlEnabled = True
-		}
-		thrustLimit_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			incrementSlide = 0.025
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionEnableThruster
-			{
-				actionGroup = None
-			}
-			ActionDisableThruster
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = RLA.rcs.micro.linear_4292046096
-	partName = Part
-	pos = -3.804214,23.07503,0.3451885
-	attPos = 0,0.1138287,8.940697E-08
-	attPos0 = -0.4536176,-2.796503,0.2618963
-	rot = 0.5000002,0.4999992,0.5000002,0.5000005
-	attRot = 0,0,0,1
-	attRot0 = 0.5000002,0.4999992,0.5000002,0.5000005
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RLA.rcs.micro.linear_4292044448
-	srfN = srfAttach,His.FASAGeminiLFTMed_4294406688
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableRCS
-		isEnabled = True
-		startEnabled = True
-		thrustLimit = 1
-		startEnabled_UIFlight
-		{
-			controlEnabled = True
-		}
-		thrustLimit_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			incrementSlide = 0.025
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionEnableThruster
-			{
-				actionGroup = None
-			}
-			ActionDisableThruster
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
-	part = RLA.rcs.micro.linear_4292044448
-	partName = Part
-	pos = -2.896978,23.07503,-0.1786043
-	attPos = 0,0.1138287,-8.940697E-08
-	attPos0 = 0.4536176,-2.796503,-0.2618963
-	rot = 0.5000002,0.5000005,-0.5000002,-0.4999992
-	attRot = 0,0,0,1
-	attRot0 = 0.5000002,0.5000005,-0.5000002,-0.4999992
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	sym = RLA.rcs.micro.linear_4292046096
-	srfN = srfAttach,His.FASAGeminiLFTMed_4294406688
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCS
-		isEnabled = True
-		rcsEnabled = True
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableRCS
-		isEnabled = True
-		startEnabled = True
-		thrustLimit = 1
-		startEnabled_UIFlight
-		{
-			controlEnabled = True
-		}
-		thrustLimit_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 1
-			incrementSlide = 0.025
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionEnableThruster
-			{
-				actionGroup = None
-			}
-			ActionDisableThruster
-			{
-				actionGroup = None
-			}
-		}
-	}
-}
-PART
-{
 	part = His.FASAAgena.Engine_4294445878
 	partName = Part
-	pos = -3.350596,22.9677,0.08329213
+	pos = 3.236205,24.33513,0.4028311
 	attPos = 0,0.08229828,0
-	attPos0 = 0,-2.789999,0
+	attPos0 = 0,-2.790001,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -3473,16 +2538,14 @@ PART
 	symMethod = Radial
 	istg = 1
 	dstg = 0
-	sidx = 1
+	sidx = 0
 	sqor = 1
 	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = His.FASAApolloStrJ2Fairing_4294509246
-	attN = top,His.FASAGeminiLFTMed_4294406688
-	attN = bottom,His.FASAApolloStrJ2Fairing_4294509246
+	attN = top,His.FASAGeminiLFTMed_4294209766
 	EVENTS
 	{
 	}
@@ -3563,7 +2626,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -3731,25 +2794,25 @@ PART
 {
 	part = His.FASAApolloStrJ2Fairing_4294509246
 	partName = Part
-	pos = -3.350596,21.7377,0.08329213
+	pos = 3.236205,23.90513,0.4028311
 	attPos = 0,0,0
-	attPos0 = 0,-1.23,0
+	attPos0 = 0,-3.220001,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 3
 	dstg = 1
-	sidx = 2
-	sqor = 1
-	sepI = 1
+	sidx = 0
+	sqor = 3
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
 	link = His.FASA.Atlas.LFT.Cone2_4294510558
-	attN = top,His.FASAAgena.Engine_4294445878
+	attN = top,His.FASAGeminiLFTMed_4294209766
 	attN = bottom,His.FASA.Atlas.LFT.Cone2_4294510558
 	EVENTS
 	{
@@ -3893,7 +2956,7 @@ PART
 {
 	part = His.FASA.Atlas.LFT.Cone2_4294510558
 	partName = Part
-	pos = -3.350596,18.1567,0.08329213
+	pos = 3.236205,20.32413,0.4028311
 	attPos = 0,0,0
 	attPos0 = 0,-3.581001,0
 	rot = 0,0,0,1
@@ -3905,7 +2968,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3964,7 +3027,7 @@ PART
 {
 	part = His.FASAMercuryAtlasLFTLong_4294428664
 	partName = Part
-	pos = -3.350596,11.9257,0.08329213
+	pos = 3.236205,14.09313,0.4028311
 	attPos = 0,0,0
 	attPos0 = 0,-6.230999,0
 	rot = 0,0,0,1
@@ -3976,7 +3039,7 @@ PART
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = 3
 	attm = 0
 	modCost = 4940.799
 	modMass = 0
@@ -4240,7 +3303,7 @@ PART
 {
 	part = His.FASAMercuryAtlasEng_4294520044
 	partName = Part
-	pos = -3.350596,5.805708,0.08329213
+	pos = 3.236205,7.973131,0.4028311
 	attPos = 0,0,0
 	attPos0 = 0,-6.119999,0
 	rot = 0,0,0,1
@@ -4248,11 +3311,11 @@ PART
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 6
 	dstg = 2
 	sidx = 0
-	sqor = 4
-	sepI = 1
+	sqor = 6
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4460,7 +3523,7 @@ PART
 {
 	part = His.FASAMercuryFairing_4294519244
 	partName = Part
-	pos = -3.350596,5.705709,0.08329213
+	pos = 3.236205,7.873133,0.4028311
 	attPos = 0,0,0
 	attPos0 = 0,-0.09999847,0
 	rot = 0,0,0,1
@@ -4468,11 +3531,11 @@ PART
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 2
+	istg = 4
 	dstg = 3
 	sidx = 0
-	sqor = 2
-	sepI = 2
+	sqor = 4
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4480,7 +3543,7 @@ PART
 	link = His.FASAMercuryAtlasEngBooster_4294518680
 	link = His.FASAMercuryAtlasEngBooster_4294518484
 	link = His.FASAlaunchClampAtlas_4294590642
-	link = His.FASAlaunchClampAtlas_4294590028
+	link = His.FASAlaunchClampAtlas_4294343288
 	attN = top,His.FASAMercuryAtlasEng_4294520044
 	attN = bottom1,His.FASAMercuryAtlasEngBooster_4294518484
 	attN = bottom2,His.FASAMercuryAtlasEngBooster_4294518680
@@ -4626,7 +3689,7 @@ PART
 {
 	part = His.FASAMercuryAtlasEngBooster_4294518680
 	partName = Part
-	pos = -4.818896,1.779711,0.08329213
+	pos = 1.767905,3.947134,0.4028311
 	attPos = 0,0,0
 	attPos0 = -1.4683,-3.926,0
 	rot = 0,0,0,1
@@ -4634,11 +3697,11 @@ PART
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 6
 	dstg = 4
 	sidx = 1
-	sqor = 4
-	sepI = 2
+	sqor = 6
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4725,7 +3788,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -4829,7 +3892,7 @@ PART
 {
 	part = His.FASAMercuryAtlasEngBooster_4294518484
 	partName = Part
-	pos = -1.882297,1.779711,0.08329213
+	pos = 4.704503,3.947134,0.4028311
 	attPos = 0,0,0
 	attPos0 = 1.4683,-3.926,0
 	rot = 0,1,0,-4.371139E-08
@@ -4837,11 +3900,11 @@ PART
 	attRot0 = 0,1,0,-4.371139E-08
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 6
 	dstg = 4
 	sidx = 2
-	sqor = 4
-	sepI = 2
+	sqor = 6
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4928,7 +3991,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -5032,24 +4095,24 @@ PART
 {
 	part = His.FASAlaunchClampAtlas_4294590642
 	partName = Part
-	pos = -6.658414,-0.4526386,0.1832203
+	pos = 6.460017,2.322958,0.4028312
 	attPos = 0,0,0
-	attPos0 = -3.307818,-6.158348,0.0999282
-	rot = 0.04923746,0.7053903,-0.04923743,0.7053906
+	attPos0 = 3.223812,-5.550175,8.940697E-08
+	rot = -0.04923732,0.7053905,-0.04923731,-0.7053905
 	attRot = 0,0,0,1
-	attRot0 = 0.04923746,0.7053903,-0.04923743,0.7053906
+	attRot0 = -0.04923732,0.7053905,-0.04923731,-0.7053905
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 3
+	istg = 5
 	dstg = 4
 	sidx = 0
-	sqor = 3
-	sepI = 4
+	sqor = 5
+	sepI = 5
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	sym = His.FASAlaunchClampAtlas_4294590028
+	sym = His.FASAlaunchClampAtlas_4294343288
 	srfN = srfAttach,His.FASAMercuryFairing_4294519244
 	EVENTS
 	{
@@ -5064,9 +4127,9 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = -0.1362412
-		height = -0.05474091
-		towerRot = -0.04923746,-0.7053903,0.04923743,0.7053906
+		scaleFactor = 6.771768
+		height = 2.720856
+		towerRot = 0.04923732,-0.7053905,0.04923731,-0.7053905
 		EVENTS
 		{
 			Release
@@ -5114,21 +4177,21 @@ PART
 }
 PART
 {
-	part = His.FASAlaunchClampAtlas_4294590028
+	part = His.FASAlaunchClampAtlas_4294343288
 	partName = Part
-	pos = -0.04277706,-0.4526386,-0.016636
+	pos = 0.012393,2.322958,0.4028313
 	attPos = 0,0,0
-	attPos0 = 3.307818,-6.158348,-0.0999285
-	rot = -0.04923743,0.7053906,-0.04923745,-0.7053904
+	attPos0 = -3.223812,-5.550175,1.788139E-07
+	rot = -0.04923731,-0.7053906,0.04923733,-0.7053904
 	attRot = 0,0,0,1
-	attRot0 = -0.04923743,0.7053906,-0.04923745,-0.7053904
+	attRot0 = -0.04923731,-0.7053906,0.04923733,-0.7053904
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 3
+	istg = 5
 	dstg = 4
 	sidx = 1
-	sqor = 3
-	sepI = 4
+	sqor = 5
+	sepI = 5
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -5148,9 +4211,9 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = -0.1362412
-		height = -0.05474091
-		towerRot = 0.04923743,-0.7053906,0.04923745,-0.7053904
+		scaleFactor = 6.771768
+		height = 2.720856
+		towerRot = 0.04923731,0.7053906,-0.04923733,-0.7053904
 		EVENTS
 		{
 			Release
@@ -5200,7 +4263,7 @@ PART
 {
 	part = His.FASAUmbilicalTower_4294589694
 	partName = Part
-	pos = -4.927449,3.989676,6.161373
+	pos = 1.659351,6.157099,6.480912
 	attPos = 0,0,0
 	attPos0 = -1.576853,-7.936031,6.078081
 	rot = 1.743098E-08,0.9914449,-1.324014E-07,0.1305262
@@ -5208,11 +4271,11 @@ PART
 	attRot0 = 1.743098E-08,0.9914449,-1.324014E-07,0.1305262
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 3
+	istg = 5
 	dstg = 12
 	sidx = 2
-	sqor = 3
-	sepI = 4
+	sqor = 5
+	sepI = 5
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -5231,8 +4294,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.994838
-		height = 5.989676
+		scaleFactor = 4.078549
+		height = 8.157099
 		towerRot = -1.743098E-08,-0.9914449,1.324014E-07,0.1305262
 		EVENTS
 		{
@@ -5330,7 +4393,7 @@ PART
 {
 	part = His.FASAMercuryAtlasVernierEngine_4293775010
 	partName = Part
-	pos = -3.350596,5.633755,-1.45393
+	pos = 3.236205,7.801178,-1.134391
 	attPos = 0,-0.01451111,0.01912689
 	attPos0 = -2.384186E-07,-6.277437,-1.556349
 	rot = 5.840058E-07,2.214673E-07,1.293382E-13,-1
@@ -5338,11 +4401,11 @@ PART
 	attRot0 = 5.840058E-07,2.214673E-07,1.293382E-13,-1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 6
 	dstg = 3
 	sidx = 3
-	sqor = 4
-	sepI = 1
+	sqor = 6
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -5527,7 +4590,7 @@ PART
 {
 	part = His.FASAMercuryAtlasVernierEngine_4293774120
 	partName = Part
-	pos = -3.350595,5.633755,1.620515
+	pos = 3.236206,7.801178,1.940054
 	attPos = 0,-0.01451111,-0.01912689
 	attPos0 = 4.768372E-07,-6.277437,1.556349
 	rot = 1.038105E-13,-1,-5.840058E-07,-1.77756E-07
@@ -5535,11 +4598,11 @@ PART
 	attRot0 = 1.038105E-13,-1,-5.840058E-07,-1.77756E-07
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 6
 	dstg = 3
 	sidx = 4
-	sqor = 4
-	sepI = 1
+	sqor = 6
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -5718,5 +4781,806 @@ PART
 				actionGroup = None
 			}
 		}
+	}
+}
+PART
+{
+	part = His.radialRCSTank_4294392948
+	partName = Part
+	pos = 3.625778,24.26468,0.4028311
+	attPos = 0.7791467,0.0335598,-5.960464E-08
+	attPos0 = -0.3895733,-2.894003,8.940697E-08
+	rot = -0.4999998,-0.5,-0.5000002,0.5000001
+	attRot = 0,0,0.7071067,-0.7071067
+	attRot0 = 0.5000001,-0.5000001,-0.4999998,-0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = -175
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = His.radialRCSTank_4294207552
+	sym = His.radialRCSTank_4294207506
+	sym = His.radialRCSTank_4294207460
+	srfN = srfAttach,His.FASAGeminiLFTMed_4294209766
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 50
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 25
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.radialRCSTank_4294207552
+	partName = Part
+	pos = 3.236205,24.26468,0.7924044
+	attPos = 0,0.0335598,0
+	attPos0 = 0,-2.894003,0.3895733
+	rot = 2.528811E-07,-0.7071068,-0.7071068,1.053671E-07
+	attRot = 0,0,0.7071067,-0.7071067
+	attRot0 = 2.528811E-07,-0.7071069,-0.7071068,1.053671E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = -175
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = His.radialRCSTank_4294392948
+	sym = His.radialRCSTank_4294207506
+	sym = His.radialRCSTank_4294207460
+	srfN = srfAttach,His.FASAGeminiLFTMed_4294209766
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 50
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 25
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.radialRCSTank_4294207506
+	partName = Part
+	pos = 3.236205,24.26468,0.01325777
+	attPos = -0.3895733,0.0335598,-0.3895732
+	attPos0 = 0.3895733,-2.894003,-1.192093E-07
+	rot = -0.7071068,1.362758E-07,-2.219725E-07,0.7071068
+	attRot = 0,0,0.7071067,-0.7071067
+	attRot0 = -0.4999998,-0.4999999,-0.5000001,0.5000001
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = -175
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = His.radialRCSTank_4294392948
+	sym = His.radialRCSTank_4294207552
+	sym = His.radialRCSTank_4294207460
+	srfN = srfAttach,His.FASAGeminiLFTMed_4294209766
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 50
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 25
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.radialRCSTank_4294207460
+	partName = Part
+	pos = 2.846631,24.26468,0.4028311
+	attPos = -0.3895733,0.0335598,0.3895733
+	attPos0 = 0,-2.894003,-0.3895733
+	rot = -0.5000002,0.5000001,0.4999998,0.5
+	attRot = 0,0,0.7071067,-0.7071067
+	attRot0 = -0.7071068,1.053671E-07,-2.528811E-07,0.7071069
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = -175
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = His.radialRCSTank_4294392948
+	sym = His.radialRCSTank_4294207552
+	sym = His.radialRCSTank_4294207506
+	srfN = srfAttach,His.FASAGeminiLFTMed_4294209766
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 50
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 25
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.FASAUmbilicalTower_4294342908
+	partName = Part
+	pos = 0.4810159,26.30688,5.274958
+	attPos = 0,0,0
+	attPos0 = -2.755189,-0.8182411,4.872127
+	rot = 9.128117E-08,0.9659259,-3.406659E-07,0.258819
+	attRot = 0,0,0,1
+	attRot0 = 9.128116E-08,0.9659258,-3.406659E-07,0.258819
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 10
+	sidx = 3
+	sqor = 5
+	sepI = 5
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,His.FASAGeminiLFTMed_4294209766
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 14.15344
+		height = 28.30688
+		towerRot = -9.128117E-08,-0.9659259,3.406659E-07,0.258819
+		EVENTS
+		{
+			Release
+			{
+				active = False
+				guiActive = True
+				guiIcon = Release Clamp
+				guiName = Release Clamp
+				category = Release Clamp
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Generator
+				guiName = Power On
+				category = Activate Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = True
+				guiActive = True
+				guiIcon = Shutdown Generator
+				guiName = Power Off
+				category = Shutdown Generator
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = LCFix
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.AgenaRCS_4293541952
+	partName = Part
+	pos = 3.583177,24.26096,0.7498031
+	attPos = -0.07278514,-0.192255,-0.07278478
+	attPos0 = 0.4197569,-2.671919,0.4197567
+	rot = -6.175078E-08,0.9238797,-2.557799E-08,0.3826832
+	attRot = 0,0,0,1
+	attRot0 = -6.175078E-08,0.9238797,-2.557799E-08,0.3826832
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = His.AgenaRCS_4293541812
+	srfN = srfAttach,His.FASAGeminiLFTMed_4294209766
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		rcsEnabled = True
+		enableYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		enablePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableX_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableY_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableZ_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 310
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.AgenaRCS_4293541812
+	partName = Part
+	pos = 2.889233,24.26096,0.05585918
+	attPos = 0.07278514,-0.192255,0.07278478
+	attPos0 = -0.4197569,-2.671919,-0.4197567
+	rot = -2.557798E-08,0.3826831,6.175078E-08,-0.9238797
+	attRot = 0,0,0,1
+	attRot0 = -2.557798E-08,0.3826831,6.175078E-08,-0.9238797
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = His.AgenaRCS_4293541952
+	srfN = srfAttach,His.FASAGeminiLFTMed_4294209766
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		rcsEnabled = True
+		enableYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		enablePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableX_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableY_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableZ_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 310
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.GeminiNosecone1m_4294335806
+	partName = Part
+	pos = 3.236205,29.91513,0.4028311
+	attPos = 0,0,0
+	attPos0 = 0,2.790001,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 1
+	sidx = 0
+	sqor = 2
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,His.FASAGeminiLFTMed_4294209766
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleFairingDecoupler
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		ejectionForcePercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleSeeThroughObject
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 350
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 0.1
+		maxAmount = 0.1
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
 	}
 }

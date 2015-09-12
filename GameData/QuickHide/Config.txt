@@ -1,4 +1,4 @@
-isHidden = True
+isHidden = False
 MouseHide = True
 TimeToKeep = 2
 StockToolBar = True
@@ -15,6 +15,10 @@ CanPin
 	Item = MechJeb2
 	Item = KSPAlternateResourcePanel
 	Item = UbioWeldingLtd
+	Item = KerbalKonstructs
+	Item = HyperEdit
+	Item = KerbalAlarmClock
+	Item = CameraTools
 }
 CanHide
 {
@@ -27,6 +31,10 @@ CanHide
 	Item = MechJeb2
 	Item = KSPAlternateResourcePanel
 	Item = UbioWeldingLtd
+	Item = KerbalKonstructs
+	Item = HyperEdit
+	Item = KerbalAlarmClock
+	Item = CameraTools
 }
 CanSetFalse
 {
@@ -39,6 +47,10 @@ CanSetFalse
 	Item = MechJeb2
 	Item = KSPAlternateResourcePanel
 	Item = UbioWeldingLtd
+	Item = KerbalKonstructs
+	Item = HyperEdit
+	Item = KerbalAlarmClock
+	Item = CameraTools
 }
 ModHasFirstConfig
 {
@@ -51,4 +63,8 @@ ModHasFirstConfig
 	Item = MechJeb2
 	Item = KSPAlternateResourcePanel
 	Item = UbioWeldingLtd
+	Item = KerbalKonstructs
+	Item = HyperEdit
+	Item = KerbalAlarmClock
+	Item = CameraTools
 }

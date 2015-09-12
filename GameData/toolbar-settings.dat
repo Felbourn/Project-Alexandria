@@ -12,7 +12,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = AmbientLightAdjustment.adjustLevels,test.buttonDOSettings,QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC
+			visibleButtons = AmbientLightAdjustment.adjustLevels,test.buttonDOSettings,QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC,KerbalAlarmClock.btnToolbarIcon
 		}
 	}
 	TRACKSTATION
@@ -42,7 +42,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = SmokeScreen.main
+			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon
 		}
 		toolbar_24934541
 		{
@@ -178,6 +178,30 @@ toolbars
 			useKSPSkin = False
 			buttonOrder = 
 			visibleButtons = sirkut.IREditorButton
+		}
+		toolbar_467562744
+		{
+			x = -3
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = AmbientLightAdjustment.adjustLevels,test.buttonDOSettings,QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC,KerbalAlarmClock.btnToolbarIcon
+		}
+		toolbar_1432091265
+		{
+			x = 1204
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = Fusebox.FBToggle
 		}
 	}
 	EDITOR
