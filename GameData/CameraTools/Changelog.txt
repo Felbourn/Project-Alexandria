@@ -1,0 +1,25 @@
+v1.3
+
+- 1.0+ Compatibility
+- Manual camera position now persists after resetting camera
+- Bind activate/reset key by recording instead of typing button name
+- Camera no longer resets when pausing
+
+
+v1.2
+
+- Added Orbit frame of reference
+- Fixed issues with setting camera offset to vertically launching vehicles
+
+v1.1
+
+- 0.25 update
+- Added ability to set location -before- activating camera
+- Fixed text fields in GUI (it won't fight you when entering negatives or decimals)
+- Fixed Toolbar Icon
+- Greatly reduced motion of stationary camera when vessel is accelerating/turning
+
+
+v1.0
+
+- Initial release

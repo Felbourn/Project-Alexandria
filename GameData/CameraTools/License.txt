@@ -1,0 +1,3 @@
+This plugin for Kerbal Space Program is licensed under GPLv3.
+For more information, please visit this site:
+http://www.gnu.org/copyleft/gpl.html
