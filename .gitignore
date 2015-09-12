@@ -12,3 +12,4 @@ GameData/Squad/*
 GameData/ModuleManager.*
 GameData/PlanetShine/Plugins/PlanetShine.log
 GameData/MechJeb2/Plugins/PluginData/MechJeb2/*
+GameData/ActiveTextureManagement/textureCache/*
