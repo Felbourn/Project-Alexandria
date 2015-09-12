@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <string name="version">1.0</string>
+    <rect name="mainWin1">
+        <xmin>1280</xmin>
+        <xmax>1400</xmax>
+        <ymin>50</ymin>
+        <ymax>226</ymax>
+    </rect>
+    <rect name="filterWin1">
+        <xmin>1280</xmin>
+        <xmax>1400</xmax>
+        <ymin>50</ymin>
+        <ymax>60</ymax>
+    </rect>
+    <rect name="setWin1">
+        <xmin>1280</xmin>
+        <xmax>1400</xmax>
+        <ymin>50</ymin>
+        <ymax>60</ymax>
+    </rect>
+    <rect name="drkWin1">
+        <xmin>1280</xmin>
+        <xmax>1440</xmax>
+        <ymin>50</ymin>
+        <ymax>60</ymax>
+    </rect>
+    <int name="skin1">2</int>
+    <bool name="toolbar1">1</bool>
+    <bool name="warphalt">1</bool>
+    <int name="warphaltthresh">30</int>
+    <bool name="showcharge1">1</bool>
+    <int name="precision1">2</int>
+    <bool name="minimized1">0</bool>
+    <string name="globalFontStyle1">Normal</string>
+    <double name="goodColr1">0</double>
+    <double name="goodColb1">0</double>
+    <double name="goodColg1">1</double>
+    <double name="badColr1">1</double>
+    <double name="badColb1">0</double>
+    <double name="badColg1">0</double>
+    <double name="otherColr1">1</double>
+    <double name="otherColb1">1</double>
+    <double name="otherColg1">1</double>
+    <bool name="filtArr10">1</bool>
+    <bool name="filtArr11">1</bool>
+    <bool name="filtArr12">1</bool>
+    <bool name="filtArr13">1</bool>
+    <bool name="filtArr14">1</bool>
+    <bool name="filtArr15">1</bool>
+    <bool name="filtArr16">1</bool>
+    <bool name="filtArr17">1</bool>
+    <bool name="filtArr18">1</bool>
+    <bool name="filtArr19">1</bool>
+    <bool name="filtArr110">1</bool>
+    <bool name="filtArr111">1</bool>
+    <bool name="filtArr112">1</bool>
+    <bool name="filtArr113">1</bool>
+    <bool name="filtArr114">1</bool>
+    <bool name="filtArr115">1</bool>
+    <bool name="filtArr116">1</bool>
+    <bool name="filtArr117">1</bool>
+    <bool name="filtArr118">1</bool>
+    <bool name="filtArr119">1</bool>
+    <rect name="mainWin0">
+        <xmin>1081</xmin>
+        <xmax>1201</xmax>
+        <ymin>4</ymin>
+        <ymax>14</ymax>
+    </rect>
+    <rect name="filterWin0">
+        <xmin>1280</xmin>
+        <xmax>1400</xmax>
+        <ymin>1</ymin>
+        <ymax>11</ymax>
+    </rect>
+    <rect name="setWin0">
+        <xmin>1280</xmin>
+        <xmax>1400</xmax>
+        <ymin>1</ymin>
+        <ymax>11</ymax>
+    </rect>
+    <rect name="drkWin0">
+        <xmin>1280</xmin>
+        <xmax>1440</xmax>
+        <ymin>1</ymin>
+        <ymax>11</ymax>
+    </rect>
+    <int name="skin0">2</int>
+    <bool name="toolbar0">1</bool>
+    <bool name="showcharge0">1</bool>
+    <int name="precision0">2</int>
+    <bool name="minimized0">1</bool>
+    <string name="globalFontStyle0">Normal</string>
+    <double name="goodColr0">0</double>
+    <double name="goodColb0">0</double>
+    <double name="goodColg0">1</double>
+    <double name="badColr0">1</double>
+    <double name="badColb0">0</double>
+    <double name="badColg0">0</double>
+    <double name="otherColr0">1</double>
+    <double name="otherColb0">1</double>
+    <double name="otherColg0">1</double>
+    <bool name="filtArr00">1</bool>
+    <bool name="filtArr01">1</bool>
+    <bool name="filtArr02">1</bool>
+    <bool name="filtArr03">1</bool>
+    <bool name="filtArr04">1</bool>
+    <bool name="filtArr05">1</bool>
+    <bool name="filtArr06">1</bool>
+    <bool name="filtArr07">1</bool>
+    <bool name="filtArr08">1</bool>
+    <bool name="filtArr09">1</bool>
+    <bool name="filtArr010">1</bool>
+    <bool name="filtArr011">1</bool>
+    <bool name="filtArr012">1</bool>
+    <bool name="filtArr013">1</bool>
+    <bool name="filtArr014">1</bool>
+    <bool name="filtArr015">1</bool>
+    <bool name="filtArr016">1</bool>
+    <bool name="filtArr017">1</bool>
+    <bool name="filtArr018">1</bool>
+    <bool name="filtArr019">1</bool>
+</config>

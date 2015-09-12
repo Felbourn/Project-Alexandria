@@ -1,0 +1,20 @@
+   
+                                        
+RESOURCES                     STAGE {0,-2: 0} $&$ STAGE
+
+      FUEL      OXID      MONO         
+   [{0:BAR| ,8}][{1:BAR| ,8}][{2:BAR| ,8}]   $&$ SYSR_LIQUIDFUELSTAGEPERCENT SYSR_OXIDIZERSTAGEPERCENT MONOPROPPERCENT 
+    ({0,-6:0.0%})  ({1,-6:0.0%})  ({2,-6:0.0%}/{3,5:0}) $&$ SYSR_LIQUIDFUELSTAGEPERCENT SYSR_OXIDIZERSTAGEPERCENT MONOPROPPERCENT MONOPROP
+   
+   
+   
+   
+   
+   
+   
+   
+   BATT   [{0:BAR| ,8}] ({1,-6:0.0%}) $&$ ELECTRIC ELECTRICPERCENT
+   DELTA:  [#00ff00]{0,5:0.00}[#ffffffff]/[#ff0000]{1,5:0.00}[#ffffffff] $&$ ELECTRICPRODUCTION ELECTRICCONSUMPTION
+   STATUS: {0} $&$ ELECTRICSTATUS
+                                        
+                        [@x12]HELPR  [@x17]TOTAL  
