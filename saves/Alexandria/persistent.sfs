@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/NASA
-	launchID = 4
+	launchID = 6
 	PARAMETERS
 	{
 		preset = Normal
@@ -386,8 +386,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 79151.9867932377
-		activeVessel = 0
+		UT = 83137.7067940498
+		activeVessel = 8
 		mapViewFiltering = 894
 		VESSEL
 		{
@@ -972,7 +972,7 @@ GAME
 			landed = True
 			landedAt = KSC_VAB_Main_Building
 			splashed = False
-			met = 26446.6600006902
+			met = 30514.3800015189
 			lct = 52623.3267925309
 			root = 0
 			lat = 28.6083269336495
@@ -981,7 +981,7 @@ GAME
 			hgt = 0.226841
 			nrm = -0.001185428,0.9999992,0.0001675041
 			rot = 0.3605854,-0.5018512,0.3620687,-0.6978752
-			CoM = 3.310515E-05,0.2099669,0.008570277
+			CoM = 4.781724E-05,0.2099895,0.008601612
 			stg = 0
 			prst = False
 			ref = 0
@@ -991,13 +991,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = NaN
-				LPE = 145.808147327983
-				LAN = -29.3047110282617
-				MNA = -8.40714670366795
-				EPH = 79149.8467932373
+				SMA = 3189834.01080073
+				ECC = 0.997340882343744
+				INC = 28.6083269433727
+				LPE = 270
+				LAN = 276.934516846329
+				MNA = 3.14159265358979
+				EPH = 83137.7067940498
 				REF = 1
 			}
 			PART
