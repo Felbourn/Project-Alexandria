@@ -27,7 +27,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = AmbientLightAdjustment.adjustLevels,QuickGoToSC.QuickGoToSC,QuickGoToSPH.QuickGoToSPH,QuickGoToTS.QuickGoToTS,QuickGoToVAB.QuickGoToVAB
+			visibleButtons = AmbientLightAdjustment.adjustLevels,QuickGoToSC.QuickGoToSC,QuickGoToSPH.QuickGoToSPH,QuickGoToTS.QuickGoToTS,QuickGoToVAB.QuickGoToVAB,KerbalAlarmClock.btnToolbarIcon
 		}
 	}
 	FLIGHT
@@ -66,7 +66,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_
+			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer
 		}
 		toolbar_1432091265
 		{
@@ -141,7 +141,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = SmokeScreen.main
+			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon
 		}
 		toolbar_24934541
 		{
@@ -165,7 +165,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_
+			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer
 		}
 		toolbar_2102786141
 		{
@@ -255,7 +255,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer
+			visibleButtons = MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer,KerbalAlarmClock.btnToolbarIcon
 		}
 		toolbar_1644868424
 		{

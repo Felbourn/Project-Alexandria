@@ -1,6 +1,31 @@
 
 ** January 9 – Cuba and the Soviet Union signed a trade pact.
 
+> greetings...
+it's 1962, a troubling and dangerous time for the world, but we'll get into that in a moment
+right now it's jan 26 and we're launching out of cape canaveral, LC-12
+heading to space today is an atlas LV3 agena-B carrying the Ranger 3 moon probe crafted by the JPL
+in the background you can see some special props used to make it look like this is the real KSC, which you can get from the kerbal forums just like i did
+also, keep your eyes on the engine plumes because I am using real plume, a mod that simulates the true changes to plumes from atmospheric pressure going down as we gain altitude 
+so, Ranger 3 weighs 328 kg total, but the united states is hoping to hard-land just one small round capsule from it on the surface of the moon in a couple days
+first we need to get to orbit, which we will be doing in the background as we learn a little about why 1962 had the survival of the world balancing on the head of a pin
+it started earlier in the month, when on Jan 9th the Sovet union and Cuba signed a trade pact
+4 years before this the united states made a deal with Turkey to station nuclear missions in their country
+Turkey is a stone's throw from the soviet union, which means very limited response time to U.S. a nuclear attack, so the USSR started looking for allies near the united states in return
+they found one in cuba
+
+that goes back a few years to a revolution in Cuba where the U.S. allied leader named Batista was overthrown by fidel castro
+this was followed up by a failed invasion by the united states trying to retake cuba, called the bay of pigs invasion
+over a 1000 captives of the invasion are still being held in cuba at this point, so far without a trial
+
+a week after this Ranger 3 launch the united states will declare an embargo on cuba and
+a few days after that the U.S. will offically banned all Cuban imports and exports within the united states
+
+meanwhile we're continuing with the space race, because this tension with the US and the USSR is only getting started
+
+
+
+
 January 26 – Ranger 3 was launched to study the Moon; it later missed the Moon by 22,000 miles.
 26.01.1962	Ranger 3 (P 34)	Atlas-LV3 Agena-B	CC LC-12
 
