@@ -489,8 +489,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 366618169.6721
-		activeVessel = 8
+		UT = 366618172.412098
+		activeVessel = 0
 		mapViewFiltering = 73
 		VESSEL
 		{
@@ -5545,8 +5545,8 @@ GAME
 			prst = False
 			ref = 2874356324
 			ctrl = True
-			cPch = 0.01159571
-			cHdg = -4.497099
+			cPch = 
+			cHdg = 
 			cMod = 1
 			ORBIT
 			{
@@ -6925,10 +6925,10 @@ GAME
 				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 48.1466111408757
-				LAN = -16.0375253982089
+				LPE = 48.1498862378317
+				LAN = -34.8169137617566
 				MNA = -8.40714670366795
-				EPH = 366450341.393577
+				EPH = 366618171.072099
 				REF = 1
 			}
 			PART
@@ -7171,13 +7171,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 3185764.24664906
+				SMA = 3185764.1562684
 				ECC = 1
 				INC = NaN
-				LPE = 48.1466140132145
-				LAN = -16.0375253982089
+				LPE = 48.1498878944081
+				LAN = -34.8169137617566
 				MNA = 3.14159265358979
-				EPH = 366450341.393577
+				EPH = 366618171.072099
 				REF = 1
 			}
 			PART
@@ -7423,10 +7423,10 @@ GAME
 				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 48.1466484646008
-				LAN = -16.0375253982089
+				LPE = 48.1499234416727
+				LAN = -34.8169137617566
 				MNA = -8.40714670366795
-				EPH = 366450341.393577
+				EPH = 366618171.072099
 				REF = 1
 			}
 			PART
@@ -7669,13 +7669,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 3185764.22525652
+				SMA = 3185764.20194157
 				ECC = 1
 				INC = NaN
-				LPE = 48.1466649778867
-				LAN = -16.0375253982089
+				LPE = 48.1499369187966
+				LAN = -34.8169137617566
 				MNA = 3.14159265358979
-				EPH = 366450341.393577
+				EPH = 366618171.072099
 				REF = 1
 			}
 			PART
@@ -7918,13 +7918,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 3185764.28647651
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 48.1466584186888
-				LAN = -16.0375253982089
-				MNA = 3.14159265358979
-				EPH = 366450341.393577
+				LPE = 48.1499280207693
+				LAN = -34.8169137617566
+				MNA = -8.40714670366795
+				EPH = 366618171.072099
 				REF = 1
 			}
 			PART
@@ -8167,13 +8167,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 3185764.24476607
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 48.1466411466399
-				LAN = -16.0375253982089
-				MNA = 3.14159265358979
-				EPH = 366450341.393577
+				LPE = 48.1499137211415
+				LAN = -34.8169137617566
+				MNA = -8.40714670366795
+				EPH = 366618171.072099
 				REF = 1
 			}
 			PART
@@ -8416,13 +8416,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 48.1466957068641
-				LAN = -16.0375253982089
+				LPE = 48.1499644020783
+				LAN = -34.8169137617566
 				MNA = -8.40714670366795
-				EPH = 366450341.393577
+				EPH = 366618171.072099
 				REF = 1
 			}
 			PART
@@ -8668,10 +8668,10 @@ GAME
 				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 48.1466928345267
-				LAN = -16.0375253982089
+				LPE = 48.1499635680061
+				LAN = -34.8169137617566
 				MNA = -8.40714670366795
-				EPH = 366450341.393577
+				EPH = 366618171.072099
 				REF = 1
 			}
 			PART
@@ -8884,694 +8884,6 @@ GAME
 				trimYaw = 0
 				trimRoll = 0
 				mainThrottle = 0
-			}
-		}
-		VESSEL
-		{
-			pid = 1647a8044ddf47f78e1c4c7b0456ce57
-			name = Untitled Space Craft
-			type = Ship
-			sit = PRELAUNCH
-			landed = True
-			landedAt = KSC_LaunchPad_Platform
-			splashed = False
-			met = 0
-			lct = 366450338.41358
-			root = 0
-			lat = 28.6087793933385
-			lon = -80.5997636050829
-			alt = 82.9792283428833
-			hgt = 0.03249624
-			nrm = 3.490264E-07,1,1.298302E-06
-			rot = -0.510201,-0.1122379,-0.01688625,0.852533
-			CoM = 0,0,0
-			stg = 1
-			prst = False
-			ref = 2787729478
-			ctrl = True
-			cPch = 
-			cHdg = 
-			cMod = 0
-			ORBIT
-			{
-				SMA = 3185541.50617342
-				ECC = 1
-				INC = NaN
-				LPE = 145.798038452421
-				LAN = -16.0375253982089
-				MNA = 3.14159265358979
-				EPH = 366450341.393577
-				REF = 1
-			}
-			PART
-			{
-				name = FASAMercuryPod
-				cid = 4294439596
-				uid = 2787729478
-				mid = 290327597
-				launchID = 53
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = -1
-				sepI = 0
-				sidx = -1
-				attm = 0
-				srfN = , -1
-				attN = top, -1
-				attN = bottom, -1
-				mass = 0.8
-				temp = 287.598259579914
-				tempExt = 287.549842416619
-				expt = 0.75
-				state = 0
-				connected = True
-				attached = True
-				flag = Squad/Flags/NASA
-				rTrf = FASAMercuryPod
-				modCost = 0
-				crew = Bob Kerman
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleRCSFX
-					isEnabled = True
-					enableYaw = True
-					enablePitch = True
-					enableRoll = True
-					enableX = True
-					enableY = True
-					enableZ = True
-					rcsEnabled = True
-					enableYaw_UIFlight
-					{
-						controlEnabled = True
-					}
-					enablePitch_UIFlight
-					{
-						controlEnabled = True
-					}
-					enableRoll_UIFlight
-					{
-						controlEnabled = True
-					}
-					enableX_UIFlight
-					{
-						controlEnabled = True
-					}
-					enableY_UIFlight
-					{
-						controlEnabled = True
-					}
-					enableZ_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-						Disable
-						{
-							active = True
-							guiActive = True
-							guiIcon = Disable RCS Port
-							guiName = Disable RCS Port
-							category = Disable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						Enable
-						{
-							active = False
-							guiActive = True
-							guiIcon = Enable RCS Port
-							guiName = Enable RCS Port
-							category = Enable RCS Port
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = ModuleLight
-					isEnabled = True
-					isOn = False
-					lightR = 1
-					lightG = 1
-					lightB = 1
-					lightR_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.05
-					}
-					lightG_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.05
-					}
-					lightB_UIFlight
-					{
-						controlEnabled = True
-						minValue = 0
-						maxValue = 1
-						stepIncrement = 0.05
-					}
-					EVENTS
-					{
-						LightsOff
-						{
-							active = False
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Lights Off
-							guiName = Lights Off
-							category = Lights Off
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						LightsOn
-						{
-							active = True
-							guiActive = True
-							guiActiveEditor = True
-							guiIcon = Lights On
-							guiName = Lights On
-							category = Lights On
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-						ToggleLightAction
-						{
-							actionGroup = Light
-						}
-						LightOnAction
-						{
-							actionGroup = None
-						}
-						LightOffAction
-						{
-							actionGroup = None
-						}
-					}
-				}
-				MODULE
-				{
-					name = FlagDecal
-					isEnabled = True
-					flagDisplayed = True
-					EVENTS
-					{
-						ToggleFlag
-						{
-							active = True
-							guiActive = False
-							guiActiveEditor = True
-							guiIcon = Toggle Flag
-							guiName = Toggle Flag
-							category = Toggle Flag
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleCommand
-					isEnabled = True
-					controlSrcStatusText = Operational
-					EVENTS
-					{
-						MakeReference
-						{
-							active = True
-							guiActive = True
-							guiIcon = Control From Here
-							guiName = Control From Here
-							category = Control From Here
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						RenameVessel
-						{
-							active = True
-							guiActive = True
-							guiIcon = Rename Vessel
-							guiName = Rename Vessel
-							category = Rename Vessel
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = BBModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = MechJebCore
-					isEnabled = True
-					running = True
-					running_UIFlight
-					{
-						controlEnabled = True
-					}
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						OnOrbitProgradeAction
-						{
-							actionGroup = None
-						}
-						OnOrbitRetrogradeAction
-						{
-							actionGroup = None
-						}
-						OnOrbitNormalAction
-						{
-							actionGroup = None
-						}
-						OnOrbitAntinormalAction
-						{
-							actionGroup = None
-						}
-						OnOrbitRadialInAction
-						{
-							actionGroup = None
-						}
-						OnOrbitRadialOutAction
-						{
-							actionGroup = None
-						}
-						OnKillRotationAction
-						{
-							actionGroup = None
-						}
-						OnDeactivateSmartASSAction
-						{
-							actionGroup = None
-						}
-						OnPanicAction
-						{
-							actionGroup = None
-						}
-						OnTranslatronOffAction
-						{
-							actionGroup = None
-						}
-						OnTranslatronKeepVertAction
-						{
-							actionGroup = None
-						}
-						OnTranslatronZeroSpeedAction
-						{
-							actionGroup = None
-						}
-						OnTranslatronPlusOneSpeedAction
-						{
-							actionGroup = None
-						}
-						OnTranslatronMinusOneSpeedAction
-						{
-							actionGroup = None
-						}
-						OnTranslatronToggleHSAction
-						{
-							actionGroup = None
-						}
-					}
-					MechJebLocalSettings
-					{
-						MechJebModuleMenu
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleAttitudeAdjustment
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleRCSBalancerWindow
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleInfoItems
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleSmartRcs
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleSettings
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleDebugArrows
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleSmartASS
-						{
-							mode = ORBITAL
-							target = OFF
-							advReference = INERTIAL
-							advDirection = FORWARD
-							forceRol = False
-							forcePitch = True
-							forceYaw = True
-							unlockParts = 
-							unlockTechs = 
-							srfHdg
-							{
-								_val = 90
-								_text = 90
-							}
-							srfPit
-							{
-								_val = 90
-								_text = 90
-							}
-							srfRol
-							{
-								_val = 0
-								_text = 0
-							}
-							srfVelYaw
-							{
-								_val = 0
-								_text = 0
-							}
-							srfVelPit
-							{
-								_val = 0
-								_text = 0
-							}
-							srfVelRol
-							{
-								_val = 0
-								_text = 0
-							}
-							rol
-							{
-								_val = 0
-								_text = 0
-							}
-						}
-						ModExtensionDemo
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleThrustWindow
-						{
-							autostageSavedState = False
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleWarpHelper
-						{
-							unlockParts = 
-							unlockTechs = 
-							phaseAngle
-							{
-								_val = 0
-								_text = 0
-							}
-						}
-						MechJebModuleCustomWindowEditor
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleNodeExecutor
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleNodeEditor
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleLandingGuidance
-						{
-							landingSiteIdx = 0
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleLandingPredictions
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleTranslatron
-						{
-							trans_spd = 0
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleWaypointWindow
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleWaypointHelpWindow
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleTargetController
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleManeuverPlanner
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleStageStats
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleRendezvousGuidance
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleCustomInfoWindow
-						{
-						}
-						MechJebModuleCustomInfoWindow
-						{
-						}
-						MechJebModuleWarpController
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleSolarPanelController
-						{
-							prev_ShouldOpenSolarPanels = False
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleThrustController
-						{
-							limitThrottle = False
-							unlockParts = 
-							unlockTechs = 
-							maxThrottle
-							{
-								_val = 1
-								_text = 100
-							}
-						}
-						MechJebModuleRCSController
-						{
-							unlockParts = 
-							unlockTechs = 
-							Tf
-							{
-								_val = 1
-								_text = 1
-							}
-						}
-						MechJebModuleRCSBalancer
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleAttitudeController
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleStagingController
-						{
-							unlockParts = 
-							unlockTechs = 
-						}
-						MechJebModuleFlightRecorder
-						{
-							markUT = 366450338.43358
-							deltaVExpended = 0
-							dragLosses = 0
-							gravityLosses = 0
-							steeringLosses = 0
-							markLatitude = 28.6087793933383
-							markLongitude = -80.5997636050829
-							markAltitude = 82.979228738416
-							markBodyIndex = 1
-							maxDragGees = 0
-							unlockParts = 
-							unlockTechs = 
-						}
-					}
-				}
-				MODULE
-				{
-					name = PartPath
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTripLogger
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					Log
-					{
-						flight = 0
-					}
-				}
-				RESOURCE
-				{
-					name = ElectricCharge
-					amount = 50000
-					maxAmount = 50000
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-				RESOURCE
-				{
-					name = HTP
-					amount = 17.434
-					maxAmount = 17.434
-					flowState = True
-					isTweakable = True
-					hideFlow = False
-					flowMode = Both
-				}
-			}
-			ACTIONGROUPS
-			{
-				Stage = False, 0
-				Gear = True, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 0
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
-			}
-			DISCOVERY
-			{
-				state = -1
-				lastObservedTime = 0
-				lifetime = Infinity
-				refTime = Infinity
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-				pitch = 0
-				yaw = 0
-				roll = 0.004
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0.004
-				mainThrottle = 0.5
 			}
 		}
 		VESSEL
@@ -10699,12 +10011,12 @@ GAME
 			dumb = 0.1
 			badS = False
 			tour = False
-			state = Assigned
+			state = Available
 			ToD = 7200
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 16
+				flight = 17
 				0 = Recover
 				1 = Recover
 				2 = Recover
@@ -10721,13 +10033,14 @@ GAME
 				13 = Recover
 				14 = Recover
 				15 = Recover
-			}
-			FLIGHT_LOG
-			{
-				flight = 16
 				16 = Flight,Kerbin
 				16 = Orbit,Kerbin
 				16 = Spawn
+				16 = Recover
+			}
+			FLIGHT_LOG
+			{
+				flight = 17
 			}
 		}
 		KERBAL

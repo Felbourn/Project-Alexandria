@@ -34,15 +34,15 @@ toolbars
 	{
 		toolbar_558249692
 		{
-			x = 207
+			x = 215
 			y = -3
 			width = 340
 			height = 38
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = False
-			buttonOrder = 
-			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon
+			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,KerbalAlarmClock.btnToolbarIcon,SmokeScreen.main,sirkut.IREditorButton
+			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton
 		}
 		toolbar_24934541
 		{
