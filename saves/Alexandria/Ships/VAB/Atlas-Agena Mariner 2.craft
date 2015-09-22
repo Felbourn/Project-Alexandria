@@ -1,4 +1,4 @@
-ship = Atlas
+ship = Atlas-Agena Mariner 2
 version = 1.0.4
 description = 
 type = VAB
@@ -141,6 +141,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 8558.183
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -662,6 +673,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -782,6 +804,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -1001,6 +1034,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -1060,6 +1104,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -1077,7 +1132,7 @@ PART
 	pos = 3.236232,30.51052,0.9738755
 	attPos = 0.1202441,0.07382489,-0.002347058
 	attPos0 = 0.2055923,-0.001074007,-6.344819E-10
-	rot = -0.7639522,3.902219E-08,-1.616726E-07,0.6452729
+	rot = -0.7639522,3.902222E-08,-1.616726E-07,0.6452729
 	attRot = 0,0,0,1
 	attRot0 = -0.7139751,6.638128E-06,-0.7001712,-6.322027E-07
 	mir = 1,1,1
@@ -1172,6 +1227,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 34.32816
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -1318,6 +1384,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -1379,6 +1456,17 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -1445,6 +1533,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -1505,6 +1604,17 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -1571,6 +1681,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -1634,6 +1755,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -1694,6 +1826,17 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -1901,6 +2044,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -1946,6 +2100,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -1975,7 +2140,7 @@ PART
 {
 	part = structuralIBeam2_4294415300
 	partName = Part
-	pos = 3.404848,31.18984,0.09158209
+	pos = 3.404848,31.18984,0.09158203
 	attPos = 2.410582E-07,-0.005914867,3.153604E-07
 	attPos0 = 7.5413E-07,0.6073458,-5.967117E-07
 	rot = -1.223063E-06,0.8660257,1.51973E-06,-0.4999996
@@ -2003,6 +2168,17 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -2063,6 +2239,17 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 	MODULE
 	{
@@ -2130,6 +2317,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 205.7824
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -2306,6 +2504,20 @@ PART
 		}
 		TANK
 		{
+			name = NTO
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = UDMH
 			note = 
 			utilization = 1
@@ -2317,6 +2529,48 @@ PART
 			techRequired = 
 			amount = 5727
 			maxAmount = 5727
+		}
+		TANK
+		{
+			name = MMH
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = HTP
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Tonka250
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
 		}
 		TANK
 		{
@@ -2418,6 +2672,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -2626,7 +2891,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -2712,6 +2977,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 750
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -2871,12 +3147,34 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleCargoBay
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = TweakScale
 		isEnabled = True
 		currentScale = 100
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 4500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -2993,6 +3291,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 750
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -3172,7 +3481,63 @@ PART
 		}
 		TANK
 		{
+			name = NTO
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
 			name = UDMH
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MMH
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = HTP
+			note = 
+			utilization = 1
+			mass = 1.6E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Tonka250
 			note = 
 			utilization = 1
 			mass = 1.6E-05
@@ -3249,6 +3614,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 3559.203
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -3470,6 +3846,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = ReflectiveShaderModule
 		isEnabled = True
 		EVENTS
@@ -3599,6 +3986,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -3788,7 +4186,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -3838,6 +4236,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 850
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -3991,7 +4400,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -4041,6 +4450,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 850
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -4154,6 +4574,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -4234,6 +4665,17 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 	}
 	MODULE
@@ -4364,6 +4806,17 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 	}
 	MODULE
@@ -4539,6 +4992,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 150
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -4745,6 +5209,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -4834,6 +5309,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -4886,6 +5372,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 25
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -4956,6 +5453,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -5008,6 +5516,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 25
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -5132,6 +5651,17 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 	}
 	MODULE
@@ -5274,6 +5804,17 @@ PART
 	}
 	MODULE
 	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -5392,6 +5933,17 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 310
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
 		EVENTS
 		{
 		}
@@ -5560,6 +6112,17 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 	}
 	MODULE

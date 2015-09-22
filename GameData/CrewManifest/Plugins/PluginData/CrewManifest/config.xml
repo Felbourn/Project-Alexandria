@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <config>
     <rect name="ManifestPosition">
-        <xmin>0</xmin>
-        <xmax>0</xmax>
-        <ymin>0</ymin>
-        <ymax>0</ymax>
+        <xmin>290</xmin>
+        <xmax>609</xmax>
+        <ymin>150</ymin>
+        <ymax>652</ymax>
     </rect>
     <rect name="TransferPosition">
         <xmin>0</xmin>
@@ -13,10 +13,10 @@
         <ymax>0</ymax>
     </rect>
     <rect name="RosterPosition">
-        <xmin>0</xmin>
-        <xmax>0</xmax>
-        <ymin>0</ymin>
-        <ymax>100</ymax>
+        <xmin>911</xmin>
+        <xmax>1234</xmax>
+        <ymin>216</ymin>
+        <ymax>316</ymax>
     </rect>
     <rect name="SettingsPosition">
         <xmin>0</xmin>

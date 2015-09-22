@@ -78,7 +78,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = Fusebox.FBToggle
+			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest
 		}
 	}
 	MAINMENU
@@ -105,7 +105,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = AmbientLightAdjustment.adjustLevels,QuickGoToSC.QuickGoToSC,QuickGoToSPH.QuickGoToSPH,QuickGoToTS.QuickGoToTS,QuickGoToVAB.QuickGoToVAB
+			visibleButtons = AmbientLightAdjustment.adjustLevels,QuickGoToSC.QuickGoToSC,QuickGoToSPH.QuickGoToSPH,QuickGoToTS.QuickGoToTS,QuickGoToVAB.QuickGoToVAB,KerbalAlarmClock.btnToolbarIcon
 		}
 		toolbar_1778613784
 		{
@@ -201,7 +201,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = Fusebox.FBToggle
+			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest
 		}
 	}
 	EDITOR
