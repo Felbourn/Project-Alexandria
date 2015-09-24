@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <int name="conicsMode">3</int>
+    <int name="mainWindowX">129</int>
+    <int name="mainWindowY">487</int>
+    <int name="optWindowX">533</int>
+    <int name="optWindowY">20</int>
+    <int name="keyWindowX">320</int>
+    <int name="keyWindowY">20</int>
+    <int name="clockWindowX">533</int>
+    <int name="clockWindowY">450</int>
+    <int name="conicsWindowX">320</int>
+    <int name="conicsWindowY">450</int>
+    <int name="tripWindowX">320</int>
+    <int name="tripWindowY">180</int>
+    <bool name="showClock">0</bool>
+    <bool name="showEAngle">1</bool>
+    <bool name="showConics">1</bool>
+    <bool name="showConicsAlways">0</bool>
+    <bool name="showOrbitInfo">0</bool>
+    <bool name="showUTControls">0</bool>
+    <bool name="showManeuverPager">1</bool>
+    <bool name="largeUTIncrement">0</bool>
+    <string name="progInc">Keypad8</string>
+    <string name="progDec">Keypad5</string>
+    <string name="normInc">Keypad9</string>
+    <string name="normDec">Keypad7</string>
+    <string name="radiInc">Keypad6</string>
+    <string name="radiDec">Keypad4</string>
+    <string name="timeInc">Keypad3</string>
+    <string name="timeDec">Keypad1</string>
+    <string name="pageIncrement">Keypad0</string>
+    <string name="pageConics">KeypadEnter</string>
+    <string name="hideWindow">P</string>
+    <string name="addWidget">O</string>
+</config>
