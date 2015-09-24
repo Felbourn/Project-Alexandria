@@ -41,8 +41,8 @@ toolbars
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = False
-			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,KerbalAlarmClock.btnToolbarIcon,SmokeScreen.main,sirkut.IREditorButton
-			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton
+			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,KerbalAlarmClock.btnToolbarIcon,AmbientLightAdjustment.adjustLevels,SmokeScreen.main,sirkut.IREditorButton
+			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels
 		}
 		toolbar_24934541
 		{
