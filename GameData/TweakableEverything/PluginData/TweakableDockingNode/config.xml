@@ -1,4 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <config>
     <string name="AffectedParts">dockingPort1, dockingPortLateral</string>
+    <vector2 name="bounds">
+        <x>-Infinity</x>
+        <y>Infinity</y>
+    </vector2>
+    <double name="stepMult">1</double>
 </config>

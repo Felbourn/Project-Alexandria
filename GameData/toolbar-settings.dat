@@ -66,7 +66,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer
+			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Node_Editor
 		}
 		toolbar_1432091265
 		{
@@ -133,15 +133,15 @@ toolbars
 		}
 		toolbar_558249692
 		{
-			x = 207
+			x = 215
 			y = -3
 			width = 340
 			height = 38
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = False
-			buttonOrder = 
-			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon
+			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,KerbalAlarmClock.btnToolbarIcon,AmbientLightAdjustment.adjustLevels,SmokeScreen.main,sirkut.IREditorButton
+			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels
 		}
 		toolbar_24934541
 		{
@@ -165,7 +165,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer
+			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Node_Editor
 		}
 		toolbar_2102786141
 		{
@@ -202,6 +202,30 @@ toolbars
 			useKSPSkin = False
 			buttonOrder = 
 			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest
+		}
+		toolbar_77370392
+		{
+			x = 158
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer,KerbalAlarmClock.btnToolbarIcon
+		}
+		toolbar_1644868424
+		{
+			x = 958
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,QuickGoToVAB.QuickGoToVAB,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC,QuickGoToTS.QuickGoToTS
+			visibleButtons = QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC
 		}
 	}
 	EDITOR

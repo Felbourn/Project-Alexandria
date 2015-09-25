@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <config>
     <int name="conicsMode">3</int>
-    <int name="mainWindowX">129</int>
-    <int name="mainWindowY">487</int>
-    <int name="optWindowX">533</int>
-    <int name="optWindowY">20</int>
-    <int name="keyWindowX">320</int>
-    <int name="keyWindowY">20</int>
-    <int name="clockWindowX">533</int>
-    <int name="clockWindowY">450</int>
+    <int name="mainWindowX">1025</int>
+    <int name="mainWindowY">504</int>
+    <int name="optWindowX">909</int>
+    <int name="optWindowY">502</int>
+    <int name="keyWindowX">1249</int>
+    <int name="keyWindowY">442</int>
+    <int name="clockWindowX">696</int>
+    <int name="clockWindowY">514</int>
     <int name="conicsWindowX">320</int>
     <int name="conicsWindowY">450</int>
     <int name="tripWindowX">320</int>
     <int name="tripWindowY">180</int>
     <bool name="showClock">0</bool>
     <bool name="showEAngle">1</bool>
-    <bool name="showConics">1</bool>
+    <bool name="showConics">0</bool>
     <bool name="showConicsAlways">0</bool>
     <bool name="showOrbitInfo">0</bool>
     <bool name="showUTControls">0</bool>
