@@ -1,0 +1,2612 @@
+ship = B-52
+version = 1.0.4
+description = 
+type = SPH
+size = 60.04823,14.95792,30.03625
+PART
+{
+	part = HL.Aero.Cockpit_4293878396
+	partName = CommandPod
+	pos = -1.199677,10.01301,25.70443
+	attPos = 0,0,0
+	attPos0 = -1.199677,10.01301,25.70443
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0.7071068,0,0,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = B9.Aero.HL.Body.Structure.6m_4293864354
+	attN = bottom,B9.Aero.HL.Body.Structure.6m_4293864354
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleCommand
+		isEnabled = True
+		controlSrcStatusText = 
+		EVENTS
+		{
+			MakeReference
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control From Here
+				guiName = Control From Here
+				category = Control From Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			RenameVessel
+			{
+				active = True
+				guiActive = True
+				guiIcon = Rename Vessel
+				guiName = Rename Vessel
+				category = Rename Vessel
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		standaloneToggle_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCS
+		isEnabled = True
+		rcsEnabled = True
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = FSanimateGeneric
+		isEnabled = True
+		startDeployed = True
+		isAnimating = False
+		animTime = 1
+		reverseAnimation = True
+		animSpeed = 1
+		hasBeenInitialized = True
+		EVENTS
+		{
+			toggleEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Deploy
+				guiName = Turn cockpit lights off
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			toggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		EVENTS
+		{
+			DeployExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = 
+				guiName = 
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 1.5
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = True
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Data
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperiment
+			{
+				active = True
+				guiActive = True
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DeployExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Deploy
+				guiName = Deploy
+				category = Deploy
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ResetExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Reset
+				guiName = Reset
+				category = Reset
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CleanUpExperimentExternal
+			{
+				active = True
+				guiActive = False
+				guiIcon = Restore
+				guiName = Restore
+				category = Restore
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceContainer
+		isEnabled = True
+		EVENTS
+		{
+			StoreDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Store Experiments (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			CollectDataExternalEvent
+			{
+				active = False
+				guiActive = False
+				guiIcon = 
+				guiName = Take Data (0)
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ReviewDataEvent
+			{
+				active = False
+				guiActive = True
+				guiIcon = Review Data
+				guiName = Review Stored Data (0)
+				category = Review Data
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = False
+		EVENTS
+		{
+			ToggleFlag
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Toggle Flag
+				guiName = Toggle Flag
+				category = Toggle Flag
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MechJebCore
+		isEnabled = True
+		running = True
+		running_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnOrbitProgradeAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRetrogradeAction
+			{
+				actionGroup = None
+			}
+			OnOrbitNormalAction
+			{
+				actionGroup = None
+			}
+			OnOrbitAntinormalAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRadialInAction
+			{
+				actionGroup = None
+			}
+			OnOrbitRadialOutAction
+			{
+				actionGroup = None
+			}
+			OnKillRotationAction
+			{
+				actionGroup = None
+			}
+			OnDeactivateSmartASSAction
+			{
+				actionGroup = None
+			}
+			OnPanicAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronOffAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronKeepVertAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronZeroSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronPlusOneSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronMinusOneSpeedAction
+			{
+				actionGroup = None
+			}
+			OnTranslatronToggleHSAction
+			{
+				actionGroup = None
+			}
+		}
+		MechJebLocalSettings
+		{
+			MechJebModuleMenu
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAttitudeAdjustment
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRCSBalancerWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleInfoItems
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSmartRcs
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSettings
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleDebugArrows
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSmartASS
+			{
+				mode = ORBITAL
+				target = OFF
+				advReference = INERTIAL
+				advDirection = FORWARD
+				forceRol = False
+				forcePitch = True
+				forceYaw = True
+				unlockParts = 
+				unlockTechs = 
+				srfHdg
+				{
+					_val = 90
+					_text = 90
+				}
+				srfPit
+				{
+					_val = 90
+					_text = 90
+				}
+				srfRol
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelYaw
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelPit
+				{
+					_val = 0
+					_text = 0
+				}
+				srfVelRol
+				{
+					_val = 0
+					_text = 0
+				}
+				rol
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			ModExtensionDemo
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustWindow
+			{
+				autostageSavedState = False
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWarpHelper
+			{
+				unlockParts = 
+				unlockTechs = 
+				phaseAngle
+				{
+					_val = 0
+					_text = 0
+				}
+			}
+			MechJebModuleCustomWindowEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleNodeExecutor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleNodeEditor
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLandingGuidance
+			{
+				landingSiteIdx = 0
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleLandingPredictions
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleTranslatron
+			{
+				trans_spd = 0
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWaypointWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleWaypointHelpWindow
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleTargetController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleManeuverPlanner
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleStageStats
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleRendezvousGuidance
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
+			MechJebModuleWarpController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleSolarPanelController
+			{
+				prev_ShouldOpenSolarPanels = False
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleThrustController
+			{
+				limitThrottle = False
+				unlockParts = 
+				unlockTechs = 
+				maxThrottle
+				{
+					_val = 1
+					_text = 100
+				}
+			}
+			MechJebModuleRCSController
+			{
+				unlockParts = 
+				unlockTechs = 
+				Tf
+				{
+					_val = 1
+					_text = 1
+				}
+			}
+			MechJebModuleRCSBalancer
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleAttitudeController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleStagingController
+			{
+				unlockParts = 
+				unlockTechs = 
+			}
+			MechJebModuleFlightRecorder
+			{
+				markUT = 0
+				deltaVExpended = 0
+				dragLosses = 0
+				gravityLosses = 0
+				steeringLosses = 0
+				markLatitude = 0
+				markLongitude = 0
+				markAltitude = 0
+				markBodyIndex = 1
+				maxDragGees = 0
+				unlockParts = 
+				unlockTechs = 
+			}
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableFuelPump
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			EnableFuelPumpAction
+			{
+				actionGroup = None
+			}
+			DisableFuelPumpAction
+			{
+				actionGroup = None
+			}
+			ToggleFuelPumpAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableRCS
+		isEnabled = True
+		startEnabled = True
+		thrustLimit = 1
+		startEnabled_UIFlight
+		{
+			controlEnabled = True
+		}
+		thrustLimit_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			incrementSlide = 0.025
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionEnableThruster
+			{
+				actionGroup = None
+			}
+			ActionDisableThruster
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableReactionWheel
+		isEnabled = True
+		startEnabled = True
+		RollTorque = 26
+		PitchTorque = 26
+		YawTorque = 26
+		TorqueGain = 1
+		startEnabled_UIFlight
+		{
+			controlEnabled = True
+		}
+		RollTorque_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 52.5
+			incrementSlide = 1
+		}
+		PitchTorque_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 52.5
+			incrementSlide = 1
+		}
+		YawTorque_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 52.5
+			incrementSlide = 1
+		}
+		TorqueGain_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			incrementSlide = 0.02
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableSAS
+		isEnabled = True
+		SASServiceLevel = 3
+		SASServiceLevel_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 3
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+	}
+	RESOURCE
+	{
+		name = ElectricCharge
+		amount = 600
+		maxAmount = 600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 60
+		maxAmount = 60
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = B9.Aero.HL.Body.Structure.6m_4293864354
+	partName = Part
+	pos = -1.199677,10.01301,20.70443
+	attPos = 0,0,0
+	attPos0 = 0,-5,5.960464E-07
+	rot = 0.7071068,0,0,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 8015
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293721572
+	attN = top,HL.Aero.Cockpit_4293878396
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FSmeshSwitch
+		isEnabled = True
+		selectedObject = 2
+		EVENTS
+		{
+			nextObjectEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Next part variant
+				guiName = Next part variant
+				category = Next part variant
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			previousObjectEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Prev part variant
+				guiName = Prev part variant
+				category = Prev part variant
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = FSfuelSwitch
+		isEnabled = True
+		selectedTankSetup = 4
+		hasLaunched = False
+		configLoaded = True
+		EVENTS
+		{
+			nextTankSetupEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Next tank setup
+				guiName = Next tank setup
+				category = Next tank setup
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			previousTankSetupEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Previous tank setup
+				guiName = Previous tank setup
+				category = Previous tank setup
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 4824
+		maxAmount = 4824
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 5896
+		maxAmount = 5896
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293721572
+	partName = Part
+	pos = -5.326022,10.01301,22.85661
+	attPos = 0,0,0
+	attPos0 = -4.126345,2.152177,-2.565595E-07
+	rot = 4.214685E-08,-0.7071068,-0.7071069,-2.107343E-08
+	attRot = 0,0,0,1
+	attRot0 = 4.470348E-08,-1,-8.42937E-08,1.490116E-08
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293721244
+	link = Fel.5mPlate_4293720282
+	srfN = srfAttach,B9.Aero.HL.Body.Structure.6m_4293864354
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293721244
+	partName = Part
+	pos = -3.740603,10.01301,25.37379
+	attPos = 0,0,0
+	attPos0 = -1.585419,2.517188,6.771892E-07
+	rot = 0,-0.7071068,0,0.7071068
+	attRot = 0,0,0,1
+	attRot0 = 0.5,0.5,0.5000001,0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293720986
+	srfN = srfAttach,Fel.5mPlate_4293721572
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293720986
+	partName = Part
+	pos = -3.740604,10.01155,30.37448
+	attPos = 0,0,0
+	attPos0 = 5.000679,-0.001456372,1.78822E-06
+	rot = -8.42937E-08,-0.7071069,1.264406E-07,0.7071066
+	attRot = 0,0,0,1
+	attRot0 = -4.019437E-14,-2.528811E-07,1.639128E-07,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293720704
+	srfN = srfAttach,Fel.5mPlate_4293721244
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293720704
+	partName = Part
+	pos = -3.740606,12.52874,32.8355
+	attPos = 0,0,0
+	attPos0 = 2.461026,2.517191,2.357701E-09
+	rot = -0.5000003,-0.4999997,0.5000002,0.5
+	attRot = 0,0,0,1
+	attRot0 = 1.279383E-07,3.17599E-07,0.707107,0.7071066
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,Fel.5mPlate_4293720986
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293720282
+	partName = Part
+	pos = -3.613837,10.01301,20.34046
+	attPos = 0,0,0
+	attPos0 = -1.712184,-2.516149,-7.751663E-07
+	rot = 0,0.7071068,0,0.7071068
+	attRot = -0.9999999,0,0,0
+	attRot0 = -0.5000001,0.4999999,0.5,-0.5
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293720190
+	link = Fel.5mPlate_4293710470
+	srfN = srfAttach,Fel.5mPlate_4293721572
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293720190
+	partName = Part
+	pos = -3.613836,10.01155,15.33978
+	attPos = 0,0,0
+	attPos0 = 5.000679,-0.001456372,1.78822E-06
+	rot = 8.42937E-08,0.7071067,1.47514E-07,0.707107
+	attRot = 0,0,0,1
+	attRot0 = -4.019437E-14,-2.528811E-07,1.639128E-07,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293720098
+	link = Fel.5mPlate_4293719392
+	srfN = srfAttach,Fel.5mPlate_4293720282
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293720098
+	partName = Part
+	pos = -3.613834,12.52875,12.87875
+	attPos = 0,0,0
+	attPos0 = 2.461026,2.517191,2.357701E-09
+	rot = 0.5000002,0.5,0.5000004,0.4999997
+	attRot = 0,0,0,1
+	attRot0 = 1.279383E-07,3.17599E-07,0.707107,0.7071066
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,Fel.5mPlate_4293720190
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293719392
+	partName = Part
+	pos = -3.613835,10.01909,10.33889
+	attPos = 0,0,0
+	attPos0 = 5.000881,0.007529859,-1.813896E-06
+	rot = -0.7071068,-4.214685E-08,0.7071069,2.107343E-08
+	attRot = -0.9999999,0,0,0
+	attRot0 = -1,1.341104E-07,2.950279E-07,-5.589529E-14
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293719300
+	srfN = srfAttach,Fel.5mPlate_4293720190
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293719300
+	partName = Part
+	pos = -3.613838,10.02054,5.338211
+	attPos = 0,0,0
+	attPos0 = 5.000679,-0.001456372,1.78822E-06
+	rot = -0.7071066,1.264406E-07,0.7071071,-8.42937E-08
+	attRot = 0,0,0,1
+	attRot0 = -4.019437E-14,-2.528811E-07,1.639128E-07,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293719208
+	srfN = srfAttach,Fel.5mPlate_4293719392
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293719208
+	partName = Part
+	pos = -3.613839,7.503353,2.877186
+	attPos = 0,0,0
+	attPos0 = 2.461026,2.517191,2.357701E-09
+	rot = -0.5,0.5000002,0.4999998,-0.5000004
+	attRot = 0,0,0,1
+	attRot0 = 1.279383E-07,3.17599E-07,0.707107,0.7071066
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,Fel.5mPlate_4293719300
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293710470
+	partName = Part
+	pos = -3.613838,12.5302,21.80989
+	attPos = 0,0,0
+	attPos0 = -1.469436,2.517188,-4.13589E-07
+	rot = -2.739545E-07,4.214685E-08,0.7071069,0.7071066
+	attRot = 0.7071067,0,0,0.7071067
+	attRot0 = -0.5000003,-0.4999999,0.4999999,0.4999999
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293710378
+	link = Fel.5mPlate_4293698840
+	srfN = srfAttach,Fel.5mPlate_4293720282
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293710378
+	partName = Part
+	pos = -6.131027,14.93158,21.80989
+	attPos = 0,0,0
+	attPos0 = 2.401385,2.517188,-5.605025E-07
+	rot = -4.065674E-07,-3.371748E-07,1,-3.499581E-07
+	attRot = 0.9999999,0,0,0
+	attRot0 = -5.71978E-07,-2.07739E-07,0.7071069,0.7071067
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293708478
+	sym = Fel.5mPlate_4293698840
+	srfN = srfAttach,Fel.5mPlate_4293710470
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293708478
+	partName = Part
+	pos = -11.13142,14.9359,21.80989
+	attPos = 0,0,0
+	attPos0 = 5.000388,-0.004320979,-1.778098E-06
+	rot = 3.499581E-07,-1,-3.793216E-07,-4.487142E-07
+	attRot = 0.9999999,0,0,0
+	attRot0 = -1,1.446278E-08,1.490114E-08,-1.732684E-14
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293708386
+	link = Fel.5mPlate_4293710286
+	sym = Fel.5mPlate_4293698748
+	srfN = srfAttach,Fel.5mPlate_4293710378
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293708386
+	partName = Part
+	pos = -16.13252,14.95218,21.80988
+	attPos = 0,0,0
+	attPos0 = 5.001106,0.01628015,-1.518282E-07
+	rot = 3.499581E-07,-1,-3.371748E-07,-4.065674E-07
+	attRot = 0,0,0,1
+	attRot0 = -7.344078E-14,2.724567E-08,2.169409E-08,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293706534
+	sym = Fel.5mPlate_4293698656
+	srfN = srfAttach,Fel.5mPlate_4293708478
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293706534
+	partName = Part
+	pos = -21.13253,14.9614,21.80988
+	attPos = 0,0,0
+	attPos0 = 5.000002,0.009232757,1.905079E-06
+	rot = -4.065674E-07,-3.371748E-07,1,-2.656644E-07
+	attRot = 0.9999999,0,0,0
+	attRot0 = 1,7.362905E-08,1.490116E-08,-6.728232E-15
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293706442
+	sym = Fel.5mPlate_4293698564
+	srfN = srfAttach,Fel.5mPlate_4293708386
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293706442
+	partName = Part
+	pos = -26.13363,14.94512,21.80987
+	attPos = 0,0,0
+	attPos0 = 5.001106,0.01628015,-1.518282E-07
+	rot = -4.487142E-07,-3.793216E-07,1,-2.656644E-07
+	attRot = 0,0,0,1
+	attRot0 = -7.344078E-14,2.724567E-08,2.169409E-08,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293707088
+	link = Fel.5mPlate_4293706350
+	sym = Fel.5mPlate_4293698472
+	srfN = srfAttach,Fel.5mPlate_4293706534
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293707088
+	partName = Part
+	pos = -23.72424,17.46127,21.80988
+	attPos = 0,0,0
+	attPos0 = -2.409392,-2.516149,-2.130981E-07
+	rot = 1.896608E-07,-5.900559E-07,0.7071071,0.7071067
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = -4.669304E-08,-2.598022E-07,-0.7071068,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = Fel.5mPlate_4293698012
+	srfN = srfAttach,Fel.5mPlate_4293706442
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293710286
+	partName = Part
+	pos = -13.54131,17.45308,21.80988
+	attPos = 0,0,0
+	attPos0 = 2.409888,2.51719,2.241619E-06
+	rot = -2.95028E-07,-2.107343E-07,0.7071071,0.7071067
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = 0.7071068,0.7071069,1.827396E-07,-3.326288E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = Fel.5mPlate_4293697920
+	srfN = srfAttach,Fel.5mPlate_4293708478
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293698840
+	partName = Part
+	pos = -1.096648,14.93158,21.80989
+	attPos = 0,0,0
+	attPos0 = 2.401382,-2.517191,-1.941655E-06
+	rot = -1,3.243916E-07,3.52076E-07,3.371748E-07
+	attRot = 0.9999999,0,0,0
+	attRot0 = -0.7071064,0.7071072,-6.840094E-09,7.728768E-07
+	mir = 1,1,1
+	symMethod = Mirror
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293698748
+	sym = Fel.5mPlate_4293710378
+	srfN = srfAttach,Fel.5mPlate_4293710470
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293698748
+	partName = Part
+	pos = 3.903742,14.9359,21.80989
+	attPos = 0,0,0
+	attPos0 = 5.000388,-0.004320979,-1.778098E-06
+	rot = -3.793216E-07,-4.785165E-07,3.243916E-07,-1
+	attRot = 0.9999999,0,0,0
+	attRot0 = -1,1.446278E-08,1.490114E-08,-1.732684E-14
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293698656
+	link = Fel.5mPlate_4293697920
+	sym = Fel.5mPlate_4293708478
+	srfN = srfAttach,Fel.5mPlate_4293698840
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293698656
+	partName = Part
+	pos = 8.904851,14.95217,21.80988
+	attPos = 0,0,0
+	attPos0 = 5.001106,0.01628015,-1.518282E-07
+	rot = -3.371748E-07,-4.363697E-07,3.243917E-07,-1
+	attRot = 0,0,0,1
+	attRot0 = -7.344078E-14,2.724567E-08,2.169409E-08,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293698564
+	sym = Fel.5mPlate_4293708386
+	srfN = srfAttach,Fel.5mPlate_4293698748
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293698564
+	partName = Part
+	pos = 13.90485,14.9614,21.80988
+	attPos = 0,0,0
+	attPos0 = 5.000002,0.009232757,1.905079E-06
+	rot = -1,2.400979E-07,3.52076E-07,3.371748E-07
+	attRot = 0.9999999,0,0,0
+	attRot0 = 1,7.362905E-08,1.490116E-08,-6.728232E-15
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293698472
+	sym = Fel.5mPlate_4293706534
+	srfN = srfAttach,Fel.5mPlate_4293698656
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293698472
+	partName = Part
+	pos = 18.90596,14.94512,21.80987
+	attPos = 0,0,0
+	attPos0 = 5.001106,0.01628015,-1.518282E-07
+	rot = -1,2.400979E-07,4.363697E-07,3.371748E-07
+	attRot = 0,0,0,1
+	attRot0 = -7.344078E-14,2.724567E-08,2.169409E-08,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293698012
+	link = Fel.5mPlate_4293694892
+	sym = Fel.5mPlate_4293706442
+	srfN = srfAttach,Fel.5mPlate_4293698564
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293698012
+	partName = Part
+	pos = 16.49657,17.46127,21.80987
+	attPos = 0,0,0
+	attPos0 = -2.409392,-2.516149,-2.130981E-07
+	rot = 0.7071071,0.7071066,2.107343E-07,-6.322028E-07
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = -4.669304E-08,-2.598022E-07,-0.7071068,0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = Fel.5mPlate_4293707088
+	srfN = srfAttach,Fel.5mPlate_4293698472
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293697920
+	partName = Part
+	pos = 6.313635,17.45308,21.80988
+	attPos = 0,0,0
+	attPos0 = 2.409888,2.51719,2.241619E-06
+	rot = 0.7071072,0.7071066,-2.318077E-07,-2.107343E-07
+	attRot = 0.7071068,0,0,0.7071068
+	attRot0 = 0.7071068,0.7071069,1.827396E-07,-3.326288E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = Fel.5mPlate_4293710286
+	srfN = srfAttach,Fel.5mPlate_4293698748
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293706350
+	partName = Part
+	pos = -31.13795,14.9378,21.80987
+	attPos = 0,0,0
+	attPos0 = 5.004328,0.00731478,-1.267452E-06
+	rot = 2.656644E-07,-1,-3.371748E-07,-4.065674E-07
+	attRot = 0.9999999,0,0,0
+	attRot0 = -1,8.472888E-09,-2.724565E-08,3.661017E-14
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293705720
+	sym = Fel.5mPlate_4293694892
+	srfN = srfAttach,Fel.5mPlate_4293706442
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293694892
+	partName = Part
+	pos = 23.91028,14.9378,21.80987
+	attPos = 0,0,0
+	attPos0 = 5.004325,0.00731854,-1.72974E-06
+	rot = -3.371748E-07,-4.363697E-07,2.400979E-07,-1
+	attRot = 0.9999999,0,0,0
+	attRot0 = -1,8.472886E-09,-2.724565E-08,4.660448E-14
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Fel.5mPlate_4293689784
+	sym = Fel.5mPlate_4293706350
+	srfN = srfAttach,Fel.5mPlate_4293698472
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293705720
+	partName = Part
+	pos = -31.64874,17.45499,21.673
+	attPos = 0,0,0
+	attPos0 = 0.5107899,2.51719,0.1368694
+	rot = 0.7071067,0.7071071,3.793216E-07,2.107343E-08
+	attRot = 0.7071067,0,0,-0.7071067
+	attRot0 = -1.465836E-07,-4.906797E-08,-0.7071068,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = Fel.5mPlate_4293689784
+	srfN = srfAttach,Fel.5mPlate_4293706350
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Fel.5mPlate_4293689784
+	partName = Part
+	pos = 24.42106,17.45498,21.94674
+	attPos = 0,0,0
+	attPos0 = 0.5107842,2.517186,0.1368696
+	rot = 6.532762E-07,1.47514E-07,0.7071067,0.707107
+	attRot = 0.7071067,0,0,-0.7071067
+	attRot0 = -1.465836E-07,-4.906797E-08,-0.7071068,-0.7071068
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = Fel.5mPlate_4293705720
+	srfN = srfAttach,Fel.5mPlate_4293694892
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
