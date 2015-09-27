@@ -113,7 +113,7 @@ Canada launched their first satellitw in '62, Alouette, AND it was the first sat
 Project Mercury launched Wally Shirra in Sigma 7, which was an Atlas launch like at the beginning of this video.
 In Sept of '62 President Kennedy visited Rice University and gavce one of the most memorable speches in spaceflight history.
 
-Schirra orbited six times and focused mainly on technical evaluation of the capsule, flight systems, and pilot capabilities rather than on science. The experiments were a success, and the capsule even used less fuel than expected, which was a pleasant surprise. Her splashed down in the Pacific and was recovered by a carrier.
+Schirra orbited six times and focused mainly on technical evaluation of the capsule, flight systems, and pilot capabilities rather than on science. The experiments were a success, and the capsule even used less fuel than expected, which was a pleasant surprise. He splashed down in the Pacific and was recovered by a carrier.
 
 -- August 24 Mary Ellen Weber
 
@@ -122,12 +122,43 @@ Schirra orbited six times and focused mainly on technical evaluation of the caps
 August 27 – NASA launched the Mariner 2 space probe
 27.08.1962	Mariner 2 (P 38)	Atlas-LV3 Agena-B	CC LC-12
 
+Now we'll fast forward three days to get Vostoks 3 and 4 into position for retro burns to bring them home. The globe at the top will decouple and reenter while the service module below it burns up. In my cast they didn't separate very fast so during reentry they were relatively close together for a while. Ultimately the occupants will use ejector seats to bailk out and parachute down separately from their capsules. This will be the first time the world will find out that's actually how they land. Until now, it was thought that these were official spaceflights.
+
+Ok, it's time for a truly difficult launch. Built by JPL, we're sending up Mariner 2 on an Atlas SLV-3 Agena-B rocket from LC-12. This is the most difficult launch of mine in RSS yet. I had to get a special mod called Flyby Finder to help determine my launch window. It's a separate application that you use to enter desired flight data. It calculates your window, and then you copy that data into a maneuver node. After that you're back on your own. You need to launch into the correct inclination to match the maneuver, and then burn at the right time for hte right amount. It's still extremely challenging evcen with the launch window calculator's help, but the calculator saved me 1500 dv. When I did it by eye I ran out of fuel. Real world launches were finely tuned to be almost exactly what was needed, so I don't have room to do a 14.5 km/s launch when the vehicle is rated for about 13 km/s while carrying a 200 kg payload like it is now. Yes, Mariner 2 was just 200 kg, with only 18 kg of room for science instruments.
+Actually, they called it Mariner 2 but really this is a Ranger satellite body. The repurposed the moon satellite chasis for a Venus trip and changed the name. The Atlas-Agena was not designed for this either. They had wanted to use an Atlas-Centaur, but it was not ready, and therefore we're going with this smaller and lighter payload.
+
+As you can see this has been almost a night launch. I am limited by the launch windows I have open to me when I go to other planets, and in this case the real launch was before dawn, so my launch is before dawn. Hopefully it's not too dark, but at least it's authentic. Once the Agena makes it higher, I have some time now to fiddle with a maneuver node to try for a Venus intercept. I'm showing you what it was like for me when I was doing it by hand. I got the intercept eventually, but remember this intercept by hand required 1500 m/s more than I had. 
+
+And now you're probably seeing some of the difficulty of this launch. We're launching from a complex that's 28 degrees above the equator which means our overall flight can't have a lower inclination than 28 degrees. We'll be leaving Earth orbit, which is inclined AND elliptical relative to the sun. We're heading to Venus that has tyet another inclination, and an offset elliptical orbit of its own. It's extremely far away, and we're on a showstring fuel budget.
+
+Scrolling in and out to change the maneuver and then check how it affected the orbit on the map is also cumbersome, and that's where a mod like PreciseNode comes in hand. With that I can modify my orbit with a UI, which you'll see me doing once I splice my footage from the two mseparate launches together.
+
+To make it more authentic I am not going to have a perfect orbit at the beginning. The real Mariner 2 made a mid-course correction 8 days later, 2 days after the Soviet Union agreed to send arms to Cuba. These events are not related of course, but I'm bringing up Cuba again because of what I had said earlier in the video.
+<clip>
+Among the arms sent were nuclear weapons. Remember the US had arms in Turkey, so now the USSR is positioning arms in Cuba. The USA doesn't know about the weapons yet, but all hell will break loose in a few weeks once they do. For now we'll go on our merry way here with Mariner 2. Everything is working well. The panels are out and I've positioned them to recharge the batteries.
+
 01.09.1962	Venera (2b) (2MV-1 #2, Sputnik 20)	Molniya	Ba LC-1/5	Partial Failure
 
 ** September 2 – The Soviet Union agreed to send arms to Cuba.
 
 September 12 – President John F. Kennedy, at a speech at Rice University, reaffirms that the U.S. will put a man on the moon by the end of the decade.
 12.09.1962	Venera (2c) (2MV-2 #1, Sputnik 21)	Molniya	Ba LC-1/5	Partial Failure
+
+As you saw, that was Sep, and Mariner doesn't reach Venus until Venus until December. A lot happens between now and then, so while we watch Ranger makes its way there, let's look at the second half of 1962 history.
+
+Mentioned earlier, but finally being flown now, late Sep is when Canada launched Alouette, and then Walter Schirra flew Sigma 7 at the beginning of Oct. By mid Oct the US had flown a U-2 spy plane over Cuba and detected nuclear missiles being installed. Tensions escalated between the US and the Soviet Union, and it looked like we were on the brink of WW3. The US escalated from an embargo to a blockade, to prevent more missiles from getting into Cuba. There was at least one major confrontation between the US navy and soviet cargo vessels, but the Soviets always turned around. Then on Oct 27th, the day before the Cuban missile crisis finally came to an end, the crisis hit its peek.
+
+A US carrier and destroyer located a submerged submarine. They sent a message to Moscow saying that they were going to drop off-target depth charges to force it to the surface for identification. Garbled messages somewhere prevented that message from reaching the sub. Maybe Moscow didn't receive it. Maybe they did, but could not reach the sub due to its depth or other interference. In any case, the sub had no idea what was going on, could not get through to Moscow, and was getting attacked with depth charges as far as they knew. The captain assumed WW3 had started, and prepared nuclear torpedoes to fire at the US ships.
+
+Now this is where we need to look at the command structure on the sub. Normally there is a Captian in charge, and and Political Officer second in command. If they both agree to fire then the sub fires. However, on ONE sub there is a floatilla commander. The captain is still in charge of the sub, but if the floatilla commander is present then he's second in command instead of the PO, and therefore an order to fire requires all three in agreement.
+
+In this case the floatilla commande, Vasili Alexandrovich Arkhipov, did not agree with the order to fire. If he had agreed, or if he had not been on this p-articular sub, then we would have done to WW43 and you would not be watching this history video. But he was there, and he got the captain to back down, and surface. They finally realized what was happening, and backed off to home. Vasili Alexandrovich Arkhipov is the man saved the world.
+
+The next day on Oct 28 the crisis ended. The USSR agreed to remove missiles from Cuba and the US agreed to remove missiles from Turkey.
+
+So now we can jump to December, and Mariner 2 is reaching Venus. It send back its glorious science data, and then passed on its way into a heliocentric orbit. Ten days later the Bay of Pigs captives were exchanged for $53 million worth of food, and 1962 came to an end.
+
+Until next time...
 
 September 29 – The Canadian Alouette 1, the first satellite built outside the United States and the Soviet Union, was launched from Vandenberg AFB in California.
 29.09.1962	Alouette 1 Thor-DM21 Agena-B	Va 75-1-1
