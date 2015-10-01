@@ -129,7 +129,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = CIT_NodeHelper.NodeHelperButton
+			visibleButtons = CIT_NodeHelper.NodeHelperButton,Fusebox.FBToggle
 		}
 		toolbar_558249692
 		{
@@ -227,6 +227,18 @@ toolbars
 			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,QuickGoToVAB.QuickGoToVAB,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC,QuickGoToTS.QuickGoToTS
 			visibleButtons = QuickGoToVAB.QuickGoToVAB,QuickGoToTS.QuickGoToTS,QuickGoToSPH.QuickGoToSPH,QuickGoToSC.QuickGoToSC
 		}
+		toolbar_388921930
+		{
+			x = 499
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = MechJeb2.Construction_Computer
+		}
 	}
 	EDITOR
 	{
@@ -252,7 +264,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = CIT_NodeHelper.NodeHelperButton
+			visibleButtons = CIT_NodeHelper.NodeHelperButton,Fusebox.FBToggle
 		}
 		toolbar_2102786141
 		{
@@ -265,6 +277,18 @@ toolbars
 			useKSPSkin = False
 			buttonOrder = 
 			visibleButtons = sirkut.IREditorButton
+		}
+		toolbar_388921930
+		{
+			x = 499
+			y = -3
+			width = 250
+			height = 38
+			autoHide = False
+			drawBorder = False
+			useKSPSkin = False
+			buttonOrder = 
+			visibleButtons = MechJeb2.Construction_Computer
 		}
 	}
 	FLIGHTMAP
