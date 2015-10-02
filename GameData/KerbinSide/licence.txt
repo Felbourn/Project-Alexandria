@@ -1,0 +1,23 @@
+KerbinSide Kampus
+
+LICENCE
+Copyright (c) 2014-2015, Ashley Hall and Alpha Strike Games
+All rights reserved.
+
+Redistribution and use in source and binary forms, without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Addendum 1: You may modify the contents for personal use but may not re-distribute modified versions of the content without obtaining permission first. Contact Ashley Hall on the KSP forums, PMing the user AlphaAsh.
+Addendum 2: This work may not be re-distributed, modified or unmodified in a 'mod pack'.
+Addendum 3: If re-distributing, no financial or other form of profitable gain should be made from this work, directly or indirectly. No advertising of any sort may be included in the redistribution or at any point of redistribution.
+Addendum 4: Contributions from collaborators may be licenced separately, except where such licence conflicts with this licence. Conflicts will be handled by the collaborators when they occur.
+
+Exceptions:
+Re-distribution of exported custom or modified configuration files is allowed without permission. Addendum 1 and 2 of this licence also do not apply and are waived in this case. This licence must still be included. All other content may not be re-distributed and if you re-distribute modified configuration files, you must make links to the pre-requisite content available where appropriate (such as in a forum post or readme file). You must also be first-point for any support necessary for your mod and where it is deemed appropriate by the original mod authors.
+
+This exception will be withdrawn from the licence if ANY abuse of said licence or this exception is believed to have occurred by the license holder.
