@@ -1,181 +1,43 @@
 
-** January 9 – Cuba and the Soviet Union signed a trade pact.
+May 15 – Project Mercury: NASA launches Gordon Cooper on Mercury-Atlas 9, the last mission (on June 12 NASA Administrator James E. Webb tells Congress the program is complete).
 
-> greetings...
-it's 1962, a troubling and dangerous time for the world, but we'll get into that in a moment
-right now it's jan 26 and we're launching out of cape canaveral, LC-12
-heading to space today is an atlas LV3 agena-B carrying the Ranger 3 moon probe crafted by the JPL
-in the background you can see some special props used to make it look like this is the real KSC, which you can get from the kerbal forums just like i did
-also, keep your eyes on the engine plumes because I am using real plume, a mod that simulates the true changes to plumes from atmospheric pressure going down as we gain altitude 
-so, Ranger 3 weighs 328 kg total, but the united states is hoping to hard-land just one small round capsule from it on the surface of the moon in a couple days
-first we need to get to orbit, which we will be doing in the background as we learn a little about why 1962 had the survival of the world balancing on the head of a pin
-it started earlier in the month, when on Jan 9th the Sovet union and Cuba signed a trade pact
-4 years before this the united states made a deal with Turkey to station nuclear missions in their country
-Turkey is a stone's throw from the soviet union, which means very limited response time to U.S. a nuclear attack, so the USSR started looking for allies near the united states in return
-they found one in cuba
+June 13
+The cancellation of Mercury-Atlas 10 effectively ends the United States' manned spaceflight Project Mercury.
 
-that goes back a few years to a revolution in Cuba where the U.S. allied leader named Batista was overthrown by fidel castro
-this was followed up by a failed invasion by the united states trying to retake cuba, called the bay of pigs invasion
-over a 1000 captives of the invasion are still being held in cuba at this point, so far without a trial
+1963-023	16.06.1963	Vostok 6 (Vostok-3KA #8)	Vostok-K	Ba LC-1/5
+June 16, 1963	First woman in space (Valentina Tereshkova)
+First civilian in space	Vostok 6	
 
-a week after this Ranger 3 launch the united states will declare an embargo on cuba and
-a few days after that the U.S. will offically banned all Cuban imports and exports within the united states
+June 19, 1963	Five-day human spaceflight record	Vostok 5	
+June 19 – Valentina Tereshkova the first woman in space, returns to Earth.
 
-meanwhile we're continuing with the space race, because this tension with the US and the USSR is only getting started
+It's June 16, 1963 and we have a new first underway. This is Vostok 6, and in the capsule is Valentina Tereshkova. She is about to be the first woman into space, another first for the Soviet Union. The United States had a distinctly male-centric view of difficult physical tasks, such as for example spaceflight. The general male attitude in the U.S. during this time period was that a woman's place was in the home, and that they were too fragile for space. The male-dominated United States was very frustrating for woman like, for example, Trudy Cooper who had been a flight instructor. She tried very hard to get NASA to allow woman, and she wanted to be an astronaut herself, but NASA continually refused. Instead, Valentina shall be the first woman in space, and shatter any notions that woman couldn't handle the trip, even though I don't think she'd have called the trip pleasant. Despite proving it was possible, no other woman would go to space for another 19 years.
 
-January 26 – Ranger 3 was launched to study the Moon; it later missed the Moon by 22,000 miles.
-26.01.1962	Ranger 3 (P 34)	Atlas-LV3 Agena-B	CC LC-12
+Now, remember, I need to start skipping things here and there, especially when they are not major Firsts in some way. Going back to Trudy Cooper for a second, her husband was Gordon Cooper, who was the last Mercury astronaut into space, and he launched in Mercury-Atlas 9 one month before this flight of  Valentina in Vostok 6. Cooper's flight would end up being the last of the Mercury program because the 10th launch was cancelled 3 days before Valentina's flight. NASA administrator James E. Webb went before congress and said the program was complete, and they started focusing on upcoming Gemini flights instead.
 
-** February 3 – The United States embargo against Cuba was announced.
-** February 7 The United States Government banned all U.S.-related Cuban imports and exports.
+As for Valentina, you might be remembering that last episode had Vostoks 3 and 4. What happened to 5? Well 5 was launched 2 days before this, but I am not going to show it. It's another of the flights we need to skip so that we can have enough time to watch all the major Firsts. Just assume cosmonaut Valery Bykovsky is already in orbit right now, in Vostok 5. Valentina's flight is targeting Vostok 5 to attempt another simulated rendezvous. Like 3 and 4 bnefore this, it's just a really accurate launch, and not really a rendezvous. Also like 3 and 4 before this, it succeeds. Valentina and Bykovsky are able to remain in radio contact, and later when they reenter they are only 3 hours apart, which basically means they were still near each other but Bykovsky got to orbit 2 more times before his retros were fired.
 
-February 20 – Project Mercury: While aboard Friendship 7, John Glenn became the first American to orbit the Earth, three times in 4 hours, 55 minutes.
-20.02.1962	Mercury MA-6 (Mercury 13)	Atlas-D Mercury	CC LC-14
+Neither Bykovsky nor Valentina's flight was entirel;y pleasant. Bykovsky had a problem with his waste collection system. I think you can imagine what that might mean. Valentina got space sick and had other aches nad pains, but didn't want to report the full extent of her status, which probably means she was really not doing well at all.
 
-The water popping in and out is a side effect of playing RSS, and I'm still trying to get that fixed up.
-So, we'll move ahead to Feb 20, 1962 now, and we're at LC-14 in CC. John H Glenn Jr is taking off to head into space and be the first American in orbit.
-As we leave the surface, you can see I have done a little more work on the pads. My Ranger 3 was done from a pad while testing out the Kerbal Konstructs & real KSC mods.
-Now I've built out a whole section of pads for Missile Row in CC and I'll keep working on this part of my base as time goes by.
-Anyway, if we use this event as a measuring stick against the Sovient Union, we're 314 days behind them in the space race at this point.
-As mentioned in a previous episode, each Mercury capsule had a name given to it by its pilot, and then with a 7 after it to denote the 7 astronauts of the mercury program.
-Glenn named this one Friendship 7. It's being lifted on an Atlas LV-3B just like my earlier Ranger 3 launch.
-In this case there's no upper stage because we're only trying to achieve low earth orbit.
-There were many delays that plagued this launch, but we're finally on our way.
-There were a number of glitches with the flight as well. The attitude control system sometimes worked, sometimes didn't, and ultimately ran out of fuel too early during decent.
-Also a faulty indicator light made the ground crew wonder if the landing bag that sits between the capsule and heat shield had accidentally deployed early.
-Glenn did not report hearing any banging noises while using the ACS, but the ground crew was not taking any chances. They ordered that the reto package not be jettisoned after use, in the hope that the straps holding it on might also hold the heat shield in place better. This was a risky call because if there was NO problem with the heat shield then leaving the reto package on might actually end up damaging the otherwise perfect shield, and could cause a problem during reentry. The reto package also changed the aerodynamics of the craft for reentry and Glenn reported that the capsule was falling like a leaf in the wind, wagging back and forth.
+Valentina was actually a civilan. She was originally a textile factory assembly worker, and was selected from a candidate pool of over 400 female applicants. So she also because the first civilian in space, and as I said earlier Bykovsky set the new duration record after his 5-day flight.
 
-While Friendship 7 continues on and ultimately reenters i the background, I'm going to skip ahead in time again. I want to devote each episode to just one year of history from now on, and that means needing to skip something that happened, and gloss over other events in space history. Rather than launching them, I'm mention them.
-The first mention is for the OSO 1. That stands for Orbiting Solar Observatory and it was launched March 7 1962. It was launched on Delta rocket, which to me looks a lot like a Thor-Able. It was the first satellite designed for extended studies of the sun, and reported back data on UV light, X-rays, and gamma radiation. There wouldk be 7 more OSO satellites launched pover time, going up through 1975.
+Valentina came down first, and of course ejected and parachuted to the group as you did with these missions. That's ok becuase she was a master skydiver, which was a big part of why she had been selected for this flight.
 
-In April, a Cuban military tribunal convicted the Bay of Pigs attackers that had been captured.
-Meanwhile about a week after that we launched Ranger 4 to the moon, but this one failed to impact as well.
+Due to solar flare activity and an unstable orbit, Bykovsky's flight that was supposed to stay up 8 days was brought back after only 5. Nonetheless, his flight remains the record for SOLO manned spaceflight since all future launches were either shorter or not solo.
 
-In May, Scott Carpenter orbitted the Earth in Aurora 7. The mission was largely the same as the Friendship 7 flight. He lifted off in the same kind of rocket, on the same kind of day, from the same exact launch tower LC-14, into the same kind of orbit for the same amount of time. He even had ACS issues with the capsule. The science experiments carried out were different.
+July 19, 1963	First reusable piloted spacecraft (X-15, suborbital)		X-15 Flight 90-NASA
+July 19 – American test pilot Joe Walker, flying the X-15, reaches an altitude of 65.8 miles (105.9 kilometers), making it a sub-orbital spaceflight by recognized international standards.
 
-And then we move to July. We attempted a Mariner launch, but it failed. We did manage to launch the first true communications satellite, Telstar 1 on a Thor-Delta rocket. It was responsible for many firsts though. Telstar did the first television pictures, phone calls, and fax messages transmitted through space. It was the first privately sponsored launch. It allowed us to syncronize time between two continents for the first time.
+July 26, 1963	First geosynchronous satellite		Syncom 2-NASA
 
+August 28 – Martin Luther King Jr. delivers his "I Have a Dream" speech on the steps of the Lincoln Memorial to an audience of at least 250,000, during the March on Washington for Jobs and Freedom.
 
-07.03.1962	OSO 1 (S 16)	Delta	CC LC-17A
+November 10 – Malcolm X makes an historic speech in Detroit, Michigan ("Message to the Grass Roots").
 
-OSO 1
-7 March 1962
-OSO 2
-3 February 1965
-OSO 3
-8 March 1967
-OSO 4
-18 October 1967
-OSO 5
-22 January 1969
-OSO 6
-9 August 1969
-OSO 7	
-29 September 1971
-OSO 8
-21 June 1975
+November 22
+Assassination of John F. Kennedy: In a motorcade in Dallas, Texas, United States President John F. Kennedy is shot by Lee Harvey Oswald, and Governor of Texas John Connally is seriously wounded. A few hours later new President Lyndon B. Johnson is sworn in aboard Air Force One, as Kennedy's body is flown back to Washington, D.C. All television coverage for the next 4 days is devoted to the assassination and its aftermath, the November 24 procession of the horsedrawn casket to the United States Capitol rotunda, and the funeral. Stores and businesses shut down for the entire weekend and Monday, in tribute.
 
-** April 14 – A Cuban military tribunal convicts 1,179 Bay of Pigs attackers.
+November 24
+Lee Harvey Oswald, assassin of John F. Kennedy, is shot dead by Jack Ruby in Dallas, an event seen on live national television. Later that night, a hastily arranged program, A Tribute to John F. Kennedy from the Arts, featuring actors, opera singers, and noted writers, all performing dramatic readings and/or music, is telecast on ABC-TV.
 
-23.04.1962	Ranger 4 (P 35)	Atlas-LV3 Agena-B	CC LC-12
-April 26 – The Ranger 4 spacecraft crashed into the Moon.
-
-May 24 – Project Mercury: Scott Carpenter orbits the Earth 3 times in the Aurora 7 space capsule.
-24.05.1962	Mercury MA-7 (Mercury 18)	Atlas-D Mercury	CC LC-14
-
--- June 29, 1962 George D. Zamka
-
-July 10 – AT&T's Telstar, the world's first commercial communications satellite, was launched into orbit and activated the next day.
-10.07.1962	Telstar 1	Delta	CC LC-17B
-
-July 22 – Mariner program: The Mariner 1 spacecraft flew erratically several minutes after launch and has to be destroyed.
-22.07.1962	Mariner 1 (P 37)	Atlas-LV3 Agena-B	CC LC-12	Failure
-
-July 23 Telstar relays the first live trans-Atlantic television signal.
-
-11.08.1962	Vostok 3 (Vostok-3KA #5)	Vostok-K	Ba LC-1/5	
-12.08.1962	Vostok 4 (Vostok-3KA #6)	Vostok-K	Ba LC-1/5
-
-We'll move ahead now to August, and switch locales to the Soviet Union. You can see I've been working on building a Cosmodrome launch site in Khazakstan using the Kerbal Konstructs mod, so we'll be lauching from this time. Atop a Vostok rocket is Andriyan Nikolayev. THe USSR is about to carry out a new, ground breaking test. Tomorrow they will be launching another cosmonaut, Pavel Popovich, into a nearly synchronous orbit with Nikolayev. In fact, they'll be so close together that the United States and the rest of the world will be lead to believe the Soviets have on-orbit maneuvering and rendezvous capabilities that they don't actually have. 
-The Soviets of course did not set the facts straight when people started assuming it. If they wanted to make assumptions, let them.
-The truth is their timing and launch control were just about perfect. This is Vostok 3, and later I'll be launching my own second, Vostok 4, to attempt a rendezvous direct from the surface. Actually I tried it three times as I was getting the hang of it in RSS. THe Soviet Union had lots of scientists and computers to do this for them automatically. I'm trying to do it by eye, and let me tell you it's a lot harder in RSS than regular KSP. THe orbits are SO close to the surface of the planet that there's very little room for error. Also, it's physically harder to see them. THe edge of hte planet can overwhelm the lines being drawn for the orbits.
-Anyway, as I said we'll launch Vostok 4 after this, and while the Soviets got with 6.5 km of each other, I get within about 21 km. Technically I got with 4.5 km but then I decoupled the capsule and the force of it alone sent me forward enough to separate the two craft by another 18 km. Still... they were very close in relative terms, and stayed that way for a long time. In the real world Nikolayev and Popovich stayed in contact via radio, and at one point Popovich claimed he could see the other craft. He said  "It looked like a very small moon in the distance." 
-So let's get back to some firsts, because Alexandria is mostly about "firsts in spaceflight history." This was the first time there were two separate manned crafts in orbit at the same time. Nikolayev unstrapped himself and became the first to floated freely inside a spaceship. Both cosmonauts were the first to do serious study of the effects of space on humans, including analyzing space sickness that had been reported on the earlier Vostok flights.
-The two men launched one day apart, and then stayed in orbit for 3-4 days each. Nikolayev landed first, and then Popovich came down just 7 minutes later, not that far away from Vostok 3. Popovich was supposed to stay up longer, but I geuss there was confusion between him and the ground crew, and they thought he had given the code word to come down early, so they fired his retros and he descended.
-
-We'll come back to vostok 3 because i need to get vostok 4 into orbit now. I'll gloss over some of the launch, the parts that are largely identical to Vostok 3. I'll just cover my attempted rendezvous, and meanwhile we'll get back to some firsts...
-
-So while we wait for the rendezvous to finish, let's see what else happened in 1962.
-The Soviet Union's Venera probe was launched toward Venus but failed to send back any data. Twice.
-With the launch window open, the United States launched two probes of their own, Mariners.
-Mariner 1 failed but Mariner 2 was more successufl. I'll cover that launch in a moment.
-Canada launched their first satellitw in '62, Alouette, AND it was the first satellite built outside the united state and soviet union.
-Project Mercury launched Wally Shirra in Sigma 7, which was an Atlas launch like at the beginning of this video.
-In Sept of '62 President Kennedy visited Rice University and gavce one of the most memorable speches in spaceflight history.
-
-Schirra orbited six times and focused mainly on technical evaluation of the capsule, flight systems, and pilot capabilities rather than on science. The experiments were a success, and the capsule even used less fuel than expected, which was a pleasant surprise. He splashed down in the Pacific and was recovered by a carrier.
-
--- August 24 Mary Ellen Weber
-
-25.08.1962	Venera (2a) (2MV-1 #1, Sputnik 19)	Molniya	Ba LC-1/5	Partial Failure
-
-August 27 – NASA launched the Mariner 2 space probe
-27.08.1962	Mariner 2 (P 38)	Atlas-LV3 Agena-B	CC LC-12
-
-Now we'll fast forward three days to get Vostoks 3 and 4 into position for retro burns to bring them home. The globe at the top will decouple and reenter while the service module below it burns up. In my cast they didn't separate very fast so during reentry they were relatively close together for a while. Ultimately the occupants will use ejector seats to bailk out and parachute down separately from their capsules. This will be the first time the world will find out that's actually how they land. Until now, it was thought that these were official spaceflights.
-
-Ok, it's time for a truly difficult launch. Built by JPL, we're sending up Mariner 2 on an Atlas SLV-3 Agena-B rocket from LC-12. This is the most difficult launch of mine in RSS yet. I had to get a special mod called Flyby Finder to help determine my launch window. It's a separate application that you use to enter desired flight data. It calculates your window, and then you copy that data into a maneuver node. After that you're back on your own. You need to launch into the correct inclination to match the maneuver, and then burn at the right time for hte right amount. It's still extremely challenging evcen with the launch window calculator's help, but the calculator saved me 1500 dv. When I did it by eye I ran out of fuel. Real world launches were finely tuned to be almost exactly what was needed, so I don't have room to do a 14.5 km/s launch when the vehicle is rated for about 13 km/s while carrying a 200 kg payload like it is now. Yes, Mariner 2 was just 200 kg, with only 18 kg of room for science instruments.
-Actually, they called it Mariner 2 but really this is a Ranger satellite body. The repurposed the moon satellite chasis for a Venus trip and changed the name. The Atlas-Agena was not designed for this either. They had wanted to use an Atlas-Centaur, but it was not ready, and therefore we're going with this smaller and lighter payload.
-
-As you can see this has been almost a night launch. I am limited by the launch windows I have open to me when I go to other planets, and in this case the real launch was before dawn, so my launch is before dawn. Hopefully it's not too dark, but at least it's authentic. Once the Agena makes it higher, I have some time now to fiddle with a maneuver node to try for a Venus intercept. I'm showing you what it was like for me when I was doing it by hand. I got the intercept eventually, but remember this intercept by hand required 1500 m/s more than I had. 
-
-And now you're probably seeing some of the difficulty of this launch. We're launching from a complex that's 28 degrees above the equator which means our overall flight can't have a lower inclination than 28 degrees. We'll be leaving Earth orbit, which is inclined AND elliptical relative to the sun. We're heading to Venus that has tyet another inclination, and an offset elliptical orbit of its own. It's extremely far away, and we're on a showstring fuel budget.
-
-Scrolling in and out to change the maneuver and then check how it affected the orbit on the map is also cumbersome, and that's where a mod like PreciseNode comes in hand. With that I can modify my orbit with a UI, which you'll see me doing once I splice my footage from the two mseparate launches together.
-
-To make it more authentic I am not going to have a perfect orbit at the beginning. The real Mariner 2 made a mid-course correction 8 days later, 2 days after the Soviet Union agreed to send arms to Cuba. These events are not related of course, but I'm bringing up Cuba again because of what I had said earlier in the video.
-<clip>
-Among the arms sent were nuclear weapons. Remember the US had arms in Turkey, so now the USSR is positioning arms in Cuba. The USA doesn't know about the weapons yet, but all hell will break loose in a few weeks once they do. For now we'll go on our merry way here with Mariner 2. Everything is working well. The panels are out and I've positioned them to recharge the batteries.
-
-01.09.1962	Venera (2b) (2MV-1 #2, Sputnik 20)	Molniya	Ba LC-1/5	Partial Failure
-
-** September 2 – The Soviet Union agreed to send arms to Cuba.
-
-September 12 – President John F. Kennedy, at a speech at Rice University, reaffirms that the U.S. will put a man on the moon by the end of the decade.
-12.09.1962	Venera (2c) (2MV-2 #1, Sputnik 21)	Molniya	Ba LC-1/5	Partial Failure
-
-As you saw, that was Sep, and Mariner doesn't reach Venus until Venus until December. A lot happens between now and then, so while we watch Ranger makes its way there, let's look at the second half of 1962 history.
-
-Mentioned earlier, but finally being flown now, late Sep is when Canada launched Alouette, and then Walter Schirra flew Sigma 7 at the beginning of Oct. By mid Oct the US had flown a U-2 spy plane over Cuba and detected nuclear missiles being installed. Tensions escalated between the US and the Soviet Union, and it looked like we were on the brink of WW3. The US escalated from an embargo to a blockade, to prevent more missiles from getting into Cuba. There was at least one major confrontation between the US navy and soviet cargo vessels, but the Soviets always turned around. Then on Oct 27th, the day before the Cuban missile crisis finally came to an end, the crisis hit its peek.
-
-A US carrier and destroyer located a submerged submarine. They sent a message to Moscow saying that they were going to drop off-target depth charges to force it to the surface for identification. Garbled messages somewhere prevented that message from reaching the sub. Maybe Moscow didn't receive it. Maybe they did, but could not reach the sub due to its depth or other interference. In any case, the sub had no idea what was going on, could not get through to Moscow, and was getting attacked with depth charges as far as they knew. The captain assumed WW3 had started, and prepared nuclear torpedoes to fire at the US ships.
-
-Now this is where we need to look at the command structure on the sub. Normally there is a Captian in charge, and and Political Officer second in command. If they both agree to fire then the sub fires. However, on ONE sub there is a floatilla commander. The captain is still in charge of the sub, but if the floatilla commander is present then he's second in command instead of the PO, and therefore an order to fire requires all three in agreement.
-
-In this case the floatilla commande, Vasili Alexandrovich Arkhipov, did not agree with the order to fire. If he had agreed, or if he had not been on this p-articular sub, then we would have done to WW43 and you would not be watching this history video. But he was there, and he got the captain to back down, and surface. They finally realized what was happening, and backed off to home. Vasili Alexandrovich Arkhipov is the man saved the world.
-
-The next day on Oct 28 the crisis ended. The USSR agreed to remove missiles from Cuba and the US agreed to remove missiles from Turkey.
-
-So now we can jump to December, and Mariner 2 is reaching Venus. It send back its glorious science data, and then passed on its way into a heliocentric orbit. Ten days later the Bay of Pigs captives were exchanged for $53 million worth of food, and 1962 came to an end.
-
-Until next time...
-
-September 29 – The Canadian Alouette 1, the first satellite built outside the United States and the Soviet Union, was launched from Vandenberg AFB in California.
-29.09.1962	Alouette 1 Thor-DM21 Agena-B	Va 75-1-1
-
-October 3 – Project Mercury: Walter Schirra orbited the Earth six times in the "Sigma 7" space capsule
-03.10.1962	Mercury MA-8 (Mercury 16)	Atlas-D Mercury	CC LC-14
-
-** October 14 – The beginning of the Cuban Missile Crisis: A U-2 flight over Cuba took photos of Soviet nuclear weapons being installed. A stand-off then ensued for another 12 days after President Kennedy was told of the pictures, between the United States and the Soviet Union, threatening the world with nuclear war.
-
-18.10.1962	Ranger 5 (P 36)	Atlas-LV3 Agena-B	CC LC-12
-
-** October 24 – Cuban Missile Crisis: First confrontation between the US Navy and a Soviet cargo vessel. The vessel changed course.
-**  27 October 1962 Vasili Alexandrovich Arkhipov
-** October 28 The end of the Cuban Missile Crisis: Soviet Union leader Nikita Khrushchev announced that he has ordered the removal of Soviet missile bases in Cuba. In a secret deal between Kennedy and Khrushchev, Kennedy agreed to the withdrawal of U.S. missiles from Turkey. The fact that this deal was not made public made it look like the Soviets have backed down.[dubious – discuss]
-
--- November 19, 1962 Nicole Stott
-
-December 14 U.S. spacecraft Mariner 2 passed by Venus, becoming the first probe to transmit data successfully from another planet.
-
-** December 24 – Cuba released the last 1,113 participants in the Bay of Pigs Invasion to the U.S., in exchange for food worth $53 million.
+December 5, 1963	First satellite navigation system		NAVSAT-USN
