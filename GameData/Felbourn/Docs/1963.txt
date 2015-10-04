@@ -25,6 +25,31 @@ Valentina came down first, and of course ejected and parachuted to the group as 
 
 Due to solar flare activity and an unstable orbit, Bykovsky's flight that was supposed to stay up 8 days was brought back after only 5. Nonetheless, his flight remains the record for SOLO manned spaceflight since all future launches were either shorter or not solo.
 
+Valentina went on to marry the cosmonaut who was in the Vostok 3 capsule from the last episode, Andriyan Nikolayev.
+
+-----------------------------------------------------
+
+Now we may return to the month after their landings. We return to the B-52 and X-15 that were taking off at the beginning. We're back in the united states, in Nevada. This is not the real launch site, but it is hte real drop site, and I didn't feel like flying the B-52 for an hour to get it into position, so I built my own airport at the same location that the X-15 was dropped.
+
+Joseph Walker is the X-15 test pilot today. This is the 90th flight of the X-15, and United States iks about to becone the first to cross the Karman line with a space plane.
+
+Some of you may have wondered what happened to the first 89 X-15 flights, or for that matter the entire X-1 program. Well the X-1 would certainly be a major First milestone if this series were about aircraft history. 
+Let me pull in my landing gear and then I'll tell you the story.
+The X-1 was the first plane to break the sound barrier with test pilot Chuck Yeager. The X-1 development was helpful for subsequent X-craft projects, but it did not itself do anything related to space. The X-1 top speed was 650 m/s and its highest alitutude was 28 km which was FAR below the 100 kmn altitude required for this series. I'm therefore giving it just a James Burke Connections-style passing reference as a link to the X-15, and I won't be building one.
+
+Well now, I have pulled the B-52 nose up to give myself time to switch between the crafts. In reality this would not be needed but in KSP I need a moment to switch over and gain control, and fire the XLR-99 engine. We'll burn almost 7 tons of propellant in about 80 seconds at 250 kN to give ourselves the thrust we need to break the Karman line.
+
+Walker's flight went to 106 km. Mine will go to 107, so it was pretty close.
+
+Going back, as for the first 89 X-15 flights, they strarted 4 years ago while the plane was being developed by North American Aviation. Their test pilot was Scott Crossfield, so he had the first 8 flights. Walkewr got in on the action at flight 9 three years ago. Neil Armstrong flew flight 31 at the end of 1960. Throughout all of these early flight they were not really going much faster or higher than an X-1. The X-15 started with a different engine, an XLR11, for 25 flights. On the 26th they switch to the engine I'm using now, the XLR99. Then things started getting faster. THey were reacing mach 4 to 5 regularly. They were not re4ally going a LOT higher. Every now and then they'd reach 60-80 km. Walker had already flown the X-15 23 times before today.
+
+I've started my reentry now. I have flown this craft three times myself. For two of them I took off from the runway just for testing. I found that for me it flies best with a 45 degree nose down angle until very close to the ground. At that point I flare up, drop the rear tail from under the craft so that the rear skids can touch the ground, and glide to a landing. When I tried gliding too early, I stalled and fell out of the sky. I also tried some skids, like on the real X-15, instead of real wheels, but the wheels just do a lot better in KSP for landing.
+
+One other quirk of this flight is you'll see the tail decouples but doesn't fall away immediately. Once it does, it actually flies ahead of the craft and back up again. But it doesn't affect the landing, so I paid it no mind. 
+The X-15 would bve flown 199 times, with the last one in 1968 by Bill Dana. It went through a few varaitions, and I've mixed two of those  varaitions into my replica.
+
+We're almost to the ground now. The real one landed at Rogers Dry Lake, Edwards Air Force Base, in California, roughly 12 minutes after being dropped over Nevada.
+
 July 19, 1963	First reusable piloted spacecraft (X-15, suborbital)		X-15 Flight 90-NASA
 July 19 – American test pilot Joe Walker, flying the X-15, reaches an altitude of 65.8 miles (105.9 kilometers), making it a sub-orbital spaceflight by recognized international standards.
 
