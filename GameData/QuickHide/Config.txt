@@ -19,6 +19,7 @@ CanPin
 	Item = HyperEdit
 	Item = KerbalAlarmClock
 	Item = CameraTools
+	Item = LightsOut
 }
 CanHide
 {
@@ -35,6 +36,7 @@ CanHide
 	Item = HyperEdit
 	Item = KerbalAlarmClock
 	Item = CameraTools
+	Item = LightsOut
 }
 CanSetFalse
 {
@@ -51,6 +53,7 @@ CanSetFalse
 	Item = HyperEdit
 	Item = KerbalAlarmClock
 	Item = CameraTools
+	Item = LightsOut
 }
 ModHasFirstConfig
 {
@@ -67,4 +70,5 @@ ModHasFirstConfig
 	Item = HyperEdit
 	Item = KerbalAlarmClock
 	Item = CameraTools
+	Item = LightsOut
 }
