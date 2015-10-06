@@ -3,7 +3,7 @@ ambience
 	setting
 	{
 		useDefaultAmbience = False
-		level = 1
+		level = 0.4095745
 	}
 	setting
 	{
