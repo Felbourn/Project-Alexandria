@@ -2,7 +2,7 @@ ship = Syncom 2
 version = 1.0.4
 description = 
 type = VAB
-size = 4.455726,32.80767,8.683115
+size = 4.455727,32.80767,8.683115
 PART
 {
 	part = RLA.small.probe.24sides_4293476148
@@ -111,6 +111,43 @@ PART
 		}
 		ACTIONS
 		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
 		}
 	}
 	MODULE
@@ -471,6 +508,54 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 1650
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableReactionWheel
+		isEnabled = True
+		startEnabled = True
+		RollTorque = 0.05
+		PitchTorque = 0.05
+		YawTorque = 0.05
+		TorqueGain = 1
+		startEnabled_UIFlight
+		{
+			controlEnabled = True
+		}
+		RollTorque_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 0.1
+			incrementSlide = 0.01
+		}
+		PitchTorque_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 0.1
+			incrementSlide = 0.01
+		}
+		YawTorque_UIEditor
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 0.1
+			incrementSlide = 0.01
+		}
+		TorqueGain_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 1
+			incrementSlide = 0.02
+		}
 		EVENTS
 		{
 		}
@@ -4208,7 +4293,7 @@ PART
 		limitTweakable = False
 		limitTweakableFlag = True
 		maxTweak = -9
-		minTweak = -45
+		minTweak = -30
 		on = False
 		pitchSet = 1
 		soundSet = 0.5
@@ -4411,7 +4496,7 @@ PART
 		limitTweakable = False
 		limitTweakableFlag = True
 		maxTweak = -9
-		minTweak = -45
+		minTweak = -30
 		on = False
 		pitchSet = 1
 		soundSet = 0.5
@@ -4614,7 +4699,7 @@ PART
 		limitTweakable = False
 		limitTweakableFlag = True
 		maxTweak = -9
-		minTweak = -45
+		minTweak = -30
 		on = False
 		pitchSet = 1
 		soundSet = 0.5
@@ -4817,7 +4902,7 @@ PART
 		limitTweakable = False
 		limitTweakableFlag = True
 		maxTweak = -9
-		minTweak = -45
+		minTweak = -30
 		on = False
 		pitchSet = 1
 		soundSet = 0.5
@@ -5200,7 +5285,7 @@ PART
 	pos = -1.307547,30.78416,-0.593203
 	attPos = 0,0,0
 	attPos0 = -8.290839E-09,0.040639,-0.02128511
-	rot = -0.535198,-0.5618266,-0.4567384,0.4350909
+	rot = -0.535198,-0.5618266,-0.4567384,0.435091
 	attRot = 0,0,0,1
 	attRot0 = -0.4877197,-0.5119858,0.511986,-0.4877197
 	mir = 1,1,1
@@ -8109,11 +8194,11 @@ PART
 	attRot0 = 0,1,0,0
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 5
 	dstg = 5
 	sidx = 0
-	sqor = 4
-	sepI = 4
+	sqor = 5
+	sepI = 5
 	attm = 0
 	modCost = -795.7125
 	modMass = 0
@@ -8286,7 +8371,7 @@ PART
 	dstg = 6
 	sidx = 0
 	sqor = 5
-	sepI = 4
+	sepI = 5
 	attm = 0
 	modCost = -795.7125
 	modMass = 0
@@ -8368,7 +8453,7 @@ PART
 	dstg = 6
 	sidx = 2
 	sqor = 5
-	sepI = 4
+	sepI = 5
 	attm = 0
 	modCost = -795.7125
 	modMass = 0
@@ -8675,7 +8760,7 @@ PART
 		name = ProceduralPart
 		isEnabled = True
 		tempColliderCenter = (0, 0, 0)
-		tempColliderSize = (0.8749999, 0.5, 0.8750003)
+		tempColliderSize = (0.8750002, 0.5, 0.8750003)
 		textureSet = PlainWhite
 		shapeName = Cylinder
 		moduleCost = 73.66177
@@ -9015,7 +9100,7 @@ PART
 		name = ProceduralPart
 		isEnabled = True
 		tempColliderCenter = (0, 0, 0)
-		tempColliderSize = (0.8749999, 4.875, 0.8750003)
+		tempColliderSize = (0.8750002, 4.875, 0.8750003)
 		textureSet = PlainWhite
 		shapeName = Cylinder
 		moduleCost = 0.02805386
@@ -9908,7 +9993,7 @@ PART
 {
 	part = Long decal 1x8_4293998128
 	partName = Part
-	pos = -1.028439,25.77729,-0.5071852
+	pos = -1.028439,25.77729,-0.5071853
 	attPos = 0.0001316667,0.3453731,0.0001316667
 	attPos0 = 0.3086967,0.1953545,0.3086967
 	rot = -0.2704308,0.6532122,0.6533508,0.2707652
@@ -10038,7 +10123,7 @@ PART
 {
 	part = Decal curved_4293593306
 	partName = Part
-	pos = -1.542552,23.33766,-0.455565
+	pos = -1.542552,23.33766,-0.4555647
 	attPos = 0.01236677,-0.01159286,-0.01653665
 	attPos0 = -0.2176518,-2.082064,0.376984
 	rot = -0.0001310981,-0.4875992,-0.0002197701,-0.8730676
@@ -10298,7 +10383,7 @@ PART
 {
 	part = W485.SurfaceOmniLight_4293936188
 	partName = Part
-	pos = -1.773551,25.39043,-0.8160127
+	pos = -1.773551,25.39043,-0.8160124
 	attPos = 0,-0.04175568,-0.009065628
 	attPos0 = -0.4362843,0.1696529,0
 	rot = 0.4999999,-0.5000001,0.5000001,0.4999999
@@ -11162,7 +11247,7 @@ PART
 {
 	part = W485.SurfaceOmniLight_4293934328
 	partName = Part
-	pos = -1.029069,22.83752,-0.5078154
+	pos = -1.029069,22.83752,-0.5078155
 	attPos = 0,-0.04175568,-0.009065628
 	attPos0 = 0.308198,-2.6451,0.3081981
 	rot = -0.6534486,-0.2705289,0.2706673,-0.6531143
@@ -11470,6 +11555,9 @@ PART
 	link = His.Engine.IRFNA.1_4294108340
 	link = His.AgenaRCS2_4210381312
 	link = His.AgenaRCS2_4210381220
+	link = His.monoNitro1_4293493152
+	link = His.monoNitro1_4293492138
+	link = His.monoNitro1_4293492092
 	attN = top,proceduralTankRealFuels_4294148474
 	attN = bottom,His.Engine.IRFNA.1_4294108340
 	EVENTS
@@ -11707,10 +11795,10 @@ PART
 	attRot0 = 0,-6.984871E-09,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 5
+	istg = 4
 	dstg = 5
 	sidx = 0
-	sqor = 5
+	sqor = 4
 	sepI = 3
 	attm = 0
 	modCost = 0
@@ -11850,7 +11938,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -12448,7 +12536,7 @@ PART
 {
 	part = Long decal 1x2_4293814444
 	partName = Part
-	pos = -0.9169598,28.10057,-0.9286337
+	pos = -0.9169599,28.10057,-0.9286335
 	attPos = -0.001688004,0,0.00045228
 	attPos0 = 0.4219947,0.1765041,-0.1130731
 	rot = 0,-0.9914449,0,0.1305263
@@ -12744,12 +12832,12 @@ PART
 	{
 		name = ModuleRCSFX
 		isEnabled = True
-		enableYaw = False
-		enablePitch = False
-		enableRoll = False
-		enableX = False
-		enableY = False
-		enableZ = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
 		rcsEnabled = True
 		enableYaw_UIFlight
 		{
@@ -12804,7 +12892,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom01
 			}
 		}
 	}
@@ -12893,12 +12981,12 @@ PART
 	{
 		name = ModuleRCSFX
 		isEnabled = True
-		enableYaw = False
-		enablePitch = False
-		enableRoll = False
-		enableX = False
-		enableY = False
-		enableZ = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
 		rcsEnabled = True
 		enableYaw_UIFlight
 		{
@@ -12953,7 +13041,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom01
 			}
 		}
 	}
@@ -13042,12 +13130,12 @@ PART
 	{
 		name = ModuleRCSFX
 		isEnabled = True
-		enableYaw = False
-		enablePitch = False
-		enableRoll = False
-		enableX = False
-		enableY = False
-		enableZ = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
 		rcsEnabled = True
 		enableYaw_UIFlight
 		{
@@ -13191,12 +13279,12 @@ PART
 	{
 		name = ModuleRCSFX
 		isEnabled = True
-		enableYaw = False
-		enablePitch = False
-		enableRoll = False
-		enableX = False
-		enableY = False
-		enableZ = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
 		rcsEnabled = True
 		enableYaw_UIFlight
 		{
@@ -13340,12 +13428,12 @@ PART
 	{
 		name = ModuleRCSFX
 		isEnabled = True
-		enableYaw = False
-		enablePitch = False
-		enableRoll = False
-		enableX = False
-		enableY = False
-		enableZ = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
 		rcsEnabled = True
 		enableYaw_UIFlight
 		{
@@ -13400,7 +13488,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom01
 			}
 		}
 	}
@@ -13489,12 +13577,12 @@ PART
 	{
 		name = ModuleRCSFX
 		isEnabled = True
-		enableYaw = False
-		enablePitch = False
-		enableRoll = False
-		enableX = False
-		enableY = False
-		enableZ = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
 		rcsEnabled = True
 		enableYaw_UIFlight
 		{
@@ -13549,7 +13637,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom01
 			}
 		}
 	}
@@ -13606,7 +13694,7 @@ PART
 {
 	part = His.AgenaRCS2_4210381312
 	partName = Part
-	pos = -1.833873,22.40331,-0.816013
+	pos = -1.833873,22.40331,-0.8160122
 	attPos = -0.1948595,-0.02073479,-1.509174E-08
 	attPos0 = -0.3017461,-0.1875,3.62346E-08
 	rot = -1,0,1.332268E-15,0
@@ -13891,341 +13979,6 @@ PART
 	MODULE
 	{
 		name = RcsSounds
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = KW5mExpFairingCone_4290079376
-	partName = Part
-	pos = -1.621642,31.25502,-0.8160131
-	attPos = 0,0,0
-	attPos0 = -0.284375,2.827961,-3.972645E-09
-	rot = 0,0,0,-1
-	attRot = 0,0,0,-0.9999999
-	attRot0 = 0,6.984871E-09,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 4
-	dstg = 5
-	sidx = 1
-	sqor = 4
-	sepI = 4
-	attm = 0
-	modCost = -795.7125
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = KW5mExpFairingWall_4290079300
-	attN = connect,KW5mExpFairingWall_4290079300
-	attN = bottom,KW5mExpandedFairingBase_4294153986
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleFairingDecoupler
-		isEnabled = True
-		ejectionForcePercent = 6
-		isDecoupled = False
-		ejectionForcePercent_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = BBModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 17.5
-		defaultScale = 100
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		DryCost = 4.2875
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSeeThroughObject
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableDecouple
-		isEnabled = True
-		ejectionForce = 100
-		staged = True
-		ejectionForce_UIFlight
-		{
-			controlEnabled = True
-			minValue = -3.402823E+38
-			maxValue = 3.402823E+38
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStagingToggle
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			EnableEvent
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Enable Staging
-				guiName = Enable Staging
-				category = Enable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableEvent
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = KW5mExpFairingWall_4290079300
-	partName = Part
-	pos = -1.621423,30.29679,-0.8160131
-	attPos = 0,0,0
-	attPos0 = 0.0002186298,-0.9582424,0
-	rot = 0,0,0,-1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 7
-	dstg = 6
-	sidx = 3
-	sqor = 7
-	sepI = 4
-	attm = 0
-	modCost = -795.7125
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = KW5mExpFairingWall_4290079244
-	attN = top,KW5mExpFairingCone_4290079376
-	attN = bottom,KW5mExpFairingWall_4290079244
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = BBModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 17.5
-		defaultScale = 100
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		DryCost = 4.287499
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSeeThroughObject
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = KW5mExpFairingWall_4290079244
-	partName = Part
-	pos = -1.621423,29.19,-0.8160131
-	attPos = 0,0,0
-	attPos0 = 0,-1.106775,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 7
-	dstg = 6
-	sidx = 4
-	sqor = 7
-	sepI = 4
-	attm = 0
-	modCost = -795.7125
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	attN = top,KW5mExpFairingWall_4290079300
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = BBModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 17.5
-		defaultScale = 100
-		defaultTransformScale = (1.25, 1.25, 1.25)
-		DryCost = 4.287499
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSeeThroughObject
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
 		isEnabled = True
 		EVENTS
 		{
@@ -15177,7 +14930,7 @@ PART
 {
 	part = W485.SurfaceOmniLight_4293978576
 	partName = Part
-	pos = -1.653365,21.03665,0.06868607
+	pos = -1.653365,21.03665,0.06868619
 	attPos = 0,-0.04175568,-0.009065628
 	attPos0 = -0.3160975,2.911989,0.8846979
 	rot = 0.6787605,-0.1408243,0.1350138,0.7079718
@@ -15609,7 +15362,7 @@ PART
 {
 	part = His.FASAUmbilicalTower_4293761440
 	partName = Part
-	pos = 0.05506122,18.32413,4.975773
+	pos = 0.05506194,18.32413,4.975773
 	attPos = 0,0,0
 	attPos0 = 1.392327,0.1994686,5.79179
 	rot = -0.002471379,0.9928489,-0.02088055,-0.1175115
@@ -15753,7 +15506,7 @@ PART
 	pos = -1.337267,11.12466,-0.8160131
 	attPos = 0,0,0
 	attPos0 = 0,-7.00001,0
-	rot = 0,-6.984865E-09,0,1
+	rot = 0,-6.984868E-09,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,-6.984871E-09,0,1
 	mir = 1,1,1
@@ -16283,7 +16036,7 @@ PART
 	pos = -1.337267,6.937119,-0.8160131
 	attPos = 0,0,0
 	attPos0 = 0,-8.000032,0
-	rot = 0,-6.984868E-09,0,1
+	rot = 0,-6.984875E-09,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -16536,7 +16289,7 @@ PART
 	pos = -1.337267,5.999575,-0.8160131
 	attPos = 0,0,0
 	attPos0 = 0,-4.187544,0
-	rot = 0,-6.984868E-09,0,1
+	rot = 0,-6.984872E-09,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -17309,7 +17062,7 @@ PART
 {
 	part = basicFin_4293866808
 	partName = Part
-	pos = -1.960728,5.211962,-0.1925508
+	pos = -1.960728,5.211962,-0.1925507
 	attPos = 0.1262002,0.04317665,-0.1261995
 	attPos0 = -0.7496614,0.1067505,0.7496612
 	rot = 0.03335305,0.381227,0.08052141,0.920364
@@ -17406,7 +17159,7 @@ PART
 {
 	part = basicFin_4293833128
 	partName = Part
-	pos = -0.7138047,5.211962,-0.192552
+	pos = -0.7138048,5.211962,-0.1925519
 	attPos = -0.1261995,0.04317665,-0.1262002
 	attPos0 = 0.7496612,0.1067505,0.7496614
 	rot = 0.0805214,0.9203638,0.03335309,0.3812275
@@ -17503,7 +17256,7 @@ PART
 {
 	part = basicFin_4293833086
 	partName = Part
-	pos = -0.7138059,5.211962,-1.439475
+	pos = -0.7138056,5.211962,-1.439475
 	attPos = -0.1262002,0.04317665,0.1261995
 	attPos0 = 0.7496614,0.1067505,-0.7496612
 	rot = 0.08052141,0.920364,-0.03335305,-0.3812271
@@ -17772,7 +17525,7 @@ PART
 	pos = -1.337267,4.654535,-0.1356285
 	attPos = 0,0,0
 	attPos0 = 0,-0.4699993,0.7428846
-	rot = 0.7071068,4.939047E-09,4.939047E-09,-0.7071068
+	rot = 0.7071068,4.93905E-09,4.93905E-09,-0.7071068
 	attRot = 0,0,0.7071067,0.7071067
 	attRot0 = 0.7071068,0,0,-0.7071068
 	mir = 1,1,1
@@ -17916,7 +17669,7 @@ PART
 	pos = -1.337267,4.654535,-1.496398
 	attPos = 0,0,0
 	attPos0 = 0,-0.4699993,-0.7428846
-	rot = 4.939047E-09,-0.7071068,-0.7071068,-4.939047E-09
+	rot = 4.93905E-09,-0.7071068,-0.7071068,-4.93905E-09
 	attRot = 0,0,0.7071067,0.7071067
 	attRot0 = 0,-0.7071068,-0.7071068,0
 	mir = 1,1,1
@@ -18136,7 +17889,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -19080,7 +18833,7 @@ PART
 {
 	part = W485.SurfaceOmniLight_4293975540
 	partName = Part
-	pos = -2.129666,6.927332,-0.02361405
+	pos = -2.129666,6.927332,-0.02361387
 	attPos = 0,-0.04175568,-0.009065628
 	attPos0 = -0.7923985,-0.009786606,0.7923981
 	rot = 0.7484364,-0.2243633,0.3100126,0.5416607
@@ -19372,7 +19125,7 @@ PART
 {
 	part = W485.SurfaceOmniLight_4293975452
 	partName = Part
-	pos = -0.2548308,6.927332,-0.5259755
+	pos = -0.254831,6.927332,-0.5259755
 	attPos = 0,-0.04175568,-0.009065628
 	attPos0 = 1.082436,-0.009786606,0.290038
 	rot = 0.642697,0.3569103,-0.4931587,0.4651346
@@ -19518,7 +19271,7 @@ PART
 {
 	part = W485.SurfaceOmniLight_4293975408
 	partName = Part
-	pos = -0.5448685,6.927332,-1.608412
+	pos = -0.5448686,6.927332,-1.608412
 	attPos = 0,-0.04175568,-0.009065628
 	attPos0 = 0.7923985,-0.009786606,-0.7923982
 	rot = 0.3100125,0.5416607,-0.7484365,0.2243632
@@ -19810,7 +19563,7 @@ PART
 {
 	part = Long decal 1x2_4294008234
 	partName = Part
-	pos = -0.3146987,14.92998,-0.2256328
+	pos = -0.3146987,14.92998,-0.2256327
 	attPos = 2.049978,1.907349E-06,1.183556
 	attPos0 = -1.02741,3.805338,-0.5931754
 	rot = 0,-0.9659259,0,-0.258819
@@ -20626,7 +20379,7 @@ PART
 {
 	part = W485.SurfaceOmniLight_4293973830
 	partName = Part
-	pos = -0.1926838,14.94755,-1.122704
+	pos = -0.1926837,14.94755,-1.122704
 	attPos = 0,-0.04175568,-0.009065628
 	attPos0 = 1.144583,3.822909,-0.3066902
 	rot = 0.4304593,0.5609856,-0.5609856,0.4304593
@@ -21185,7 +20938,7 @@ PART
 {
 	part = Decal curved_4290084202
 	partName = Part
-	pos = -0.3694818,8.090519,-0.2572637
+	pos = -0.3694817,8.090519,-0.2572636
 	attPos = -0.0594604,0,-0.03432935
 	attPos0 = 1.027245,-3.034134,0.5930802
 	rot = -1.392572E-09,-0.9659259,-3.731385E-10,-0.2588191
@@ -21498,7 +21251,7 @@ PART
 	pos = -1.337267,14.91091,0.3493507
 	attPos = -2.846079E-10,0,-0.02037311
 	attPos0 = 1.656444E-08,3.786259,1.185737
-	rot = -3.049754E-16,-1,-3.717314E-09,8.204178E-08
+	rot = -3.049754E-16,-1,-3.717314E-09,8.204176E-08
 	attRot = 0,0,0,1
 	attRot0 = -3.309403E-16,-1,-3.717314E-09,8.902672E-08
 	mir = 1,1,1
@@ -21669,5 +21422,583 @@ PART
 		isTweakable = True
 		hideFlow = False
 		flowMode = Both
+	}
+}
+PART
+{
+	part = His.monoNitro1_4293493152
+	partName = Part
+	pos = -1.683605,22.42405,-0.8407316
+	attPos = 0,0,0
+	attPos0 = -0.346338,-0.1875,-0.02471867
+	rot = 9.181702E-15,0.7071068,0.7071068,-9.181702E-15
+	attRot = 0,0,0,1
+	attRot0 = -2.738248E-08,0.7071068,0.7071068,2.738248E-08
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 4
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = His.monoNitro1_4293492138
+	sym = His.monoNitro1_4293492092
+	srfN = srfAttach,proceduralStructural_4294093962
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 99.97
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Nitrogen
+		amount = 600
+		maxAmount = 600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = His.monoNitro1_4293492138
+	partName = Part
+	pos = -1.185505,22.42405,-0.5037162
+	attPos = 0,0,0
+	attPos0 = 0.1517621,-0.1875,0.3122969
+	rot = 0.6123725,0.3535534,0.3535534,-0.6123725
+	attRot = 0,0,0,1
+	attRot0 = 0.6123725,0.3535534,0.3535534,-0.6123725
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 4
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = His.monoNitro1_4293493152
+	sym = His.monoNitro1_4293492092
+	srfN = srfAttach,proceduralStructural_4294093962
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 99.97
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Nitrogen
+		amount = 600
+		maxAmount = 600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = His.monoNitro1_4293492092
+	partName = Part
+	pos = -1.142691,22.42405,-1.103591
+	attPos = 0,0,0
+	attPos0 = 0.194576,-0.1875,-0.2875782
+	rot = 0.6123725,-0.3535534,-0.3535534,-0.6123725
+	attRot = 0,0,0,1
+	attRot0 = 0.6123725,-0.3535534,-0.3535534,-0.6123725
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 4
+	dstg = 4
+	sidx = -1
+	sqor = -1
+	sepI = 3
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = His.monoNitro1_4293493152
+	sym = His.monoNitro1_4293492138
+	srfN = srfAttach,proceduralStructural_4294093962
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 99.97
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = Nitrogen
+		amount = 600
+		maxAmount = 600
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = KW5mExpFairingCone_4290079376
+	partName = Part
+	pos = -1.621642,31.25502,-0.8160131
+	attPos = 0,0,0
+	attPos0 = -0.2843751,2.827961,-3.972646E-09
+	rot = 0,0,0,-1
+	attRot = 0,0,0,-0.9999999
+	attRot0 = 0,6.984871E-09,0,-1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 5
+	dstg = 5
+	sidx = 1
+	sqor = 5
+	sepI = 5
+	attm = 0
+	modCost = -795.7125
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KW5mExpFairingWall_4290079300
+	attN = connect,KW5mExpFairingWall_4290079300
+	attN = bottom,KW5mExpandedFairingBase_4294153986
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleFairingDecoupler
+		isEnabled = True
+		ejectionForcePercent = 6
+		isDecoupled = False
+		ejectionForcePercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 17.5
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 4.2875
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSeeThroughObject
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableDecouple
+		isEnabled = True
+		ejectionForce = 100
+		staged = True
+		ejectionForce_UIFlight
+		{
+			controlEnabled = True
+			minValue = -3.402823E+38
+			maxValue = 3.402823E+38
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStagingToggle
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			EnableEvent
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Enable Staging
+				guiName = Enable Staging
+				category = Enable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KW5mExpFairingWall_4290079300
+	partName = Part
+	pos = -1.621423,30.29679,-0.8160131
+	attPos = 0,0,0
+	attPos0 = 0.0002186298,-0.9582424,0
+	rot = 0,0,0,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 7
+	dstg = 6
+	sidx = 3
+	sqor = 7
+	sepI = 5
+	attm = 0
+	modCost = -795.7125
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = KW5mExpFairingWall_4290079244
+	attN = top,KW5mExpFairingCone_4290079376
+	attN = bottom,KW5mExpFairingWall_4290079244
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 17.5
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 4.287499
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSeeThroughObject
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = KW5mExpFairingWall_4290079244
+	partName = Part
+	pos = -1.621423,29.19,-0.8160131
+	attPos = 0,0,0
+	attPos0 = 0,-1.106775,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,-1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 7
+	dstg = 6
+	sidx = 4
+	sqor = 7
+	sepI = 5
+	attm = 0
+	modCost = -795.7125
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = top,KW5mExpFairingWall_4290079300
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 17.5
+		defaultScale = 100
+		defaultTransformScale = (1.25, 1.25, 1.25)
+		DryCost = 4.287499
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSeeThroughObject
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
 	}
 }
