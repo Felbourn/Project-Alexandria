@@ -55,6 +55,15 @@ July 19 – American test pilot Joe Walker, flying the X-15, reaches an altitude
 
 July 26, 1963	First geosynchronous satellite		Syncom 2-NASA
 
+Here we are again, back at cape canaveral, this time launch complex 17 where we have the facilities needed to launch thor-delta rockets. This one is known as a delta 3. In the background you're getting a nice view of missile row as it receeds below us. The reason there are so many launch pads is there are so many types of launches. Each complex is designed for a different kind, so... we have a lot of them. We're lanching Syncom 2, which was the first successful geosynchrounous satellite. The first stage is powered by a kerolox MB-3-II engine. Kero, meaning kerosene. Lox, meaning liquid oxygen, thus kerolox. The second stage will be powered by a UDMH and nitric acid AJ-10-118D engine. UDMH stands for unsymmetrical dimethylhydrazine, a toxic colorless fuel that smells like fish and ammonia. After releasing the fairing we'll have access to the 3rd stage, an X-248A Altair 1 solid rocket motor with the payload attached on top of it. All three of these are lit once and burn until they run out of fuel, which makes things especially challenging. I can use man nodes in between stages, sometimes, but I can only set the man node for the exact amount of dV that's in the stage I'm about to fire next. I have to take what I can get for final orbits. This was not a problem for real NASA engineers because they could design their missions well ahead of time and programn computers to carry them out. I'm flying by eye and the seat of my pants. It's... hard.
+
+So I said this was the first successful geo sync satellite. There was a syncom 1 back in Feb of this year but it was lost due to an electronics failure. This is now July 26th of 1963 and we're taking another shot at it. It's a communications sat capable of relaying ONE telephone message at a time, or 12 of what are effectively text messages. Next month JFK will carry out the first sat-relayed telephone conversation between two heads of state when he calls the Nigerian Prime Minister.
+
+so what does that mean? The earth rotates once every 24 hours. If a satellite can be made to orbit once every 24 hours too then it will appear to hover roughly in the same area of the sky. It will make a sort of figure 8 unless we launch it from the equator, or make an inclination change. If we did that then we'd call it a geostationary satellite, that really does sit in exactly one place in the sky all the time. That's useful for satellite TV so we can point our dishes at one spot and always get a signal. A geo sync satellite is fine for telephones though, so that's what this one will be used for.
+
+Syncom 2 is still in orbit, although no longer functioning.
+
+
 August 28 – Martin Luther King Jr. delivers his "I Have a Dream" speech on the steps of the Lincoln Memorial to an audience of at least 250,000, during the March on Washington for Jobs and Freedom.
 
 November 10 – Malcolm X makes an historic speech in Detroit, Michigan ("Message to the Grass Roots").
@@ -66,4 +75,116 @@ November 24
 Lee Harvey Oswald, assassin of John F. Kennedy, is shot dead by Jack Ruby in Dallas, an event seen on live national television. Later that night, a hastily arranged program, A Tribute to John F. Kennedy from the Arts, featuring actors, opera singers, and noted writers, all performing dramatic readings and/or music, is telecast on ABC-TV.
 
 December 5, 1963	First satellite navigation system		NAVSAT-USN
+1963-12-05
+21:51	Thor DSV-2A Ablestar	Thor 385
+Ablestar 015	VAFB LC-75-1-1	Transit 5BN-2
+Transit 5E-3	Navigation	LEO	Success	
 
+We're moving ahead to December now to close out the year. However, around the time of Syncom 2 up to now there were some HUGE historical events. They were not all directly space-related, but they're also too huge to let go by without a mention.
+
+For starters, it was a huge year for racial equality. In June, Civil Rights leader Medger Evers was assasinated outside his home, which spurred protests and more awareness of hte problems. JFK attended his funeral and condemed his killing. Then in August, MLK Jr delivered his "I have a dream" speech at the Lincolm Memorial. In November, Malcolm X delivered his "Message to the Grass Roots" speech in Detroit. You don't have to agree with his message, but you do have to acknowledge that he was an influencial leader of his time.
+
+Then on November 22, JFK was assassinated by Lee Harvey Oswald while driving through Dallas in his motorcade. Many conspiracy theories revolve around the assassination. Some people even think Vice President Johnson, who was an ambitious man and wanted to be president, and who may have disliked president Kennedy, and who may have disagreed with the president's policies, may have had him assassinated. If that were true, it would certainly be a thing that no one would want to let leak out during 1963 when the United States could not afford to look weak in front of the Soviet Union or the world. It would also surly be a thing that if anyone who knew anything about it, they would also probably end up dead as a loose end. Anyway, we never found out from Lee Harvey Oswald because he was assassinated 2 days later by Jack Ruby.
+
+So JFK never got to see us continue the space program, nor see if we made it to the moon before the end of the decade like he wanted. But his death spurred America forward to see his vision through. And so here we are launching one more spall piece of that puzzle.
+
+This is the launch of Transit 5BN-2 and Transit 5E-3 on a Thor DSV-2A Ablestar rocket from VAFB in Cali. We have two stacked satellites that will be released to fly separately and serve two separate functions in orbit. We're launching polar because one is a navigation satellite. It will send out a signal that will allow the United States submarine flet to get a fix on it, and thereby determine their own location. This is essentially the first position satellite, and from this day on the US will always have a way to use this and various future satellites to get measure for their location.
+
+And that's going to do it for 1963. We end with the US Navy now able to determine their exact location so that subs can accurately launch nuclear weapons and start world war 3k, to end life as we know it, any time, from any where, in any weather. Until...
+
+
+Flights of 1963
+
+January
+04 Luna 4c
+07 KH-4 18
+16 Samos-F2 3
+
+February
+03 Luna 4d
+14 Syncom 1
+19 DSAP-1 F3
+28 KH-4 19
+
+March
+18 KH-6 1
+21 Kosmos 13
+
+April
+01 KH-4 20
+02 Luna 4
+03 Explorer 17
+05 Transit-5A 2
+06 Kosmos 14
+13 Kosmos 14
+22 Kosmos 15
+26 DSAP-1 F4
+26 KH-5 8
+28 Kosmos 16
+
+May
+07 Telstar 2
+09 MIDAS 7
+15 Mercury MA-9
+18 KH-6 2
+22 Kosmos 17
+24 Kosmos 18
+
+June
+01 Kosmos 19a
+12 MIDAS 8
+12 KH-4 21
+14 Vostok 5
+15 Poppy 2A
+16 Transit-5A 3
+16 Vostok 6
+19 TIROS 7
+27 KH-4 22
+28 GRS CRL 1
+29 Samos-F2 4
+
+July
+10 Kosmos 19b
+12 KH-7 1
+19 KH-4 23
+19 MIDAS 9
+26 Syncom 2
+31 KH-6 3
+
+August
+06 Kosmos 19
+22 Kosmos 20
+25 KH-4A 1
+29 KH-5 9
+
+September
+06 KH-7 2
+23 KH-4A 2
+27 DSAP-1 F5
+28 Transit 5BN-1
+
+October
+17 Vela 1
+18 Kosmos 20
+24 Kosmos 21
+25 KH-7 3
+29 KH-5 10
+
+November
+01 Polyot 1
+09 KH-4 24
+11 Kosmos 21
+16 Kosmos 22
+27 Explorer 18
+27 Centaur AC-2
+27 KH-4 25
+28 Kosmos 23
+
+December
+05 Transit 5BN-2
+13 Kosmos 23
+18 KH-7 4
+19 Kosmos 24
+19 Explorer 19
+21 TIROS 8
+21 KH-4 26
