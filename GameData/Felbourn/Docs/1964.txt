@@ -1,0 +1,163 @@
+upping requirements to orbital missions
+
+November 22, 1963: President John F. Kennedy is shot and killed in Dallas, Texas. As a tribute, President Lyndon Johnson changes the name of the rocket launch site--Cape Canaveral--to Cape Kennedy. Although the name change will be approved by the United States Board on Geographic Names of the Interior Department in 1964, it is never popular in Florida, especially in the city of Cape Canaveral. In 1973 the state will pass a law restoring the former 400-year-old name.
+
+----------------------------------------
+greetings K
+you just watched the saturn I sa-5 launch from cape ken, which was not the launch site's name last year
+it was called cape can then
+but president johnson got it renamed to cape ken after the former presiden't assassination
+the name was not very popular in florida, however, and in 1973 the site will get renamed back to cape can
+
+today is jan 29, which is the same day the cold war spoof by Stanley Kubrick is being released, called
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
+I first saw that in 1984. well actuially it was hte only time i saw it
+It's was a... strange movie, but sure had  a memorable ending
+
+anyway the saturn I block 2 here is the launch that JFK had predicted would place the nited state launch capabilities ahead of the soviet union for hte first time
+if you look at a graph of moon launch capability, it probably looked like this...
+(explain)
+though arguably it couldbe said that the real crossover point was in another year and a half after the US has carried out various activities like rendezvous and space walk
+
+----------------------------------------
+
+January 29, 1964: Columbia Pictures releases the black comedy,. Directed by Stanley Kubrick, the film is a Cold War spoof, and one of the top-rated comedy movies of all time. The story revolves around a United States Air Force general, who orders a first strike nuclear attack on the Soviet Union. The film's opening frames feature this disclaimer:
+It is the stated position of the United States Air Force that their safeguards would prevent the occurrence of such events as are depicted in this film. Furthermore, it should be noted that none of the characters portrayed in this film are meant to represent any real persons living or dead.
+The title character, Dr. Strangelove, is a former Nazi physicist, serving as science advisor to the president of the United States. He is prone to accidentally addressing the President as Mein Fuehrer during moments of stress. Despite the disclaimer, Strangelove is an amalgamation of RAND Corporation strategist Herman Kahn, atom scientists Edward Teller and John von Neumann, and Wernher von Braun.
+
+August 6, 1964: The Washington Post reports on a story published in the Soviet newspaper Izvestia:
+Izvestia - attacked American rocket expert Wernher von Braun, for "creating inhuman conditions" among workers at an underground Nazi rocket base in Poland, [sic] which he reportedly headed during World War II. Von Braun, Izvestia said, did so "to carry out the promise given to Hitler of a miracle weapon."
+
+29 January
+16:25:01	United StatesSaturn I	United StatesCape Canaveral LC-37B	United StatesNASA
+United StatesJupiter nosecone	NASA	Low Earth	Test flight	30 April	Successful
+First all-up test and orbital launch of the Saturn I
+SA-5	SA-5	January 29, 1964	First live S-IV second stage. First Block II. First to orbit (760 by 264) km. Mass 38,700 lb (17,550 kg). Decayed 30 April 1966. JFK identified this launch as the one which would place US lift capability ahead of the Soviets, after being behind since Sputnik.
+
+1964 January 29 - . 16:25 GMT - . 
+Launch Site: Cape Canaveral. 
+Launch Complex: Cape Canaveral LC37B.
+LV Family: Saturn I. 
+Launch Vehicle: Saturn I. 
+LV Configuration: Saturn I-Blk2 SA-5.
+Saturn 5 - . 
+Payload: Saturn-SA 5. 
+Mass: 17,100 kg (37,600 lb). 
+Nation: USA. 
+Agency: NASA Huntsville. 
+Program: Apollo. 
+Class: Technology. 
+Type: Re-entry vehicle technology satellite. 
+Spacecraft: Jupiter nose cone. 
+Decay Date: 1966-04-30 . 
+USAF Sat Cat: 744 . 
+COSPAR: 1964-005A. 
+Apogee: 740 km (450 mi). 
+Perigee: 274 km (170 mi). 
+Inclination: 31.4000 deg. 
+Period: 94.80 min. 
+First first mission of Block II Saturn with two live stages. SA-5, a vehicle development flight, was launched from Cape Kennedy Complex 37B at 11:25:01.41, e.s.t. This was the first flight of the Saturn I Block II configuration (i.e., lengthened fuel tanks in the S-1 and stabilizing tail fins), as well as the first flight of a live (powered) S-IV upper stage. The S-1, powered by eight H-1 engines, reached a full thrust of over 680,400 kilograms (1.5 million pounds) the first time in flight. The S-IV's 41,000 kilogram (90,000-pound-thrust cluster of six liquid-hydrogen RL-10 engines performed as expected. The Block II SA-5 was also the first flight test of the Saturn I guidance system.
+
+Saturn I-Blk2 Saturn Apollo-5 Saturn V 
+Mass: 17,100 kg (37,600 lb). 
+Spacecraft/payload: Jupiter nose cone. 
+Agency: NASA - MSFC. 
+Perigee: 274 km (170 mi). 
+Apogee: 740 km (450 mi). 
+Inclination: 31.40 deg. 
+Period: 94.80 min.
+First mission of Block II Saturn with two live stages. SA-5, a vehicle development flight, was launched from Cape Kennedy Complex 37B at 11:25:01.41, EST. This was the first flight of the Saturn I Block II configuration (i.e., lengthened fuel tanks in the S-1 and stabilizing tail fins), as well as the first flight of a live (powered) S-IV upper stage. The S-1, powered by eight H-1 engines, reached a full thrust of over 680,400 kilograms (1.5 million pounds) the first time in flight. The S-IV's 41,000 kilogram (90,000-pound-thrust cluster of six liquid-hydrogen RL-10 engines performed as expected. The Block II SA-5 was also the first flight test of the Saturn I guidance system and placed the heaviest payload to date in Earth Orbit (37,700 Lbs).
+
+Stage 1. 1 x Saturn I. 
+Gross Mass: 432,681 kg (953,898 lb). 
+Empty Mass: 45,267 kg (99,796 lb). 
+Thrust (vac): 7,582.100 kN (1,704,524 lbf). 
+Isp: 289 sec. 
+Burn time: 150 sec. 
+Isp(sl): 255 sec. 
+Diameter: 6.52 m (21.39 ft). 
+Span: 6.52 m (21.39 ft). 
+Length: 24.48 m (80.31 ft). 
+Propellants: Lox/Kerosene. 
+No Engines: 8. 
+Engine: H-1. Status: Out of Production.
+
+Stage 2. 1 x Saturn IV. 
+Gross Mass: 50,576 kg (111,500 lb). 
+Empty Mass: 5,217 kg (11,501 lb). 
+Thrust (vac): 400.346 kN (90,001 lbf). 
+Isp: 410 sec. Burn time: 482 sec. 
+Diameter: 5.49 m (18.01 ft). 
+Span: 5.49 m (18.01 ft). 
+Length: 12.19 m (39.99 ft). 
+Propellants: Lox/LH2. 
+No Engines: 6. 
+Engine: RL-10. Status: Out of Production.
+
+Stage 3. 1 x Centaur C. 
+Gross Mass: 15,600 kg (34,300 lb). 
+Empty Mass: 1,996 kg (4,400 lb). 
+Thrust (vac): 133.448 kN (30,000 lbf). 
+Isp: 425 sec. 
+Burn time: 430 sec. 
+Isp(sl): 0.0000 sec. 
+Diameter: 3.05 m (10.00 ft). 
+Span: 3.05 m (10.00 ft). 
+Length: 9.14 m (29.98 ft). 
+Propellants: Lox/LH2.
+No Engines: 2. 
+Engine: RL-10A-1. 
+Status: Out of Production.
+
+AKA: Juno V; Saturn C-1. 
+Status: Retired 1975. 
+Gross mass: 509,660 kg (1,123,600 lb). 
+Payload: 9,000 kg (19,800 lb). 
+Height: 55.00 m (180.00 ft). 
+Diameter: 6.52 m (21.39 ft). 
+Thrust: 6,690.00 kN (1,503,970 lbf). 
+Apogee: 185 km (114 mi). 
+First Launch: 1963.03.28. 
+Last Launch: 1965.07.30. 
+Number: 7 . 
+
+
+April
+16:00:01	United StatesTitan II GLV	United StatesCape Canaveral LC-19	United StatesUS Air Force
+United StatesGemini 1	NASA	Low Earth	Test flight	12 April
+15:00	Successful
+Maiden flight of Titan II GLV, first orbital launch of a Titan rocket, and first flight of the Gemini programme.
+
+8 May
+17:07:00	United StatesSaturn I	United StatesCape Canaveral LC-37B	United StatesNASA
+United StatesApollo AS-101 (BP-13)	NASA	Low Earth	Test flight	2 June
+01:00	Successful
+Boilerplate Apollo spacecraft, first stage engine failure during ascent did not affect flight due to engine-out capability
+
+8 July
+16:50:07	United StatesAtlas LV-3A Agena-B	United StatesCape Canaveral LC-12	United StatesUS Air Force
+United StatesRanger 7	NASA	Highly elliptical	Lunar impactor	31 July
+13:25:48	Successful
+Impacted Mare Nubium
+
+12 October
+07:30:01	Soviet UnionVoskhod	Soviet UnionBaikonur Site 1/5	Soviet Union
+Soviet UnionVoskhod 1		Low Earth	Biological	13 October
+07:47:04	Successful
+Manned flight with three cosmonauts, first manned Voskhod flight, first spacecraft to carry more than one person
+Part 26	Comments	Voskhod 1	Voskhod	SSP	Oct 12 1964	First multi-member crew in space.
+
+8 November
+14:22:01	United StatesAtlas LV-3A Agena-D	United StatesCape Canaveral LC-12	United StatesUS Air Force
+United StatesMariner 4	NASA	Heliocentric	Mars flyby	In orbit	Successful
+First spacecraft to successfully fly past Mars, closest approach 9,846 kilometres (6,118 mi) at 01:00:57 UTC on 15 July 1965
+Part 27	Comments	Mariner 4	Mariner	NASA	Nov 28 1964	First Martian encounter.
+
+5 December
+20:20:04	United StatesScout X-4	United StatesWallops Island LA-3A	ItalyCRA
+ItalySan Marco 1	CRA	Low Earth	Technology
+Air density	11 September 1965	Successful
+First Italian satellite
+Part 28	Comments	San Marco 1	San Marco	CNR	Dec 15 1964	First Italian satellite.
+
+I want to get (or program) a simple mod that calculates the perfect angle for a rocket flight. I can extract the current stage delta-v of a craft from internal KSP vars pretty easily. In fact, MJ and KER do this already, so I could just steal their code for stage dV. From stage dV and an input parameter of desired final apoapsis, I want to get back a target angle relative to the horizon that the craft should be pointing toward such that: "when the stage burns out, the craft will be at the desired altitude if this target angle was maintained up until burnout." I sort of know how to do that math, but perhaps it has already been done? Real rockets do this every launch. Someone must have this handy, or maybe it exists for KSP already?
