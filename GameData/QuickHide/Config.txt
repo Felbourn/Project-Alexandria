@@ -1,4 +1,4 @@
-isHidden = False
+isHidden = True
 MouseHide = True
 TimeToKeep = 2
 StockToolBar = True

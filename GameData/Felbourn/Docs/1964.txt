@@ -144,7 +144,11 @@ We're launching from Cape Kennedy launch complex 19, and all future gemini missi
 
 What's really intgeresting is that Gemini craft were technically more advanced spacecraft than Apollo in many ways. The saturn launch vehivles and capsule plans have been in development for years now. Apollo was intended to be a series of tests after Mercury, and was not intended to go to the moon. Gemini was going to go to the moon after the Apollo tests were completed. However, delays in the Apollo program made is clear to NASA that we would not make it to the moon before the end of the decade if we didn't change plans. The time gap between Mercuryt and Apollo was going ot be years, and there was too much space training that still needed to be done. 
 So in 1962 the US started looking at configurations involving Apollo for moon landing, and Gemini moved to the front of the line for followup missions to the Mercury program.
-The gemini capsules were even called Mercury Mark II at first, and only later renamed to Gemini. There were all kinds of plans for how Gemini would be used to go to the moon, land, return, and how to deal with safe reentry and landing. There were even plans for how to make 12-man Gemini missions and space station development. All those plans were eventually scrapped, and Apollo became the moon missions project instead.
+The gemini capsules were even called Mercury Mark II at first, and only later renamed to Gemini. 
+Engineers were able to incprorate all their knowledge and learned techniques into Gemini desoign and construction, making it technically more advanced than Apollo. 
+There were all kinds of plans for how Gemini would be used to go to the moon, land, return, and how to deal with safe reentry and landing. There were even plans for how to make 12-man Gemini missions and space station development. All those plans were eventually scrapped, and Apollo became the moon missions project instead.
+
+Our Gemini has made it to orbit. The only problem was it went into a slightly higbher orbit than expected. 270 km wasdesired, but about 320 km was achieved. The perigee was 160 km, so the drag at perigee pulled the craft down after only 4 days. It deorbited over the south atlanta ocean. THe capsule was not decoupled from the upper stage, so the retro rockets were not tested with this flight. That would occur with gemii 2, whioch was supposed to fly in december, but would not actually launch until next year.
 -------------------------------------------------------
 
 8 May

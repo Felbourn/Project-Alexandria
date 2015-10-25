@@ -2,7 +2,7 @@ ship = Gemini
 version = 1.0.4
 description = 
 type = VAB
-size = 7.241279,37.42104,9.46762
+size = 7.241279,37.42104,9.467621
 PART
 {
 	part = His.FASAGeminiPod2_4293834336
@@ -3473,7 +3473,7 @@ PART
 	symMethod = Radial
 	istg = 3
 	dstg = 10
-	sidx = 3
+	sidx = 0
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -3614,7 +3614,7 @@ PART
 	symMethod = Radial
 	istg = 3
 	dstg = 13
-	sidx = 4
+	sidx = 1
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -3755,7 +3755,7 @@ PART
 	symMethod = Radial
 	istg = 1
 	dstg = 4
-	sidx = 2
+	sidx = 0
 	sqor = 1
 	sepI = 1
 	attm = 0
@@ -4382,7 +4382,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -4727,6 +4727,8 @@ PART
 	link = His.FASAlaunchClampAtlas_4293804272
 	link = His.FASAUmbilicalTower_4293802848
 	link = His.FASAUmbilicalTower_4293801570
+	link = Long decal 1x8_4290808798
+	link = Long decal 1x8_4290801262
 	attN = top,His.FASATitanLR91Dec_4293817186
 	attN = bottom,His.LR87.KW1mengineMaverick1D_4293812366
 	EVENTS
@@ -5303,7 +5305,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -5451,7 +5453,7 @@ PART
 	symMethod = Radial
 	istg = 3
 	dstg = 7
-	sidx = 0
+	sidx = 2
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -5546,7 +5548,7 @@ PART
 	symMethod = Radial
 	istg = 3
 	dstg = 7
-	sidx = 1
+	sidx = 3
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -5641,7 +5643,7 @@ PART
 	symMethod = Radial
 	istg = 3
 	dstg = 17
-	sidx = 2
+	sidx = 4
 	sqor = 3
 	sepI = 3
 	attm = 1
@@ -5662,7 +5664,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 6.074526
+		scaleFactor = 6.074525
 		height = 12.14905
 		towerRot = 0,-1,1.362679E-07,0
 		EVENTS
@@ -5803,7 +5805,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 7.978406
+		scaleFactor = 7.978405
 		height = 15.95681
 		towerRot = -4.873662E-08,-0.9961947,2.763991E-07,-0.08715574
 		EVENTS
@@ -5944,7 +5946,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 13.21386
+		scaleFactor = 13.21385
 		height = 26.42771
 		towerRot = -5.532489E-08,-0.9961947,3.13763E-07,0.08715575
 		EVENTS
@@ -6182,6 +6184,266 @@ PART
 	MODULE
 	{
 		name = LCFix
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Long decal 1x8_4290808798
+	partName = Part
+	pos = -1.272078,16.95938,0.850639
+	attPos = 0,0,0
+	attPos0 = -1.290961,7.304749,0.7453369
+	rot = 0.6830127,-0.1830129,-0.1830126,-0.6830127
+	attRot = 0.7071067,0,0,-0.7071067
+	attRot0 = 0.6830127,-0.1830129,-0.1830126,-0.6830127
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 7
+	dstg = 7
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 2209.945
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = Long decal 1x8_4290801262
+	srfN = srfAttach,His.FASAGeminiLFTLong_4293816286
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 6
+		selectedTextureURL = NEBULA/decals/textures/UnitedStates1x8
+		selectedMapURL = 
+		EVENTS
+		{
+			listAllObjects
+			{
+				active = True
+				guiActive = False
+				guiIcon = Debug: Log Objects
+				guiName = Debug: Log Objects
+				category = Debug: Log Objects
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Next Texture
+				guiName = Next Texture
+				category = Next Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			previousTextureEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Previous Texture
+				guiName = Previous Texture
+				category = Previous Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEVAEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Repaint
+				guiName = Repaint
+				category = Repaint
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 605.5
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2219.945
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Long decal 1x8_4290801262
+	partName = Part
+	pos = 1.309845,16.95938,-0.640035
+	attPos = 0,0,0
+	attPos0 = 1.290961,7.304749,-0.7453371
+	rot = -0.1830126,-0.6830127,-0.6830127,0.1830129
+	attRot = 0.7071067,0,0,-0.7071067
+	attRot0 = -0.1830126,-0.6830127,-0.6830127,0.1830129
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 7
+	dstg = 7
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 2209.945
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	sym = Long decal 1x8_4290808798
+	srfN = srfAttach,His.FASAGeminiLFTLong_4293816286
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FStextureSwitch2
+		isEnabled = True
+		selectedTexture = 6
+		selectedTextureURL = NEBULA/decals/textures/UnitedStates1x8
+		selectedMapURL = 
+		EVENTS
+		{
+			listAllObjects
+			{
+				active = True
+				guiActive = False
+				guiIcon = Debug: Log Objects
+				guiName = Debug: Log Objects
+				category = Debug: Log Objects
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Next Texture
+				guiName = Next Texture
+				category = Next Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			previousTextureEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Previous Texture
+				guiName = Previous Texture
+				category = Previous Texture
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			nextTextureEVAEvent
+			{
+				active = True
+				guiActive = False
+				guiIcon = Repaint
+				guiName = Repaint
+				category = Repaint
+				guiActiveUnfocused = True
+				unfocusedRange = 5
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 605.5
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 2219.945
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
 		isEnabled = True
 		EVENTS
 		{
