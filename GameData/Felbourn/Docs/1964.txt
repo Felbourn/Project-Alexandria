@@ -25,6 +25,8 @@ January 29, 1964: Columbia Pictures releases the black comedy,. Directed by Stan
 It is the stated position of the United States Air Force that their safeguards would prevent the occurrence of such events as are depicted in this film. Furthermore, it should be noted that none of the characters portrayed in this film are meant to represent any real persons living or dead.
 The title character, Dr. Strangelove, is a former Nazi physicist, serving as science advisor to the president of the United States. He is prone to accidentally addressing the President as Mein Fuehrer during moments of stress. Despite the disclaimer, Strangelove is an amalgamation of RAND Corporation strategist Herman Kahn, atom scientists Edward Teller and John von Neumann, and Wernher von Braun.
 
+The cold war raged on through all of this, or more accurately because of this. A soviet newspaper verbally attacked Wernher von Braun calling him a nazi, and claiming he created inhuman working conditions for workers at an underground Nazi rocket base in Poland while working with adaolf hitler during ww2.
+
 August 6, 1964: The Washington Post reports on a story published in the Soviet newspaper Izvestia:
 Izvestia - attacked American rocket expert Wernher von Braun, for "creating inhuman conditions" among workers at an underground Nazi rocket base in Poland, [sic] which he reportedly headed during World War II. Von Braun, Izvestia said, did so "to carry out the promise given to Hitler of a miracle weapon."
 
@@ -121,12 +123,29 @@ First Launch: 1963.03.28.
 Last Launch: 1965.07.30. 
 Number: 7 . 
 
+We have dropped away stage 1 and burned out stage 2. The payload for this flight was ballast, so we're leaving it attached and thus the whole upper stage is the payload.
+The test was completed successfullyand this stage will eventually deorbit and burn up in 1966.
+
+Later in the year NASA will launch flights #6 and #7, which will be the first two flights to have the Command Service Module attached. I won't be showing those, but those flights are also most successful.
 
 April
 16:00:01	United StatesTitan II GLV	United StatesCape Canaveral LC-19	United StatesUS Air Force
 United StatesGemini 1	NASA	Low Earth	Test flight	12 April
 15:00	Successful
 Maiden flight of Titan II GLV, first orbital launch of a Titan rocket, and first flight of the Gemini programme.
+
+-------------------------------------------------------
+On apr 12 1964, before the other two saturn launches of the year, we're testing the first ever of the Gemini spacecraft. 
+This, like all Gemini that will come after it, is being launched on a Titan II missile.
+The Titan 1 was an ICBM, technically capable of orbital flight but once you load it with a 4 ton nuclear warhead it becomes suborbital, which was fine for missiles. We need to send 4 ton manned payloads into orbit though, so we're using a modified Titan II.
+
+Mission control this time is in Houston, not florida, which is the first time Houston is being used for flight mission control.
+We're launching from Cape Kennedy launch complex 19, and all future gemini missions will launch from here as well.
+
+What's really intgeresting is that Gemini craft were technically more advanced spacecraft than Apollo in many ways. The saturn launch vehivles and capsule plans have been in development for years now. Apollo was intended to be a series of tests after Mercury, and was not intended to go to the moon. Gemini was going to go to the moon after the Apollo tests were completed. However, delays in the Apollo program made is clear to NASA that we would not make it to the moon before the end of the decade if we didn't change plans. The time gap between Mercuryt and Apollo was going ot be years, and there was too much space training that still needed to be done. 
+So in 1962 the US started looking at configurations involving Apollo for moon landing, and Gemini moved to the front of the line for followup missions to the Mercury program.
+The gemini capsules were even called Mercury Mark II at first, and only later renamed to Gemini. There were all kinds of plans for how Gemini would be used to go to the moon, land, return, and how to deal with safe reentry and landing. There were even plans for how to make 12-man Gemini missions and space station development. All those plans were eventually scrapped, and Apollo became the moon missions project instead.
+-------------------------------------------------------
 
 8 May
 17:07:00	United StatesSaturn I	United StatesCape Canaveral LC-37B	United StatesNASA

@@ -522,7 +522,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 412790258.764057
+		UT = 412790422.383902
 		activeVessel = 23
 		mapViewFiltering = 8
 		VESSEL
@@ -6218,13 +6218,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 43.9882384441774
-				LAN = -84.7329261116862
-				MNA = -8.40714670366795
-				EPH = 412789658.744629
+				LPE = 42.0686465427586
+				LAN = -82.8119238754913
+				MNA = 0
+				EPH = 412790422.043902
 				REF = 13
 			}
 			PART
@@ -36713,15 +36713,15 @@ GAME
 			landedAt = LaunchPad
 			splashed = False
 			met = 0
-			lct = 412789658.744629
+			lct = 412790411.363912
 			root = 0
-			lat = 28.6087795212336
-			lon = -80.5997636038803
-			alt = 117.009579802863
-			hgt = 34.01443
-			nrm = 7.032332E-05,1,-2.940006E-09
-			rot = -0.5102006,-0.1122381,-0.0168865,0.8525332
-			CoM = 0.07564112,-7.509389,1.058668
+			lat = 28.6087798436377
+			lon = -80.5997633632418
+			alt = 117.083650155924
+			hgt = 34.01096
+			nrm = -0.0001481713,1,0.0001127518
+			rot = -0.5102395,-0.1122409,-0.0169761,0.8525078
+			CoM = 0.02101097,-19.98231,0.2374519
 			stg = 8
 			prst = False
 			ref = 359956708
@@ -36731,13 +36731,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 3185554.75009555
+				SMA = 3185548.55069245
 				ECC = 1
 				INC = NaN
-				LPE = 145.804463584044
-				LAN = -84.7329261116862
+				LPE = 145.804468996357
+				LAN = -82.8119238754913
 				MNA = 3.14159265358979
-				EPH = 412789658.744629
+				EPH = 412790422.043902
 				REF = 1
 			}
 			PART
@@ -36762,14 +36762,14 @@ GAME
 				attN = top, 1
 				attN = bottom, 6
 				mass = 1.52
-				temp = 287.389430071082
-				tempExt = 287.226986885382
+				temp = 287.450908651631
+				tempExt = 287.865224203121
 				expt = 0.5
 				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/NASA
-				rTrf = His.FASAGeminiPod2
+				rTrf = His.FASAGeminiPod2 (Gemini)
 				modCost = 0
 				crew = Jebediah Kerman
 				crew = Bill Kerman
@@ -37262,14 +37262,14 @@ GAME
 						}
 						MechJebModuleFlightRecorder
 						{
-							markUT = 412789658.744629
+							markUT = 412790411.403912
 							deltaVExpended = 0
 							dragLosses = 0
 							gravityLosses = 0
 							steeringLosses = 0
-							markLatitude = 28.6087893972318
-							markLongitude = -80.5997636574311
-							markAltitude = 109.500192875974
+							markLatitude = 28.6087820067643
+							markLongitude = -80.599763416647
+							markAltitude = 97.1013622077182
 							markBodyIndex = 1
 							maxDragGees = 0
 							unlockParts = 
@@ -37365,8 +37365,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 0
 				mass = 0.133
-				temp = 287.382993125555
-				tempExt = 287.380371353101
+				temp = 287.59404736891
+				tempExt = 287.645558086376
 				expt = 0.5
 				state = 0
 				connected = True
@@ -37856,8 +37856,8 @@ GAME
 				attN = bottom, 1
 				attN = top, 3
 				mass = 0.058
-				temp = 287.379885426758
-				tempExt = 287.37194476974
+				temp = 287.584016578279
+				tempExt = 287.639584339576
 				expt = 0.5
 				state = 0
 				connected = True
@@ -38075,8 +38075,8 @@ GAME
 				attN = bottom, 2
 				attN = top, 4
 				mass = 0.04
-				temp = 287.379760499565
-				tempExt = 287.375398309129
+				temp = 287.439602455438
+				tempExt = 287.884133803492
 				expt = 0.5
 				state = 0
 				connected = True
@@ -38297,8 +38297,8 @@ GAME
 				attN = connect2, 3
 				attN = connect3, -1
 				mass = 0.05
-				temp = 287.379746826919
-				tempExt = 287.371646376328
+				temp = 287.634929295523
+				tempExt = 288.231315356984
 				expt = 0.5
 				state = 0
 				connected = True
@@ -38443,6 +38443,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
@@ -38460,12 +38471,12 @@ GAME
 				dstg = 10
 				sqor = 3
 				sepI = 3
-				sidx = 6
+				sidx = 0
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 1
-				temp = 287.394504301676
-				tempExt = 287.366566467073
+				temp = 287.599588149383
+				tempExt = 287.650749367053
 				expt = 0.1
 				state = 0
 				connected = True
@@ -38486,7 +38497,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 17.34474
+					scaleFactor = 17.34475
 					height = 34.68949
 					towerRot = -2.068519E-08,-0.9914448,1.571201E-07,-0.1305266
 					EVENTS
@@ -38516,7 +38527,7 @@ GAME
 					name = ModuleGenerator
 					isEnabled = True
 					generatorIsActive = True
-					throttle = 0
+					throttle = 0.5
 					EVENTS
 					{
 						Activate
@@ -38591,6 +38602,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRLaunchClampReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
@@ -38614,8 +38636,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 7
 				mass = 0.49
-				temp = 287.39365426775
-				tempExt = 287.385722817154
+				temp = 287.447737412267
+				tempExt = 287.496132100999
 				expt = 0.5
 				state = 0
 				connected = True
@@ -38909,6 +38931,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 				RESOURCE
 				{
 					name = PSPC
@@ -38943,8 +38976,8 @@ GAME
 				attN = bottom, 16
 				attN = bottom1, -1
 				mass = 0.9
-				temp = 287.403092243189
-				tempExt = 287.395018104611
+				temp = 287.442581993589
+				tempExt = 287.472313134875
 				expt = 0.5
 				state = 0
 				connected = True
@@ -39226,6 +39259,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 				RESOURCE
 				{
 					name = LqdHydrogen
@@ -39298,8 +39342,8 @@ GAME
 				sym = 9
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.399362482881
-				tempExt = 287.398855022675
+				temp = 287.442604681601
+				tempExt = 287.449503515897
 				expt = 0.5
 				state = 0
 				connected = True
@@ -39439,8 +39483,8 @@ GAME
 				sym = 8
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.399362481182
-				tempExt = 287.398854827367
+				temp = 287.442637864478
+				tempExt = 287.451078298375
 				expt = 0.5
 				state = 0
 				connected = True
@@ -39580,8 +39624,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.405643744346
-				tempExt = 287.398902455195
+				temp = 287.442653107195
+				tempExt = 287.454461044994
 				expt = 0.5
 				state = 0
 				connected = True
@@ -39721,8 +39765,8 @@ GAME
 				sym = 10
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.405644643532
-				tempExt = 287.398958822398
+				temp = 287.442623232411
+				tempExt = 287.450211759331
 				expt = 0.5
 				state = 0
 				connected = True
@@ -39864,8 +39908,8 @@ GAME
 				sym = 15
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.405758997083
-				tempExt = 287.40215411232
+				temp = 287.434029435576
+				tempExt = 287.685869404392
 				expt = 0.5
 				state = 0
 				connected = True
@@ -40007,8 +40051,8 @@ GAME
 				sym = 15
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.405758997377
-				tempExt = 287.402154577765
+				temp = 287.410679133201
+				tempExt = 287.442596605337
 				expt = 0.5
 				state = 0
 				connected = True
@@ -40150,8 +40194,8 @@ GAME
 				sym = 15
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.405758997669
-				tempExt = 287.402155040852
+				temp = 287.421959098279
+				tempExt = 287.551112170096
 				expt = 0.5
 				state = 0
 				connected = True
@@ -40293,8 +40337,8 @@ GAME
 				sym = 14
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.40575899796
-				tempExt = 287.402155501595
+				temp = 287.410991059846
+				tempExt = 287.445777998402
 				expt = 0.5
 				state = 0
 				connected = True
@@ -40435,8 +40479,8 @@ GAME
 				attN = top, 7
 				attN = bottom, 17
 				mass = 2.295
-				temp = 287.425266324677
-				tempExt = 287.404115486209
+				temp = 287.437882867468
+				tempExt = 287.494783411107
 				expt = 0.5
 				state = 0
 				connected = True
@@ -40850,6 +40894,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 				RESOURCE
 				{
 					name = NTO
@@ -40893,8 +40948,8 @@ GAME
 				attN = top, 16
 				attN = bottom, 18
 				mass = 0.565
-				temp = 287.442737729155
-				tempExt = 287.425562680051
+				temp = 287.465016821862
+				tempExt = 287.507516760914
 				expt = 0.5
 				state = 0
 				connected = True
@@ -41033,7 +41088,7 @@ GAME
 							active = True
 							guiActive = False
 							guiIcon = Jettison
-							guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+							guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 							category = Jettison
 							guiActiveUnfocused = False
 							unfocusedRange = 2
@@ -41201,8 +41256,8 @@ GAME
 				attN = bottom, 19
 				attN = top, 17
 				mass = 0.25
-				temp = 287.479508915944
-				tempExt = 287.486342684771
+				temp = 287.543401913757
+				tempExt = 287.576412757666
 				expt = 0.5
 				state = 0
 				connected = True
@@ -41358,6 +41413,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
@@ -41381,8 +41447,8 @@ GAME
 				attN = top, 18
 				attN = bottom, 20
 				mass = 2.56
-				temp = 287.54872199501
-				tempExt = 287.477414659734
+				temp = 287.554839400773
+				tempExt = 287.617870814171
 				expt = 15
 				state = 0
 				connected = True
@@ -41737,8 +41803,8 @@ GAME
 				attN = top, 19
 				attN = bottom, -1
 				mass = 1.426
-				temp = 287.592497900002
-				tempExt = 287.395810220117
+				temp = 287.554831624931
+				tempExt = 287.560530166504
 				expt = 0.5
 				state = 0
 				connected = True
@@ -41949,7 +42015,7 @@ GAME
 							active = False
 							guiActive = False
 							guiIcon = Jettison
-							guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+							guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 							category = Jettison
 							guiActiveUnfocused = False
 							unfocusedRange = 2
@@ -42075,7 +42141,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0.112518516003513
+					amount = 0.0999999977648258
 					maxAmount = 0.159999996423721
 					flowState = True
 					isTweakable = False
@@ -42099,13 +42165,13 @@ GAME
 				dstg = 7
 				sqor = 3
 				sepI = 3
-				sidx = 0
+				sidx = 1
 				attm = 1
 				sym = 22
 				srfN = srfAttach, 19
-				mass = 0.1
-				temp = 287.570645426353
-				tempExt = 287.529749003106
+				mass = 1.208593
+				temp = 287.578760033653
+				tempExt = 287.648825405088
 				expt = 0.1
 				state = 0
 				connected = True
@@ -42126,7 +42192,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 4.537084
+					scaleFactor = 4.537105
 					height = 1.822971
 					towerRot = -3.583836E-09,-0.7071065,3.583833E-09,0.7071071
 					EVENTS
@@ -42184,6 +42250,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRLaunchClampReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
@@ -42201,13 +42278,13 @@ GAME
 				dstg = 7
 				sqor = 3
 				sepI = 3
-				sidx = 1
+				sidx = 2
 				attm = 1
 				sym = 21
 				srfN = srfAttach, 19
-				mass = 0.1
-				temp = 287.572688270769
-				tempExt = 287.539408623808
+				mass = 1.208593
+				temp = 287.578778851221
+				tempExt = 287.648898311428
 				expt = 0.1
 				state = 0
 				connected = True
@@ -42228,7 +42305,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 4.537083
+					scaleFactor = 4.537085
 					height = 1.822971
 					towerRot = 3.583833E-09,-0.7071071,3.583835E-09,-0.7071065
 					EVENTS
@@ -42286,6 +42363,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRLaunchClampReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
@@ -42303,12 +42391,12 @@ GAME
 				dstg = 17
 				sqor = 3
 				sepI = 3
-				sidx = 2
+				sidx = 3
 				attm = 1
 				srfN = srfAttach, 19
-				mass = 1
-				temp = 287.545019431391
-				tempExt = 287.519357705784
+				mass = 1.208593
+				temp = 287.554844849392
+				tempExt = 287.551960188275
 				expt = 0.1
 				state = 0
 				connected = True
@@ -42329,7 +42417,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 6.074523
+					scaleFactor = 6.074529
 					height = 12.14905
 					towerRot = 0,-1,1.362679E-07,0
 					EVENTS
@@ -42359,7 +42447,7 @@ GAME
 					name = ModuleGenerator
 					isEnabled = True
 					generatorIsActive = True
-					throttle = 0
+					throttle = 0.5
 					EVENTS
 					{
 						Activate
@@ -42434,6 +42522,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRLaunchClampReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
@@ -42451,12 +42550,12 @@ GAME
 				dstg = 17
 				sqor = 3
 				sepI = 3
-				sidx = 3
+				sidx = 4
 				attm = 1
 				srfN = srfAttach, 19
-				mass = 1
-				temp = 287.520362871401
-				tempExt = 287.494105094934
+				mass = 1.208593
+				temp = 287.569372984156
+				tempExt = 287.604563880438
 				expt = 0.1
 				state = 0
 				connected = True
@@ -42477,7 +42576,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 7.978403
+					scaleFactor = 7.978405
 					height = 15.95681
 					towerRot = -4.873662E-08,-0.9961947,2.763991E-07,-0.08715574
 					EVENTS
@@ -42507,7 +42606,7 @@ GAME
 					name = ModuleGenerator
 					isEnabled = True
 					generatorIsActive = True
-					throttle = 0
+					throttle = 0.5
 					EVENTS
 					{
 						Activate
@@ -42582,6 +42681,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRLaunchClampReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
@@ -42599,12 +42709,12 @@ GAME
 				dstg = 15
 				sqor = 3
 				sepI = 3
-				sidx = 4
+				sidx = 5
 				attm = 1
 				srfN = srfAttach, 16
 				mass = 1
-				temp = 287.449029922059
-				tempExt = 287.415048177041
+				temp = 287.437874157405
+				tempExt = 287.443321449456
 				expt = 0.1
 				state = 0
 				connected = True
@@ -42625,7 +42735,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 13.21385
+					scaleFactor = 13.21386
 					height = 26.42771
 					towerRot = -5.532489E-08,-0.9961947,3.13763E-07,0.08715575
 					EVENTS
@@ -42655,7 +42765,7 @@ GAME
 					name = ModuleGenerator
 					isEnabled = True
 					generatorIsActive = True
-					throttle = 0
+					throttle = 0.5
 					EVENTS
 					{
 						Activate
@@ -42730,6 +42840,17 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = KJRLaunchClampReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
@@ -42747,12 +42868,12 @@ GAME
 				dstg = 15
 				sqor = 3
 				sepI = 3
-				sidx = 5
+				sidx = 6
 				attm = 1
 				srfN = srfAttach, 16
 				mass = 1
-				temp = 287.427694332406
-				tempExt = 287.402766009539
+				temp = 287.45939685788
+				tempExt = 287.507728318822
 				expt = 0.1
 				state = 0
 				connected = True
@@ -42773,7 +42894,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 14.99136
+					scaleFactor = 14.99137
 					height = 29.98274
 					towerRot = 2.516298E-08,-0.9848078,2.876141E-07,-0.1736482
 					EVENTS
@@ -42803,7 +42924,7 @@ GAME
 					name = ModuleGenerator
 					isEnabled = True
 					generatorIsActive = True
-					throttle = 0
+					throttle = 0.5
 					EVENTS
 					{
 						Activate
@@ -42870,6 +42991,17 @@ GAME
 				MODULE
 				{
 					name = LCFix
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KJRLaunchClampReinforcementModule
 					isEnabled = True
 					EVENTS
 					{
@@ -42899,8 +43031,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 7
 				mass = 1
-				temp = 287.411143735435
-				tempExt = 287.386632554157
+				temp = 287.44258950311
+				tempExt = 287.447830174475
 				expt = 0.1
 				state = 0
 				connected = True
@@ -42921,7 +43053,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 16.18104
+					scaleFactor = 16.18103
 					height = 32.36206
 					towerRot = -0.02336224,-0.9959178,0.08718903,2.766815E-08
 					EVENTS
@@ -42951,7 +43083,7 @@ GAME
 					name = ModuleGenerator
 					isEnabled = True
 					generatorIsActive = True
-					throttle = 0
+					throttle = 0.5
 					EVENTS
 					{
 						Activate
@@ -43018,6 +43150,17 @@ GAME
 				MODULE
 				{
 					name = LCFix
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KJRLaunchClampReinforcementModule
 					isEnabled = True
 					EVENTS
 					{
@@ -43058,6 +43201,11 @@ GAME
 			FLIGHTPLAN
 			{
 			}
+			TARGET
+			{
+				type = Vessel
+				vesselID = 4e41c975-cfec-4060-b4a9-8283de01e397
+			}
 			CTRLSTATE
 			{
 				pitch = 0
@@ -43066,7 +43214,7 @@ GAME
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
-				mainThrottle = 0
+				mainThrottle = 0.5
 			}
 		}
 		VESSEL
@@ -43079,31 +43227,31 @@ GAME
 			landedAt = LC-19
 			splashed = False
 			met = 0
-			lct = 412790258.764057
+			lct = 412790422.383902
 			root = 0
-			lat = 28.6413235812061
-			lon = -80.5870119126574
-			alt = 123.690185954794
-			hgt = 34.01085
-			nrm = -9.42075E-05,0.9999999,-4.461968E-05
-			rot = -0.3942169,0.4299635,-0.323979,0.7448236
-			CoM = 0.01772174,-19.98226,0.2407127
+			lat = 28.6413242154128
+			lon = -80.587011474209
+			alt = 123.646085089073
+			hgt = 34.00281
+			nrm = -1.650244E-05,1,0.0002816675
+			rot = -0.3944056,0.4298387,-0.3237778,0.7448832
+			CoM = 0.07563934,-7.517187,1.05867
 			stg = 8
 			prst = False
 			ref = 3092621894
 			ctrl = True
-			cPch = -0.08399974
-			cHdg = 0.5240003
+			cPch = 0.2
+			cHdg = 0.3
 			cMod = 0
 			ORBIT
 			{
-				SMA = 3189790.18031962
-				ECC = 0.997342567297014
-				INC = 28.6413239064193
-				LPE = 269.997320732183
-				LAN = 206.10558603956
+				SMA = 3189796.28174097
+				ECC = 0.997342640863974
+				INC = 28.6413269395969
+				LPE = 270
+				LAN = 206.786161266529
 				MNA = 3.14159265358979
-				EPH = 412790258.764057
+				EPH = 412790422.383902
 				REF = 1
 			}
 			PART
@@ -43128,14 +43276,14 @@ GAME
 				attN = top, 1
 				attN = bottom, 6
 				mass = 1.52
-				temp = 287.658945649706
-				tempExt = 287.968849734249
+				temp = 287.836324342114
+				tempExt = 290.192934877416
 				expt = 0.5
 				state = 0
 				connected = True
 				attached = True
 				flag = Squad/Flags/NASA
-				rTrf = His.FASAGeminiPod2
+				rTrf = His.FASAGeminiPod2 (Gemini)
 				modCost = 0
 				EVENTS
 				{
@@ -43626,14 +43774,14 @@ GAME
 						}
 						MechJebModuleFlightRecorder
 						{
-							markUT = 412790258.764057
+							markUT = 412790422.383902
 							deltaVExpended = 0
 							dragLosses = 0
 							gravityLosses = 0
 							steeringLosses = 0
-							markLatitude = 28.6413242040374
-							markLongitude = -80.5870095549812
-							markAltitude = 103.707883331738
+							markLatitude = 28.6413272738981
+							markLongitude = -80.5870007995881
+							markAltitude = 116.129196068272
 							markBodyIndex = 1
 							maxDragGees = 0
 							unlockParts = 
@@ -43729,8 +43877,8 @@ GAME
 				attN = top, 2
 				attN = bottom, 0
 				mass = 0.133
-				temp = 288.525149569549
-				tempExt = 288.57022706748
+				temp = 289.425241416635
+				tempExt = 289.732719194372
 				expt = 0.5
 				state = 0
 				connected = True
@@ -44220,8 +44368,8 @@ GAME
 				attN = bottom, 1
 				attN = top, 3
 				mass = 0.058
-				temp = 288.515769540816
-				tempExt = 288.557199708012
+				temp = 289.36345226002
+				tempExt = 289.690915617451
 				expt = 0.5
 				state = 0
 				connected = True
@@ -44439,8 +44587,8 @@ GAME
 				attN = bottom, 2
 				attN = top, 4
 				mass = 0.04
-				temp = 288.302418498675
-				tempExt = 288.7733400828
+				temp = 288.534600177591
+				tempExt = 292.188736872612
 				expt = 0.5
 				state = 0
 				connected = True
@@ -44661,8 +44809,8 @@ GAME
 				attN = connect2, 3
 				attN = connect3, -1
 				mass = 0.05
-				temp = 288.73764497408
-				tempExt = 289.148001838953
+				temp = 289.483944119935
+				tempExt = 292.609990511284
 				expt = 0.5
 				state = 0
 				connected = True
@@ -44807,17 +44955,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRDecouplerReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -44839,8 +44976,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 1
-				temp = 288.535600017889
-				tempExt = 288.579761494027
+				temp = 289.469165897123
+				tempExt = 289.728416348063
 				expt = 0.1
 				state = 0
 				connected = True
@@ -44861,7 +44998,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 17.34474
+					scaleFactor = 17.34475
 					height = 34.68949
 					towerRot = -2.068519E-08,-0.9914448,1.571201E-07,-0.1305266
 					EVENTS
@@ -44966,17 +45103,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRLaunchClampReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -45000,8 +45126,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 7
 				mass = 0.49
-				temp = 287.528768356562
-				tempExt = 287.56829284065
+				temp = 287.837999449799
+				tempExt = 288.140612847748
 				expt = 0.5
 				state = 0
 				connected = True
@@ -45295,17 +45421,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRDecouplerReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 				RESOURCE
 				{
 					name = PSPC
@@ -45340,8 +45455,8 @@ GAME
 				attN = bottom, 17
 				attN = bottom1, -1
 				mass = 0.9
-				temp = 287.507127369003
-				tempExt = 287.544051619352
+				temp = 287.795497094163
+				tempExt = 288.171926889757
 				expt = 0.5
 				state = 0
 				connected = True
@@ -45623,17 +45738,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRDecouplerReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 				RESOURCE
 				{
 					name = LqdHydrogen
@@ -45706,8 +45810,8 @@ GAME
 				sym = 9
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.510929859294
-				tempExt = 287.531325636833
+				temp = 287.857875772194
+				tempExt = 288.212053840199
 				expt = 0.5
 				state = 0
 				connected = True
@@ -45847,8 +45951,8 @@ GAME
 				sym = 8
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.507198602035
-				tempExt = 287.524459842697
+				temp = 287.849039182433
+				tempExt = 288.198143989124
 				expt = 0.5
 				state = 0
 				connected = True
@@ -45988,8 +46092,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.507154465645
-				tempExt = 287.52389680744
+				temp = 287.849060661884
+				tempExt = 288.198244727778
 				expt = 0.5
 				state = 0
 				connected = True
@@ -46129,8 +46233,8 @@ GAME
 				sym = 10
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.507272754075
-				tempExt = 287.520445112509
+				temp = 287.849581854499
+				tempExt = 288.199623043579
 				expt = 0.5
 				state = 0
 				connected = True
@@ -46272,8 +46376,8 @@ GAME
 				sym = 15
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.444861956778
-				tempExt = 287.510124969469
+				temp = 287.632687466324
+				tempExt = 290.811530590247
 				expt = 0.5
 				state = 0
 				connected = True
@@ -46415,8 +46519,8 @@ GAME
 				sym = 15
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.507131123559
-				tempExt = 287.585004758978
+				temp = 287.70600708416
+				tempExt = 291.160283647038
 				expt = 0.5
 				state = 0
 				connected = True
@@ -46558,8 +46662,8 @@ GAME
 				sym = 15
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.508863753707
-				tempExt = 287.63366511034
+				temp = 287.713774622007
+				tempExt = 291.275004971623
 				expt = 0.5
 				state = 0
 				connected = True
@@ -46701,8 +46805,8 @@ GAME
 				sym = 14
 				srfN = srfAttach, 7
 				mass = 0.007
-				temp = 287.507418933578
-				tempExt = 287.589762783459
+				temp = 287.705187074076
+				tempExt = 291.138745394809
 				expt = 0.5
 				state = 0
 				connected = True
@@ -46841,8 +46945,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 7
 				mass = 1
-				temp = 287.518477333549
-				tempExt = 287.544495135854
+				temp = 287.961175882589
+				tempExt = 288.171806398986
 				expt = 0.1
 				state = 0
 				connected = True
@@ -46863,7 +46967,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 16.18104
+					scaleFactor = 16.18103
 					height = 32.36206
 					towerRot = -0.02336224,-0.9959178,0.08718903,2.766815E-08
 					EVENTS
@@ -46968,17 +47072,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRLaunchClampReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -47002,8 +47095,8 @@ GAME
 				attN = top, 7
 				attN = bottom, 18
 				mass = 2.295
-				temp = 287.484186070106
-				tempExt = 287.53609636007
+				temp = 287.570377060074
+				tempExt = 288.080273453173
 				expt = 0.5
 				state = 0
 				connected = True
@@ -47417,17 +47510,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRDecouplerReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 				RESOURCE
 				{
 					name = NTO
@@ -47471,8 +47553,8 @@ GAME
 				attN = top, 17
 				attN = bottom, 19
 				mass = 0.565
-				temp = 287.499026757559
-				tempExt = 287.528506098661
+				temp = 287.710664379602
+				tempExt = 288.034390472497
 				expt = 0.5
 				state = 0
 				connected = True
@@ -47611,7 +47693,7 @@ GAME
 							active = True
 							guiActive = False
 							guiIcon = Jettison
-							guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+							guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 							category = Jettison
 							guiActiveUnfocused = False
 							unfocusedRange = 2
@@ -47779,8 +47861,8 @@ GAME
 				attN = bottom, 20
 				attN = top, 18
 				mass = 0.25
-				temp = 287.533498809011
-				tempExt = 287.560281476016
+				temp = 287.742802307699
+				tempExt = 288.020267498015
 				expt = 0.5
 				state = 0
 				connected = True
@@ -47936,17 +48018,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRDecouplerReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -47970,8 +48041,8 @@ GAME
 				attN = top, 19
 				attN = bottom, 25
 				mass = 2.56
-				temp = 287.537435351459
-				tempExt = 287.58444492307
+				temp = 287.57873791005
+				tempExt = 288.147871358506
 				expt = 15
 				state = 0
 				connected = True
@@ -48325,8 +48396,8 @@ GAME
 				sym = 22
 				srfN = srfAttach, 20
 				mass = 1.208593
-				temp = 287.553833117037
-				tempExt = 287.599836880803
+				temp = 287.730286745303
+				tempExt = 288.036013425461
 				expt = 0.1
 				state = 0
 				connected = True
@@ -48347,7 +48418,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 4.53709
+					scaleFactor = 4.537082
 					height = 1.822971
 					towerRot = -3.583836E-09,-0.7071065,3.583833E-09,0.7071071
 					EVENTS
@@ -48405,17 +48476,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRLaunchClampReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -48438,8 +48498,8 @@ GAME
 				sym = 21
 				srfN = srfAttach, 20
 				mass = 1.208593
-				temp = 287.559552587704
-				tempExt = 287.621692797679
+				temp = 287.734903740877
+				tempExt = 288.050892229069
 				expt = 0.1
 				state = 0
 				connected = True
@@ -48460,7 +48520,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 4.537087
+					scaleFactor = 4.537079
 					height = 1.822971
 					towerRot = 3.583833E-09,-0.7071071,3.583835E-09,-0.7071065
 					EVENTS
@@ -48518,17 +48578,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRLaunchClampReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -48550,8 +48599,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 20
 				mass = 1.208593
-				temp = 287.547499784602
-				tempExt = 287.570394267351
+				temp = 287.777716175459
+				tempExt = 288.083827426276
 				expt = 0.1
 				state = 0
 				connected = True
@@ -48572,7 +48621,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 6.074527
+					scaleFactor = 6.074522
 					height = 12.14905
 					towerRot = 0,-1,1.362679E-07,0
 					EVENTS
@@ -48677,17 +48726,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRLaunchClampReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -48709,8 +48747,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 20
 				mass = 1.208593
-				temp = 287.548376597126
-				tempExt = 287.57350501165
+				temp = 287.778925440149
+				tempExt = 288.093408906121
 				expt = 0.1
 				state = 0
 				connected = True
@@ -48731,7 +48769,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 7.978409
+					scaleFactor = 7.97841
 					height = 15.95681
 					towerRot = -4.873662E-08,-0.9961947,2.763991E-07,-0.08715574
 					EVENTS
@@ -48836,17 +48874,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRLaunchClampReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -48870,8 +48897,8 @@ GAME
 				attN = top, 20
 				attN = bottom, -1
 				mass = 1.426
-				temp = 287.531036518101
-				tempExt = 287.505600040213
+				temp = 287.678185697452
+				tempExt = 288.076828297476
 				expt = 0.5
 				state = 0
 				connected = True
@@ -49082,7 +49109,7 @@ GAME
 							active = False
 							guiActive = False
 							guiIcon = Jettison
-							guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+							guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 							category = Jettison
 							guiActiveUnfocused = False
 							unfocusedRange = 2
@@ -49208,7 +49235,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 0
+					amount = 0.0399999991059303
 					maxAmount = 0.159999996423721
 					flowState = True
 					isTweakable = False
@@ -49236,8 +49263,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 17
 				mass = 1
-				temp = 287.49122052024
-				tempExt = 287.508938527085
+				temp = 287.768113713396
+				tempExt = 288.076273357645
 				expt = 0.1
 				state = 0
 				connected = True
@@ -49363,17 +49390,6 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRLaunchClampReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			PART
 			{
@@ -49395,8 +49411,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 17
 				mass = 1
-				temp = 287.506543968476
-				tempExt = 287.55678822446
+				temp = 287.776632049095
+				tempExt = 288.100701391221
 				expt = 0.1
 				state = 0
 				connected = True
@@ -49417,7 +49433,7 @@ GAME
 				{
 					name = LaunchClamp
 					isEnabled = True
-					scaleFactor = 14.99138
+					scaleFactor = 14.99137
 					height = 29.98274
 					towerRot = 2.516298E-08,-0.9848078,2.876141E-07,-0.1736482
 					EVENTS
@@ -49522,22 +49538,11 @@ GAME
 					{
 					}
 				}
-				MODULE
-				{
-					name = KJRLaunchClampReinforcementModule
-					isEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-				}
 			}
 			ACTIONGROUPS
 			{
 				Stage = False, 0
-				Gear = True, 0
+				Gear = True, 412790297.28402
 				Light = False, 0
 				RCS = False, 0
 				SAS = False, 0
