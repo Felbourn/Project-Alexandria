@@ -1,0 +1,1043 @@
+Shader "Hidden/Edge Detect Normals" {
+Properties {
+	_MainTex ("Base (RGB)", RECT) = "white" {}
+}
+
+SubShader {
+	Pass {
+		ZTest Always Cull Off ZWrite Off
+		Fog { Mode off }
+
+Program "vp" {
+// Vertex combos: 1
+//   opengl - ALU: 14 to 14
+//   d3d9 - ALU: 23 to 23
+//   d3d11 - ALU: 5 to 5, TEX: 0 to 0, FLOW: 1 to 1
+//   d3d11_9x - ALU: 5 to 5, TEX: 0 to 0, FLOW: 1 to 1
+SubProgram "opengl " {
+Keywords { }
+Bind "vertex" Vertex
+Bind "texcoord" TexCoord0
+Vector 9 [_MainTex_TexelSize]
+"!!ARBvp1.0
+# 14 ALU
+PARAM c[10] = { { 0 },
+		state.matrix.mvp,
+		state.matrix.texture[0],
+		program.local[9] };
+TEMP R0;
+TEMP R1;
+MOV R1.zw, c[0].x;
+MOV R1.xy, vertex.texcoord[0];
+DP4 R0.x, R1, c[5];
+DP4 R0.y, R1, c[6];
+MOV R0.w, -c[9].y;
+MOV R0.z, c[9].x;
+MOV result.texcoord[0].xy, R0;
+MOV result.texcoord[1].xy, R0;
+ADD result.texcoord[2].xy, R0, -c[9];
+ADD result.texcoord[3].xy, R0, R0.zwzw;
+DP4 result.position.w, vertex.position, c[4];
+DP4 result.position.z, vertex.position, c[3];
+DP4 result.position.y, vertex.position, c[2];
+DP4 result.position.x, vertex.position, c[1];
+END
+# 14 instructions, 2 R-regs
+"
+}
+
+SubProgram "d3d9 " {
+Keywords { }
+Bind "vertex" Vertex
+Bind "texcoord" TexCoord0
+Matrix 0 [glstate_matrix_mvp]
+Matrix 4 [glstate_matrix_texture0]
+Vector 8 [_MainTex_TexelSize]
+"vs_2_0
+; 23 ALU
+def c9, 0.00000000, 1.00000000, 0, 0
+dcl_position0 v0
+dcl_texcoord0 v1
+mov r0.x, c9
+slt r0.z, c8.y, r0.x
+max r1.x, -r0.z, r0.z
+slt r1.y, c9.x, r1.x
+mov r0.zw, c9.x
+mov r0.xy, v1
+dp4 r1.x, r0, c4
+dp4 r0.x, r0, c5
+add r1.z, -r1.y, c9.y
+mul r0.z, r0.x, r1
+add r0.y, -r0.x, c9
+mad r1.y, r1, r0, r0.z
+mov r0.w, -c8.y
+mov r0.z, c8.x
+mov oT1.xy, r1
+add oT2.xy, r1, -c8
+add oT3.xy, r1, r0.zwzw
+mov oT0.y, r0.x
+mov oT0.x, r1
+dp4 oPos.w, v0, c3
+dp4 oPos.z, v0, c2
+dp4 oPos.y, v0, c1
+dp4 oPos.x, v0, c0
+"
+}
+
+SubProgram "d3d11 " {
+Keywords { }
+Bind "vertex" Vertex
+Bind "texcoord" TexCoord0
+ConstBuffer "$Globals" 32 // 32 used size, 2 vars
+Vector 16 [_MainTex_TexelSize] 4
+ConstBuffer "UnityPerDraw" 336 // 64 used size, 6 vars
+Matrix 0 [glstate_matrix_mvp] 4
+ConstBuffer "UnityPerDrawTexMatrices" 768 // 576 used size, 5 vars
+Matrix 512 [glstate_matrix_texture0] 4
+BindCB "$Globals" 0
+BindCB "UnityPerDraw" 1
+BindCB "UnityPerDrawTexMatrices" 2
+// 12 instructions, 1 temp regs, 0 temp arrays:
+// ALU 5 float, 0 int, 0 uint
+// TEX 0 (0 load, 0 comp, 0 bias, 0 grad)
+// FLOW 1 static, 0 dynamic
+"vs_4_0
+eefieceddkmjfbbmmfioganepflfeddcolmbgdljabaaaaaadeadaaaaadaaaaaa
+cmaaaaaaiaaaaaaacaabaaaaejfdeheoemaaaaaaacaaaaaaaiaaaaaadiaaaaaa
+aaaaaaaaaaaaaaaaadaaaaaaaaaaaaaaapapaaaaebaaaaaaaaaaaaaaaaaaaaaa
+adaaaaaaabaaaaaaadadaaaafaepfdejfeejepeoaafeeffiedepepfceeaaklkl
+epfdeheojiaaaaaaafaaaaaaaiaaaaaaiaaaaaaaaaaaaaaaabaaaaaaadaaaaaa
+aaaaaaaaapaaaaaaimaaaaaaaaaaaaaaaaaaaaaaadaaaaaaabaaaaaaadamaaaa
+imaaaaaaabaaaaaaaaaaaaaaadaaaaaaacaaaaaaadamaaaaimaaaaaaacaaaaaa
+aaaaaaaaadaaaaaaadaaaaaaadamaaaaimaaaaaaadaaaaaaaaaaaaaaadaaaaaa
+aeaaaaaaadamaaaafdfgfpfagphdgjhegjgpgoaafeeffiedepepfceeaaklklkl
+fdeieefcamacaaaaeaaaabaaidaaaaaafjaaaaaeegiocaaaaaaaaaaaacaaaaaa
+fjaaaaaeegiocaaaabaaaaaaaeaaaaaafjaaaaaeegiocaaaacaaaaaaccaaaaaa
+fpaaaaadpcbabaaaaaaaaaaafpaaaaaddcbabaaaabaaaaaaghaaaaaepccabaaa
+aaaaaaaaabaaaaaagfaaaaaddccabaaaabaaaaaagfaaaaaddccabaaaacaaaaaa
+gfaaaaaddccabaaaadaaaaaagfaaaaaddccabaaaaeaaaaaagiaaaaacabaaaaaa
+diaaaaaipcaabaaaaaaaaaaafgbfbaaaaaaaaaaaegiocaaaabaaaaaaabaaaaaa
+dcaaaaakpcaabaaaaaaaaaaaegiocaaaabaaaaaaaaaaaaaaagbabaaaaaaaaaaa
+egaobaaaaaaaaaaadcaaaaakpcaabaaaaaaaaaaaegiocaaaabaaaaaaacaaaaaa
+kgbkbaaaaaaaaaaaegaobaaaaaaaaaaadcaaaaakpccabaaaaaaaaaaaegiocaaa
+abaaaaaaadaaaaaapgbpbaaaaaaaaaaaegaobaaaaaaaaaaadiaaaaaidcaabaaa
+aaaaaaaafgbfbaaaabaaaaaaegiacaaaacaaaaaacbaaaaaadcaaaaakdcaabaaa
+aaaaaaaaegiacaaaacaaaaaacaaaaaaaagbabaaaabaaaaaaegaabaaaaaaaaaaa
+dgaaaaafdccabaaaabaaaaaaegaabaaaaaaaaaaadgaaaaafdccabaaaacaaaaaa
+egaabaaaaaaaaaaaaaaaaaajdccabaaaadaaaaaaegaabaaaaaaaaaaaegiacaia
+ebaaaaaaaaaaaaaaabaaaaaaaaaaaaaibccabaaaaeaaaaaaakaabaaaaaaaaaaa
+akiacaaaaaaaaaaaabaaaaaaaaaaaaajcccabaaaaeaaaaaabkaabaaaaaaaaaaa
+bkiacaiaebaaaaaaaaaaaaaaabaaaaaadoaaaaab"
+}
+
+SubProgram "gles " {
+Keywords { }
+"!!GLES
+
+
+#ifdef VERTEX
+
+varying highp vec2 xlv_TEXCOORD0_3;
+varying highp vec2 xlv_TEXCOORD0_2;
+varying highp vec2 xlv_TEXCOORD0_1;
+varying highp vec2 xlv_TEXCOORD0;
+uniform highp vec4 _MainTex_TexelSize;
+uniform highp mat4 glstate_matrix_texture0;
+uniform highp mat4 glstate_matrix_mvp;
+attribute vec4 _glesMultiTexCoord0;
+attribute vec4 _glesVertex;
+void main ()
+{
+  vec2 tmpvar_1;
+  tmpvar_1 = _glesMultiTexCoord0.xy;
+  highp vec2 tmpvar_2;
+  highp vec4 tmpvar_3;
+  tmpvar_3.zw = vec2(0.0, 0.0);
+  tmpvar_3.x = tmpvar_1.x;
+  tmpvar_3.y = tmpvar_1.y;
+  highp vec4 tmpvar_4;
+  tmpvar_4 = (glstate_matrix_texture0 * tmpvar_3);
+  tmpvar_2 = tmpvar_4.xy;
+  highp vec2 tmpvar_5;
+  tmpvar_5.x = -(_MainTex_TexelSize.x);
+  tmpvar_5.y = -(_MainTex_TexelSize.y);
+  highp vec2 tmpvar_6;
+  tmpvar_6.x = _MainTex_TexelSize.x;
+  tmpvar_6.y = -(_MainTex_TexelSize.y);
+  gl_Position = (glstate_matrix_mvp * _glesVertex);
+  xlv_TEXCOORD0 = tmpvar_2;
+  xlv_TEXCOORD0_1 = tmpvar_2;
+  xlv_TEXCOORD0_2 = (tmpvar_4.xy + tmpvar_5);
+  xlv_TEXCOORD0_3 = (tmpvar_4.xy + tmpvar_6);
+}
+
+
+
+#endif
+#ifdef FRAGMENT
+
+varying highp vec2 xlv_TEXCOORD0_3;
+varying highp vec2 xlv_TEXCOORD0_2;
+varying highp vec2 xlv_TEXCOORD0_1;
+uniform sampler2D _CameraDepthNormalsTexture;
+void main ()
+{
+  mediump vec4 sample2_1;
+  mediump vec4 sample1_2;
+  mediump vec4 center_3;
+  lowp vec4 tmpvar_4;
+  tmpvar_4 = texture2D (_CameraDepthNormalsTexture, xlv_TEXCOORD0_1);
+  center_3 = tmpvar_4;
+  lowp vec4 tmpvar_5;
+  tmpvar_5 = texture2D (_CameraDepthNormalsTexture, xlv_TEXCOORD0_2);
+  sample1_2 = tmpvar_5;
+  lowp vec4 tmpvar_6;
+  tmpvar_6 = texture2D (_CameraDepthNormalsTexture, xlv_TEXCOORD0_3);
+  sample2_1 = tmpvar_6;
+  highp vec2 enc_7;
+  enc_7 = center_3.zw;
+  highp float tmpvar_8;
+  tmpvar_8 = dot (enc_7, vec2(1.0, 0.00392157));
+  mediump float isSameDepth_9;
+  mediump vec2 tmpvar_10;
+  tmpvar_10 = pow (abs((center_3.xy - sample1_2.xy)), vec2(1.0, 1.0));
+  highp vec2 enc_11;
+  enc_11 = sample1_2.zw;
+  highp float tmpvar_12;
+  tmpvar_12 = clamp (((((0.2 * tmpvar_8) - abs((tmpvar_8 - dot (enc_11, vec2(1.0, 0.00392157))))) * 5.0) / tmpvar_8), 0.0, 1.0);
+  isSameDepth_9 = tmpvar_12;
+  mediump float isSameDepth_13;
+  mediump vec2 tmpvar_14;
+  tmpvar_14 = pow (abs((center_3.xy - sample2_1.xy)), vec2(1.0, 1.0));
+  highp vec2 enc_15;
+  enc_15 = sample2_1.zw;
+  highp float tmpvar_16;
+  tmpvar_16 = clamp (((((0.2 * tmpvar_8) - abs((tmpvar_8 - dot (enc_15, vec2(1.0, 0.00392157))))) * 5.0) / tmpvar_8), 0.0, 1.0);
+  isSameDepth_13 = tmpvar_16;
+  gl_FragData[0] = (vec4((mix (0.0, 1.0, clamp ((1.0 - (5.0 * (tmpvar_10.x + tmpvar_10.y))), 0.0, 1.0)) * isSameDepth_9)) * (mix (0.0, 1.0, clamp ((1.0 - (5.0 * (tmpvar_14.x + tmpvar_14.y))), 0.0, 1.0)) * isSameDepth_13));
+}
+
+
+
+#endif"
+}
+
+SubProgram "glesdesktop " {
+Keywords { }
+"!!GLES
+
+
+#ifdef VERTEX
+
+varying highp vec2 xlv_TEXCOORD0_3;
+varying highp vec2 xlv_TEXCOORD0_2;
+varying highp vec2 xlv_TEXCOORD0_1;
+varying highp vec2 xlv_TEXCOORD0;
+uniform highp vec4 _MainTex_TexelSize;
+uniform highp mat4 glstate_matrix_texture0;
+uniform highp mat4 glstate_matrix_mvp;
+attribute vec4 _glesMultiTexCoord0;
+attribute vec4 _glesVertex;
+void main ()
+{
+  vec2 tmpvar_1;
+  tmpvar_1 = _glesMultiTexCoord0.xy;
+  highp vec2 tmpvar_2;
+  highp vec4 tmpvar_3;
+  tmpvar_3.zw = vec2(0.0, 0.0);
+  tmpvar_3.x = tmpvar_1.x;
+  tmpvar_3.y = tmpvar_1.y;
+  highp vec4 tmpvar_4;
+  tmpvar_4 = (glstate_matrix_texture0 * tmpvar_3);
+  tmpvar_2 = tmpvar_4.xy;
+  highp vec2 tmpvar_5;
+  tmpvar_5.x = -(_MainTex_TexelSize.x);
+  tmpvar_5.y = -(_MainTex_TexelSize.y);
+  highp vec2 tmpvar_6;
+  tmpvar_6.x = _MainTex_TexelSize.x;
+  tmpvar_6.y = -(_MainTex_TexelSize.y);
+  gl_Position = (glstate_matrix_mvp * _glesVertex);
+  xlv_TEXCOORD0 = tmpvar_2;
+  xlv_TEXCOORD0_1 = tmpvar_2;
+  xlv_TEXCOORD0_2 = (tmpvar_4.xy + tmpvar_5);
+  xlv_TEXCOORD0_3 = (tmpvar_4.xy + tmpvar_6);
+}
+
+
+
+#endif
+#ifdef FRAGMENT
+
+varying highp vec2 xlv_TEXCOORD0_3;
+varying highp vec2 xlv_TEXCOORD0_2;
+varying highp vec2 xlv_TEXCOORD0_1;
+uniform sampler2D _CameraDepthNormalsTexture;
+void main ()
+{
+  mediump vec4 sample2_1;
+  mediump vec4 sample1_2;
+  mediump vec4 center_3;
+  lowp vec4 tmpvar_4;
+  tmpvar_4 = texture2D (_CameraDepthNormalsTexture, xlv_TEXCOORD0_1);
+  center_3 = tmpvar_4;
+  lowp vec4 tmpvar_5;
+  tmpvar_5 = texture2D (_CameraDepthNormalsTexture, xlv_TEXCOORD0_2);
+  sample1_2 = tmpvar_5;
+  lowp vec4 tmpvar_6;
+  tmpvar_6 = texture2D (_CameraDepthNormalsTexture, xlv_TEXCOORD0_3);
+  sample2_1 = tmpvar_6;
+  highp vec2 enc_7;
+  enc_7 = center_3.zw;
+  highp float tmpvar_8;
+  tmpvar_8 = dot (enc_7, vec2(1.0, 0.00392157));
+  mediump float isSameDepth_9;
+  mediump vec2 tmpvar_10;
+  tmpvar_10 = pow (abs((center_3.xy - sample1_2.xy)), vec2(1.0, 1.0));
+  highp vec2 enc_11;
+  enc_11 = sample1_2.zw;
+  highp float tmpvar_12;
+  tmpvar_12 = clamp (((((0.2 * tmpvar_8) - abs((tmpvar_8 - dot (enc_11, vec2(1.0, 0.00392157))))) * 5.0) / tmpvar_8), 0.0, 1.0);
+  isSameDepth_9 = tmpvar_12;
+  mediump float isSameDepth_13;
+  mediump vec2 tmpvar_14;
+  tmpvar_14 = pow (abs((center_3.xy - sample2_1.xy)), vec2(1.0, 1.0));
+  highp vec2 enc_15;
+  enc_15 = sample2_1.zw;
+  highp float tmpvar_16;
+  tmpvar_16 = clamp (((((0.2 * tmpvar_8) - abs((tmpvar_8 - dot (enc_15, vec2(1.0, 0.00392157))))) * 5.0) / tmpvar_8), 0.0, 1.0);
+  isSameDepth_13 = tmpvar_16;
+  gl_FragData[0] = (vec4((mix (0.0, 1.0, clamp ((1.0 - (5.0 * (tmpvar_10.x + tmpvar_10.y))), 0.0, 1.0)) * isSameDepth_9)) * (mix (0.0, 1.0, clamp ((1.0 - (5.0 * (tmpvar_14.x + tmpvar_14.y))), 0.0, 1.0)) * isSameDepth_13));
+}
+
+
+
+#endif"
+}
+
+SubProgram "flash " {
+Keywords { }
+Bind "vertex" Vertex
+Bind "texcoord" TexCoord0
+Matrix 0 [glstate_matrix_mvp]
+Matrix 4 [glstate_matrix_texture0]
+Vector 8 [_MainTex_TexelSize]
+"agal_vs
+c9 0.0 0.0 0.0 0.0
+[bc]
+aaaaaaaaabaaamacajaaaaaaabaaaaaaaaaaaaaaaaaaaaaa mov r1.zw, c9.x
+aaaaaaaaabaaadacadaaaaoeaaaaaaaaaaaaaaaaaaaaaaaa mov r1.xy, a3
+bdaaaaaaaaaaabacabaaaaoeacaaaaaaaeaaaaoeabaaaaaa dp4 r0.x, r1, c4
+bdaaaaaaaaaaacacabaaaaoeacaaaaaaafaaaaoeabaaaaaa dp4 r0.y, r1, c5
+aaaaaaaaabaaapacaiaaaaoeabaaaaaaaaaaaaaaaaaaaaaa mov r1, c8
+bfaaaaaaaaaaaiacabaaaaffacaaaaaaaaaaaaaaaaaaaaaa neg r0.w, r1.y
+aaaaaaaaaaaaaeacaiaaaaaaabaaaaaaaaaaaaaaaaaaaaaa mov r0.z, c8.x
+aaaaaaaaaaaaadaeaaaaaafeacaaaaaaaaaaaaaaaaaaaaaa mov v0.xy, r0.xyyy
+aaaaaaaaabaaadaeaaaaaafeacaaaaaaaaaaaaaaaaaaaaaa mov v1.xy, r0.xyyy
+acaaaaaaacaaadaeaaaaaafeacaaaaaaaiaaaaoeabaaaaaa sub v2.xy, r0.xyyy, c8
+abaaaaaaadaaadaeaaaaaafeacaaaaaaaaaaaapoacaaaaaa add v3.xy, r0.xyyy, r0.zwww
+bdaaaaaaaaaaaiadaaaaaaoeaaaaaaaaadaaaaoeabaaaaaa dp4 o0.w, a0, c3
+bdaaaaaaaaaaaeadaaaaaaoeaaaaaaaaacaaaaoeabaaaaaa dp4 o0.z, a0, c2
+bdaaaaaaaaaaacadaaaaaaoeaaaaaaaaabaaaaoeabaaaaaa dp4 o0.y, a0, c1
+bdaaaaaaaaaaabadaaaaaaoeaaaaaaaaaaaaaaoeabaaaaaa dp4 o0.x, a0, c0
+aaaaaaaaaaaaamaeaaaaaaoeabaaaaaaaaaaaaaaaaaaaaaa mov v0.zw, c0
+aaaaaaaaabaaamaeaaaaaaoeabaaaaaaaaaaaaaaaaaaaaaa mov v1.zw, c0
+aaaaaaaaacaaamaeaaaaaaoeabaaaaaaaaaaaaaaaaaaaaaa mov v2.zw, c0
+aaaaaaaaadaaamaeaaaaaaoeabaaaaaaaaaaaaaaaaaaaaaa mov v3.zw, c0
+"
+}
+
+SubProgram "d3d11_9x " {
+Keywords { }
+Bind "vertex" Vertex
+Bind "texcoord" TexCoord0
+ConstBuffer "$Globals" 32 // 32 used size, 2 vars
+Vector 16 [_MainTex_TexelSize] 4
+ConstBuffer "UnityPerDraw" 336 // 64 used size, 6 vars
+Matrix 0 [glstate_matrix_mvp] 4
+ConstBuffer "UnityPerDrawTexMatrices" 768 // 576 used size, 5 vars
+Matrix 512 [glstate_matrix_texture0] 4
+BindCB "$Globals" 0
+BindCB "UnityPerDraw" 1
+BindCB "UnityPerDrawTexMatrices" 2
+// 12 instructions, 1 temp regs, 0 temp arrays:
+// ALU 5 float, 0 int, 0 uint
+// TEX 0 (0 load, 0 comp, 0 bias, 0 grad)
+// FLOW 1 static, 0 dynamic
+"vs_4_0_level_9_1
+eefiecedkccgbcfajobacllmlcbeknlipfdmeconabaaaaaaieaeaaaaaeaaaaaa
+daaaaaaahmabaaaajaadaaaaoeadaaaaebgpgodjeeabaaaaeeabaaaaaaacpopp
+piaaaaaaemaaaaaaadaaceaaaaaaeiaaaaaaeiaaaaaaceaaabaaeiaaaaaaabaa
+abaaabaaaaaaaaaaabaaaaaaaeaaacaaaaaaaaaaacaacaaaacaaagaaaaaaaaaa
+aaaaaaaaaaacpoppbpaaaaacafaaaaiaaaaaapjabpaaaaacafaaabiaabaaapja
+afaaaaadaaaaadiaabaaffjaahaaoekaaeaaaaaeaaaaadiaagaaoekaabaaaaja
+aaaaoeiaacaaaaadacaaadoaaaaaoeiaabaaoekbacaaaaadadaaaboaaaaaaaia
+abaaaakaacaaaaadadaaacoaaaaaffiaabaaffkbafaaaaadabaaapiaaaaaffja
+adaaoekaaeaaaaaeabaaapiaacaaoekaaaaaaajaabaaoeiaaeaaaaaeabaaapia
+aeaaoekaaaaakkjaabaaoeiaaeaaaaaeabaaapiaafaaoekaaaaappjaabaaoeia
+aeaaaaaeaaaaadmaabaappiaaaaaoekaabaaoeiaabaaaaacaaaaammaabaaoeia
+abaaaaacaaaaadoaaaaaoeiaabaaaaacabaaadoaaaaaoeiappppaaaafdeieefc
+amacaaaaeaaaabaaidaaaaaafjaaaaaeegiocaaaaaaaaaaaacaaaaaafjaaaaae
+egiocaaaabaaaaaaaeaaaaaafjaaaaaeegiocaaaacaaaaaaccaaaaaafpaaaaad
+pcbabaaaaaaaaaaafpaaaaaddcbabaaaabaaaaaaghaaaaaepccabaaaaaaaaaaa
+abaaaaaagfaaaaaddccabaaaabaaaaaagfaaaaaddccabaaaacaaaaaagfaaaaad
+dccabaaaadaaaaaagfaaaaaddccabaaaaeaaaaaagiaaaaacabaaaaaadiaaaaai
+pcaabaaaaaaaaaaafgbfbaaaaaaaaaaaegiocaaaabaaaaaaabaaaaaadcaaaaak
+pcaabaaaaaaaaaaaegiocaaaabaaaaaaaaaaaaaaagbabaaaaaaaaaaaegaobaaa
+aaaaaaaadcaaaaakpcaabaaaaaaaaaaaegiocaaaabaaaaaaacaaaaaakgbkbaaa
+aaaaaaaaegaobaaaaaaaaaaadcaaaaakpccabaaaaaaaaaaaegiocaaaabaaaaaa
+adaaaaaapgbpbaaaaaaaaaaaegaobaaaaaaaaaaadiaaaaaidcaabaaaaaaaaaaa
+fgbfbaaaabaaaaaaegiacaaaacaaaaaacbaaaaaadcaaaaakdcaabaaaaaaaaaaa
+egiacaaaacaaaaaacaaaaaaaagbabaaaabaaaaaaegaabaaaaaaaaaaadgaaaaaf
+dccabaaaabaaaaaaegaabaaaaaaaaaaadgaaaaafdccabaaaacaaaaaaegaabaaa
+aaaaaaaaaaaaaaajdccabaaaadaaaaaaegaabaaaaaaaaaaaegiacaiaebaaaaaa
+aaaaaaaaabaaaaaaaaaaaaaibccabaaaaeaaaaaaakaabaaaaaaaaaaaakiacaaa
+aaaaaaaaabaaaaaaaaaaaaajcccabaaaaeaaaaaabkaabaaaaaaaaaaabkiacaia
+ebaaaaaaaaaaaaaaabaaaaaadoaaaaabejfdeheoemaaaaaaacaaaaaaaiaaaaaa
+diaaaaaaaaaaaaaaaaaaaaaaadaaaaaaaaaaaaaaapapaaaaebaaaaaaaaaaaaaa
+aaaaaaaaadaaaaaaabaaaaaaadadaaaafaepfdejfeejepeoaafeeffiedepepfc
+eeaaklklepfdeheojiaaaaaaafaaaaaaaiaaaaaaiaaaaaaaaaaaaaaaabaaaaaa
+adaaaaaaaaaaaaaaapaaaaaaimaaaaaaaaaaaaaaaaaaaaaaadaaaaaaabaaaaaa
+adamaaaaimaaaaaaabaaaaaaaaaaaaaaadaaaaaaacaaaaaaadamaaaaimaaaaaa
+acaaaaaaaaaaaaaaadaaaaaaadaaaaaaadamaaaaimaaaaaaadaaaaaaaaaaaaaa
+adaaaaaaaeaaaaaaadamaaaafdfgfpfagphdgjhegjgpgoaafeeffiedepepfcee
+aaklklkl"
+}
+
+SubProgram "gles3 " {
+Keywords { }
+"!!GLES3#version 300 es
+
+
+#ifdef VERTEX
+
+#define gl_Vertex _glesVertex
+in vec4 _glesVertex;
+#define gl_MultiTexCoord0 _glesMultiTexCoord0
+in vec4 _glesMultiTexCoord0;
+
+#line 150
+struct v2f_vertex_lit {
+    highp vec2 uv;
+    lowp vec4 diff;
+    lowp vec4 spec;
+};
+#line 186
+struct v2f_img {
+    highp vec4 pos;
+    mediump vec2 uv;
+};
+#line 180
+struct appdata_img {
+    highp vec4 vertex;
+    mediump vec2 texcoord;
+};
+#line 309
+struct v2f {
+    highp vec4 pos;
+    highp vec2 uv[4];
+};
+uniform highp vec4 _Time;
+uniform highp vec4 _SinTime;
+#line 3
+uniform highp vec4 _CosTime;
+uniform highp vec4 unity_DeltaTime;
+uniform highp vec3 _WorldSpaceCameraPos;
+uniform highp vec4 _ProjectionParams;
+#line 7
+uniform highp vec4 _ScreenParams;
+uniform highp vec4 _ZBufferParams;
+uniform highp vec4 unity_CameraWorldClipPlanes[6];
+uniform highp vec4 _WorldSpaceLightPos0;
+#line 11
+uniform highp vec4 _LightPositionRange;
+uniform highp vec4 unity_4LightPosX0;
+uniform highp vec4 unity_4LightPosY0;
+uniform highp vec4 unity_4LightPosZ0;
+#line 15
+uniform highp vec4 unity_4LightAtten0;
+uniform highp vec4 unity_LightColor[4];
+uniform highp vec4 unity_LightPosition[4];
+uniform highp vec4 unity_LightAtten[4];
+#line 19
+uniform highp vec4 unity_SHAr;
+uniform highp vec4 unity_SHAg;
+uniform highp vec4 unity_SHAb;
+uniform highp vec4 unity_SHBr;
+#line 23
+uniform highp vec4 unity_SHBg;
+uniform highp vec4 unity_SHBb;
+uniform highp vec4 unity_SHC;
+uniform highp vec3 unity_LightColor0;
+uniform highp vec3 unity_LightColor1;
+uniform highp vec3 unity_LightColor2;
+uniform highp vec3 unity_LightColor3;
+#line 27
+uniform highp vec4 unity_ShadowSplitSpheres[4];
+uniform highp vec4 unity_ShadowSplitSqRadii;
+uniform highp vec4 unity_LightShadowBias;
+uniform highp vec4 _LightSplitsNear;
+#line 31
+uniform highp vec4 _LightSplitsFar;
+uniform highp mat4 unity_World2Shadow[4];
+uniform highp vec4 _LightShadowData;
+uniform highp vec4 unity_ShadowFadeCenterAndType;
+#line 35
+uniform highp mat4 glstate_matrix_mvp;
+uniform highp mat4 glstate_matrix_modelview0;
+uniform highp mat4 glstate_matrix_invtrans_modelview0;
+uniform highp mat4 _Object2World;
+#line 39
+uniform highp mat4 _World2Object;
+uniform highp vec4 unity_Scale;
+uniform highp mat4 glstate_matrix_transpose_modelview0;
+uniform highp mat4 glstate_matrix_texture0;
+#line 43
+uniform highp mat4 glstate_matrix_texture1;
+uniform highp mat4 glstate_matrix_texture2;
+uniform highp mat4 glstate_matrix_texture3;
+uniform highp mat4 glstate_matrix_projection;
+#line 47
+uniform highp vec4 glstate_lightmodel_ambient;
+uniform highp mat4 unity_MatrixV;
+uniform highp mat4 unity_MatrixVP;
+uniform lowp vec4 unity_ColorSpaceGrey;
+#line 76
+#line 81
+#line 86
+#line 90
+#line 95
+#line 119
+#line 136
+#line 157
+#line 165
+#line 192
+#line 205
+#line 214
+#line 219
+#line 228
+#line 233
+#line 242
+#line 259
+#line 264
+#line 290
+#line 298
+#line 302
+#line 306
+uniform sampler2D _MainTex;
+uniform sampler2D _CameraDepthNormalsTexture;
+uniform highp vec4 _MainTex_TexelSize;
+#line 315
+#line 192
+highp vec2 MultiplyUV( in highp mat4 mat, in highp vec2 inUV ) {
+    highp vec4 temp = vec4( inUV.x, inUV.y, 0.0, 0.0);
+    temp = (mat * temp);
+    #line 196
+    return temp.xy;
+}
+#line 315
+v2f vert( in appdata_img v ) {
+    v2f o;
+    o.pos = (glstate_matrix_mvp * v.vertex);
+    #line 319
+    highp vec2 uv = MultiplyUV( glstate_matrix_texture0, v.texcoord);
+    o.uv[0] = uv;
+    o.uv[1] = uv;
+    o.uv[2] = (uv + (vec2( (-_MainTex_TexelSize.x), (-_MainTex_TexelSize.y)) * 1.0));
+    #line 323
+    o.uv[3] = (uv + (vec2( _MainTex_TexelSize.x, (-_MainTex_TexelSize.y)) * 1.0));
+    return o;
+}
+out highp vec2 xlv_TEXCOORD0;
+out highp vec2 xlv_TEXCOORD0_1;
+out highp vec2 xlv_TEXCOORD0_2;
+out highp vec2 xlv_TEXCOORD0_3;
+void main() {
+    v2f xl_retval;
+    appdata_img xlt_v;
+    xlt_v.vertex = vec4(gl_Vertex);
+    xlt_v.texcoord = vec2(gl_MultiTexCoord0);
+    xl_retval = vert( xlt_v);
+    gl_Position = vec4(xl_retval.pos);
+    xlv_TEXCOORD0 = vec2(xl_retval.uv[0]);
+    xlv_TEXCOORD0_1 = vec2(xl_retval.uv[1]);
+    xlv_TEXCOORD0_2 = vec2(xl_retval.uv[2]);
+    xlv_TEXCOORD0_3 = vec2(xl_retval.uv[3]);
+}
+
+
+#endif
+#ifdef FRAGMENT
+
+#define gl_FragData _glesFragData
+layout(location = 0) out mediump vec4 _glesFragData[4];
+
+#line 150
+struct v2f_vertex_lit {
+    highp vec2 uv;
+    lowp vec4 diff;
+    lowp vec4 spec;
+};
+#line 186
+struct v2f_img {
+    highp vec4 pos;
+    mediump vec2 uv;
+};
+#line 180
+struct appdata_img {
+    highp vec4 vertex;
+    mediump vec2 texcoord;
+};
+#line 309
+struct v2f {
+    highp vec4 pos;
+    highp vec2 uv[4];
+};
+uniform highp vec4 _Time;
+uniform highp vec4 _SinTime;
+#line 3
+uniform highp vec4 _CosTime;
+uniform highp vec4 unity_DeltaTime;
+uniform highp vec3 _WorldSpaceCameraPos;
+uniform highp vec4 _ProjectionParams;
+#line 7
+uniform highp vec4 _ScreenParams;
+uniform highp vec4 _ZBufferParams;
+uniform highp vec4 unity_CameraWorldClipPlanes[6];
+uniform highp vec4 _WorldSpaceLightPos0;
+#line 11
+uniform highp vec4 _LightPositionRange;
+uniform highp vec4 unity_4LightPosX0;
+uniform highp vec4 unity_4LightPosY0;
+uniform highp vec4 unity_4LightPosZ0;
+#line 15
+uniform highp vec4 unity_4LightAtten0;
+uniform highp vec4 unity_LightColor[4];
+uniform highp vec4 unity_LightPosition[4];
+uniform highp vec4 unity_LightAtten[4];
+#line 19
+uniform highp vec4 unity_SHAr;
+uniform highp vec4 unity_SHAg;
+uniform highp vec4 unity_SHAb;
+uniform highp vec4 unity_SHBr;
+#line 23
+uniform highp vec4 unity_SHBg;
+uniform highp vec4 unity_SHBb;
+uniform highp vec4 unity_SHC;
+uniform highp vec3 unity_LightColor0;
+uniform highp vec3 unity_LightColor1;
+uniform highp vec3 unity_LightColor2;
+uniform highp vec3 unity_LightColor3;
+#line 27
+uniform highp vec4 unity_ShadowSplitSpheres[4];
+uniform highp vec4 unity_ShadowSplitSqRadii;
+uniform highp vec4 unity_LightShadowBias;
+uniform highp vec4 _LightSplitsNear;
+#line 31
+uniform highp vec4 _LightSplitsFar;
+uniform highp mat4 unity_World2Shadow[4];
+uniform highp vec4 _LightShadowData;
+uniform highp vec4 unity_ShadowFadeCenterAndType;
+#line 35
+uniform highp mat4 glstate_matrix_mvp;
+uniform highp mat4 glstate_matrix_modelview0;
+uniform highp mat4 glstate_matrix_invtrans_modelview0;
+uniform highp mat4 _Object2World;
+#line 39
+uniform highp mat4 _World2Object;
+uniform highp vec4 unity_Scale;
+uniform highp mat4 glstate_matrix_transpose_modelview0;
+uniform highp mat4 glstate_matrix_texture0;
+#line 43
+uniform highp mat4 glstate_matrix_texture1;
+uniform highp mat4 glstate_matrix_texture2;
+uniform highp mat4 glstate_matrix_texture3;
+uniform highp mat4 glstate_matrix_projection;
+#line 47
+uniform highp vec4 glstate_lightmodel_ambient;
+uniform highp mat4 unity_MatrixV;
+uniform highp mat4 unity_MatrixVP;
+uniform lowp vec4 unity_ColorSpaceGrey;
+#line 76
+#line 81
+#line 86
+#line 90
+#line 95
+#line 119
+#line 136
+#line 157
+#line 165
+#line 192
+#line 205
+#line 214
+#line 219
+#line 228
+#line 233
+#line 242
+#line 259
+#line 264
+#line 290
+#line 298
+#line 302
+#line 306
+uniform sampler2D _MainTex;
+uniform sampler2D _CameraDepthNormalsTexture;
+uniform highp vec4 _MainTex_TexelSize;
+#line 315
+#line 228
+highp float DecodeFloatRG( in highp vec2 enc ) {
+    highp vec2 kDecodeDot = vec2( 1.0, 0.00392157);
+    return dot( enc, kDecodeDot);
+}
+#line 326
+mediump float CheckSame( in mediump vec2 centerNormal, in highp float centerDepth, in mediump vec4 xlat_var_sample ) {
+    #line 328
+    mediump vec2 diff = pow( abs((centerNormal - xlat_var_sample.xy)), vec2( 1.0));
+    mediump float isSameNormal = mix( 0.0, 1.0, clamp( (1.0 - (5.0 * (diff.x + diff.y))), 0.0, 1.0));
+    highp float sampleDepth = DecodeFloatRG( xlat_var_sample.zw);
+    highp float zdiff = abs((centerDepth - sampleDepth));
+    #line 332
+    mediump float isSameDepth = clamp( ((((0.2 * centerDepth) - zdiff) * 5.0) / centerDepth), 0.0, 1.0);
+    return (isSameNormal * isSameDepth);
+}
+#line 335
+mediump vec4 frag( in v2f i ) {
+    #line 337
+    mediump vec4 original = texture( _MainTex, i.uv[0]);
+    mediump vec4 center = texture( _CameraDepthNormalsTexture, i.uv[1]);
+    mediump vec4 sample1 = texture( _CameraDepthNormalsTexture, i.uv[2]);
+    mediump vec4 sample2 = texture( _CameraDepthNormalsTexture, i.uv[3]);
+    #line 341
+    mediump vec2 centerNormal = center.xy;
+    highp float centerDepth = DecodeFloatRG( center.zw);
+    original = vec4( 1.0, 1.0, 1.0, 1.0);
+    original *= CheckSame( centerNormal, centerDepth, sample1);
+    #line 345
+    original *= CheckSame( centerNormal, centerDepth, sample2);
+    return original;
+}
+in highp vec2 xlv_TEXCOORD0;
+in highp vec2 xlv_TEXCOORD0_1;
+in highp vec2 xlv_TEXCOORD0_2;
+in highp vec2 xlv_TEXCOORD0_3;
+void main() {
+    mediump vec4 xl_retval;
+    v2f xlt_i;
+    xlt_i.pos = vec4(0.0);
+    xlt_i.uv[0] = vec2(xlv_TEXCOORD0);
+    xlt_i.uv[1] = vec2(xlv_TEXCOORD0_1);
+    xlt_i.uv[2] = vec2(xlv_TEXCOORD0_2);
+    xlt_i.uv[3] = vec2(xlv_TEXCOORD0_3);
+    xl_retval = frag( xlt_i);
+    gl_FragData[0] = vec4(xl_retval);
+}
+
+
+#endif"
+}
+
+}
+Program "fp" {
+// Fragment combos: 1
+//   opengl - ALU: 31 to 31, TEX: 3 to 3
+//   d3d9 - ALU: 36 to 36, TEX: 3 to 3
+//   d3d11 - ALU: 18 to 18, TEX: 3 to 3, FLOW: 1 to 1
+//   d3d11_9x - ALU: 18 to 18, TEX: 3 to 3, FLOW: 1 to 1
+SubProgram "opengl " {
+Keywords { }
+SetTexture 0 [_CameraDepthNormalsTexture] 2D
+"!!ARBfp1.0
+OPTION ARB_precision_hint_fastest;
+# 31 ALU, 3 TEX
+PARAM c[1] = { { 1, 5, 0.2, 0.0039215689 } };
+TEMP R0;
+TEMP R1;
+TEMP R2;
+TEX R0, fragment.texcoord[1], texture[0], 2D;
+TEX R2, fragment.texcoord[3], texture[0], 2D;
+TEX R1, fragment.texcoord[2], texture[0], 2D;
+ADD R2.xy, R0, -R2;
+MUL R2.zw, R2, c[0].xyxw;
+ADD R0.xy, R0, -R1;
+ABS R0.xy, R0;
+ADD R0.x, R0, R0.y;
+ABS R2.xy, R2;
+MUL R0.zw, R0, c[0].xyxw;
+ADD R2.w, R2.z, R2;
+ADD R2.z, R0, R0.w;
+ADD R0.z, R2.x, R2.y;
+ADD R0.w, R2.z, -R2;
+ABS R0.w, R0;
+MAD_SAT R2.x, -R0.z, c[0].y, c[0];
+MAD R2.y, R2.z, c[0].z, -R0.w;
+MUL R0.zw, R1, c[0].xyxw;
+ADD R0.z, R0, R0.w;
+RCP R1.z, R2.z;
+ADD R0.w, R2.z, -R0.z;
+MUL R1.w, R1.z, R2.y;
+MUL_SAT R1.w, R1, c[0].y;
+ABS R0.w, R0;
+MAD R0.w, R2.z, c[0].z, -R0;
+MUL R0.w, R0, R1.z;
+MUL R0.z, R2.x, R1.w;
+MUL_SAT R0.y, R0.w, c[0];
+MAD_SAT R0.x, -R0, c[0].y, c[0];
+MUL R0.x, R0, R0.y;
+MUL result.color, R0.x, R0.z;
+END
+# 31 instructions, 3 R-regs
+"
+}
+
+SubProgram "d3d9 " {
+Keywords { }
+SetTexture 0 [_CameraDepthNormalsTexture] 2D
+"ps_2_0
+; 36 ALU, 3 TEX
+dcl_2d s0
+def c0, 1.00000000, 0.00392157, 0.20000000, 5.00000000
+dcl t1.xy
+dcl t2.xy
+dcl t3.xy
+texld r5, t1, s0
+texld r3, t3, s0
+texld r4, t2, s0
+mov r1.y, r5.w
+mov r1.x, r5.z
+mul r6.xy, r1, c0
+add_pp r3.xy, r5, -r3
+mov r0.y, r3.w
+mov r0.x, r3.z
+mul r0.xy, r0, c0
+add r2.x, r0, r0.y
+mov r0.y, r4.w
+mov r0.x, r4.z
+mul r0.xy, r0, c0
+add r1.x, r0, r0.y
+add r0.x, r6, r6.y
+add r1.x, r0, -r1
+add r2.x, r0, -r2
+abs_pp r6.xy, r3
+abs r2.x, r2
+mad r3.x, r0, c0.z, -r2
+rcp r2.x, r0.x
+abs r1.x, r1
+mad r0.x, r0, c0.z, -r1
+mul r3.x, r2, r3
+add_pp r6.x, r6, r6.y
+add_pp r4.xy, r5, -r4
+abs_pp r1.xy, r4
+mul r0.x, r0, r2
+add_pp r1.x, r1, r1.y
+mul_sat r3.x, r3, c0.w
+mad_pp_sat r6.x, -r6, c0.w, c0
+mul_pp r3.x, r6, r3
+mul_sat r0.x, r0, c0.w
+mad_pp_sat r1.x, -r1, c0.w, c0
+mul_pp r0.x, r1, r0
+mul_pp r0.x, r0, r3
+mov_pp r0, r0.x
+mov_pp oC0, r0
+"
+}
+
+SubProgram "d3d11 " {
+Keywords { }
+SetTexture 0 [_CameraDepthNormalsTexture] 2D 0
+// 26 instructions, 3 temp regs, 0 temp arrays:
+// ALU 18 float, 0 int, 0 uint
+// TEX 3 (0 load, 0 comp, 0 bias, 0 grad)
+// FLOW 1 static, 0 dynamic
+"ps_4_0
+eefiecedpoiegkcgmdbcghlfnpoihnodkkiikjaaabaaaaaalaaeaaaaadaaaaaa
+cmaaaaaammaaaaaaaaabaaaaejfdeheojiaaaaaaafaaaaaaaiaaaaaaiaaaaaaa
+aaaaaaaaabaaaaaaadaaaaaaaaaaaaaaapaaaaaaimaaaaaaaaaaaaaaaaaaaaaa
+adaaaaaaabaaaaaaadaaaaaaimaaaaaaabaaaaaaaaaaaaaaadaaaaaaacaaaaaa
+adadaaaaimaaaaaaacaaaaaaaaaaaaaaadaaaaaaadaaaaaaadadaaaaimaaaaaa
+adaaaaaaaaaaaaaaadaaaaaaaeaaaaaaadadaaaafdfgfpfagphdgjhegjgpgoaa
+feeffiedepepfceeaaklklklepfdeheocmaaaaaaabaaaaaaaiaaaaaacaaaaaaa
+aaaaaaaaaaaaaaaaadaaaaaaaaaaaaaaapaaaaaafdfgfpfegbhcghgfheaaklkl
+fdeieefckiadaaaaeaaaaaaaokaaaaaafkaaaaadaagabaaaaaaaaaaafibiaaae
+aahabaaaaaaaaaaaffffaaaagcbaaaaddcbabaaaacaaaaaagcbaaaaddcbabaaa
+adaaaaaagcbaaaaddcbabaaaaeaaaaaagfaaaaadpccabaaaaaaaaaaagiaaaaac
+adaaaaaaefaaaaajpcaabaaaaaaaaaaaegbabaaaadaaaaaaeghobaaaaaaaaaaa
+aagabaaaaaaaaaaaefaaaaajpcaabaaaabaaaaaaegbabaaaacaaaaaaeghobaaa
+aaaaaaaaaagabaaaaaaaaaaaaaaaaaaidcaabaaaaaaaaaaaegaabaiaebaaaaaa
+aaaaaaaaegaabaaaabaaaaaaapaaaaakecaabaaaaaaaaaaaogakbaaaaaaaaaaa
+aceaaaaaaaaaiadpibiaiadlaaaaaaaaaaaaaaaaaaaaaaajbcaabaaaaaaaaaaa
+bkaabaiaibaaaaaaaaaaaaaaakaabaiaibaaaaaaaaaaaaaadcaaaaakbcaabaaa
+aaaaaaaaakaabaiaebaaaaaaaaaaaaaaabeaaaaaaaaakaeaabeaaaaaaaaaiadp
+deaaaaahbcaabaaaaaaaaaaaakaabaaaaaaaaaaaabeaaaaaaaaaaaaaapaaaaak
+ccaabaaaaaaaaaaaogakbaaaabaaaaaaaceaaaaaaaaaiadpibiaiadlaaaaaaaa
+aaaaaaaaaaaaaaaiecaabaaaaaaaaaaackaabaiaebaaaaaaaaaaaaaabkaabaaa
+aaaaaaaadcaaaaakecaabaaaaaaaaaaabkaabaaaaaaaaaaaabeaaaaamnmmemdo
+ckaabaiambaaaaaaaaaaaaaadiaaaaahecaabaaaaaaaaaaackaabaaaaaaaaaaa
+abeaaaaaaaaakaeaaocaaaahecaabaaaaaaaaaaackaabaaaaaaaaaaabkaabaaa
+aaaaaaaadiaaaaahbcaabaaaaaaaaaaackaabaaaaaaaaaaaakaabaaaaaaaaaaa
+efaaaaajpcaabaaaacaaaaaaegbabaaaaeaaaaaaeghobaaaaaaaaaaaaagabaaa
+aaaaaaaaapaaaaakecaabaaaaaaaaaaaogakbaaaacaaaaaaaceaaaaaaaaaiadp
+ibiaiadlaaaaaaaaaaaaaaaaaaaaaaaidcaabaaaabaaaaaaegaabaaaabaaaaaa
+egaabaiaebaaaaaaacaaaaaaaaaaaaajicaabaaaaaaaaaaabkaabaiaibaaaaaa
+abaaaaaaakaabaiaibaaaaaaabaaaaaadcaaaaakicaabaaaaaaaaaaadkaabaia
+ebaaaaaaaaaaaaaaabeaaaaaaaaakaeaabeaaaaaaaaaiadpdeaaaaahicaabaaa
+aaaaaaaadkaabaaaaaaaaaaaabeaaaaaaaaaaaaaaaaaaaaiecaabaaaaaaaaaaa
+ckaabaiaebaaaaaaaaaaaaaabkaabaaaaaaaaaaadcaaaaakecaabaaaaaaaaaaa
+bkaabaaaaaaaaaaaabeaaaaamnmmemdockaabaiambaaaaaaaaaaaaaadiaaaaah
+ecaabaaaaaaaaaaackaabaaaaaaaaaaaabeaaaaaaaaakaeaaocaaaahccaabaaa
+aaaaaaaackaabaaaaaaaaaaabkaabaaaaaaaaaaadiaaaaahccaabaaaaaaaaaaa
+bkaabaaaaaaaaaaadkaabaaaaaaaaaaadiaaaaahpccabaaaaaaaaaaafgafbaaa
+aaaaaaaaagaabaaaaaaaaaaadoaaaaab"
+}
+
+SubProgram "gles " {
+Keywords { }
+"!!GLES"
+}
+
+SubProgram "glesdesktop " {
+Keywords { }
+"!!GLES"
+}
+
+SubProgram "flash " {
+Keywords { }
+SetTexture 0 [_CameraDepthNormalsTexture] 2D
+"agal_ps
+c0 1.0 0.003922 0.2 5.0
+[bc]
+ciaaaaaaafaaapacabaaaaoeaeaaaaaaaaaaaaaaafaababb tex r5, v1, s0 <2d wrap linear point>
+ciaaaaaaadaaapacadaaaaoeaeaaaaaaaaaaaaaaafaababb tex r3, v3, s0 <2d wrap linear point>
+ciaaaaaaaeaaapacacaaaaoeaeaaaaaaaaaaaaaaafaababb tex r4, v2, s0 <2d wrap linear point>
+aaaaaaaaabaaacacafaaaappacaaaaaaaaaaaaaaaaaaaaaa mov r1.y, r5.w
+aaaaaaaaabaaabacafaaaakkacaaaaaaaaaaaaaaaaaaaaaa mov r1.x, r5.z
+adaaaaaaagaaadacabaaaafeacaaaaaaaaaaaaoeabaaaaaa mul r6.xy, r1.xyyy, c0
+acaaaaaaadaaadacafaaaafeacaaaaaaadaaaafeacaaaaaa sub r3.xy, r5.xyyy, r3.xyyy
+aaaaaaaaaaaaacacadaaaappacaaaaaaaaaaaaaaaaaaaaaa mov r0.y, r3.w
+aaaaaaaaaaaaabacadaaaakkacaaaaaaaaaaaaaaaaaaaaaa mov r0.x, r3.z
+adaaaaaaaaaaadacaaaaaafeacaaaaaaaaaaaaoeabaaaaaa mul r0.xy, r0.xyyy, c0
+abaaaaaaacaaabacaaaaaaaaacaaaaaaaaaaaaffacaaaaaa add r2.x, r0.x, r0.y
+aaaaaaaaaaaaacacaeaaaappacaaaaaaaaaaaaaaaaaaaaaa mov r0.y, r4.w
+aaaaaaaaaaaaabacaeaaaakkacaaaaaaaaaaaaaaaaaaaaaa mov r0.x, r4.z
+adaaaaaaaaaaadacaaaaaafeacaaaaaaaaaaaaoeabaaaaaa mul r0.xy, r0.xyyy, c0
+abaaaaaaabaaabacaaaaaaaaacaaaaaaaaaaaaffacaaaaaa add r1.x, r0.x, r0.y
+abaaaaaaaaaaabacagaaaaaaacaaaaaaagaaaaffacaaaaaa add r0.x, r6.x, r6.y
+acaaaaaaabaaabacaaaaaaaaacaaaaaaabaaaaaaacaaaaaa sub r1.x, r0.x, r1.x
+acaaaaaaacaaabacaaaaaaaaacaaaaaaacaaaaaaacaaaaaa sub r2.x, r0.x, r2.x
+beaaaaaaagaaadacadaaaafeacaaaaaaaaaaaaaaaaaaaaaa abs r6.xy, r3.xyyy
+beaaaaaaacaaabacacaaaaaaacaaaaaaaaaaaaaaaaaaaaaa abs r2.x, r2.x
+adaaaaaaabaaaeacaaaaaaaaacaaaaaaaaaaaakkabaaaaaa mul r1.z, r0.x, c0.z
+acaaaaaaadaaabacabaaaakkacaaaaaaacaaaaaaacaaaaaa sub r3.x, r1.z, r2.x
+afaaaaaaacaaabacaaaaaaaaacaaaaaaaaaaaaaaaaaaaaaa rcp r2.x, r0.x
+beaaaaaaabaaabacabaaaaaaacaaaaaaaaaaaaaaaaaaaaaa abs r1.x, r1.x
+adaaaaaaacaaacacaaaaaaaaacaaaaaaaaaaaakkabaaaaaa mul r2.y, r0.x, c0.z
+acaaaaaaaaaaabacacaaaaffacaaaaaaabaaaaaaacaaaaaa sub r0.x, r2.y, r1.x
+adaaaaaaadaaabacacaaaaaaacaaaaaaadaaaaaaacaaaaaa mul r3.x, r2.x, r3.x
+abaaaaaaagaaabacagaaaaaaacaaaaaaagaaaaffacaaaaaa add r6.x, r6.x, r6.y
+acaaaaaaaeaaadacafaaaafeacaaaaaaaeaaaafeacaaaaaa sub r4.xy, r5.xyyy, r4.xyyy
+beaaaaaaabaaadacaeaaaafeacaaaaaaaaaaaaaaaaaaaaaa abs r1.xy, r4.xyyy
+adaaaaaaaaaaabacaaaaaaaaacaaaaaaacaaaaaaacaaaaaa mul r0.x, r0.x, r2.x
+abaaaaaaabaaabacabaaaaaaacaaaaaaabaaaaffacaaaaaa add r1.x, r1.x, r1.y
+adaaaaaaadaaabacadaaaaaaacaaaaaaaaaaaappabaaaaaa mul r3.x, r3.x, c0.w
+bgaaaaaaadaaabacadaaaaaaacaaaaaaaaaaaaaaaaaaaaaa sat r3.x, r3.x
+bfaaaaaaagaaabacagaaaaaaacaaaaaaaaaaaaaaaaaaaaaa neg r6.x, r6.x
+adaaaaaaagaaabacagaaaaaaacaaaaaaaaaaaappabaaaaaa mul r6.x, r6.x, c0.w
+abaaaaaaagaaabacagaaaaaaacaaaaaaaaaaaaoeabaaaaaa add r6.x, r6.x, c0
+bgaaaaaaagaaabacagaaaaaaacaaaaaaaaaaaaaaaaaaaaaa sat r6.x, r6.x
+adaaaaaaadaaabacagaaaaaaacaaaaaaadaaaaaaacaaaaaa mul r3.x, r6.x, r3.x
+adaaaaaaaaaaabacaaaaaaaaacaaaaaaaaaaaappabaaaaaa mul r0.x, r0.x, c0.w
+bgaaaaaaaaaaabacaaaaaaaaacaaaaaaaaaaaaaaaaaaaaaa sat r0.x, r0.x
+bfaaaaaaabaaabacabaaaaaaacaaaaaaaaaaaaaaaaaaaaaa neg r1.x, r1.x
+adaaaaaaabaaabacabaaaaaaacaaaaaaaaaaaappabaaaaaa mul r1.x, r1.x, c0.w
+abaaaaaaabaaabacabaaaaaaacaaaaaaaaaaaaoeabaaaaaa add r1.x, r1.x, c0
+bgaaaaaaabaaabacabaaaaaaacaaaaaaaaaaaaaaaaaaaaaa sat r1.x, r1.x
+adaaaaaaaaaaabacabaaaaaaacaaaaaaaaaaaaaaacaaaaaa mul r0.x, r1.x, r0.x
+adaaaaaaaaaaabacaaaaaaaaacaaaaaaadaaaaaaacaaaaaa mul r0.x, r0.x, r3.x
+aaaaaaaaaaaaapacaaaaaaaaacaaaaaaaaaaaaaaaaaaaaaa mov r0, r0.x
+aaaaaaaaaaaaapadaaaaaaoeacaaaaaaaaaaaaaaaaaaaaaa mov o0, r0
+"
+}
+
+SubProgram "d3d11_9x " {
+Keywords { }
+SetTexture 0 [_CameraDepthNormalsTexture] 2D 0
+// 26 instructions, 3 temp regs, 0 temp arrays:
+// ALU 18 float, 0 int, 0 uint
+// TEX 3 (0 load, 0 comp, 0 bias, 0 grad)
+// FLOW 1 static, 0 dynamic
+"ps_4_0_level_9_1
+eefiecedldhiildaonlalbljgnklbgdgancigfafabaaaaaahaahaaaaaeaaaaaa
+daaaaaaaomacaaaajmagaaaadmahaaaaebgpgodjleacaaaaleacaaaaaaacpppp
+imacaaaaciaaaaaaaaaaciaaaaaaciaaaaaaciaaabaaceaaaaaaciaaaaaaaaaa
+aaacppppfbaaaaafaaaaapkaaaaaiadpibiaiadlaaaakaeaaaaaaaaafbaaaaaf
+abaaapkamnmmemdoaaaaaaaaaaaaaaaaaaaaaaaabpaaaaacaaaaaaiaabaaadla
+bpaaaaacaaaaaaiaacaaadlabpaaaaacaaaaaaiaadaaadlabpaaaaacaaaaaaja
+aaaiapkaecaaaaadaaaacpiaacaaoelaaaaioekaecaaaaadabaacpiaabaaoela
+aaaioekaecaaaaadacaacpiaadaaoelaaaaioekaacaaaaadaaaacdiaaaaaoeib
+abaaoeiaafaaaaadaaaaaeiaaaaakkiaaaaaaakaaeaaaaaeaaaaaeiaaaaappia
+aaaaffkaaaaakkiacdaaaaacaaaacdiaaaaaoeiaacaaaaadaaaacbiaaaaaffia
+aaaaaaiaaeaaaaaeaaaacbiaaaaaaaiaaaaakkkbaaaaaakaalaaaaadadaaciia
+aaaaaaiaaaaappkaafaaaaadaaaaabiaabaakkiaaaaaaakaaeaaaaaeaaaaabia
+abaappiaaaaaffkaaaaaaaiaacaaaaadaaaaaciaaaaakkibaaaaaaiacdaaaaac
+aaaaaciaaaaaffiaaeaaaaaeaaaaaciaaaaaaaiaabaaaakaaaaaffibafaaaaad
+aaaaaciaaaaaffiaaaaakkkaagaaaaacaaaaaeiaaaaaaaiaafaaaaadaaaadcia
+aaaakkiaaaaaffiaafaaaaadaaaacciaaaaaffiaadaappiaafaaaaadaaaaaiia
+acaakkiaaaaaaakaaeaaaaaeaaaaaiiaacaappiaaaaaffkaaaaappiaacaaaaad
+abaacdiaabaaoeiaacaaoeibcdaaaaacabaacdiaabaaoeiaacaaaaadabaacbia
+abaaffiaabaaaaiaaeaaaaaeabaacbiaabaaaaiaaaaakkkbaaaaaakaalaaaaad
+acaacbiaabaaaaiaaaaappkaacaaaaadaaaaaiiaaaaappibaaaaaaiacdaaaaac
+aaaaaiiaaaaappiaaeaaaaaeaaaaabiaaaaaaaiaabaaaakaaaaappibafaaaaad
+aaaaabiaaaaakkiaaaaaaaiaafaaaaadaaaadbiaaaaaaaiaaaaakkkaafaaaaad
+aaaacbiaaaaaaaiaacaaaaiaafaaaaadaaaacpiaaaaaaaiaaaaaffiaabaaaaac
+aaaicpiaaaaaoeiappppaaaafdeieefckiadaaaaeaaaaaaaokaaaaaafkaaaaad
+aagabaaaaaaaaaaafibiaaaeaahabaaaaaaaaaaaffffaaaagcbaaaaddcbabaaa
+acaaaaaagcbaaaaddcbabaaaadaaaaaagcbaaaaddcbabaaaaeaaaaaagfaaaaad
+pccabaaaaaaaaaaagiaaaaacadaaaaaaefaaaaajpcaabaaaaaaaaaaaegbabaaa
+adaaaaaaeghobaaaaaaaaaaaaagabaaaaaaaaaaaefaaaaajpcaabaaaabaaaaaa
+egbabaaaacaaaaaaeghobaaaaaaaaaaaaagabaaaaaaaaaaaaaaaaaaidcaabaaa
+aaaaaaaaegaabaiaebaaaaaaaaaaaaaaegaabaaaabaaaaaaapaaaaakecaabaaa
+aaaaaaaaogakbaaaaaaaaaaaaceaaaaaaaaaiadpibiaiadlaaaaaaaaaaaaaaaa
+aaaaaaajbcaabaaaaaaaaaaabkaabaiaibaaaaaaaaaaaaaaakaabaiaibaaaaaa
+aaaaaaaadcaaaaakbcaabaaaaaaaaaaaakaabaiaebaaaaaaaaaaaaaaabeaaaaa
+aaaakaeaabeaaaaaaaaaiadpdeaaaaahbcaabaaaaaaaaaaaakaabaaaaaaaaaaa
+abeaaaaaaaaaaaaaapaaaaakccaabaaaaaaaaaaaogakbaaaabaaaaaaaceaaaaa
+aaaaiadpibiaiadlaaaaaaaaaaaaaaaaaaaaaaaiecaabaaaaaaaaaaackaabaia
+ebaaaaaaaaaaaaaabkaabaaaaaaaaaaadcaaaaakecaabaaaaaaaaaaabkaabaaa
+aaaaaaaaabeaaaaamnmmemdockaabaiambaaaaaaaaaaaaaadiaaaaahecaabaaa
+aaaaaaaackaabaaaaaaaaaaaabeaaaaaaaaakaeaaocaaaahecaabaaaaaaaaaaa
+ckaabaaaaaaaaaaabkaabaaaaaaaaaaadiaaaaahbcaabaaaaaaaaaaackaabaaa
+aaaaaaaaakaabaaaaaaaaaaaefaaaaajpcaabaaaacaaaaaaegbabaaaaeaaaaaa
+eghobaaaaaaaaaaaaagabaaaaaaaaaaaapaaaaakecaabaaaaaaaaaaaogakbaaa
+acaaaaaaaceaaaaaaaaaiadpibiaiadlaaaaaaaaaaaaaaaaaaaaaaaidcaabaaa
+abaaaaaaegaabaaaabaaaaaaegaabaiaebaaaaaaacaaaaaaaaaaaaajicaabaaa
+aaaaaaaabkaabaiaibaaaaaaabaaaaaaakaabaiaibaaaaaaabaaaaaadcaaaaak
+icaabaaaaaaaaaaadkaabaiaebaaaaaaaaaaaaaaabeaaaaaaaaakaeaabeaaaaa
+aaaaiadpdeaaaaahicaabaaaaaaaaaaadkaabaaaaaaaaaaaabeaaaaaaaaaaaaa
+aaaaaaaiecaabaaaaaaaaaaackaabaiaebaaaaaaaaaaaaaabkaabaaaaaaaaaaa
+dcaaaaakecaabaaaaaaaaaaabkaabaaaaaaaaaaaabeaaaaamnmmemdockaabaia
+mbaaaaaaaaaaaaaadiaaaaahecaabaaaaaaaaaaackaabaaaaaaaaaaaabeaaaaa
+aaaakaeaaocaaaahccaabaaaaaaaaaaackaabaaaaaaaaaaabkaabaaaaaaaaaaa
+diaaaaahccaabaaaaaaaaaaabkaabaaaaaaaaaaadkaabaaaaaaaaaaadiaaaaah
+pccabaaaaaaaaaaafgafbaaaaaaaaaaaagaabaaaaaaaaaaadoaaaaabejfdeheo
+jiaaaaaaafaaaaaaaiaaaaaaiaaaaaaaaaaaaaaaabaaaaaaadaaaaaaaaaaaaaa
+apaaaaaaimaaaaaaaaaaaaaaaaaaaaaaadaaaaaaabaaaaaaadaaaaaaimaaaaaa
+abaaaaaaaaaaaaaaadaaaaaaacaaaaaaadadaaaaimaaaaaaacaaaaaaaaaaaaaa
+adaaaaaaadaaaaaaadadaaaaimaaaaaaadaaaaaaaaaaaaaaadaaaaaaaeaaaaaa
+adadaaaafdfgfpfagphdgjhegjgpgoaafeeffiedepepfceeaaklklklepfdeheo
+cmaaaaaaabaaaaaaaiaaaaaacaaaaaaaaaaaaaaaaaaaaaaaadaaaaaaaaaaaaaa
+apaaaaaafdfgfpfegbhcghgfheaaklkl"
+}
+
+SubProgram "gles3 " {
+Keywords { }
+"!!GLES3"
+}
+
+}
+
+#LINE 89
+
+	}
+}
+
+Fallback off
+
+}
