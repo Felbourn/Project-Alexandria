@@ -20,6 +20,7 @@ CanPin
 	Item = KerbalAlarmClock
 	Item = CameraTools
 	Item = LightsOut
+	Item = KronalUtils
 }
 CanHide
 {
@@ -37,6 +38,7 @@ CanHide
 	Item = KerbalAlarmClock
 	Item = CameraTools
 	Item = LightsOut
+	Item = KronalUtils
 }
 CanSetFalse
 {
@@ -54,6 +56,7 @@ CanSetFalse
 	Item = KerbalAlarmClock
 	Item = CameraTools
 	Item = LightsOut
+	Item = KronalUtils
 }
 ModHasFirstConfig
 {
@@ -71,4 +74,5 @@ ModHasFirstConfig
 	Item = KerbalAlarmClock
 	Item = CameraTools
 	Item = LightsOut
+	Item = KronalUtils
 }

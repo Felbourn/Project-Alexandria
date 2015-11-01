@@ -69,22 +69,22 @@
         <ymax>14</ymax>
     </rect>
     <rect name="filterWin0">
-        <xmin>1280</xmin>
-        <xmax>1400</xmax>
-        <ymin>1</ymin>
-        <ymax>11</ymax>
+        <xmin>1202</xmin>
+        <xmax>1335</xmax>
+        <ymin>164</ymin>
+        <ymax>454</ymax>
     </rect>
     <rect name="setWin0">
         <xmin>1280</xmin>
-        <xmax>1400</xmax>
+        <xmax>1418</xmax>
         <ymin>1</ymin>
-        <ymax>11</ymax>
+        <ymax>190</ymax>
     </rect>
     <rect name="drkWin0">
         <xmin>1280</xmin>
         <xmax>1440</xmax>
         <ymin>1</ymin>
-        <ymax>11</ymax>
+        <ymax>152</ymax>
     </rect>
     <int name="skin0">2</int>
     <bool name="toolbar0">1</bool>
