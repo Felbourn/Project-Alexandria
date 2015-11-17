@@ -1,11 +1,11 @@
 forceOFFaniso = False
-displayInterpolatedVariables = True
+displayInterpolatedVariables = False
 extinctionMultiplier = 1
-extinctionTint = 1
-mapExtinctionMultiplier = 1.5
+extinctionTint = 100
+mapExtinctionMultiplier = 1
 mapExtinctionTint = 1
 MapViewScale = 1
-mapExposure = 0.12
+mapExposure = 0.15
 mapAlphaGlobal = 1
 rimBlend = 20
 rimpower = 600
@@ -13,46 +13,24 @@ configPoints
 {
 	Item
 	{
-		altitude = 1000
-		skyAlpha = 1
-		skyExposure = 0.25
-		postProcessAlpha = 0.78
-		postProcessDepth = 0.06
-		postProcessExposure = 0.23
-		skyExtinctionMultiplier = 1
-		skyExtinctionTint = 1
-	}
-	Item
-	{
 		altitude = 5000
 		skyAlpha = 1
 		skyExposure = 0.25
-		postProcessAlpha = 0.78
-		postProcessDepth = 0.1
+		postProcessAlpha = 1
+		postProcessDepth = 0.4
 		postProcessExposure = 0.23
 		skyExtinctionMultiplier = 1
-		skyExtinctionTint = 1
+		skyExtinctionTint = 100
 	}
 	Item
 	{
-		altitude = 55000
-		skyAlpha = 1
-		skyExposure = 0.25
-		postProcessAlpha = 0.78
-		postProcessDepth = 0.8
-		postProcessExposure = 0.23
-		skyExtinctionMultiplier = 1
-		skyExtinctionTint = 1
-	}
-	Item
-	{
-		altitude = 160000
+		altitude = 15000
 		skyAlpha = 1
 		skyExposure = 0.15
-		postProcessAlpha = 0.78
-		postProcessDepth = 2.4
+		postProcessAlpha = 1
+		postProcessDepth = 8
 		postProcessExposure = 0.23
-		skyExtinctionMultiplier = 1.35
-		skyExtinctionTint = 0.9
+		skyExtinctionMultiplier = 1
+		skyExtinctionTint = 100
 	}
 }
