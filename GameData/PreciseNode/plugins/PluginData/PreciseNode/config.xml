@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <config>
     <int name="conicsMode">3</int>
-    <int name="mainWindowX">1125</int>
-    <int name="mainWindowY">265</int>
+    <int name="mainWindowX">1290</int>
+    <int name="mainWindowY">347</int>
     <int name="optWindowX">909</int>
     <int name="optWindowY">502</int>
     <int name="keyWindowX">902</int>
