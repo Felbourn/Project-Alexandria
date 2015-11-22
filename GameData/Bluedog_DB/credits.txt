@@ -1,0 +1,25 @@
+BLUEDOG DESIGN BUREAU CREDITS
+
+Authors:
+	CobaltWolf - Original author
+	VenomousRequiem - Research, modeling, discussion
+
+Contributors:
+	129828 - Assistance with Micrometeoroid Impact Detector sciencedefs
+
+Dependency Credits:
+	DMagic - Author of DMagicScienceAnimateGeneric 
+
+Misc credits:
+	-Felbourn for advice on texture sizing and image compression
+	-DMagic for the magnetometer science definitions.
+	-Frizzank and the FASA mod for the geiger counter sciencedefs.
+	-RGBpeter for his delightful KSP decal library
+
+Special thanks:
+	Everyone who comments on the thread! Your feedback is important and appreciated!
+
+Programs used (for those curious)
+	-Autodesk Maya 2016
+		-UV Mapping is done using the non-commercial release of Nightshade UV Editor
+	-Adobe Photoshop CS6

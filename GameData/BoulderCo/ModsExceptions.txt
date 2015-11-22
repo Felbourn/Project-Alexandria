@@ -1,0 +1,132 @@
+﻿//Some mods can't use dds textures yet or this program have problems converting them in the correct format. All mods folders listed below will be skipped during a folder conversion (case-sensitive), or will have forced parameters applied.
+//You can specify a folder, or a file directly. Folders listed will include their sub-directories
+// if you use any argument, the folder is not skipped and all files in it will be treated accordingly.
+//Available arguments :
+//	" -fn" (Force Normals): Force all files to be considered as normals. They will be swizzled to xRxG format and flagged as normal.
+//	" -nn" (Not Normals): Force all files to skip automatic normal detection and to be flagged as not normal.
+//	" -nr" (No Resize): Skip resizing for files in the folder. Relevant only if you use the resizing option.
+//	" -nm" (No Mipmaps): Deactivate mipmaps generation for files in the folder.
+//Applying arguments to a folder will override arguments for single files in this folder/subfolder.
+//Others arguments are coming Soon(tm).
+//
+//Action Groups Extended, looks for a png file (hard-coded)
+Diazo\AGExt
+//
+//ActiveTextureManagement cache
+ActiveTextureManagement
+//
+//Ambient Light Adjustment
+blizzy\AmbientLightAdjustment -nn -nm -nr
+//
+///AVC
+KSP-AVC\Textures\OverlayBackground.png
+KSP-AVC\Textures\DropDownBackground.png
+KSP-AVC\Textures\DropDownNormal.png
+KSP-AVC\Textures -nm -nn -nr
+//
+//CommunityResourcePack
+CommunityResourcePack
+//
+//Connected Living Spaces
+ConnectedLivingSpace\assets -nn -nm -nr
+//
+//Contracts Window
+Contracts Window\Textures\ContractsIcon.png
+//
+//Distant Object Enhancements (bis, v1.4)
+DistantObject\Flare -nn -nr
+DistantObject\Icons -nn -nm -nr
+//
+//Environmental Visual Enhancements (+Better Atmospheres). Nothing seems to be working in the "Clouds" folder (all clouds are renderer, auroras as well, but errors are spammed in log files).
+BoulderCo\Clouds\Textures
+CityLights\Textures -nn -nr
+//
+//FAR
+FerramAerospaceResearch\Textures -nn -nm -nr
+//
+//Final Frontier, no mipmaps needed
+Nereid\FinalFrontier -nm -nn -nr
+//
+//FinePrint
+FinePrint\Textures -nn -nm -nr
+//
+//Generic exceptions: don't convert anything in a "PluginData" folder
+PluginData
+//
+//HaystackContinued, looks for a png file (hard-coded)
+HaystackContinued\icons
+//
+//Infernal Robotics
+MagicSmokeIndustries\Textures\icon_drag.png
+MagicSmokeIndustries\Textures\icon_dragInsert.png
+MagicSmokeIndustries\Textures\icon_dragHandle.png
+MagicSmokeIndustries\Textures -nn -nm -nr
+//
+//Interstellar, these textures need to be readable
+WarpPlugin\PlanetResourceData
+//
+//Kerbal Alarm clock. Plugin looks for png files (hard-coded).
+TriggerTech
+//
+//Kerbal Engineer
+KerbalEngineer\Textures\ToolbarIcon.png -nn -nm
+//
+//Kethane
+Kethane\toolbar.png -nr -nm
+//
+//kOS Screen (plugin is hard-coded to look for png, but parts textures are converted correctly)
+kOS\GFX
+//
+//Map Resources Overlay
+MapResourceOverlay\Assets -nn -nm -nr
+//
+//Mechjeb
+MechJeb2\Icons -nn -nm -nr
+//
+//NavUtils, better not resize anything, and some textures don't like to be set as read-only
+KerbalScienceFoundation -nr -nm -nn
+//
+//NavyFish's Docking Port Alignment Indicator is looking for png (hard-coded)
+NavyFish
+//
+//PartAngleDisplay, looks for a png file (hard-coded)
+PartAngleDisplay\applaunch.png
+//
+//PartCatalog is looking for png, hard-coded
+PartCatalog
+//
+//RasterPropMonitors: Don't resize the navball, or it'll be a blurry mess. Same for the screen behind it.
+JSI\RasterPropMonitor\Library\Components\NavBall\NavBall000.png -nr
+JSI\RasterPropMonitor\Library\Components\NavBall\StaticMask.png -nr
+//
+//Realchutes
+RealChute\Plugins\PluginData\RC_Icon.png
+//
+//RCS Build Aid
+RCSBuildAid\Textures -nn -nm -nr
+//
+//ScanSat
+SCANsat\Icons
+//
+//Squad: Avoid Screenshots folder (just in case, but this shouldn't happen) and avoid resizing flags and companies logos
+Flags -nr
+Agencies -nr
+Screenshots
+//
+//ShipManifest
+ShipManifest\Plugins -nn -nm -nr
+//
+//StageRecovery
+StageRecovery -nm -nr -nn
+//
+//TextureReplacer's helmet visor, this prog still can't get the p8 format, but nvdxt or crunch could probably do it.
+TextureReplacer\EnvMap
+//
+//Throttle Controlled Avionics, looks for a png file (hard-coded)
+ThrottleControlledAvionics
+//
+//Toolbar, no mipmaps and no resize
+000_Toolbar -nm -nr
+//
+//USI's Exploration Pack. Not sure why this one throw an error, both files in this folder seems to be converted properly...
+UmbraSpaceIndustries\ExpPack\AES\Spaces

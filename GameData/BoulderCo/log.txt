@@ -1,0 +1,24 @@
+-----
+Folder infos : 
+MBM files count : 0
+TGA files count : 0
+PNG files count : 2
+Backup files count : 0
+-----
+-----
+Starting conversion of 2 files.
+    MBM count : 0.
+    TGA count : 0.
+    PNG count : 2.
+0 files excluded, 0 files without mipmaps. 0 files will skip normal detection.0 files will not be resized.
+-----
+LOG : Converting C:\Users\Ryan\Documents\GitHub\EnvironmentalVisualEnhancements\GameData\BoulderCo\Terrain\Textures\grass.png to C:\Users\Ryan\Documents\GitHub\EnvironmentalVisualEnhancements\GameData\BoulderCo\Terrain\Textures\grass.dds
+ERR : Unknown file format A8L8, skipping conversion for C:\Users\Ryan\Documents\GitHub\EnvironmentalVisualEnhancements\GameData\BoulderCo\Terrain\Textures\grass.png
+---
+LOG : Converting C:\Users\Ryan\Documents\GitHub\EnvironmentalVisualEnhancements\GameData\BoulderCo\Terrain\Textures\ocean.png to C:\Users\Ryan\Documents\GitHub\EnvironmentalVisualEnhancements\GameData\BoulderCo\Terrain\Textures\ocean.dds
+ERR : Unknown file format L8, skipping conversion for C:\Users\Ryan\Documents\GitHub\EnvironmentalVisualEnhancements\GameData\BoulderCo\Terrain\Textures\ocean.png
+---
+-----
+Conversion done! 2 files processed.
+2 files skipped, check log.txt for more informations.
+-----

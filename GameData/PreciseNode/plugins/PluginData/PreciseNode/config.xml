@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <config>
-    <int name="conicsMode">3</int>
+    <int name="conicsMode">0</int>
     <int name="mainWindowX">1290</int>
     <int name="mainWindowY">347</int>
     <int name="optWindowX">909</int>
@@ -15,7 +15,7 @@
     <int name="tripWindowY">180</int>
     <bool name="showClock">0</bool>
     <bool name="showEAngle">1</bool>
-    <bool name="showConics">0</bool>
+    <bool name="showConics">1</bool>
     <bool name="showConicsAlways">0</bool>
     <bool name="showOrbitInfo">0</bool>
     <bool name="showUTControls">0</bool>
