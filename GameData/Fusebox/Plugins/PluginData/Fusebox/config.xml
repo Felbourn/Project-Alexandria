@@ -5,19 +5,19 @@
         <xmin>1280</xmin>
         <xmax>1400</xmax>
         <ymin>50</ymin>
-        <ymax>201</ymax>
+        <ymax>60</ymax>
     </rect>
     <rect name="filterWin1">
         <xmin>1280</xmin>
-        <xmax>1400</xmax>
-        <ymin>50</ymin>
-        <ymax>60</ymax>
+        <xmax>1413</xmax>
+        <ymin>283</ymin>
+        <ymax>614</ymax>
     </rect>
     <rect name="setWin1">
-        <xmin>1280</xmin>
-        <xmax>1400</xmax>
-        <ymin>50</ymin>
-        <ymax>60</ymax>
+        <xmin>1259</xmin>
+        <xmax>1397</xmax>
+        <ymin>266</ymin>
+        <ymax>455</ymax>
     </rect>
     <rect name="drkWin1">
         <xmin>1280</xmin>
@@ -31,7 +31,7 @@
     <int name="warphaltthresh">30</int>
     <bool name="showcharge1">1</bool>
     <int name="precision1">2</int>
-    <bool name="minimized1">0</bool>
+    <bool name="minimized1">1</bool>
     <string name="globalFontStyle1">Normal</string>
     <double name="goodColr1">0</double>
     <double name="goodColb1">0</double>
@@ -43,11 +43,11 @@
     <double name="otherColb1">1</double>
     <double name="otherColg1">1</double>
     <bool name="filtArr10">1</bool>
-    <bool name="filtArr11">1</bool>
-    <bool name="filtArr12">1</bool>
+    <bool name="filtArr11">0</bool>
+    <bool name="filtArr12">0</bool>
     <bool name="filtArr13">1</bool>
     <bool name="filtArr14">1</bool>
-    <bool name="filtArr15">1</bool>
+    <bool name="filtArr15">0</bool>
     <bool name="filtArr16">1</bool>
     <bool name="filtArr17">1</bool>
     <bool name="filtArr18">1</bool>

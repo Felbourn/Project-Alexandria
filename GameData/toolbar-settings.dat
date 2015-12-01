@@ -184,7 +184,7 @@ toolbars
 			x = -3
 			y = -3
 			width = 250
-			height = 38
+			height = 81
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = False
