@@ -7,7 +7,7 @@ toolbars
 			x = -3
 			y = -3
 			width = 250
-			height = 81
+			height = 38
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = False
@@ -42,7 +42,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,KerbalAlarmClock.btnToolbarIcon,AmbientLightAdjustment.adjustLevels,SmokeScreen.main,sirkut.IREditorButton
-			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels
+			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels,DockingAlignment.dockalign
 		}
 		toolbar_24934541
 		{
@@ -70,8 +70,8 @@ toolbars
 		}
 		toolbar_1432091265
 		{
-			x = 1204
-			y = -3
+			x = 1142
+			y = 39
 			width = 250
 			height = 38
 			autoHide = False
@@ -141,7 +141,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,KerbalAlarmClock.btnToolbarIcon,AmbientLightAdjustment.adjustLevels,SmokeScreen.main,sirkut.IREditorButton
-			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels
+			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels,DockingAlignment.dockalign
 		}
 		toolbar_24934541
 		{
@@ -193,8 +193,8 @@ toolbars
 		}
 		toolbar_1432091265
 		{
-			x = 1204
-			y = -3
+			x = 1142
+			y = 39
 			width = 250
 			height = 38
 			autoHide = False
