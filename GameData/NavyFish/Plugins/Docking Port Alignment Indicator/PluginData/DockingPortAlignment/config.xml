@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <double name="gui_scale">0.600000023841858</double>
+    <rect name="window_position">
+        <xmin>1349</xmin>
+        <xmax>1589</xmax>
+        <ymin>503.81</ymin>
+        <ymax>778.01</ymax>
+    </rect>
+    <bool name="drawHudIcon">1</bool>
+    <bool name="allowAutoPortTargeting">1</bool>
+    <bool name="excludeDockedPorts">1</bool>
+    <bool name="showHUDIconWhileEva">0</bool>
+</config>
