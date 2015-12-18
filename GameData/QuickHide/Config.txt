@@ -21,6 +21,7 @@ CanPin
 	Item = CameraTools
 	Item = LightsOut
 	Item = KronalUtils
+	Item = RCSBuildAid
 }
 CanHide
 {
@@ -39,6 +40,7 @@ CanHide
 	Item = CameraTools
 	Item = LightsOut
 	Item = KronalUtils
+	Item = RCSBuildAid
 }
 CanSetFalse
 {
@@ -57,6 +59,7 @@ CanSetFalse
 	Item = CameraTools
 	Item = LightsOut
 	Item = KronalUtils
+	Item = RCSBuildAid
 }
 ModHasFirstConfig
 {
@@ -75,4 +78,5 @@ ModHasFirstConfig
 	Item = CameraTools
 	Item = LightsOut
 	Item = KronalUtils
+	Item = RCSBuildAid
 }
