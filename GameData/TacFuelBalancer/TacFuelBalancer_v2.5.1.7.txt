@@ -1,0 +1,3 @@
+﻿You have installed the TAC Fuel Balancer, version 2.5.1.7 ('6eea46a'+'89b591f' clean).
+
+See the Readme.txt and LICENSE.txt files for more information.

@@ -1,0 +1,11 @@
+﻿{
+  "NAME": "TAC Fuel Balancer",
+  "URL": "http://ksp-avc.cybutek.net/version.php?id=20",
+  "DOWNLOAD": "",
+  "VERSION": "2.5.1.7",
+  "KSP_VERSION": {
+    "MAJOR": 1,
+    "MINOR": 0,
+    "PATCH": 2
+  }
+}
