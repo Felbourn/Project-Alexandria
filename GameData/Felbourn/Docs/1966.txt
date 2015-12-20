@@ -1,0 +1,505 @@
+
+31 January 1966, 11:45:00 UTC
+https://en.wikipedia.org/wiki/Luna_9
+The Soviet Union's Luna 9 performs the first semi-soft landing on the Moon, returning the first surface images and radiation data.
+
+	Apollo-Saturn 201 is the first test flight of the Saturn 1B rocket, carrying a Block I command and service module (CSM).
+
+	AS-201 (or SA-201), flown February 26, 1966, was the 
+first unmanned test flight of an entire production Block I Apollo Command/Service Module and the Saturn IB launch vehicle. 
+	The spacecraft consisted of the second Block I command module and the first Block I service module. The suborbital flight was a partially successful demonstration of the service propulsion system and the reaction control systems of both modules, and successfully demonstrated the capability of the Command Module's heat shield to survive re-entry from low Earth orbit.
+
+	AS-203 (or SA-203) was an unmanned flight of the Saturn IB rocket on July 5, 1966. It carried no Apollo Command/Service Module spacecraft, as its purpose was to verify the design of the S-IVB rocket stage restart capability that would later be used in the Apollo program to boost astronauts from Earth orbit to a trajectory towards the Moon. It successfully achieved its objectives, but the stage was inadvertently destroyed after four orbits.
+
+	AS-202 (also referred to as SA-202) was the second unmanned, suborbital test flight of a production Block I Apollo Command/Service Module launched with the Saturn IB launch vehicle. It was launched on August 25, 1966 and was the 
+first flight which included the spacecraft Guidance and Navigation Control system and fuel cells. The success of this flight enabled the Apollo program to judge the Block I spacecraft and 	Saturn IB ready to carry men into orbit on the next mission, AS-204.
+
+	The Soviet Venera 3 probe performs the first Venus atmosphere entry and surface impact but fails to return data.
+
+March 16, 1966, 16:41:02 UTC
+https://en.wikipedia.org/wiki/Gemini_8
+Gemini 8 becomes the first spacecraft to dock with another vehicle in space, an Agena target vehicle.
+Accomplished first docking with another space vehicle, an unmanned Agena Target Vehicle. While docked, a Gemini spacecraft thruster malfunction caused near-fatal tumbling of the craft, which, after undocking, Armstrong was able to overcome; the crew effected the first emergency landing of a manned U.S. space mission.
+
+	The Soviet Union conducts its first space launch from Plesetsk.
+
+March 31, 1966, 10:48:00 UTC
+https://en.wikipedia.org/wiki/Luna_10
+The Soviet Union's Luna 10 performs the first successful lunar orbit insertion, returning data over a 56-day life.
+
+May 30, 1966, 14:41:01 UTC
+https://en.wikipedia.org/wiki/Surveyor_1
+The U.S. Surveyor 1 soft lands on the Moon, returning over 11,000 TV pictures and engineering data for six weeks.
+
+	During Gemini 9, Eugene Cernan performs a 127-minute EVA, however working outside the spacecraft proves more difficult than anticipated.
+	Rescheduled from May to rendezvous and dock with the Augmented Target Docking Adapter (ATDA) after the original Agena Target Vehicle launch failed. The ATDA shroud did not completely separate, making docking impossible. Three different types of rendezvous, two hours of EVA, and 44 orbits were completed.
+
+August 10, 1966, 19:31 UTC
+https://en.wikipedia.org/wiki/Lunar_Orbiter_1
+Lunar Orbiter 1, the first of five successful U.S. lunar orbiters, performs a surface survey for future Apollo landings.
+
+	Apollo-Saturn 202 tests the CSM service propulsion system, as well as further testing the Saturn 1B.
+
+	NASA qualifies the F-1 engine for use on manned missions.
+
+	Gemini 10
+	First use of the Agena Target Vehicle's propulsion systems. The spacecraft also rendezvoused with the Agena Target Vehicle from Gemini VIII. Collins had 49 minutes of EVA standing in the hatch and 39 minutes of EVA to retrieve experiments from the Agena. 43 orbits completed.
+	LEO
+
+	Gemini 11 attains a new manned altitude record of 1,374 kilometers.
+	Gemini record altitude with apogee of 739.2 nautical miles (1,369.0 km)[16] reached using the Agena Target Vehicle propulsion system after first orbit rendezvous and docking. Gordon made a 33-minute EVA and two-hour standup EVA. 44 orbits.
+
+	During Gemini 12, Edwin Aldrin demonstrates that an astronaut can work effectively outside a spacecraft.
+	Final Gemini flight. Rendezvoused and docked manually with its target Agena and kept station with it during EVA. Aldrin set an EVA record of 5 hours and 30 minutes for one space walk and two stand-up exercises, and demonstrated solutions to previous EVA problems. 59 orbits completed
+	final gemini mission
+
+--------------------------
+1967
+
+American astronauts Grissom, White and Chaffee are killed when fire sweeps through their Apollo 1 spacecraft during a test on the launch pad.
+The first manned flight of the Soviet Soyuz spacecraft ends tragically when the parachute fails to open, killing cosmonaut Vladimir Komarov.
+A Scout B rocket places the first Italian satellite in orbit from the San Marco platform in Kenya.
+The U.S. Surveyor 5 lands on the Moon and performs the first chemical analysis of the soil.
+America's X-15, piloted by William Knight, sets a new world speed record for winged aircraft at Mach 6.72.
+The Soviet Venera 4 probe performs the first successful Venus atmosphere entry, returning data to within 25 kilometers of the surface.
+Apollo 4 is the first unmanned test of the Saturn V launch vehicle. Also tested the CM heat shield for high speed reentry.
+first:  Australia	WRESAT[8]	WRE	Australia WRE	United States Sparta	Australia Woomera	29 November 1967	
+
+1968
+
+Surveyor 7 performs the fifth and final U.S. unmanned lunar landing, touching down near the rim of crater Tycho.
+Apollo 5 carries an unmanned lunar module to orbit to verify operation of its propulsion systems.
+The Soviet Union launches Zond 4, a test flight for a manned circumlunar flight using a modified Soyuz capsule.
+Apollo 6 is the second and final qualification flight of the Saturn V.
+The first rocket is fired from France's Centre Spatial Guyanais near Kourou, Guiana.
+The U.S. Rover/NERVA program performs a 12-minute test of Phoebus-2A, the largest nuclear reactor ever built.
+The Soviet Zond 5 completes a circumlunar fly-by and returns to Earth, carrying turtles and other biological samples.
+The first rocket is fired from Japan's Tanegashima Space Center.
+NASA begins early studies of space shuttle designs.
+In October, Apollo 7 is the first piloted flight of the Apollo CSM; first American three-man crew.
+Soyuz 3 is the first successful piloted flight of the Soyuz spacecraft; rendezvous with unmanned Soyuz 2.
+In December, Apollo 8 completes a historic mission. First manned launch of a Saturn V, first human crew to leave low Earth orbit, first manned lunar orbit, and first piloted lunar return reentry.
+first:  Europe	ESRO-2B[9]	ESRO	United Kingdom Hawker Siddeley[9]	United States Scout B	United States Vandenberg	17 May 1968[10]
+
+1969
+
+Soyuz 4 and 5 perform the first docking of piloted spacecraft; two crew transfer by EVA from Soyuz 5 to 4.
+A launch failure ends a Soviet attempt to land the first automatic rover on the Moon.
+In February, the Soviet Union attempts a test launch of its N1 rocket, unsuccessfully due to stage 1 failure.
+The Soviet Union attempts the first automated lunar sample return, unsuccessfully due to launch failure.
+In March, Apollo 9 performs the first piloted test flight of the lunar module in Earth orbit.
+In May, Apollo 10 tests the lunar module in lunar orbit, descending to within 15,000 meters of the surface.
+A second test of the Soviet N1 rocket results in an explosion on the launch pad, causing extensive damage.
+Apollo 11 performs the first lunar landing by astronauts Neil Armstrong and Edwin Aldrin on July 20. They stay 21 hours, 36 minutes on the surface, conduct a 151 minute EVA, and collect 22 kilograms of rock and soil samples.
+Luna 15, the third Soviet attempt to retrieve lunar samples, crashes into the moon on July 21.
+Soyuz 6, 7 and 8 perform the first triple rendezvous.
+Apollo 12 performs the second manned lunar landing touching down within sight of their target, Surveyor 3.
+first:  West Germany	Azur[11]		Germany	United States Scout B	United States Vandenberg	8 November 1969
+German Aerospace Center founded
+Indian Space Research Organisation founded
+
+1970
+
+Japan launches its first satellite, Ohsumi, on a Lambada 4S rocket from Kagoshima.
+ Japan	Osumi[12]	ISAS	Japan	Japan Lambda-4S	Japan Kagoshima	11 February 1970
+Apollo 13's lunar landing is aborted following an oxygen tank explosion. The crew returns safely using the lunar module as a lifeboat. The circumlunar flight sets a manned altitude record.
+China launches its first satellite, DFH-1, on a CZ-1 rocket from Jiuquan.
+People's Republic of China	Dongfanghong I[13]		China	China Chang Zheng 1	China Jiuquan	24 April 1970
+Soyuz 9 sets a new endurance record of 17 days, 17 hours.
+The Soviet Union's Luna 16 performs the first successful automated lunar soil sample return, retrieving about 100 grams.
+Cosmos 367 is the first Soviet satellite powered by the BES-5 nuclear reactor.
+The Soviet Union's Luna 17 lander includes the first successful automatic lunar rover, Lunokhod 1.
+The Soviet Venera 7 spacecraft is the first to successfully return data after landing on another planet, Venus.
+
+1971
+
+Apollo 14 makes the third manned lunar landing.
+The Soviet Union launches the world's first space station, Salyut 1.
+Soyuz 11 docks with Salyut 1 and the crew spends a record 23 days in orbit. Cosmonauts Dobrovolsky, Volkov, and Patsayev die during reentry due to a loss of cabin pressurization.
+Apollo 15 makes the fourth manned lunar landing; first extended stay mission using the lunar roving vehicle. Subsatellite released, the first deployed by a manned spacecraft.
+The United Kingdom launches its first satellite, Prospero, on a Black Arrow rocket from Woomera, Australia.
+The U.S. Mariner 9 spacecraft becomes the first to enter orbit around another planet, Mars, and maps 100% of the surface.
+The Soviet Mars 2 spacecraft enters orbit but the lander fails, crashing and becoming first man-made object on Mars.
+The Soviet Mars 3 lander successfully touches down but no data is returned.
+
+1972
+
+President Nixon announces that NASA will proceed with the development of a reusable Space Shuttle system.
+The U.S. launches Pioneer 10, the first spacecraft sent to the outer solar system.
+Apollo 16 makes the fifth manned lunar landing. John Young becomes first person to twice orbit the Moon.
+In December, Apollo 17 makes the sixth and final manned lunar landing. Sets records for lunar stay time (74 hours, 59 minutes), EVA time (22 hours, 4 minutes), and lunar samples collected (110 kilograms).
+founded Swedish National Space Board
+
+1973
+
+The U.S. Rover/NERVA nuclear rocket program loses its funding and is terminated.
+The United States launches Skylab 1, America's first space station. The station is occupied for 171 days by three crews.
+Astronauts Conrad, Kerwin & Weitz set new endurance record of 28 days aboard the Skylab space station.
+Astronauts Bean, Garriott & Lousma set new endurance record of 59 days aboard Skylab.
+The U.S. Pioneer 10 spacecraft performs the first successful fly-by of Jupiter, passing within 130,000 kilometers of the cloud tops.
+
+1974
+
+Astronauts Carr, Gibson & Pogue set new endurance record of 84 days aboard Skylab.
+The U.S. Mariner 10 spacecraft flies by Venus and returns the first close-up TV pictures. First spacecraft to use the gravity of one planet to reach another.
+Mariner 10 conducts the first of three close encounters with the planet Mercury.
+The Soviet Union launches Salyut 3, the second of six Salyut space stations (Salyut 2 suffered a systems failure).
+The U.S. Pioneer 11 spacecraft passes within 34,000 kilometers above Jupiter's cloud tops and is redirected on a trajectory to Saturn.
+Helios 1, a joint U.S./German project, is launched to study the interplanetary medium between Earth and the Sun.
+first:  Netherlands	ANS[14]			United States Scout D-1	United States Vandenberg	30 August 1974
+ Spain	Intasat[14]	INTA		United States Delta 2310	United States Vandenberg	15 November 1974	
+
+1975
+
+Apollo 18 and Soyuz 19 are launched on July 15 in the first USA/USSR joint mission. The two vehicles dock in space for two days; the crews conduct experiments, share meals, and hold a joint news conference.
+Japan conducts its first orbital launch from Tanegashima.
+The Soviet Venera 9 spacecraft is the first to enter Venus orbit. The lander is first to return TV pictures from the surface of another planet. Venera 10 repeats Venera 9's success three days later.
+ India	Aryabhata[14]	ISRO	India[15]ISRO	Soviet Union Kosmos-3M	Soviet Union Kapustin Yar	19 April 1975	
+ESA founded
+
+1976
+
+The U.S./German spacecraft Helios 2 becomes the fastest man-made object, reaching 247,500 km/h at 0.29 AU from the Sun.
+The U.S. Viking 1 spacecraft performs the first successful Mars landing, returning pictures & data, and searches for evidence of life.
+Luna 24 is the Soviet Union's final mission to the Moon; third automatic sample return.
+Viking 2 repeats Viking 1's success, landing on the opposite side of Mars.
+Indonesia	Palapa A1[14]	Perumtel	United States Hughes	United States Delta 2914	United States Cape Canaveral	8 July 1976	
+
+1977
+
+The space shuttle Enterprise makes five free flights after separating from the 747 shuttle carrier aircraft.
+Salyut 6 is launched. The space station is occupied for 676 days by five long stay and eleven visiting crews.
+
+1978
+
+Cosmonauts Grechko & Romanenko set a new endurance record of 96 days aboard the Salyut 6 space station.
+The British Interplanetary Society publishes Project Daedalus, a study to design a plausible interstellar unmanned spacecraft.
+Cosmonauts Kovalyonok & Ivanchenko set a new endurance record of 139 days aboard Salyut 6.
+ Czechoslovakia	Magion 1[14]		Soviet Union	Soviet Union Kosmos-3M	Soviet Union Plesetsk	24 October 1978	
+
+1979
+
+The U.S. spacecraft Voyager 1 performs the third Jupiter fly-by, returning high-resolution pictures of the planet and moons. Captures images of volcanic activity on Io.
+Cosmonauts Lyakhov & Ryumin set a new endurance record of 175 days aboard Salyut 6.
+Voyager 2 performs the fourth fly-by of Jupiter; images of Europa show a smooth surface with almost no craters.
+America's Skylab 1 reenters the atmosphere after more than six years in orbit. Some of the debris falls in Australia.
+The U.S. Pioneer 11 spacecraft performs the first fly-by of Saturn, passing 21,000 kilometers above the cloud tops.
+The European Space Agency (ESA) launches its first Ariane 1 rocket from Kourou.
+
+1980
+
+India launches its first satellite, Rohini RS-1, on a SLV-3 rocket from Sriharikota.
+Cosmonauts Popov & Ryumin set a new endurance record of 184 days aboard Salyut 6.
+The U.S. spacecraft Voyager 1 performs the second Saturn fly-by and conducts a close encounter with the moon Titan.
+
+1981
+
+The United States launches STS-1, the first orbital test flight of the Space Shuttle and maiden flight of Columbia. The space shuttle is the first reusable spacecraft.
+The U.S. spacecraft Voyager 2 performs the third fly-by of Saturn; uses a gravity assist to reach the planet Uranus.
+ Bulgaria	Bulgaria 1300[14]		Soviet Union	Soviet Union Vostok-2M	Soviet Union Plesetsk	7 August 1981	
+
+1982
+
+The Soviet Venera 13 and 14 landers conduct the first soil analysis on Venus; first color pictures from surface.
+Salyut 7, the last Salyut space station, is launched. The station is occupied for 812 days by ten crews.
+Cosmonauts Berezovoi & Lebedev set a new endurance record of 211 days aboard Salyut 7.
+STS-5 is the first operational space shuttle mission and first 4-person crew.
+
+1983
+
+STS-6 is the maiden flight of the space shuttle Challenger.
+Shuttle mission STS-7 carries the first 5-person crew; Sally Ride becomes the first American woman in space.
+Guion Bluford becomes the first African-American in space (STS-8).
+Soyuz T-10-1 makes first use of an emergency escape tower to escape a launch pad fire.
+The Soviet Venera 15 and 16 orbiters arrive at Venus for the start of radar surface mapping missions.
+Shuttle mission STS-9 carries the first 6-person crew; John Young makes his 6th space flight.
+Israel Space Agency founded
+
+1984
+
+Shuttle mission 41-B features the first untethered space walks by astronauts McCandless and Stewart, using the manned maneuvering unit (MMU).
+Shuttle mission 41-C features the first in-orbit satellite retrieval and repair.
+The first successful launch from China's Xichang Satellite Launch Center, a CZ-3 rocket.
+Svetlana Savitskaya performs the first EVA by a woman during a visit to Salyut 7.
+Mission 41-D is the maiden flight of the space shuttle Discovery; first commercial payload specialist.
+Cosmonauts Atkov, Kizim, & Solovyov set a new endurance record of 236 days aboard Salyut 7.
+Shuttle mission 41-G features the first 7-person crew, first to include two women, first EVA by an American woman (Kathy Sullivan), and the first Canadian in space (Marc Garneau).
+
+1985
+
+Sakigake, Japan's first deep-space probe, is launched.
+Shuttle mission 51-C is the first dedicated to the Department of Defense with a classified military payload deployed. 100th manned orbital mission.
+The Soviet Union's Vega 1 and 2 spacecraft deploy instrumented balloons in the atmosphere of Venus.
+Giotto, Europe's first deep-space probe, is launched.
+First ever comet fly-by, of comet Giacobini-Zinner, by the International Comet Explorer (originally named ISEE-3).
+Mission 51-J is the maiden flight of the space shuttle Atlantis.
+Shuttle mission 61-A carries the first 8-person crew.
+ Saudi Arabia	Arabsat-1A	Arabsat	France Aérospatiale	Europe Ariane 3	France Kourou	8 February 1985	
+ Brazil	Brasilsat A1[14]	Embratel	United States Hughes	
+ Mexico	Morelos 1[14]		United States Hughes	United States Space Shuttle Discovery	United States Kennedy	17 June 1985	Deployed using PAM-D during STS-51-G
+ Sweden	Viking	SSC	United States Boeing/
+
+1986
+
+The U.S. spacecraft Voyager 2 performs the first fly-by of Uranus, passing within 81,500 kilometers of the cloud tops.
+The space shuttle Challenger explodes 73 seconds after liftoff killing its 7-person crew
+The Soviet Union launches Mir, a new generation space station. The station is occupied by 28 long stay crews.
+The Soviet spacecraft Vega 1 transmits the first images of comet Halley.
+ESA's Giotto spacecraft performs the first close encounter with a comet, passing within 600 kilometers of comet Halley.
+Sweden Saab	Europe Ariane 1	France Kourou	22 February 1986	
+
+1987
+
+Cosmonaut Romanenko sets a new endurance record of 326 days aboard the Mir space station.
+
+1988
+
+STS-26 is the first launch of the redesigned Space Shuttle since the Challenger disaster.
+Cosmonauts Manarov & Titov set a new endurance record of 365 days aboard Mir.
+ Israel	Ofek-1		Israel IAI	Israel Shavit	Israel Palmachim	19 September 1988	
+ Luxembourg	Astra 1A	SES Astra	United States GE Astrospace	Europe Ariane 44LP	France Kourou	11 December 1988	
+Italian Space Agency founded
+
+1989
+
+The U.S. spacecraft Voyager 2 performs the first fly-by of Neptune, the fourth planet encounter of its mission.
+Canadian Space Agency founded
+Korea Aerospace Research Institute foujnded
+
+1990
+
+Japan launches the Hiten/Hagoromo mission, making Japan the third nation to achieve lunar fly-by, orbit, and impact.
+The Hubble Space Telescope (HST) is deployed during shuttle mission STS-31; shuttle altitude record of 619 kilometers.
+The U.S. Magellan orbiter arrives at Venus; first use of aerobraking to lower orbit. Radar maps 98% of planet to 100-meter resolution.
+ Argentina	Lusat	AMSAT Argentina		Europe Ariane 40	France Kourou	22 January 1990	
+ Hong Kong	AsiaSat 1	AsiaSat	United States Hughes	China Chang Zheng 3	China Xichang	7 April 1990	Hong Kong, a British Overseas Territory, became part of the People's Republic of China in July 1997
+ Pakistan	Badr-1	SUPARCO	Pakistan SUPARCO	China Chang Zheng 2E	China Xichang	16 July 1990	
+ Russia	Kosmos 2175		Russia	Russia Soyuz-U	Russia Plesetsk	21 January 1992	Successor state to the Soviet Union
+
+1991
+
+The Compton Gamma Ray Observatory is deployed during shuttle mission STS-37; first U.S. EVA since 1985.
+The U.S. spacecraft Galileo performs the first asteroid fly-by, passing 1,600 kilometers from 951 Gaspra.
+As of December 31, the Soviet Union ceases to exist.
+Comisión Nacional de Actividades Espaciales founded
+
+1992
+
+Ulysses, a joint U.S./ESA project, flies by Jupiter to change its orbit into one of high inclination for solar polar overflights.
+Mission STS-49 is the maiden flight of the space shuttle Endeavour. A record 60 manhours of EVA is performed.
+Mission STS-50 is the first Extended Duration Orbiter (EDO); shuttle endurance record of 13 days, 19 hours.
+ South Korea	Kitsat-1	KAIST	United Kingdom SSTL	Europe Ariane 42P	France Kourou	10 August 1992	
+Roscosmos founded
+State Space Agency of Ukraine founded
+
+1993
+
+The Space Station Alpha Project is announced, which will later be named the International Space Station (ISS).
+Shuttle mission STS-61 features the first HST servicing mission. Thomas Akers sets a new U.S. career EVA duration record of 29 hours, 40 minutes.
+ Portugal	PoSAT-1	PoSAT	United Kingdom SSTL	Europe Ariane 40	France Kourou	26 September 1993	
+ Thailand	Thaicom-1	Shin Satellite	United States Hughes	Europe Ariane 44L	France Kourou	18 December 1993	
+China National Space Administration founded 
+
+1994
+
+The Clementine orbiter is the first U.S. mission to the Moon since Apollo 17 (1972); maps lunar surface.
+Sergei Krikalyov is the first Russian cosmonaut to travel on the U.S. Space Shuttle (STS-60).
+U.S. spacecraft Galileo performs its second asteroid fly-by, passing within 2,400 kilometers of 243 Ida.
+ Turkey	Turksat 1B	Turksat	France Aérospatiale	Europe Ariane 44LP	France Kourou	10 August 1994	
+founded Brazilian Space Agency
+
+1995
+
+Cosmonaut Polyakov sets a new endurance record of 437 days aboard Mir.
+Eileen Collins becomes the first female space shuttle pilot (STS-63).
+Norman Thagard is the first NASA astronaut to visit the Mir space station, sets U.S. endurance record of 115 days.
+Shuttle mission STS-71 features the first shuttle docking to the Mir space station. 100th U.S. human space flight.
+America's Galileo becomes the first spacecraft to orbit Jupiter. An atmospheric probe gathers data on Jupiter's upper atmosphere.
+ Czech Republic	Magion 4		Czech Republic	Russia Molniya-M	Russia Plesetsk	2 August 1995	Formerly part of Czechoslovakia
+ Ukraine	Sich-1			Ukraine Tsyklon-3	Russia Plesetsk	31 August 1995	Formerly part of the Soviet Union
+ Chile	Fasat-Alfa		United Kingdom SSTL	Failed to separate
+
+1996
+
+Shannon Lucid sets a new U.S. endurance record of 188 days aboard Mir.
+Russia's Mars 96, the heaviest interplanetary probe ever launched, suffers an upper stage failure and crashes back to Earth.
+Columbia sets the space shuttle endurance record of 17 days, 16 hours (STS-80).
+ Malaysia	MEASAT-1	MEASAT	United States Hughes	Europe Ariane 44L	France Kourou	13 January 1996	
+
+1997
+
+NASA's Mars Pathfinder lands the first planetary rover, Sojourner, on Mars. Demonstrates new landing technique using air bags.
+The United States' Mars Global Surveyor becomes the first Mars orbiter since Viking 2 (1976).
+ Norway	Thor 2	Telenor	United States Hughes	United States Delta II 7925	United States Cape Canaveral	20 May 1997	
+ Philippines	Mabuhay 1	Mabuhay	United States SS/Loral	China Chang Zheng 3B	China Xichang	19 August 1997	
+
+1998
+
+The U.S. launches Deep Space 1 to test advanced technologies, including first flight of an ion engine.
+Russia launches the Zarya Functional Cargo Block on a Proton rocket, the first module of the ISS to be placed in space.
+Shuttle mission STS-88 is the first ISS assembly flight and first habitation of the ISS.
+ Egypt	Nilesat 101	Nilesat	Europe Astrium	Europe Ariane 44P	France Kourou	28 April 1998	
+ Singapore
+ Republic of China	ST-1	SingTel
+Chunghwa	Europe Astrium	Europe Ariane 44P	France Kourou	25 August 1998	
+
+1999
+
+NASA's Lunar Prospector crashes into a crater at the Moon's south pole in the hope water vapor will be liberated, none is detected.
+The U.S. suffers the failure of two Mars missions, Mars Climate Orbiter and Mars Polar Lander.
+ Republic of China	Formosat-1	NSPO	United States TRW	United States Athena I	United States Cape Canaveral	27 January 1999	
+ South Africa	SUNSAT	Stellenbosch	South Africa Stellenbosch	United States Delta II 7920	United States Vandenberg	23 February 1999	Launched on same rocket as first Danish satellite
+ Denmark	Ørsted		Denmark CRI	Launched on same rocket as first South African satellite
+
+2000
+
+The U.S. spacecraft NEAR-Shoemaker becomes the first to orbit an asteroid, 433 Eros.
+Mission STS-96 features the first space shuttle docking with the ISS.
+The Chandra X-Ray Observatory is deployed during shuttle mission STS-93; Collins is first female shuttle commander.
+ United Arab Emirates	Thuraya 1	Thuraya	United States Boeing	Ukraine Zenit-3SL	United Nations Odyssey	21 October 2000	
+
+2000
+
+Soyuz TM-30 is the 28th and final Mir long stay mission.
+Soyuz TM-31 delivers the Expedition 1 crew to the ISS for the first extended stay on the space station.
+Iranian Space Research Center founded
+
+2001
+
+NASA's NEAR-Shoemaker successfully lands on asteroid 433 Eros.
+The space station Mir reenters the atmosphere after 15 years in space.
+American businessman Dennis Tito becomes the first space tourist, purchasing a flight aboard a Russian Soyuz.
+ Morocco	Maroc-Tubsat		Germany TU Berlin	Ukraine Zenit-2	Kazakhstan Baikonur	10 December 2001	
+ Tonga	Esiafi 1
+(former Comstar D4)	TONGASAT	United States SS/Loral	(United States Atlas SLV-3D Centaur-D1AR)	(United States Cape Canaveral)	(21 February 1981)	Esiafi 1 (former private American Comstar D4) satellite was transferred in April 2002 to Tonga being at orbit
+
+2002
+
+Jerry Ross (STS-110) and Franklin Chang-Diaz (STS-111) make a record 7th space flight.
+Astronauts Bursch & Walz set a new U.S. endurance record of 195 days aboard ISS.
+ Algeria	AlSAT-1		United Kingdom SSTL	Russia Kosmos-3M	Russia Plesetsk	28 November 2002	
+
+2003
+
+The space shuttle Columbia breaks up during reentry resulting in the loss of both vehicle and 7-person crew.
+China becomes the third nation to place a man in space with the launch of Shenzhou 5 on October 15, piloted by Yang Liwei.
+ESA launches SMART-1, the first European mission to the Moon; arrives November 2004 using ion propulsion.
+ Greece	Hellas-Sat 2	Hellas-Sat	European Union Astrium	United States Atlas V 401	United States Cape Canaveral	13 May 2003	
+ Nigeria	NigeriaSat-1		United Kingdom SSTL	Russia Kosmos-3M	Russia Plesetsk	27 September 2003	
+JAXA founded
+
+2004
+
+The U.S. Stardust spacecraft flies by coment Wild 2, collecting cometary dust particles.
+The U.S. lands two rovers, Spirit and Opportunity, on Mars; evidence for past liquid surface water is found.
+President George W. Bush announces the New Vision for Space Exploration Program, including plans for returning humans to the Moon by 2020 and eventually to Mars and beyond.
+The suborbital flight of SpaceShipOne, piloted by Michael Melvill, is the first privately funded, non-government manned space flight.
+America's Cassini becomes the first spacecraft to orbit Saturn; releases European Huygens probe prior to orbit insertion.
+NASA's Genesis, the first mission to return samples from beyond the Moon, crashes after failing to deploy parachute; useful solar wind samples are recovered.
+SpaceShipOne, piloted by Brian Binnie, breaks the X-15's altitude record for a rocket plane, reaching 111,997 meters.
+NASA's X-43A scramjet sets a new speed record for jet-powered aircraft at Mach 9.6.
+Iranian Space Agency founded
+
+2005
+
+ESA's Huygens probe, piggy-backed with Cassini, descends to the surface of the moon Titan and returns pictures and data.
+NASA's Deep Impact flies by comet Tempel 1, successfully releasing an impactor to study ejecta.
+The U.S. launches STS-114 to the ISS, the first space shuttle flight since the loss of Columbia.
+Sergei Krikalyov, ISS Expedition 11, sets a record with 803 cumulative days in space.
+China's second manned flight, Shenzhou 6, includes its first two-man crew.
+Mars Express, ESA's first mission to Mars, successfully enters orbit but the lander fails.
+ Iran	Sina-1		Russia NPO Polyot	Russia Kosmos-3M	Russia Plesetsk	27 October 2005
+
+2006
+
+The U.S. launches New Horizons, the first mission to Pluto and the fastest spacecraft launched from Earth at 57,600 km/h.
+Stardust's sample return cannister sucessfully lands in the U.S., returning the first cometary dust particles.
+America's Mars Reconnaissance Orbiter arrives at Mars, carrying the largest camera flown on a planetary mission.
+Venus Express, ESA's first mission to Venus, arrives successfully.
+ Kazakhstan	KazSat-1		Russia Khrunichev	Russia Proton-M/DM3	Kazakhstan Baikonur	17 June 2006	Formerly part of the Soviet Union
+
+2007
+
+Astronaut Michael Lopez-Alegria sets a new U.S. endurance record of 215 days aboard ISS; also sets American records with 10 career EVA totaling 67 hours, 40 minutes.
+Astronaut Sunita Williams sets new endurance and EVA records for women; 195 days aboard ISS and 29 hours, 17 minutes of EVA time.
+American Peggy Whitson becomes the first female ISS commander (Expedition 16).
+Japan's Kaguya returns the first high-definition television images of the moon from lunar orbit.
+Chang'e 1 becomes China's first successful mission to the Moon.
+ Colombia	Libertad-1		United StatesColombia	Ukraine Dnepr-1	Kazakhstan Baikonur	17 April 2007	
+ Mauritius	Rascom-QAF 1	Rascom	France Alcatel	Europe Ariane 5GS	France Kourou	21 December 2007	
+Phoenix (spacecraft) first martian polar lander
+
+2008
+
+NASA's MESSENGER flies by Mercury, the first spacecraft to visit the planet since 1975.
+Sergei Volkov becomes the first second-generation cosmonaut in space, son of Aleksandr Volkov.
+NASA's Phoenix lander touches near Mars' north pole, the first landing in a polar region, and confirms the presence of water ice on Mars.
+China's third manned flight, Shenzhou 7, includes its first three-man crew and first spacewalk by Zhai Zhigang.
+Chandrayaan 1 becomes India's first successful mission to the Moon.
+ Vietnam	Vinasat-1		United States Lockheed Martin	Europe Ariane 5ECA	France Kourou	18 April 2008	
+ Venezuela	Venesat-1		China CAST	China Chang Zheng 3B/E	China Xichang	29 October 2008	
+
+2009
+
+NASA launches the Kepler space observatory to discover Earth-like planets orbiting other stars.
+The International Space Station begins regular six-person crew operations.
+A record thirteen crewmembers occupy a single spacecraft when Shuttle mission STS-127 visits the ISS.
+NASA's Lunar Reconnaissance Orbiter enters lunar orbit; returns high-resolution images of Apollo artifacts on the moon.
+NASA's LCROSS mission confirms the presence of water in a permanently shadowed crater at the Moon's south pole.
+  Switzerland	SwissCube-1		Switzerland	India PSLV-CA	India Satish Dhawan	23 September 2009	
+founded Netherlands Space Office
+
+2010
+
+U.S. President Barack Obama cancels NASA's Constellation Program, the human space flight program begun in response to the goals laid out in President Bush's Vision for Space Exploration.
+Virgin Galactic's SpaceShipTwo private suborbital spaceplane makes its first solo test flight.
+The SpaceX Dragon becomes the first spacecraft placed in orbit and recovered by a private company.
+UK Space Agency founded
+South African National Space Agency founded
+Agencia Espacial Mexicana founded
+
+2011
+
+NASA's MESSENGER becomes the first spacecraft to enter orbit around the planet Mercury.
+U.S. shuttles Discovery and Endeavour make their final flights and are retired.
+Atlantis makes the 135th and final flight of the U.S. Space Shuttle program.
+NASA's Dawn spacecraft enters orbit around the asteroid Vesta.
+China launches its first space station, Tiangong 1.
+The unmanned Shenzhou 8 spacecraft performs China's first automated docking with Tiangong 1.
+ Singapore	X-Sat		South Korea SATREC	India PSLV-C	India Satish Dhawan	20 April 2011	
+ Isle of Man	ViaSat-1	ViaSat-IOM, ManSat, Telesat-IOM	United States SS/Loral	Russia Proton-M​/Briz-M	Kazakhstan Baikonur	19 October 2011	Isle of Man is a Crown Dependency of the British sovereign
+
+2012
+
+The unmanned SpaceX Dragon becomes the first commercial spacecraft to successfully rendezvous with the ISS.
+Shenzhou 9 is the first manned mission to the Tiangong 1 space station, performing China's first manned rendezvous and docking. Jing Haipeng becomes China's first repeat astronaut, while Liu Yang becomes the first Chinese woman in space. Sets Chinese endurance record of 13 days.
+NASA's Mars Science Laboratory lands the planetary rover Curiosity on Mars, demonstrating the "sky crane" landing technique.
+ Hungary	MaSat-1[16]		Hungary	European Union Vega	France Kourou	13 February 2012	
+ Poland	PW-Sat[16]			
+ Romania	Goliat[16]		United StatesRomania	
+ Belarus	BelKA-2[17][18]		Russia	Russia Soyuz-FG/​Fregat	Kazakhstan Baikonur	22 July 2012	
+ North Korea	Kwangmyŏngsŏng-3 Unit 2[19]		North Korea	North Korea Unha-3	North Korea Sohae	12 December 2012	Failed to operate in orbit
+
+2013
+
+ Azerbaijan	Azerspace-1/​Africasat-1a[20]		United States Orbital Sciences	Europe Ariane 5ECA	France Kourou	7 February 2013	Formerly part of the Soviet Union
+ Austria	TUGSAT-1/​UniBRITE[21]		Canada UTAIS	India PSLV-CA	India Satish Dhawan	25 February 2013	Austria's first two satellites were launched together
+ Bermuda	Bermudasat 1
+(former EchoStar VI)	Bermudasat	United States SS/Loral	(United States Atlas IIAS)	(United States Cape Canaveral)	(14 July 2000)	Bermuda is a British Overseas Territory; Bermudasat 1 (former private American EchoStar VI) satellite was transferred in April 2013 to Bermuda being at orbit
+ Ecuador	NEE-01 Pegaso[22]	EXA	Ecuador EXA	China Chang Zheng 2D	China Jiuquan	26 April 2013	
+ Estonia	ESTCube-1		Estonia	European Union Vega	France Kourou	7 May 2013	Formerly part of the Soviet Union
+ Jersey	O3b-1/O3b-2/O3b-3/O3b-4	O3b Networks	France Thales Alenia Space	Russia Soyuz-STB​/Fregat-MT	France Kourou	25 June 2013	Jersey's first four satellites were launched together. Jersey is a Crown Dependency of the British sovereign
+ Peru	PUCP-Sat 1		Peru	Ukraine Dnepr	Russia Dombarovsky	21 November 2013	
+ Bolivia	Túpac Katari 1		China CAST	China Chang Zheng 3B/E	China Xichang	20 December 2013	
+ 
+ 2014
+
+ Lithuania	LitSat-1/Lituanica SAT-1		Lithuania	United States Antares 120	United States MARS LP-0A	9 January 2014	The first two Lithuanian satellites were launched together; both carried to the International Space Station and deployed later in the year. Lithuania was formerly part of the Soviet Union.
+ Belgium	QB50P1/QB50P2	Von Karman Institute	Belgium	Ukraine Dnepr	Russia Dombarovsky	19 June 2014	The first two Belgian satellites were launched together
+ Iraq	Tigrisat	MOST/La Sapienza	Italy	
+ Uruguay	ANTELSAT	UdelaR	Uruguay	
+
+2015
+
+ Turkmenistan	TurkmenAlem52E/MonacoSAT	TNSA	France Alcatel	United States Falcon 9	United States Cape Canaveral	27 April 2015	Formerly part of the Soviet Union.
+ Laos	Laosat-1	Laos National Authority for Science and Technology	China CAST	China Chang Zheng 3B/E	China Xichang	20 November 2015	
