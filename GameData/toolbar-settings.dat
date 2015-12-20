@@ -7,7 +7,7 @@ toolbars
 			x = -3
 			y = -3
 			width = 250
-			height = 38
+			height = 81
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = False
@@ -78,7 +78,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest
+			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest,Tac.FB
 		}
 	}
 	MAINMENU
@@ -201,7 +201,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest
+			visibleButtons = Fusebox.FBToggle,CrewManifest.CrewManifest,Tac.FB
 		}
 		toolbar_77370392
 		{
