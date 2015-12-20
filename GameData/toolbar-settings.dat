@@ -7,7 +7,7 @@ toolbars
 			x = -3
 			y = -3
 			width = 250
-			height = 81
+			height = 38
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = False
@@ -177,7 +177,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = sirkut.IREditorButton
+			visibleButtons = sirkut.IREditorButton,RCSBuildAid.mainButton
 		}
 		toolbar_467562744
 		{
