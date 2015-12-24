@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/NASA
-	launchID = 218
+	launchID = 219
 	PARAMETERS
 	{
 		preset = Normal
@@ -662,8 +662,8 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 492973598.354115
-		activeVessel = 0
+		UT = 492973598.774115
+		activeVessel = -1
 		mapViewFiltering = 576
 		VESSEL
 		{
@@ -46592,13 +46592,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 875137.866587498
+				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 158.408039701256
-				LAN = 128.93076496523
-				MNA = 3.14159265358979
-				EPH = 492973593.994119
+				LPE = 45.2540644746333
+				LAN = 130.036538271216
+				MNA = -8.40714670366795
+				EPH = 492973598.374115
 				REF = 10
 			}
 			PART
@@ -51005,13 +51005,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 875441.686877199
+				SMA = 0
 				ECC = 1
 				INC = NaN
-				LPE = 154.956084403242
-				LAN = 128.93076496523
-				MNA = 3.14159265358979
-				EPH = 492973593.994119
+				LPE = 44.9055273100899
+				LAN = 130.036538271216
+				MNA = -8.40714670366795
+				EPH = 492973598.374115
 				REF = 10
 			}
 			PART

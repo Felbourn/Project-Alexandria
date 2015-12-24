@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <config>
     <rect name="editorWinPos">
-        <xmin>1151</xmin>
-        <xmax>1517</xmax>
-        <ymin>190</ymin>
-        <ymax>640</ymax>
+        <xmin>247</xmin>
+        <xmax>651</xmax>
+        <ymin>261</ymin>
+        <ymax>711</ymax>
     </rect>
     <rect name="presetWinPos">
         <xmin>1190</xmin>
