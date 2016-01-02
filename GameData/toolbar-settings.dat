@@ -141,7 +141,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,KerbalAlarmClock.btnToolbarIcon,AmbientLightAdjustment.adjustLevels,SmokeScreen.main,sirkut.IREditorButton
-			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels,DockingAlignment.dockalign
+			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels,DockingAlignment.dockalign,AGX.AGXBtn
 		}
 		toolbar_24934541
 		{
@@ -229,7 +229,7 @@ toolbars
 		}
 		toolbar_388921930
 		{
-			x = 499
+			x = 436
 			y = -3
 			width = 250
 			height = 38
@@ -237,7 +237,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = MechJeb2.Construction_Computer
+			visibleButtons = MechJeb2.Construction_Computer,AGX.AGXBtn
 		}
 	}
 	EDITOR
@@ -280,7 +280,7 @@ toolbars
 		}
 		toolbar_388921930
 		{
-			x = 499
+			x = 436
 			y = -3
 			width = 250
 			height = 38
@@ -288,7 +288,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = MechJeb2.Construction_Computer
+			visibleButtons = MechJeb2.Construction_Computer,AGX.AGXBtn
 		}
 	}
 	FLIGHTMAP
