@@ -7,7 +7,7 @@ toolbars
 			x = -3
 			y = -3
 			width = 250
-			height = 38
+			height = 81
 			autoHide = False
 			drawBorder = False
 			useKSPSkin = False
@@ -34,7 +34,7 @@ toolbars
 	{
 		toolbar_558249692
 		{
-			x = 215
+			x = 192
 			y = -3
 			width = 340
 			height = 38
@@ -42,7 +42,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,KerbalAlarmClock.btnToolbarIcon,AmbientLightAdjustment.adjustLevels,SmokeScreen.main,sirkut.IREditorButton
-			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels,DockingAlignment.dockalign,AGX.AGXBtn
+			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels,DockingAlignment.dockalign,AGX.AGXBtn,test.buttonDOSettings
 		}
 		toolbar_24934541
 		{
@@ -58,7 +58,7 @@ toolbars
 		}
 		toolbar_1438345651
 		{
-			x = 429
+			x = 469
 			y = -3
 			width = 250
 			height = 38
@@ -66,12 +66,12 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Node_Editor
+			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer
 		}
 		toolbar_1432091265
 		{
-			x = 1142
-			y = 39
+			x = 1112
+			y = 36
 			width = 250
 			height = 38
 			autoHide = False
@@ -133,7 +133,7 @@ toolbars
 		}
 		toolbar_558249692
 		{
-			x = 215
+			x = 192
 			y = -3
 			width = 340
 			height = 38
@@ -141,7 +141,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = __TOOLBAR_INTERNAL.configureVisibleButtons,KerbalAlarmClock.btnToolbarIcon,AmbientLightAdjustment.adjustLevels,SmokeScreen.main,sirkut.IREditorButton
-			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels,DockingAlignment.dockalign,AGX.AGXBtn
+			visibleButtons = SmokeScreen.main,KerbalAlarmClock.btnToolbarIcon,sirkut.IREditorButton,AmbientLightAdjustment.adjustLevels,DockingAlignment.dockalign,AGX.AGXBtn,test.buttonDOSettings
 		}
 		toolbar_24934541
 		{
@@ -157,7 +157,7 @@ toolbars
 		}
 		toolbar_1438345651
 		{
-			x = 429
+			x = 469
 			y = -3
 			width = 250
 			height = 38
@@ -165,7 +165,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer,MechJeb2.Maneuver_Node_Editor
+			visibleButtons = MechJeb2.Rendezvous_Planner,MechJeb2.Maneuver_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer
 		}
 		toolbar_2102786141
 		{
@@ -193,8 +193,8 @@ toolbars
 		}
 		toolbar_1432091265
 		{
-			x = 1142
-			y = 39
+			x = 1112
+			y = 36
 			width = 250
 			height = 38
 			autoHide = False
@@ -213,7 +213,7 @@ toolbars
 			drawBorder = False
 			useKSPSkin = False
 			buttonOrder = 
-			visibleButtons = MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer,KerbalAlarmClock.btnToolbarIcon
+			visibleButtons = MechJeb2.Maneuver_Planner,MechJeb2.Rendezvous_Planner,MechJeb2.Smart_A_S_S_,MechJeb2.Flight_Computer,KerbalAlarmClock.btnToolbarIcon,AmbientLightAdjustment.adjustLevels
 		}
 		toolbar_1644868424
 		{
