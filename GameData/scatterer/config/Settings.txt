@@ -2,11 +2,11 @@ forceOFFaniso = False
 displayInterpolatedVariables = True
 extinctionMultiplier = 1
 extinctionTint = 1
-mapExtinctionMultiplier = 1.5
-mapExtinctionTint = 1
-MapViewScale = 1
-mapExposure = 0.12
-mapAlphaGlobal = 1
+mapExtinctionMultiplier = 0.7
+mapExtinctionTint = 0.8
+MapViewScale = 10.56
+mapExposure = 0.08
+mapAlphaGlobal = 0.9
 rimBlend = 20
 rimpower = 600
 configPoints
@@ -14,45 +14,78 @@ configPoints
 	Item
 	{
 		altitude = 1000
-		skyAlpha = 1
-		skyExposure = 0.25
-		postProcessAlpha = 0.78
-		postProcessDepth = 0.06
+		skyAlpha = 0.9
+		skyExposure = 0.3
+		postProcessAlpha = 0.3
+		postProcessDepth = 0.5
 		postProcessExposure = 0.23
 		skyExtinctionMultiplier = 1
 		skyExtinctionTint = 1
 	}
 	Item
 	{
-		altitude = 5000
-		skyAlpha = 1
-		skyExposure = 0.25
-		postProcessAlpha = 0.78
-		postProcessDepth = 0.1
-		postProcessExposure = 0.23
+		altitude = 6000
+		skyAlpha = 0.83
+		skyExposure = 0.29
+		postProcessAlpha = 0.35
+		postProcessDepth = 0.6
+		postProcessExposure = 0.22
 		skyExtinctionMultiplier = 1
-		skyExtinctionTint = 1
-	}
-	Item
-	{
-		altitude = 55000
-		skyAlpha = 1
-		skyExposure = 0.25
-		postProcessAlpha = 0.78
-		postProcessDepth = 0.8
-		postProcessExposure = 0.23
-		skyExtinctionMultiplier = 1
-		skyExtinctionTint = 1
-	}
-	Item
-	{
-		altitude = 160000
-		skyAlpha = 1
-		skyExposure = 0.15
-		postProcessAlpha = 0.78
-		postProcessDepth = 2.4
-		postProcessExposure = 0.23
-		skyExtinctionMultiplier = 1.35
 		skyExtinctionTint = 0.9
+	}
+	Item
+	{
+		altitude = 16000
+		skyAlpha = 0.76
+		skyExposure = 0.28
+		postProcessAlpha = 0.4
+		postProcessDepth = 0.7
+		postProcessExposure = 0.21
+		skyExtinctionMultiplier = 1
+		skyExtinctionTint = 0.8
+	}
+	Item
+	{
+		altitude = 31000
+		skyAlpha = 0.69
+		skyExposure = 0.27
+		postProcessAlpha = 0.45
+		postProcessDepth = 0.8
+		postProcessExposure = 0.2
+		skyExtinctionMultiplier = 1
+		skyExtinctionTint = 0.7
+	}
+	Item
+	{
+		altitude = 49000
+		skyAlpha = 0.64
+		skyExposure = 0.26
+		postProcessAlpha = 0.5
+		postProcessDepth = 0.9
+		postProcessExposure = 0.19
+		skyExtinctionMultiplier = 1
+		skyExtinctionTint = 0.6
+	}
+	Item
+	{
+		altitude = 130000
+		skyAlpha = 0.58
+		skyExposure = 0.25
+		postProcessAlpha = 0.55
+		postProcessDepth = 1
+		postProcessExposure = 0.18
+		skyExtinctionMultiplier = 1
+		skyExtinctionTint = 0.5
+	}
+	Item
+	{
+		altitude = 250000
+		skyAlpha = 0.54
+		skyExposure = 0.24
+		postProcessAlpha = 0.6
+		postProcessDepth = 1
+		postProcessExposure = 0.17
+		skyExtinctionMultiplier = 1
+		skyExtinctionTint = 0.4
 	}
 }
