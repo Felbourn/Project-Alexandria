@@ -77,15 +77,4 @@ configPoints
 		skyExtinctionMultiplier = 1
 		skyExtinctionTint = 0.5
 	}
-	Item
-	{
-		altitude = 250000
-		skyAlpha = 0.54
-		skyExposure = 0.24
-		postProcessAlpha = 0.6
-		postProcessDepth = 1
-		postProcessExposure = 0.17
-		skyExtinctionMultiplier = 1
-		skyExtinctionTint = 0.4
-	}
 }
