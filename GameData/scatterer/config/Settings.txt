@@ -1,7 +1,7 @@
 forceOFFaniso = False
 displayInterpolatedVariables = True
 extinctionMultiplier = 1
-extinctionTint = 1
+extinctionTint = 0.91817
 mapExtinctionMultiplier = 0.7
 mapExtinctionTint = 0.8
 MapViewScale = 10.56
