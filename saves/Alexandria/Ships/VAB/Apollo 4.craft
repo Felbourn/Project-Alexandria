@@ -2,23 +2,23 @@ ship = Apollo 4
 version = 1.0.4
 description = 
 type = VAB
-size = 14.66997,118.0721,20.09032
+size = 14.66996,121.5196,20.0903
 PART
 {
 	part = His.FASAApollo.CM_4294249552
 	partName = Part
-	pos = 0.07671165,102.0913,0.2592155
+	pos = -1.623592,105.5388,2.961337
 	attPos = 0,0,0
-	attPos0 = 0.07671165,102.0913,0.2592155
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
+	attPos0 = -1.623592,105.5388,2.961337
+	rot = -3.721745E-09,0,0,1
+	attRot = -3.721745E-09,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 6
+	istg = 4
 	dstg = 0
 	sidx = 0
-	sqor = 6
+	sqor = 4
 	sepI = 0
 	attm = 0
 	modCost = 0
@@ -28,7 +28,6 @@ PART
 	link = His.FASA.Apollo.Float.Round_4294240594
 	link = His.FASA.Apollo.Float.Round_4294240332
 	link = His.FASA.Apollo.Float.Round_4294240270
-	link = Apollo.radialDrogue_4294233312
 	link = His.FASA.Apollo.Float.Ring_4294229776
 	link = His.FASA.Apollo.Float.Ring_4294227716
 	link = His.FASA.Apollo.Float.Ring_4294227656
@@ -254,7 +253,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = Custom05, Custom06
+				actionGroup = Custom10
 			}
 		}
 	}
@@ -277,6 +276,124 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 10
+			groupName = toggle CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 10
+			groupName = tog CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 10
+			groupName = tog CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 10
+			groupName = tog CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 10
+			groupName = tog CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 10
+			groupName = tog CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 10
+			groupName = tog CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 10
+			groupName = tog CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 10
+			groupName = tog CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 10
+			groupName = tog CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -528,6 +645,9 @@ PART
 			MechJebModuleCustomInfoWindow
 			{
 			}
+			MechJebModuleCustomInfoWindow
+			{
+			}
 			MechJebModuleWarpController
 			{
 				unlockParts = 
@@ -643,31 +763,6 @@ PART
 				guiActive = True
 				guiActiveEditor = True
 				guiIcon = 
-				guiName = Seat 0 inventory
-				category = 
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
-		EVENTS
-		{
-			ShowInventory
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = 
 				guiName = Seat 1 inventory
 				category = 
 				guiActiveUnfocused = True
@@ -694,6 +789,31 @@ PART
 				guiActiveEditor = True
 				guiIcon = 
 				guiName = Seat 2 inventory
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleKISInventory
+		isEnabled = True
+		invName = 
+		helmetEquipped = True
+		EVENTS
+		{
+			ShowInventory
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = 
+				guiName = 
 				category = 
 				guiActiveUnfocused = True
 				unfocusedRange = 2
@@ -739,18 +859,18 @@ PART
 {
 	part = His.FASAApollo.CM.parachutes_4294245104
 	partName = Part
-	pos = 0.07671165,102.8713,0.2592155
+	pos = -1.623592,106.3188,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,0.7799997,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 2
+	istg = 1
 	dstg = 0
 	sidx = 0
-	sqor = 2
+	sqor = 1
 	sepI = 0
 	attm = 0
 	modCost = 0
@@ -887,6 +1007,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -966,7 +1104,7 @@ PART
 {
 	part = His.FASA.Apollo.Float.Round_4294240594
 	partName = Part
-	pos = 0.07671165,102.6686,1.102196
+	pos = -1.623592,106.1161,3.804316
 	attPos = 0,0,0
 	attPos0 = 0,0.5772305,0.8429807
 	rot = -0.3535534,0.6123728,-0.3535536,0.6123719
@@ -974,10 +1112,10 @@ PART
 	attRot0 = -0.3535534,0.6123728,-0.3535536,0.6123719
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 0
 	dstg = 0
 	sidx = 0
-	sqor = 1
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -1021,7 +1159,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = Custom07
+				actionGroup = None
 			}
 		}
 	}
@@ -1048,6 +1186,34 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Round
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -1083,7 +1249,7 @@ PART
 {
 	part = His.FASA.Apollo.Float.Round_4294240332
 	partName = Part
-	pos = 0.8067544,102.6686,-0.162275
+	pos = -0.8935487,106.1161,2.539847
 	attPos = 0,0,0
 	attPos0 = 0.7300427,0.5772305,-0.4214904
 	rot = -0.4829631,0.8365161,0.1294094,-0.2241445
@@ -1091,10 +1257,10 @@ PART
 	attRot0 = -0.4829631,0.836516,0.1294094,-0.2241445
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 0
 	dstg = 0
 	sidx = 1
-	sqor = 1
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -1138,7 +1304,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = Custom07
+				actionGroup = None
 			}
 		}
 	}
@@ -1165,6 +1331,34 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Round
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -1200,7 +1394,7 @@ PART
 {
 	part = His.FASA.Apollo.Float.Round_4294240270
 	partName = Part
-	pos = -0.6533311,102.6686,-0.1622748
+	pos = -2.353636,106.1161,2.539847
 	attPos = 0,0,0
 	attPos0 = -0.7300428,0.5772305,-0.4214903
 	rot = -0.1294097,0.2241432,0.4829631,-0.8365164
@@ -1208,10 +1402,10 @@ PART
 	attRot0 = -0.1294097,0.2241432,0.4829631,-0.8365164
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 0
 	dstg = 0
 	sidx = 2
-	sqor = 1
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -1255,7 +1449,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = Custom07
+				actionGroup = None
 			}
 		}
 	}
@@ -1282,6 +1476,34 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Round
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -1315,245 +1537,20 @@ PART
 }
 PART
 {
-	part = Apollo.radialDrogue_4294233312
-	partName = Part
-	pos = 0.1074187,103.1586,0.2486021
-	attPos = 0,0,0
-	attPos0 = 0.03070709,1.067232,-0.01061345
-	rot = 0,0.7071067,-0.7071069,0
-	attRot = 0,0,0,1
-	attRot0 = 0,0.7071067,-0.7071069,0
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 4
-	dstg = 1
-	sidx = 0
-	sqor = 4
-	sepI = 0
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	srfN = srfAttach,His.FASAApollo.CM_4294249552
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 300
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		minAirPressureToOpen = 0.02
-		deployAltitude = 7600
-		minAirPressureToOpen_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0.01
-			maxValue = 0.75
-			stepIncrement = 0.01
-		}
-		deployAltitude_UIFlight
-		{
-			controlEnabled = True
-			minValue = 50
-			maxValue = 5000
-			stepIncrement = 50
-		}
-		EVENTS
-		{
-			Deploy
-			{
-				active = True
-				guiActive = True
-				guiIcon = Deploy Chute
-				guiName = Deploy Chute
-				category = Deploy Chute
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-			CutParachute
-			{
-				active = True
-				guiActive = True
-				guiIcon = Cut Parachute
-				guiName = Cut Parachute
-				category = Cut Parachute
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-			Repack
-			{
-				active = False
-				guiActive = False
-				guiIcon = Repack Chute
-				guiName = Repack Chute
-				category = Repack Chute
-				guiActiveUnfocused = True
-				unfocusedRange = 4
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			CutAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = BBModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = MPFix
-		isEnabled = True
-		semiDeploymentSpeed = 2
-		deploymentSpeed = 6
-		semiDeploymentSpeed_UIFlight
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 15
-			stepIncrement = 1
-		}
-		deploymentSpeed_UIFlight
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 15
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-			ResetChute
-			{
-				active = False
-				guiActive = False
-				guiIcon = Reset Chute
-				guiName = Reset Chute
-				category = Reset Chute
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableParachute
-		isEnabled = True
-		deploymentFactor = 1
-		semiDeploymentFactor = 2
-		deploymentFactor_UIFlight
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 20
-			incrementSlide = 1
-		}
-		semiDeploymentFactor_UIFlight
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 20
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
 	part = His.FASA.Apollo.Float.Ring_4294229776
 	partName = Part
-	pos = -1.187489,101.0992,1.523417
+	pos = -2.887793,104.5467,4.225535
 	attPos = 0.09111989,-0.0171833,-0.09112
 	attPos0 = -1.355321,-0.9749718,1.355321
-	rot = 0.001726834,0.3826796,0.004168854,0.9238701
+	rot = 0.00172683,0.3826796,0.004168853,0.9238701
 	attRot = 3.72888E-08,7.746068E-09,0.2674568,0.96357
 	attRot0 = -0.1006863,0.3692003,-0.2430784,0.8913285
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 0
 	dstg = 0
 	sidx = 3
-	sqor = 1
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -1598,7 +1595,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = Custom07
+				actionGroup = None
 			}
 		}
 	}
@@ -1625,6 +1622,34 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Ring
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -1660,18 +1685,18 @@ PART
 {
 	part = His.FASA.Apollo.Float.Ring_4294227716
 	partName = Part
-	pos = 1.340913,101.0992,1.523417
+	pos = -0.3593909,104.5467,4.225535
 	attPos = -0.09112,-0.0171833,-0.09111989
 	attPos0 = 1.355321,-0.9749718,1.355321
-	rot = 0.004168883,0.9238701,0.001726769,0.3826795
+	rot = 0.004168883,0.9238701,0.001726766,0.3826795
 	attRot = 3.72888E-08,7.746068E-09,0.2674568,0.96357
 	attRot0 = -0.2430784,0.8913285,-0.1006863,0.3692003
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 0
 	dstg = 0
 	sidx = 4
-	sqor = 1
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -1716,7 +1741,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = Custom07
+				actionGroup = None
 			}
 		}
 	}
@@ -1743,6 +1768,34 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Ring
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -1778,18 +1831,18 @@ PART
 {
 	part = His.FASA.Apollo.Float.Ring_4294227656
 	partName = Part
-	pos = 1.340913,101.0992,-1.004985
+	pos = -0.3593909,104.5467,1.697137
 	attPos = -0.09111989,-0.0171833,0.09112
 	attPos0 = 1.355321,-0.9749718,-1.355321
-	rot = 0.004168855,0.9238701,-0.001726834,-0.3826795
+	rot = 0.004168857,0.9238701,-0.001726838,-0.3826795
 	attRot = 3.72888E-08,7.746068E-09,0.2674568,0.96357
 	attRot0 = -0.2430784,0.8913285,0.1006864,-0.3692003
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 0
 	dstg = 0
 	sidx = 5
-	sqor = 1
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -1834,7 +1887,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = Custom07
+				actionGroup = None
 			}
 		}
 	}
@@ -1861,6 +1914,34 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Ring
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -1896,18 +1977,18 @@ PART
 {
 	part = His.FASA.Apollo.Float.Ring_4294227596
 	partName = Part
-	pos = -1.187489,101.0992,-1.004985
+	pos = -2.887793,104.5467,1.697137
 	attPos = 0.09112,-0.0171833,0.09111989
 	attPos0 = -1.355321,-0.9749718,-1.355321
-	rot = 0.001726769,0.3826795,-0.004168883,-0.9238701
+	rot = 0.001726773,0.3826795,-0.004168885,-0.9238701
 	attRot = 3.72888E-08,7.746068E-09,0.2674568,0.96357
 	attRot0 = -0.1006863,0.3692003,0.2430784,-0.8913285
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 1
+	istg = 0
 	dstg = 0
 	sidx = 6
-	sqor = 1
+	sqor = 0
 	sepI = 0
 	attm = 1
 	modCost = 0
@@ -1952,7 +2033,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = Custom07
+				actionGroup = None
 			}
 		}
 	}
@@ -1979,6 +2060,34 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Ring
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -2014,18 +2123,18 @@ PART
 {
 	part = His.FASAApollo.CM.HeatShield_4294239590
 	partName = Part
-	pos = 0.07671165,100.8163,0.2592155
+	pos = -1.623592,104.2638,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-1.275,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 5
+	istg = 3
 	dstg = 0
 	sidx = 0
-	sqor = 5
+	sqor = 3
 	sepI = 0
 	attm = 0
 	modCost = 0
@@ -2082,6 +2191,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -2106,19 +2233,19 @@ PART
 {
 	part = His.FASAApollo.CM.Decoupler_4294239176
 	partName = Part
-	pos = 0.07671165,100.9763,0.2592155
+	pos = -1.623592,104.4239,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,0.1599998,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 6
+	istg = 4
 	dstg = 1
 	sidx = 1
-	sqor = 6
-	sepI = 6
+	sqor = 4
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -2209,6 +2336,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -2279,19 +2424,19 @@ PART
 {
 	part = His.FASAApollo.SM_4294238326
 	partName = Part
-	pos = 0.07671165,98.76634,0.2592155
+	pos = -1.623592,102.2138,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-2.21,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 10
+	istg = 8
 	dstg = 2
 	sidx = 0
-	sqor = 10
-	sepI = 6
+	sqor = 8
+	sepI = 4
 	attm = 0
 	modCost = 12582.27
 	modMass = 0
@@ -3102,6 +3247,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = MechJebCore
 		isEnabled = True
 		running = True
@@ -3374,19 +3537,19 @@ PART
 {
 	part = His.FASAApollo.SM.Dish_4294237936
 	partName = Part
-	pos = 1.786712,96.71633,0.05921546
+	pos = 0.0864085,100.1638,2.761336
 	attPos = 0,0,0
 	attPos0 = 1.71,-2.05,-0.2
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 9
+	istg = 7
 	dstg = 2
 	sidx = 0
-	sqor = 9
-	sepI = 6
+	sqor = 7
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3492,6 +3655,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -3522,19 +3703,19 @@ PART
 {
 	part = His.FASAApollo.SM.Engine_4294237398
 	partName = Part
-	pos = 0.07671165,95.30634,0.2592155
+	pos = -1.623592,98.75374,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-3.46,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 7
+	istg = 5
 	dstg = 2
 	sidx = 0
-	sqor = 7
-	sepI = 6
+	sqor = 5
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3685,6 +3866,124 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -3727,19 +4026,19 @@ PART
 {
 	part = His.FASAApollo.SM.RCS_4294236506
 	partName = Part
-	pos = -1.327281,99.64056,1.663208
+	pos = -3.027584,103.0881,4.365335
 	attPos = 0,-0.01049519,0
 	attPos0 = -1.403993,0.884716,1.403993
-	rot = -1.081774E-07,-0.3826835,-4.480854E-08,0.9238796
+	rot = -1.116158E-07,-0.3826835,-4.338429E-08,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = -1.081774E-07,-0.3826835,-4.480854E-08,0.9238796
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 10
+	istg = 8
 	dstg = 2
 	sidx = 1
-	sqor = 10
-	sepI = 6
+	sqor = 8
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3821,7 +4120,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom09
 			}
 		}
 	}
@@ -3848,6 +4147,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -3878,19 +4225,19 @@ PART
 {
 	part = His.FASAApollo.SM.RCS_4294235566
 	partName = Part
-	pos = 1.480704,99.64056,1.663209
+	pos = -0.2195998,103.0881,4.365335
 	attPos = 0,-0.01049519,0
 	attPos0 = 1.403992,0.884716,1.403993
-	rot = -1.081774E-07,0.3826834,4.480853E-08,0.9238796
+	rot = -1.116158E-07,0.3826834,4.338428E-08,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = -1.081774E-07,0.3826834,4.480853E-08,0.9238796
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 10
+	istg = 8
 	dstg = 2
 	sidx = 2
-	sqor = 10
-	sepI = 6
+	sqor = 8
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3972,7 +4319,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom09
 			}
 		}
 	}
@@ -3999,6 +4346,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -4029,19 +4424,19 @@ PART
 {
 	part = His.FASAApollo.SM.RCS_4294235432
 	partName = Part
-	pos = 1.480705,99.64056,-1.144777
+	pos = -0.2195989,103.0881,1.557347
 	attPos = 0,-0.01049519,0
 	attPos0 = 1.403993,0.884716,-1.403993
-	rot = -4.480853E-08,0.9238796,1.081774E-07,0.3826835
+	rot = -4.623278E-08,0.9238796,1.04739E-07,0.3826835
 	attRot = 0,0,0,1
 	attRot0 = -4.480853E-08,0.9238796,1.081774E-07,0.3826835
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 10
+	istg = 8
 	dstg = 2
 	sidx = 3
-	sqor = 10
-	sepI = 6
+	sqor = 8
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4123,7 +4518,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom09
 			}
 		}
 	}
@@ -4155,6 +4550,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -4180,19 +4623,19 @@ PART
 {
 	part = His.FASAApollo.SM.RCS_4294235298
 	partName = Part
-	pos = -1.327281,99.64056,-1.144777
+	pos = -3.027584,103.0881,1.557347
 	attPos = 0,-0.01049519,0
 	attPos0 = -1.403993,0.884716,-1.403993
-	rot = 4.480853E-08,0.9238796,1.081774E-07,-0.3826834
+	rot = 4.623278E-08,0.9238796,1.04739E-07,-0.3826834
 	attRot = 0,0,0,1
 	attRot0 = 4.480853E-08,0.9238796,1.081774E-07,-0.3826834
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 10
+	istg = 8
 	dstg = 2
 	sidx = 4
-	sqor = 10
-	sepI = 6
+	sqor = 8
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4274,7 +4717,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom09
 			}
 		}
 	}
@@ -4306,6 +4749,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -4331,19 +4822,19 @@ PART
 {
 	part = His.FASAApollo.SM.Light_4294234650
 	partName = Part
-	pos = -1.860158,100.9112,-0.2597676
+	pos = -3.56046,104.3587,2.442357
 	attPos = 0,0.6603432,0
 	attPos0 = -1.93687,1.484528,-0.5189832
-	rot = -2.74125E-08,0.6087614,2.103434E-08,0.7933534
+	rot = -3.036516E-08,0.6087614,1.876869E-08,0.7933534
 	attRot = 0,0,0,1
 	attRot0 = -2.74125E-08,0.6087614,2.103434E-08,0.7933534
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 8
+	istg = 6
 	dstg = 2
 	sidx = 0
-	sqor = 8
-	sepI = 6
+	sqor = 6
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4458,118 +4949,19 @@ PART
 	}
 	MODULE
 	{
-		name = PartPath
+		name = ModuleAGX
 		isEnabled = True
+		placeHolder = Hello World
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
 		}
-	}
-}
-PART
-{
-	part = His.FASAApollo.CM.Top_4294244340
-	partName = Part
-	pos = 0.07671165,102.9263,0.2592155
-	attPos = 0,0,0
-	attPos0 = 0,0.05499935,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 3
-	dstg = 1
-	sidx = 0
-	sqor = 3
-	sepI = 3
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = His.FASAApollo.DockingDevice_4294232382
-	attN = top,His.FASAApollo.DockingDevice_4294232382
-	attN = bottom,His.FASAApollo.CM.parachutes_4294245104
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		ejectionForcePercent_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		EVENTS
-		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 300
-		EVENTS
+		TOGGLE
 		{
 		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ReflectiveShaderModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = BBModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
+		HOLD
 		{
 		}
 	}
@@ -4579,366 +4971,6 @@ PART
 		isEnabled = True
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableDecouple
-		isEnabled = True
-		ejectionForce = 100
-		staged = True
-		ejectionForce_UIFlight
-		{
-			controlEnabled = True
-			minValue = -3.402823E+38
-			maxValue = 3.402823E+38
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleStagingToggle
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			EnableEvent
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Enable Staging
-				guiName = Enable Staging
-				category = Enable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableEvent
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = His.FASAApollo.DockingDevice_4294232382
-	partName = Part
-	pos = 0.07671165,103.3363,0.2592155
-	attPos = 0,0,0
-	attPos0 = 0,0.4099998,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 2
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 4
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = His.FASAApollo.LES_4294190234
-	attN = bottom,His.FASAApollo.CM.Top_4294244340
-	attN = top,His.FASAApollo.LES_4294190234
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-			Undock
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			UndockSameVessel
-			{
-				active = False
-				guiActive = True
-				guiIcon = Undock
-				guiName = Undock
-				category = Undock
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Decouple
-			{
-				active = False
-				guiActive = True
-				guiIcon = Decouple Node
-				guiName = Decouple Node
-				category = Decouple Node
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			SetAsTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Set as Target
-				guiName = Set as Target
-				category = Set as Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			UnsetTarget
-			{
-				active = True
-				guiActive = False
-				guiIcon = Unset Target
-				guiName = Unset Target
-				category = Unset Target
-				guiActiveUnfocused = True
-				unfocusedRange = 200
-				externalToEVAOnly = False
-			}
-			EnableXFeed
-			{
-				active = False
-				guiActive = False
-				guiIcon = Enable Crossfeed
-				guiName = Enable Crossfeed
-				category = Enable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableXFeed
-			{
-				active = False
-				guiActive = False
-				guiIcon = Disable Crossfeed
-				guiName = Disable Crossfeed
-				category = Disable Crossfeed
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MakeReferenceTransform
-			{
-				active = True
-				guiActive = True
-				guiIcon = Control from Here
-				guiName = Control from Here
-				category = Control from Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			UndockAction
-			{
-				actionGroup = None
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 4500
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = BBModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDockingNodeNamed
-		isEnabled = True
-		portName = Apollo CSM Docking Device
-		initialized = True
-		controlTransformName = 
-		EVENTS
-		{
-			renameDockingPort
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = Rename Port
-				guiName = Rename Port
-				category = Rename Port
-				guiActiveUnfocused = True
-				unfocusedRange = 2000
-				externalToEVAOnly = False
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTweakableDockingNode
-		isEnabled = True
-		fuelCrossFeed = True
-		acquireRange = 0.75
-		acquireForce = 0.25
-		acquireTorque = 0.25
-		undockEjectionForce = 1
-		minDistanceToReEngage = 0.75
-		isDecoupled = False
-		fuelCrossFeed_UIFlight
-		{
-			controlEnabled = True
-		}
-		acquireRange_UIFlight
-		{
-			controlEnabled = True
-			minValue = -1
-			maxValue = 3.402823E+38
-			incrementSlide = 1
-		}
-		acquireForce_UIFlight
-		{
-			controlEnabled = True
-			minValue = -1
-			maxValue = 3.402823E+38
-			incrementSlide = 1
-		}
-		acquireTorque_UIFlight
-		{
-			controlEnabled = True
-			minValue = -1
-			maxValue = 3.402823E+38
-			incrementSlide = 1
-		}
-		undockEjectionForce_UIFlight
-		{
-			controlEnabled = True
-			minValue = -1
-			maxValue = 3.402823E+38
-			incrementSlide = 1
-		}
-		minDistanceToReEngage_UIFlight
-		{
-			controlEnabled = True
-			minValue = -1
-			maxValue = 3.402823E+38
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			MakeReferenceTransformAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleStagingToggle
-		isEnabled = True
-		stagingEnabled = False
-		EVENTS
-		{
-			EnableEvent
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Enable Staging
-				guiName = Enable Staging
-				category = Enable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			DisableEvent
-			{
-				active = False
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -4949,19 +4981,19 @@ PART
 {
 	part = His.FASAApolloIU_4294182312
 	partName = Part
-	pos = 0.07671165,87.91634,0.2592155
+	pos = -1.623592,91.36375,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-7.39,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 15
+	istg = 10
 	dstg = 3
 	sidx = 0
-	sqor = 15
-	sepI = 15
+	sqor = 10
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5019,7 +5051,7 @@ PART
 		{
 			DecoupleAction
 			{
-				actionGroup = Abort, Custom03
+				actionGroup = Abort
 			}
 		}
 	}
@@ -5142,6 +5174,124 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -5337,7 +5487,7 @@ PART
 {
 	part = His.petalHinge_4294179260
 	partName = Part
-	pos = 0.07671165,88.41634,3.439215
+	pos = -1.623592,91.86375,6.141335
 	attPos = 0,0,0
 	attPos0 = 0,0.5,3.18
 	rot = 0.7009087,0,0,0.7132511
@@ -5345,11 +5495,11 @@ PART
 	attRot0 = 0.7071068,0,0,0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 12
+	istg = 10
 	dstg = 4
-	sidx = 0
-	sqor = 12
-	sepI = 15
+	sidx = 1
+	sqor = 10
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5502,7 +5652,7 @@ PART
 			}
 			MovePlusAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
 			}
 			MoveMinusAction
 			{
@@ -5527,6 +5677,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -5541,7 +5739,7 @@ PART
 {
 	part = His.petalHinge_4294175148
 	partName = Part
-	pos = 3.256711,88.41634,0.2592155
+	pos = 1.556407,91.86375,2.961337
 	attPos = 0,0,0
 	attPos0 = 3.18,0.5,0
 	rot = 0.4956177,0.5043443,-0.4956177,0.5043443
@@ -5549,11 +5747,11 @@ PART
 	attRot0 = 0.5,0.5,-0.5,0.5
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 12
+	istg = 10
 	dstg = 4
-	sidx = 1
-	sqor = 12
-	sepI = 15
+	sidx = 2
+	sqor = 10
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5706,7 +5904,7 @@ PART
 			}
 			MovePlusAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
 			}
 			MoveMinusAction
 			{
@@ -5731,6 +5929,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -5745,7 +5991,7 @@ PART
 {
 	part = His.petalHinge_4294175100
 	partName = Part
-	pos = 0.07671165,88.41634,-2.920784
+	pos = -1.623592,91.86375,-0.2186632
 	attPos = 0,0,0
 	attPos0 = -7.450581E-09,0.5,-3.18
 	rot = -3.063773E-08,0.7132511,-0.7009087,-3.117716E-08
@@ -5753,11 +5999,11 @@ PART
 	attRot0 = -3.090862E-08,0.7071068,-0.7071068,-3.090862E-08
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 12
+	istg = 10
 	dstg = 4
-	sidx = 2
-	sqor = 12
-	sepI = 15
+	sidx = 3
+	sqor = 10
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -5910,7 +6156,7 @@ PART
 			}
 			MovePlusAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
 			}
 			MoveMinusAction
 			{
@@ -5935,6 +6181,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -5949,7 +6243,7 @@ PART
 {
 	part = His.petalHinge_4294175052
 	partName = Part
-	pos = -3.103288,88.41634,0.2592155
+	pos = -4.803592,91.86375,2.961337
 	attPos = 0,0,0
 	attPos0 = -3.18,0.5,0
 	rot = -0.4956177,0.5043443,-0.4956177,-0.5043443
@@ -5957,11 +6251,11 @@ PART
 	attRot0 = -0.5,0.5,-0.5,-0.5
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 12
+	istg = 10
 	dstg = 4
-	sidx = 3
-	sqor = 12
-	sepI = 15
+	sidx = 4
+	sqor = 10
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -6114,7 +6408,7 @@ PART
 			}
 			MovePlusAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
 			}
 			MoveMinusAction
 			{
@@ -6139,6 +6433,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = MuMechToggle
+			actionGuiName = Move +
+			actionName = MovePlusAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -6153,19 +6495,19 @@ PART
 {
 	part = His.FASAStrFairing3m4x_4294178464
 	partName = Part
-	pos = 0.1316597,90.39017,0.2592156
+	pos = -1.568633,93.83765,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-3.2,-2.03
-	rot = -1.490116E-08,-1.490116E-08,-0.008726582,0.999962
+	rot = -3.378286E-08,-2.95736E-08,-0.008726567,0.999962
 	attRot = 0,0,0,1
 	attRot0 = 0.5,-0.5,0.5,-0.5
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 11
+	istg = 9
 	dstg = 4
 	sidx = 0
-	sqor = 11
-	sepI = 11
+	sqor = 9
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -6258,6 +6600,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -6271,7 +6661,7 @@ PART
 	{
 		name = ModuleTweakableDecouple
 		isEnabled = True
-		ejectionForce = 10
+		ejectionForce = 0
 		staged = True
 		ejectionForce_UIFlight
 		{
@@ -6328,19 +6718,19 @@ PART
 {
 	part = His.FASAStrFairing3m4x_4294173330
 	partName = Part
-	pos = 0.07671127,90.39016,0.2042677
+	pos = -1.623592,93.83757,2.906385
 	attPos = 0,0,0
 	attPos0 = -3.911555E-07,-3.200001,-2.029999
-	rot = 0.006171185,-0.7070799,0.006171185,-0.7070799
+	rot = 0.006171158,-0.7070799,0.006171158,-0.7070799
 	attRot = 0,0,0,1
 	attRot0 = 0.5,-0.5,0.5,-0.5
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 11
+	istg = 9
 	dstg = 4
 	sidx = 1
-	sqor = 11
-	sepI = 11
+	sqor = 9
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -6433,6 +6823,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -6446,7 +6884,7 @@ PART
 	{
 		name = ModuleTweakableDecouple
 		isEnabled = True
-		ejectionForce = 10
+		ejectionForce = 0
 		staged = True
 		ejectionForce_UIFlight
 		{
@@ -6503,19 +6941,19 @@ PART
 {
 	part = His.FASAStrFairing3m4x_4294173246
 	partName = Part
-	pos = 0.02176356,90.39017,0.2592156
+	pos = -1.678552,93.83765,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-3.2,-2.03
-	rot = 0.008726582,-0.999962,1.490116E-08,1.490116E-08
+	rot = 0.008726567,-0.999962,3.378286E-08,2.95736E-08
 	attRot = 0,0,0,1
 	attRot0 = 0.5,-0.5,0.5,-0.5
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 11
+	istg = 9
 	dstg = 4
 	sidx = 2
-	sqor = 11
-	sepI = 11
+	sqor = 9
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -6608,6 +7046,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -6621,7 +7107,7 @@ PART
 	{
 		name = ModuleTweakableDecouple
 		isEnabled = True
-		ejectionForce = 10
+		ejectionForce = 0
 		staged = True
 		ejectionForce_UIFlight
 		{
@@ -6678,19 +7164,19 @@ PART
 {
 	part = His.FASAStrFairing3m4x_4294173162
 	partName = Part
-	pos = 0.07671183,90.39017,0.3141717
+	pos = -1.623592,93.83765,3.016298
 	attPos = 0,0,0
 	attPos0 = 9.34884E-08,-3.200001,-2.03
-	rot = 0.006171269,-0.7070798,-0.00617131,0.7070799
+	rot = 0.006171257,-0.7070799,-0.0061713,0.7070799
 	attRot = 0,0,0,1
 	attRot0 = 0.5,-0.5,0.5,-0.5
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 11
+	istg = 9
 	dstg = 4
 	sidx = 3
-	sqor = 11
-	sepI = 11
+	sqor = 9
+	sepI = 9
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -6783,6 +7269,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -6796,7 +7330,7 @@ PART
 	{
 		name = ModuleTweakableDecouple
 		isEnabled = True
-		ejectionForce = 10
+		ejectionForce = 0
 		staged = True
 		ejectionForce_UIFlight
 		{
@@ -6853,10 +7387,10 @@ PART
 {
 	part = His.FASAApalloLFTJ2_4294167304
 	partName = Part
-	pos = 0.07671165,82.15634,0.2592155
+	pos = -1.623592,85.60382,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-5.760002,0
-	rot = 0,0.08715575,0,0.9961947
+	rot = -3.707582E-09,0.08715575,-3.243714E-10,0.9961947
 	attRot = 0,0.08715575,0,0.9961947
 	attRot0 = 0,0.08715575,0,0.9961947
 	mir = 1,1,1
@@ -6865,7 +7399,7 @@ PART
 	dstg = 4
 	sidx = 1
 	sqor = 15
-	sepI = 15
+	sepI = 10
 	attm = 0
 	modCost = 13756.99
 	modMass = 0
@@ -7394,6 +7928,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -7428,19 +7980,19 @@ PART
 {
 	part = His.FASAApalloLFTJ2Plate_4294164836
 	partName = Part
-	pos = 0.07671165,75.50635,0.2592155
+	pos = -1.623592,78.9538,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-6.649994,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0.3007059,0,0.953717
 	attRot0 = 0,0.3007059,0,0.953717
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 15
+	istg = 12
 	dstg = 4
-	sidx = 2
-	sqor = 15
-	sepI = 15
+	sidx = 0
+	sqor = 12
+	sepI = 12
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -7564,6 +8116,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -7660,19 +8230,19 @@ PART
 {
 	part = His.FASAApolloAPS2_4294163646
 	partName = Part
-	pos = -2.242599,75.88635,-2.060092
+	pos = -3.942905,79.33379,0.6420372
 	attPos = 0,0,0
 	attPos0 = 0,0.3800011,-3.28
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 13
+	istg = 11
 	dstg = 4
-	sidx = 0
-	sqor = 13
-	sepI = 15
+	sidx = 1
+	sqor = 11
+	sepI = 12
 	attm = 0
 	modCost = 124.686
 	modMass = 0
@@ -7734,7 +8304,7 @@ PART
 		{
 			OnAction
 			{
-				actionGroup = None
+				actionGroup = Custom07
 			}
 			ShutdownAction
 			{
@@ -8418,6 +8988,254 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -8468,19 +9286,19 @@ PART
 {
 	part = His.FASAApolloAPS_4294162468
 	partName = Part
-	pos = 2.396023,75.88635,2.578524
+	pos = 0.695721,79.33379,5.280644
 	attPos = 0,0,0
 	attPos0 = 0,0.3800011,3.28
-	rot = 0,0.9238796,0,-0.3826835
+	rot = 1.42425E-09,0.9238796,-3.438444E-09,-0.3826835
 	attRot = 0,0.9999999,0,0
 	attRot0 = 0,1,0,0
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 13
+	istg = 11
 	dstg = 4
-	sidx = 1
-	sqor = 13
-	sepI = 15
+	sidx = 2
+	sqor = 11
+	sepI = 12
 	attm = 0
 	modCost = 124.686
 	modMass = 0
@@ -8542,7 +9360,7 @@ PART
 		{
 			OnAction
 			{
-				actionGroup = None
+				actionGroup = Custom07
 			}
 			ShutdownAction
 			{
@@ -9231,6 +10049,314 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine+
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine+
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine+
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -9276,19 +10402,19 @@ PART
 {
 	part = His.s3.ullage_4294161650
 	partName = Part
-	pos = -2.221383,76.50635,2.55731
+	pos = -3.921685,79.9538,5.259424
 	attPos = 0,0,0
 	attPos0 = -3.25,1,0
-	rot = 0,-0.3826834,0,0.9238797
+	rot = -3.438444E-09,-0.3826835,1.42425E-09,0.9238797
 	attRot = 0,-0.7071068,0,0.7071068
 	attRot0 = 0,-0.7071068,0,0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 15
+	istg = 14
 	dstg = 4
-	sidx = 3
-	sqor = 15
-	sepI = 15
+	sidx = 0
+	sqor = 14
+	sepI = 12
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -9396,7 +10522,7 @@ PART
 			}
 			vActivateAction
 			{
-				actionGroup = None
+				actionGroup = Custom05
 			}
 			OnAction
 			{
@@ -9441,6 +10567,124 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -9470,19 +10714,19 @@ PART
 {
 	part = His.s3.ullage_4294160878
 	partName = Part
-	pos = 2.374805,76.50635,-2.038879
+	pos = 0.6744992,79.9538,0.6632473
 	attPos = 0,0,0
 	attPos0 = 3.25,1,2.980232E-08
-	rot = 0,0.9238797,0,0.3826834
+	rot = -1.42425E-09,0.9238797,-3.438444E-09,0.3826835
 	attRot = 0,0.7071067,0,0.7071067
 	attRot0 = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 15
+	istg = 14
 	dstg = 4
-	sidx = 4
-	sqor = 15
-	sepI = 15
+	sidx = 1
+	sqor = 14
+	sepI = 12
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -9590,7 +10834,7 @@ PART
 			}
 			vActivateAction
 			{
-				actionGroup = None
+				actionGroup = Custom05
 			}
 			OnAction
 			{
@@ -9640,6 +10884,124 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -9664,19 +11026,19 @@ PART
 {
 	part = His.FASAApolloLFEJ2_4294160088
 	partName = Part
-	pos = 0.07671165,73.04636,0.2592155
+	pos = -1.623592,76.49382,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-2.459999,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 14
+	istg = 13
 	dstg = 4
 	sidx = 0
-	sqor = 14
-	sepI = 15
+	sqor = 13
+	sepI = 12
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -9738,7 +11100,7 @@ PART
 		{
 			OnAction
 			{
-				actionGroup = None
+				actionGroup = Custom06
 			}
 			ShutdownAction
 			{
@@ -9798,7 +11160,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -9879,6 +11241,74 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -9952,19 +11382,19 @@ PART
 {
 	part = His.FASAApolloStrJ2StrJ23m5mDec_4294154398
 	partName = Part
-	pos = 0.07671165,72.51635,0.2592155
+	pos = -1.623592,75.9638,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-2.989998,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 15
+	istg = 14
 	dstg = 5
-	sidx = 5
-	sqor = 15
-	sepI = 15
+	sidx = 2
+	sqor = 14
+	sepI = 14
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -10038,7 +11468,7 @@ PART
 		{
 			DecoupleAction
 			{
-				actionGroup = None
+				actionGroup = Custom05
 			}
 		}
 	}
@@ -10120,7 +11550,7 @@ PART
 			}
 			vActivateAction
 			{
-				actionGroup = None
+				actionGroup = Custom05
 			}
 			OnAction
 			{
@@ -10165,6 +11595,224 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -10250,10 +11898,10 @@ PART
 {
 	part = His.FASAApalloLFTSVS2_4294151318
 	partName = Part
-	pos = 0.07671165,61.64635,0.2592155
+	pos = -1.623592,65.09381,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-10.87,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -10262,13 +11910,14 @@ PART
 	dstg = 6
 	sidx = 0
 	sqor = 17
-	sepI = 15
+	sepI = 14
 	attm = 0
 	modCost = 52379.9
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
 	link = His.FASAApalloLFTJ25XPlate.B_4294147502
 	link = His.FASAUmbilicalTower_4293980716
+	link = strutCube_4294136696
 	attN = top,His.FASAApolloStrJ2StrJ23m5mDec_4294154398
 	attN = bottom,His.FASAApalloLFTJ25XPlate.B_4294147502
 	EVENTS
@@ -10791,6 +12440,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -10825,10 +12492,10 @@ PART
 {
 	part = His.FASAApalloLFTJ25XPlate.B_4294147502
 	partName = Part
-	pos = 0.07671165,51.80635,0.2592155
+	pos = -1.623592,55.2538,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-9.84,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -10837,7 +12504,7 @@ PART
 	dstg = 6
 	sidx = 1
 	sqor = 17
-	sepI = 15
+	sepI = 14
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -10948,6 +12615,24 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -11072,19 +12757,19 @@ PART
 {
 	part = His.FASAApolloLFEJ2_4294146604
 	partName = Part
-	pos = 1.915188,47.98635,2.09769
+	pos = 0.214882,51.43382,4.799803
 	attPos = 0,0,0
 	attPos0 = 0,-3.82,2.6
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 17
+	istg = 16
 	dstg = 6
-	sidx = 2
-	sqor = 17
-	sepI = 15
+	sidx = 0
+	sqor = 16
+	sepI = 14
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -11157,7 +12842,7 @@ PART
 			}
 			ActivateAction
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -11209,7 +12894,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -11285,6 +12970,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -11363,19 +13096,19 @@ PART
 {
 	part = His.FASAApolloLFEJ2_4294146334
 	partName = Part
-	pos = 1.915185,47.98635,-1.579259
+	pos = 0.214874,51.43382,1.122867
 	attPos = 0,0,0
 	attPos0 = 2.6,-3.82,0
-	rot = 0,0.9238797,0,0.3826832
+	rot = -1.424249E-09,0.9238797,-3.438444E-09,0.3826832
 	attRot = 0,0,0,1
 	attRot0 = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 17
+	istg = 16
 	dstg = 6
-	sidx = 3
-	sqor = 17
-	sepI = 15
+	sidx = 1
+	sqor = 16
+	sepI = 14
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -11448,7 +13181,7 @@ PART
 			}
 			ActivateAction
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -11500,7 +13233,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -11576,6 +13309,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -11654,19 +13435,19 @@ PART
 {
 	part = His.FASAApolloLFEJ2_4294146238
 	partName = Part
-	pos = -1.761765,47.98635,-1.579258
+	pos = -3.462068,51.43382,1.122867
 	attPos = 0,0,0
 	attPos0 = 0,-3.82,-2.6
-	rot = 0,0.9238796,0,-0.3826836
+	rot = 1.424251E-09,0.9238795,-3.438444E-09,-0.3826836
 	attRot = 0,0,0,1
 	attRot0 = 0,1,0,-4.371139E-08
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 17
+	istg = 16
 	dstg = 6
-	sidx = 4
-	sqor = 17
-	sepI = 15
+	sidx = 2
+	sqor = 16
+	sepI = 14
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -11739,7 +13520,7 @@ PART
 			}
 			ActivateAction
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -11791,7 +13572,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -11867,6 +13648,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -11945,19 +13774,19 @@ PART
 {
 	part = His.FASAApolloLFEJ2_4294146142
 	partName = Part
-	pos = -1.761761,47.98635,2.097689
+	pos = -3.462059,51.43382,4.799802
 	attPos = 0,0,0
 	attPos0 = -2.6,-3.82,0
-	rot = 0,0.3826832,0,-0.9238797
+	rot = 3.438444E-09,0.3826832,-1.424249E-09,-0.9238797
 	attRot = 0,0,0,1
 	attRot0 = 0,0.7071068,0,-0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 17
+	istg = 16
 	dstg = 6
-	sidx = 5
-	sqor = 17
-	sepI = 15
+	sidx = 3
+	sqor = 16
+	sepI = 14
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -12030,7 +13859,7 @@ PART
 			}
 			ActivateAction
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -12082,7 +13911,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -12158,6 +13987,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -12236,19 +14113,19 @@ PART
 {
 	part = His.FASAApolloLFEJ2_4294120990
 	partName = Part
-	pos = 0.07671165,47.98635,0.2592155
+	pos = -1.623592,51.43382,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-3.82,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 17
+	istg = 16
 	dstg = 6
-	sidx = 6
-	sqor = 17
-	sepI = 15
+	sidx = 4
+	sqor = 16
+	sepI = 14
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -12318,7 +14195,7 @@ PART
 			}
 			ActivateAction
 			{
-				actionGroup = None
+				actionGroup = Custom03
 			}
 		}
 	}
@@ -12370,7 +14247,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -12451,6 +14328,214 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 16
+			groupName = J2 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 16
+			groupName = J2 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 16
+			groupName = J2 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 16
+			groupName = J2 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 16
+			groupName = J2 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 16
+			groupName = J2 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 16
+			groupName = J2 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 16
+			groupName = J2 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 16
+			groupName = J2 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -12524,19 +14609,19 @@ PART
 {
 	part = His.KW5mDecouplerShroud_4294144226
 	partName = Part
-	pos = 0.07671165,45.08635,0.2592155
+	pos = -1.623592,48.53381,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-6.720001,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 16
+	istg = 15
 	dstg = 7
 	sidx = 0
-	sqor = 16
-	sepI = 16
+	sqor = 15
+	sepI = 15
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -12599,7 +14684,7 @@ PART
 		{
 			DecoupleAction
 			{
-				actionGroup = None
+				actionGroup = Custom04
 			}
 		}
 	}
@@ -12753,6 +14838,224 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -12833,25 +15136,26 @@ PART
 {
 	part = His.FASAApalloLFTSVS1_4294124092
 	partName = Part
-	pos = 0.07671165,30.07635,0.2592155
+	pos = -1.623592,33.5238,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-15.01,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 18
+	istg = 17
 	dstg = 9
 	sidx = 0
-	sqor = 18
-	sepI = 18
+	sqor = 17
+	sepI = 17
 	attm = 0
 	modCost = 91913.3
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
 	link = His.FASAApalloLFTF1Plate_4294122834
 	link = His.FASAUmbilicalTower_4293981124
+	link = hc.booster_4294156668
 	attN = top,His.KW5mDecouplerShroud_4294144226
 	attN = bottom,His.FASAApalloLFTF1Plate_4294122834
 	EVENTS
@@ -13409,6 +15713,124 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -13499,10 +15921,10 @@ PART
 {
 	part = His.FASAApalloLFTF1Plate_4294122834
 	partName = Part
-	pos = 0.07671165,12.00635,0.2592155
+	pos = -1.623592,15.4538,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-18.07,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -13511,7 +15933,7 @@ PART
 	dstg = 10
 	sidx = 0
 	sqor = 20
-	sepI = 18
+	sepI = 17
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -13617,6 +16039,24 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -13741,19 +16181,19 @@ PART
 {
 	part = His.FASAStrF1Fairing_4294120144
 	partName = Part
-	pos = -3.423455,10.66634,3.759383
+	pos = -5.123739,14.11381,6.46149
 	attPos = 0,0,0
 	attPos0 = -4.95,-1.34,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 18
+	istg = 17
 	dstg = 10
 	sidx = 1
-	sqor = 18
-	sepI = 18
+	sqor = 17
+	sepI = 17
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -13909,6 +16349,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -13938,19 +16426,19 @@ PART
 {
 	part = His.FASAStrF1Fairing_4294119748
 	partName = Part
-	pos = 3.576886,10.66634,3.759386
+	pos = 1.87658,14.11381,6.46149
 	attPos = 0,0,0
 	attPos0 = 0,-1.34,4.95
-	rot = 0,0.9238797,0,0.3826833
+	rot = -1.424249E-09,0.9238797,-3.438444E-09,0.3826832
 	attRot = 0,0,0,1
 	attRot0 = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 18
+	istg = 17
 	dstg = 10
 	sidx = 2
-	sqor = 18
-	sepI = 18
+	sqor = 17
+	sepI = 17
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -14106,6 +16594,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -14135,19 +16671,19 @@ PART
 {
 	part = His.FASAStrF1Fairing_4294119616
 	partName = Part
-	pos = 3.576878,10.66634,-3.24095
+	pos = 1.876558,14.11381,-0.5388093
 	attPos = 0,0,0
 	attPos0 = 4.95,-1.34,0
-	rot = 0,0.9238796,0,-0.3826835
+	rot = 1.42425E-09,0.9238796,-3.438444E-09,-0.3826835
 	attRot = 0,0,0,1
 	attRot0 = 0,1,0,-4.371139E-08
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 18
+	istg = 17
 	dstg = 10
 	sidx = 3
-	sqor = 18
-	sepI = 18
+	sqor = 17
+	sepI = 17
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -14308,6 +16844,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -14332,19 +16916,19 @@ PART
 {
 	part = His.FASAStrF1Fairing_4294119484
 	partName = Part
-	pos = -3.423463,10.66634,-3.240955
+	pos = -5.123762,14.11381,-0.5388203
 	attPos = 0,0,0
 	attPos0 = 0,-1.34,-4.95
-	rot = 0,0.3826833,0,-0.9238797
+	rot = 3.438444E-09,0.3826832,-1.424249E-09,-0.9238797
 	attRot = 0,0,0,1
 	attRot0 = 0,0.7071068,0,-0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 18
+	istg = 17
 	dstg = 10
 	sidx = 4
-	sqor = 18
-	sepI = 18
+	sqor = 17
+	sepI = 17
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -14505,6 +17089,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -14529,19 +17161,19 @@ PART
 {
 	part = His.FASAApolloLFEF1_4294117918
 	partName = Part
-	pos = 3.470811,7.586342,-3.134885
+	pos = 1.770492,11.0338,-0.4327395
 	attPos = 0,0,0
 	attPos0 = 4.8,-4.419998,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 20
+	istg = 19
 	dstg = 10
-	sidx = 1
-	sqor = 20
-	sepI = 18
+	sidx = 0
+	sqor = 19
+	sepI = 17
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -14731,6 +17363,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -14773,19 +17423,19 @@ PART
 {
 	part = FASAlaunchClampApollo_4294098600
 	partName = Part
-	pos = 6.070212,2.076958,-5.734286
+	pos = 4.369877,5.524414,-3.032136
 	attPos = 0,0,0
 	attPos0 = 3.676123,-5.509384,5.960464E-08
-	rot = 0.008803785,-0.3826661,0.003646647,0.9238377
+	rot = 0.008803779,-0.3826659,0.003646645,0.9238378
 	attRot = 0,0,0,1
 	attRot0 = 0.006738125,-0.7070747,0.006738126,0.7070746
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 19
+	istg = 18
 	dstg = 10
 	sidx = 0
-	sqor = 19
-	sepI = 19
+	sqor = 18
+	sepI = 18
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -14807,9 +17457,9 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 9.307662
-		height = 2.326912
-		towerRot = -0.008803784,0.382666,-0.003646647,0.9238376
+		scaleFactor = 23.09751
+		height = 5.774368
+		towerRot = -0.008803778,0.3826658,-0.003646644,0.9238377
 		EVENTS
 		{
 			Release
@@ -14914,6 +17564,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -14939,19 +17607,19 @@ PART
 {
 	part = His.FASAApolloLFEF1_4294117110
 	partName = Part
-	pos = -3.317397,7.586342,-3.134889
+	pos = -5.0177,11.0338,-0.4327519
 	attPos = 0,0,0
 	attPos0 = 0,-4.419998,-4.8
-	rot = 0,0.9238797,0,0.3826833
+	rot = -1.424249E-09,0.9238797,-3.438444E-09,0.3826832
 	attRot = 0,0,0,1
 	attRot0 = 0,0.7071068,0,0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 20
+	istg = 19
 	dstg = 10
-	sidx = 2
-	sqor = 20
-	sepI = 18
+	sidx = 1
+	sqor = 19
+	sepI = 17
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -15141,6 +17809,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -15183,19 +17869,19 @@ PART
 {
 	part = FASAlaunchClampApollo_4294098490
 	partName = Part
-	pos = -5.916808,2.076958,-5.734298
+	pos = -7.617107,5.524414,-3.032159
 	attPos = 0,0,0
 	attPos0 = 3.676124,-5.509384,8.432546E-08
-	rot = 0.008803786,0.3826661,-0.003646647,0.9238378
+	rot = 0.008803776,0.3826661,-0.003646641,0.9238377
 	attRot = 0,0,0,1
 	attRot0 = 0.006738126,-0.7070748,0.006738127,0.7070747
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 19
+	istg = 18
 	dstg = 10
 	sidx = 1
-	sqor = 19
-	sepI = 19
+	sqor = 18
+	sepI = 18
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -15217,9 +17903,9 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 9.307662
-		height = 2.326912
-		towerRot = -0.008803785,-0.382666,0.003646647,0.9238377
+		scaleFactor = 23.09751
+		height = 5.774368
+		towerRot = -0.008803776,-0.382666,0.003646641,0.9238376
 		EVENTS
 		{
 			Release
@@ -15324,6 +18010,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -15349,19 +18053,19 @@ PART
 {
 	part = His.FASAApolloLFEF1_4294117016
 	partName = Part
-	pos = -3.317389,7.586342,3.653317
+	pos = -5.017677,11.0338,6.355419
 	attPos = 0,0,0
 	attPos0 = -4.8,-4.419998,0
-	rot = 0,0.9238796,0,-0.3826835
+	rot = 1.42425E-09,0.9238796,-3.438444E-09,-0.3826835
 	attRot = 0,0,0,1
 	attRot0 = 0,1,0,-4.371139E-08
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 20
+	istg = 19
 	dstg = 10
-	sidx = 3
-	sqor = 20
-	sepI = 18
+	sidx = 2
+	sqor = 19
+	sepI = 17
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -15551,6 +18255,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -15593,19 +18315,19 @@ PART
 {
 	part = FASAlaunchClampApollo_4294098780
 	partName = Part
-	pos = -5.916789,2.076958,6.252717
+	pos = -7.617062,5.524414,8.954803
 	attPos = 0,0,0
 	attPos0 = 3.676123,-5.509384,8.295827E-08
-	rot = 0.003646647,0.9238378,-0.008803785,0.3826659
+	rot = 0.003646641,0.9238378,-0.0088038,0.3826658
 	attRot = 0,0,0,1
 	attRot0 = 0.006738125,-0.7070747,0.006738126,0.7070746
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 19
+	istg = 18
 	dstg = 10
 	sidx = 2
-	sqor = 19
-	sepI = 19
+	sqor = 18
+	sepI = 18
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -15627,9 +18349,9 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 9.307662
-		height = 2.326912
-		towerRot = -0.003646646,-0.9238377,0.008803784,0.3826658
+		scaleFactor = 23.09751
+		height = 5.774368
+		towerRot = -0.003646641,-0.9238377,0.008803799,0.3826658
 		EVENTS
 		{
 			Release
@@ -15734,6 +18456,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -15759,19 +18499,19 @@ PART
 {
 	part = His.FASAApolloLFEF1_4294116922
 	partName = Part
-	pos = 3.47082,7.586342,3.65332
+	pos = 1.77051,11.0338,6.355431
 	attPos = 0,0,0
 	attPos0 = 0,-4.419998,4.8
-	rot = 0,0.3826833,0,-0.9238797
+	rot = 3.438444E-09,0.3826832,-1.424249E-09,-0.9238797
 	attRot = 0,0,0,1
 	attRot0 = 0,0.7071068,0,-0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 20
+	istg = 19
 	dstg = 10
-	sidx = 4
-	sqor = 20
-	sepI = 18
+	sidx = 3
+	sqor = 19
+	sepI = 17
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -15961,6 +18701,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -16003,19 +18761,19 @@ PART
 {
 	part = FASAlaunchClampApollo_4294098380
 	partName = Part
-	pos = 6.070233,2.076958,6.252728
+	pos = 4.369913,5.524414,8.954836
 	attPos = 0,0,0
 	attPos0 = 3.676124,-5.509384,8.331262E-08
-	rot = -0.003646647,0.9238378,-0.008803786,-0.3826661
+	rot = -0.003646644,0.9238377,-0.008803787,-0.3826661
 	attRot = 0,0,0,1
 	attRot0 = 0.006738126,-0.7070748,0.006738127,0.7070747
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 19
+	istg = 18
 	dstg = 10
 	sidx = 3
-	sqor = 19
-	sepI = 19
+	sqor = 18
+	sepI = 18
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -16037,9 +18795,9 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 9.307662
-		height = 2.326912
-		towerRot = 0.003646647,-0.9238377,0.008803785,-0.382666
+		scaleFactor = 23.09751
+		height = 5.774368
+		towerRot = 0.003646643,-0.9238376,0.008803786,-0.382666
 		EVENTS
 		{
 			Release
@@ -16144,6 +18902,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -16169,19 +18945,19 @@ PART
 {
 	part = His.FASAApolloLFEF1_4294116440
 	partName = Part
-	pos = 0.07671165,7.586342,0.2592155
+	pos = -1.623592,11.0338,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,-4.419998,0
-	rot = 0,0.3826835,0,0.9238796
+	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 20
+	istg = 19
 	dstg = 10
-	sidx = 5
-	sqor = 20
-	sepI = 18
+	sidx = 4
+	sqor = 19
+	sepI = 17
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -16367,6 +19143,124 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -16409,19 +19303,19 @@ PART
 {
 	part = His.FASAUmbilicalTower_4293981124
 	partName = Part
-	pos = -3.451048,41.2567,-8.80516
+	pos = -5.151357,44.70416,-6.103004
 	attPos = 0,0,0
 	attPos0 = 3.914993,11.18035,-8.903997
-	rot = 4.584561E-07,-0.2651355,3.708783E-08,-0.9642113
+	rot = 4.620448E-07,-0.2651355,3.807469E-08,-0.9642113
 	attRot = 0,0.1736482,0,0.9848078
 	attRot0 = 4.093653E-07,0.1240345,2.097083E-07,-0.9922779
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 19
+	istg = 18
 	dstg = 20
 	sidx = 4
-	sqor = 19
-	sepI = 19
+	sqor = 18
+	sepI = 18
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -16440,9 +19334,9 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 21.62835
-		height = 43.2567
-		towerRot = -4.58456E-07,0.2651355,-3.708783E-08,-0.9642112
+		scaleFactor = 23.35208
+		height = 46.70416
+		towerRot = -4.620448E-07,0.2651355,-3.807468E-08,-0.9642112
 		EVENTS
 		{
 			Release
@@ -16520,6 +19414,24 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -16550,19 +19462,19 @@ PART
 {
 	part = His.FASAUmbilicalTower_4293980716
 	partName = Part
-	pos = -2.191551,64.80305,-9.136475
+	pos = -3.891867,68.2505,-6.434329
 	attPos = 0,0,0
 	attPos0 = 5.039865,3.156704,-8.247667
-	rot = 3.040473E-07,-0.2164396,6.740565E-08,-0.9762962
+	rot = 3.076808E-07,-0.2164394,6.821141E-08,-0.9762962
 	attRot = 0,0.2164396,0,0.9762961
 	attRot0 = 2.55108E-07,0.1736481,1.786285E-07,-0.9848078
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 19
+	istg = 18
 	dstg = 16
-	sidx = 5
-	sqor = 19
-	sepI = 19
+	sidx = 6
+	sqor = 18
+	sepI = 18
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -16581,9 +19493,9 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 33.40152
-		height = 66.80305
-		towerRot = -3.040473E-07,0.2164396,-6.740564E-08,-0.9762961
+		scaleFactor = 35.12525
+		height = 70.2505
+		towerRot = -3.076808E-07,0.2164393,-6.82114E-08,-0.9762961
 		EVENTS
 		{
 			Release
@@ -16661,6 +19573,24 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -16691,19 +19621,19 @@ PART
 {
 	part = His.FASAUmbilicalTower_4293980322
 	partName = Part
-	pos = -0.8442393,83.12965,-7.877848
+	pos = -2.544541,86.57711,-5.175709
 	attPos = 0,0,0
 	attPos0 = 0.506027,0.9733124,-8.173373
-	rot = 1.591298E-07,-0.08715579,-1.392206E-08,-0.9961947
+	rot = 1.628374E-07,-0.08715579,-1.359769E-08,-0.9961947
 	attRot = 0,1.973055E-08,0,1
 	attRot0 = 1.597377E-07,-3.711115E-08,1.418572E-15,-1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 19
+	istg = 18
 	dstg = 14
-	sidx = 6
-	sqor = 19
-	sepI = 19
+	sidx = 7
+	sqor = 18
+	sepI = 18
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -16722,9 +19652,9 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 42.56482
-		height = 85.12965
-		towerRot = -1.591298E-07,0.08715579,1.392206E-08,-0.9961947
+		scaleFactor = 44.28856
+		height = 88.57711
+		towerRot = -1.628374E-07,0.08715579,1.359769E-08,-0.9961947
 		EVENTS
 		{
 			Release
@@ -16807,6 +19737,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -16832,24 +19780,24 @@ PART
 {
 	part = His.IR.StrutDecoupler.Small_4293720766
 	partName = StrutConnector
-	pos = -2.021732,96.06415,0.2592178
+	pos = -3.722021,99.51165,2.961337
 	attPos = 0,0,0
 	attPos0 = -2.252087,5.635534,1.190697E-07
-	rot = -4.031432E-08,3.718312E-07,-0.07414664,0.9972475
+	rot = -3.013174E-08,3.873996E-07,-0.07414662,0.9972474
 	attRot = 0,0,0,1
 	attRot0 = -2.4771E-08,3.84198E-07,-0.06544126,0.9978565
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 2
 	dstg = 4
-	sidx = 1
-	sqor = 4
-	sepI = 4
+	sidx = 0
+	sqor = 2
+	sepI = 2
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: His.FASAApollo.SM_16; pos: 1.983627,0.5832368,-0.0186969; dir: 0.9593509,0.2820709,-0.00904265
+	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 1.700415,0.4999595,-0.01602912; dir: 0.9593509,0.2820709,-0.00904265
 	sym = His.IR.StrutDecoupler.Small_4293706020
 	sym = His.IR.StrutDecoupler.Small_4293705960
 	sym = His.IR.StrutDecoupler.Small_4293705900
@@ -16894,7 +19842,7 @@ PART
 		{
 			DecoupleAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
 			}
 		}
 	}
@@ -16942,6 +19890,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -17031,24 +20027,24 @@ PART
 {
 	part = His.IR.StrutDecoupler.Small_4293706020
 	partName = StrutConnector
-	pos = 0.07671315,96.06415,2.357649
+	pos = -1.623576,99.51165,5.059763
 	attPos = 0,0,0
 	attPos0 = -2.252087,5.635535,1.192093E-07
-	rot = 0.05243021,-0.7051607,0.05243017,-0.7051601
+	rot = 0.0524302,-0.7051607,0.05243019,-0.7051601
 	attRot = 0,0,0,1
 	attRot0 = -2.477105E-08,3.84198E-07,-0.06544126,0.9978564
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 2
 	dstg = 4
-	sidx = 2
-	sqor = 4
-	sepI = 4
+	sidx = 1
+	sqor = 2
+	sepI = 2
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: His.FASAApollo.SM_16; pos: 1.999785,0.5879781,-0.01884929; dir: 0.9593509,0.2820709,-0.00904265
+	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 1.70041,0.4999619,-0.01602584; dir: 0.9593509,0.2820709,-0.00904265
 	sym = His.IR.StrutDecoupler.Small_4293720766
 	sym = His.IR.StrutDecoupler.Small_4293705960
 	sym = His.IR.StrutDecoupler.Small_4293705900
@@ -17093,7 +20089,7 @@ PART
 		{
 			DecoupleAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
 			}
 		}
 	}
@@ -17141,6 +20137,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -17230,24 +20274,24 @@ PART
 {
 	part = His.IR.StrutDecoupler.Small_4293705960
 	partName = StrutConnector
-	pos = 2.175157,96.06416,0.2592173
+	pos = 0.4748458,99.51165,2.961349
 	attPos = 0,0,0
 	attPos0 = -2.252088,5.635534,3.577675E-07
-	rot = 0.07414664,-0.9972475,1.753508E-08,4.33061E-07
+	rot = 0.07414662,-0.9972474,3.741378E-08,4.470337E-07
 	attRot = 0,0,0,1
 	attRot0 = -2.4771E-08,3.84198E-07,-0.06544125,0.9978564
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 2
 	dstg = 4
-	sidx = 3
-	sqor = 4
-	sepI = 4
+	sidx = 2
+	sqor = 2
+	sepI = 2
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: His.FASAApollo.SM_16; pos: 1.983626,0.5832352,-0.01869776; dir: 0.9593509,0.2820709,-0.00904265
+	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 1.700423,0.4999605,-0.01602865; dir: 0.9593509,0.2820709,-0.00904265
 	sym = His.IR.StrutDecoupler.Small_4293720766
 	sym = His.IR.StrutDecoupler.Small_4293706020
 	sym = His.IR.StrutDecoupler.Small_4293705900
@@ -17292,7 +20336,7 @@ PART
 		{
 			DecoupleAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
 			}
 		}
 	}
@@ -17340,6 +20384,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -17429,24 +20521,24 @@ PART
 {
 	part = His.IR.StrutDecoupler.Small_4293705900
 	partName = StrutConnector
-	pos = 0.07671115,96.06415,-1.839205
+	pos = -1.623605,99.51165,0.8629298
 	attPos = 0,0,0
 	attPos0 = -2.252086,5.635533,1.056633E-06
-	rot = 0.05243021,-0.70516,-0.05243029,0.7051607
+	rot = 0.05243018,-0.70516,-0.05243024,0.7051608
 	attRot = 0,0,0,1
 	attRot0 = -2.549725E-08,3.853334E-07,-0.06544126,0.9978565
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 2
 	dstg = 4
-	sidx = 4
-	sqor = 4
-	sepI = 4
+	sidx = 3
+	sqor = 2
+	sepI = 2
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: His.FASAApollo.SM_16; pos: 1.999781,0.5879774,-0.01884822; dir: 0.9593509,0.2820709,-0.00904265
+	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 1.700391,0.4999517,-0.01602568; dir: 0.9593509,0.2820709,-0.00904265
 	sym = His.IR.StrutDecoupler.Small_4293720766
 	sym = His.IR.StrutDecoupler.Small_4293706020
 	sym = His.IR.StrutDecoupler.Small_4293705960
@@ -17491,7 +20583,7 @@ PART
 		{
 			DecoupleAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
 			}
 		}
 	}
@@ -17539,6 +20631,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleAnchoredDecoupler
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -17628,19 +20768,19 @@ PART
 {
 	part = His.FASALM.DescentEngine_4293699486
 	partName = Part
-	pos = 0.07671165,89.06635,0.2592155
+	pos = -1.623592,92.51377,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,1.150002,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 2
 	dstg = 4
-	sidx = 5
-	sqor = 4
-	sepI = 15
+	sidx = 4
+	sqor = 2
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -17802,6 +20942,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -17844,19 +21002,19 @@ PART
 {
 	part = His.FASALM.DescentStage_4293698284
 	partName = Part
-	pos = 0.07671165,89.26634,0.2592155
+	pos = -1.623592,92.71379,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,0.1999969,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 2
 	dstg = 4
-	sidx = 6
-	sqor = 4
-	sepI = 15
+	sidx = 5
+	sqor = 2
+	sepI = 10
 	attm = 0
 	modCost = 5591.408
 	modMass = 0
@@ -18526,6 +21684,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = MechJebCore
 		isEnabled = True
 		running = True
@@ -18646,19 +21822,19 @@ PART
 {
 	part = His.FASALM.DecouplerRing_4293697538
 	partName = Part
-	pos = 0.07671165,90.50634,0.2592155
+	pos = -1.623592,93.95378,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,1.239998,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 5
+	istg = 3
 	dstg = 5
 	sidx = 1
-	sqor = 5
-	sepI = 5
+	sqor = 3
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -18738,6 +21914,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -18808,10 +22002,10 @@ PART
 {
 	part = His.FASALM.OutputPlace_4293696744
 	partName = Part
-	pos = 0.07671165,90.45634,2.129215
+	pos = -1.623592,93.90377,4.831335
 	attPos = 0,0,0
 	attPos0 = 0,1.190002,1.87
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -18820,7 +22014,7 @@ PART
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 15
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -18863,6 +22057,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -18877,19 +22089,19 @@ PART
 {
 	part = His.FASALM.AscentEngine_4293693974
 	partName = Part
-	pos = 0.07671165,91.26633,0.2592155
+	pos = -1.623592,94.71379,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,0.7599945,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 6
+	istg = 4
 	dstg = 6
 	sidx = 2
-	sqor = 6
-	sepI = 5
+	sqor = 4
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -19051,6 +22263,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -19093,19 +22323,19 @@ PART
 {
 	part = His.FASALM.AscentStage_4293693376
 	partName = Part
-	pos = 0.07671165,91.30634,0.2592155
+	pos = -1.623592,94.75375,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,0.04000092,0
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 6
+	istg = 4
 	dstg = 6
 	sidx = 3
-	sqor = 6
-	sepI = 5
+	sqor = 4
+	sepI = 3
 	attm = 0
 	modCost = 1809.797
 	modMass = 0
@@ -19843,6 +23073,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = MechJebCore
 		isEnabled = True
 		running = True
@@ -20048,19 +23296,19 @@ PART
 {
 	part = His.FASALM.Antenna_4293691948
 	partName = Part
-	pos = 0.07671165,93.31634,0.2592156
+	pos = -1.623592,96.76375,2.961337
 	attPos = 0,0,0
 	attPos0 = 0,2.010002,8.940697E-08
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 6
+	istg = 4
 	dstg = 6
 	sidx = 4
-	sqor = 6
-	sepI = 5
+	sqor = 4
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -20133,6 +23381,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -20163,19 +23429,19 @@ PART
 {
 	part = His.FASALM.RCS_4293690780
 	partName = Part
-	pos = -1.642967,91.82969,1.978894
+	pos = -3.343271,95.27718,4.681015
 	attPos = 0,0,0
 	attPos0 = -1.719678,0.5233536,1.719678
-	rot = -6.214706E-07,1,6.214717E-07,-9.353371E-07
+	rot = -6.214706E-07,1,6.177499E-07,-9.353371E-07
 	attRot = 0,0,0,1
 	attRot0 = -6.214706E-07,1,6.214717E-07,-9.353371E-07
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 6
+	istg = 4
 	dstg = 6
 	sidx = 5
-	sqor = 6
-	sepI = 5
+	sqor = 4
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -20284,6 +23550,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -20314,19 +23628,19 @@ PART
 {
 	part = His.FASALM.RCS_4293689290
 	partName = Part
-	pos = 1.796389,91.82969,1.978894
+	pos = 0.09608543,95.27718,4.681015
 	attPos = 0,0,0
 	attPos0 = 1.719678,0.5233536,1.719678
-	rot = 8.038874E-13,0.7071062,8.78893E-07,-0.7071075
+	rot = 2.632477E-09,0.7071062,8.762613E-07,-0.7071075
 	attRot = 0,0,0,1
 	attRot0 = 8.038874E-13,0.7071062,8.78893E-07,-0.7071075
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 6
+	istg = 4
 	dstg = 6
 	sidx = 6
-	sqor = 6
-	sepI = 5
+	sqor = 4
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -20435,6 +23749,54 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -20465,19 +23827,19 @@ PART
 {
 	part = His.FASALM.RCS_4293689194
 	partName = Part
-	pos = 1.79639,91.82969,-1.460463
+	pos = 0.09608638,95.27718,1.241666
 	attPos = 0,0,0
 	attPos0 = 1.719678,0.5233536,-1.719678
-	rot = 6.214717E-07,-9.790484E-07,6.214706E-07,-1
+	rot = 6.251935E-07,-9.790484E-07,6.214706E-07,-1
 	attRot = 0,0,0,1
 	attRot0 = 6.214717E-07,-9.790484E-07,6.214706E-07,-1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 6
+	istg = 4
 	dstg = 6
 	sidx = 7
-	sqor = 6
-	sepI = 5
+	sqor = 4
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -20591,6 +23953,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -20616,19 +24026,19 @@ PART
 {
 	part = His.FASALM.RCS_4293689098
 	partName = Part
-	pos = -1.642966,91.82969,-1.460463
+	pos = -3.343269,95.27718,1.241666
 	attPos = 0,0,0
 	attPos0 = -1.719678,0.5233536,-1.719678
-	rot = 8.78893E-07,-0.7071075,-8.038874E-13,-0.7071062
+	rot = 8.815247E-07,-0.7071075,2.63087E-09,-0.7071062
 	attRot = 0,0,0,1
 	attRot0 = 8.78893E-07,-0.7071075,-8.038874E-13,-0.7071062
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 6
+	istg = 4
 	dstg = 6
 	sidx = 8
-	sqor = 6
-	sepI = 5
+	sqor = 4
+	sepI = 3
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -20742,6 +24152,54 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -20767,10 +24225,10 @@ PART
 {
 	part = His.FASALM.DockingCone_4293688082
 	partName = Part
-	pos = 0.07671165,93.22633,0.2792155
+	pos = -1.623592,96.67374,2.981337
 	attPos = 0,0,0
 	attPos0 = 0,1.919998,0.02000001
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -20779,7 +24237,7 @@ PART
 	dstg = 6
 	sidx = -1
 	sqor = -1
-	sepI = 6
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -20932,6 +24390,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -21069,19 +24545,19 @@ PART
 {
 	part = His.FASALM.LandingLegStaircase_4293686978
 	partName = Part
-	pos = 0.07671165,89.56635,2.759215
+	pos = -1.623592,93.01377,5.461335
 	attPos = 0,0,0
 	attPos0 = 0,0.3000031,2.5
-	rot = 0,1,0,0
+	rot = 0,1,-3.721745E-09,0
 	attRot = 0,0.9999999,0,0
 	attRot0 = 0,1,0,0
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 2
 	dstg = 4
-	sidx = 7
-	sqor = 4
-	sepI = 15
+	sidx = 6
+	sqor = 2
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -21213,6 +24689,24 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21232,19 +24726,19 @@ PART
 {
 	part = His.FASALM.LandingLegs_4293685032
 	partName = Part
-	pos = -1.253288,89.55634,0.8392155
+	pos = -2.953593,93.00375,3.541337
 	attPos = 0,0,0
 	attPos0 = -1.33,0.2900009,0.58
-	rot = 0,0,0,1
+	rot = -3.721745E-09,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 2
 	dstg = 4
-	sidx = 8
-	sqor = 4
-	sepI = 15
+	sidx = 7
+	sqor = 2
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -21376,6 +24870,24 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21395,19 +24907,19 @@ PART
 {
 	part = His.FASALM.LandingLegs_4293684048
 	partName = Part
-	pos = -0.5032883,89.55634,-1.070784
+	pos = -2.203593,93.00375,1.631337
 	attPos = 0,0,0
 	attPos0 = -0.5799999,0.2900009,-1.33
-	rot = 0,-0.7071068,0,0.7071068
+	rot = -2.631671E-09,-0.7071068,2.631671E-09,0.7071068
 	attRot = 0,-0.7071068,0,0.7071068
 	attRot0 = 0,-0.7071068,0,0.7071068
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 2
 	dstg = 4
-	sidx = 9
-	sqor = 4
-	sepI = 15
+	sidx = 8
+	sqor = 2
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -21539,6 +25051,24 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21558,19 +25088,19 @@ PART
 {
 	part = His.FASALM.LandingLegs_4293683174
 	partName = Part
-	pos = 1.406712,89.55634,-0.3207844
+	pos = -0.2935916,93.00375,2.381337
 	attPos = 0,0,0
 	attPos0 = 1.33,0.2900009,-0.5799999
-	rot = 0,-1,0,0
+	rot = 0,-1,3.721745E-09,0
 	attRot = 0,-0.9999999,0,0
 	attRot0 = 0,-1,0,0
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 4
+	istg = 2
 	dstg = 4
-	sidx = 10
-	sqor = 4
-	sepI = 15
+	sidx = 9
+	sqor = 2
+	sepI = 10
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -21707,6 +25237,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -21719,21 +25267,3418 @@ PART
 }
 PART
 {
-	part = His.FASAApollo.LES_4294190234
+	part = hc.booster_4294156668
 	partName = Part
-	pos = 0.07671165,104.0763,0.2592155
+	pos = -6.637355,24.42184,2.961334
 	attPos = 0,0,0
-	attPos0 = 0,0.7399979,0
+	attPos0 = -3.545266,-9.101936,-3.545266
+	rot = 1.187753E-07,-1,3.721732E-09,1.662566E-07
+	attRot = 0,0,0,1
+	attRot0 = 1.097341E-07,-0.9238796,4.545333E-08,-0.3826833
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 10
+	dstg = 10
+	sidx = -1
+	sqor = -1
+	sepI = 17
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,His.FASAApalloLFTSVS1_4294124092
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = MuMechModuleHullCameraZoom
+		isEnabled = True
+		EVENTS
+		{
+			ActivateCamera
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Camera
+				guiName = Activate Camera
+				category = Activate Camera
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableCamera
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable Camera
+				guiName = Disable Camera
+				category = Disable Camera
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ZoomInAction
+			{
+				actionGroup = None
+			}
+			ZoomOutAction
+			{
+				actionGroup = None
+			}
+			ActivateCameraAction
+			{
+				actionGroup = None
+			}
+			DeactivateCameraAction
+			{
+				actionGroup = None
+			}
+			NextCameraAction
+			{
+				actionGroup = None
+			}
+			PreviousCameraAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = MuMechModuleHullCameraZoom
+		isEnabled = True
+		EVENTS
+		{
+			ActivateCamera
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Camera
+				guiName = Activate Camera
+				category = Activate Camera
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableCamera
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable Camera
+				guiName = Disable Camera
+				category = Disable Camera
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ZoomInAction
+			{
+				actionGroup = None
+			}
+			ZoomOutAction
+			{
+				actionGroup = None
+			}
+			ActivateCameraAction
+			{
+				actionGroup = None
+			}
+			DeactivateCameraAction
+			{
+				actionGroup = None
+			}
+			NextCameraAction
+			{
+				actionGroup = None
+			}
+			PreviousCameraAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294136696
+	partName = Part
+	pos = -1.574272,57.00881,6.162792
+	attPos = -1.272122,-0.08126831,2.02443
+	attPos0 = -0.9567782,-8.003738,0.2742165
+	rot = 1,3.224532E-07,-1.662566E-07,1.685874E-07
+	attRot = 0,0,0,1
+	attRot0 = 0.9238797,2.348165E-07,0.3826832,2.757135E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294136180
+	srfN = srfAttach,His.FASAApalloLFTSVS2_4294151318
+	attN = top,strutCube_4294136180
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294136180
+	partName = Part
+	pos = -1.574272,56.75134,6.162792
+	attPos = 0,0,0
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = 1.003646E-13,3.48838E-08,-2.874914E-14,1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294135684
+	attN = top,strutCube_4294136696
+	attN = bottom,strutCube_4294135684
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294135684
+	partName = Part
+	pos = -1.574272,56.49387,6.162792
+	attPos = 0,0,0
+	attPos0 = 8.429372E-08,-0.2574692,1.91647E-09
+	rot = -1,3.319607E-14,5.715049E-08,2.065057E-14
+	attRot = -0.9999999,0,0,0
+	attRot0 = -1,-7.921481E-15,-5.194887E-09,-1.776399E-14
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294135648
+	attN = top,strutCube_4294135648
+	attN = bottom,strutCube_4294136180
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294135648
+	partName = Part
+	pos = -1.574272,56.23639,6.162792
+	attPos = 0,0,0
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = -1.685875E-07,3.13961E-07,3.224533E-07,-1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294135158
+	attN = top,strutCube_4294135684
+	attN = bottom,strutCube_4294135158
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294135158
+	partName = Part
+	pos = -1.574272,55.97893,6.162792
+	attPos = 0,0,0
+	attPos0 = 2.056466E-07,-0.2574693,1.333938E-07
+	rot = 1,-2.319555E-16,-3.48838E-08,-1.554354E-14
+	attRot = 0.9999999,0,0,0
+	attRot0 = -1,-3.224532E-07,3.139609E-07,-1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294135122
+	attN = top,strutCube_4294135122
+	attN = bottom,strutCube_4294135648
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294135122
+	partName = Part
+	pos = -1.574272,55.72146,6.162792
+	attPos = 0,0,0
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = 1.685874E-07,-2.620054E-07,-3.224532E-07,1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294135084
+	attN = top,strutCube_4294135158
+	attN = bottom,strutCube_4294135084
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294135084
+	partName = Part
+	pos = -1.574272,55.46399,6.162792
+	attPos = 0,0,0
+	attPos0 = 8.429372E-08,-0.2574692,1.91647E-09
+	rot = -1,3.224534E-07,-2.620054E-07,1.685874E-07
+	attRot = -0.9999999,0,0,0
+	attRot0 = -1,-7.921481E-15,-5.194887E-09,-1.776399E-14
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294135046
+	attN = top,strutCube_4294135046
+	attN = bottom,strutCube_4294135122
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294135046
+	partName = Part
+	pos = -1.574272,55.20652,6.162792
+	attPos = 0,0,0
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = -3.371752E-07,5.566672E-07,6.449068E-07,-1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294134548
+	attN = top,strutCube_4294135084
+	attN = bottom,strutCube_4294134548
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294134548
+	partName = Part
+	pos = -1.574272,54.94904,6.162792
+	attPos = 0,0,0
+	attPos0 = 1.954707E-07,-0.2574693,-2.511984E-08
+	rot = 1,1.551944E-13,4.898806E-08,1.580953E-13
+	attRot = 0.9999999,0,0,0
+	attRot0 = -1,-6.449063E-07,6.086227E-07,-3.371748E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294134512
+	attN = top,strutCube_4294134512
+	attN = bottom,strutCube_4294135046
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294134512
+	partName = Part
+	pos = -1.574272,54.69158,6.162792
+	attPos = 0,0,0
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = 1.685874E-07,-2.323164E-07,-3.224534E-07,1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294134474
+	attN = top,strutCube_4294134548
+	attN = bottom,strutCube_4294134474
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294134474
+	partName = Part
+	pos = -1.574272,54.43411,6.162792
+	attPos = 0,0,0
+	attPos0 = 8.429372E-08,-0.2574692,1.91647E-09
+	rot = -1,3.224534E-07,-2.323164E-07,1.685874E-07
+	attRot = -0.9999999,0,0,0
+	attRot0 = -1,-7.921481E-15,-5.194887E-09,-1.776399E-14
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294134436
+	attN = top,strutCube_4294134436
+	attN = bottom,strutCube_4294134512
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294134436
+	partName = Part
+	pos = -1.574273,54.17664,6.162792
+	attPos = 0,0,0
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = -3.371751E-07,5.566672E-07,6.449064E-07,-1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294134398
+	attN = top,strutCube_4294134474
+	attN = bottom,strutCube_4294134398
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294134398
+	partName = Part
+	pos = -1.574273,53.91918,6.162792
+	attPos = 0,0,0
+	attPos0 = 2.056466E-07,-0.2574693,1.333938E-07
+	rot = 1,-3.224534E-07,2.84272E-07,-1.685874E-07
+	attRot = 0.9999999,0,0,0
+	attRot0 = -1,-3.224532E-07,3.139609E-07,-1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294134360
+	attN = top,strutCube_4294134360
+	attN = bottom,strutCube_4294134436
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294134360
+	partName = Part
+	pos = -1.574273,53.66171,6.162792
+	attPos = 0,0,0
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = 3.371751E-07,-5.566672E-07,-6.449064E-07,1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294134322
+	attN = top,strutCube_4294134398
+	attN = bottom,strutCube_4294134322
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294134322
+	partName = Part
+	pos = -1.574273,53.40423,6.162792
+	attPos = 0,0,0
+	attPos0 = 8.429372E-08,-0.2574692,1.91647E-09
+	rot = -1,6.449064E-07,-5.566672E-07,3.371751E-07
+	attRot = -0.9999999,0,0,0
+	attRot0 = -1,-7.921481E-15,-5.194887E-09,-1.776399E-14
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294134284
+	attN = top,strutCube_4294134284
+	attN = bottom,strutCube_4294134360
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294134284
+	partName = Part
+	pos = -1.574274,53.14676,6.162792
+	attPos = 0,0,0
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = -5.057629E-07,8.75823E-07,9.673603E-07,-1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294133770
+	attN = top,strutCube_4294134322
+	attN = bottom,strutCube_4294133770
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294133770
+	partName = Part
+	pos = -1.574274,52.88929,6.162792
+	attPos = 0,0,0
+	attPos0 = 2.3834E-07,-0.2574695,5.824825E-08
+	rot = -1,-1.724348E-13,5.194888E-09,-1.083573E-13
+	attRot = -0.9999999,0,0,0
+	attRot0 = 1,9.673595E-07,-8.980896E-07,5.057622E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294133732
+	attN = top,strutCube_4294133732
+	attN = bottom,strutCube_4294134284
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294133732
+	partName = Part
+	pos = -1.574274,52.63183,6.162792
+	attPos = 0,0,0
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = -1.685877E-07,2.620054E-07,3.224536E-07,-1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294133694
+	attN = top,strutCube_4294133770
+	attN = bottom,strutCube_4294133694
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294133694
+	partName = Part
+	pos = -1.574274,52.37436,6.162792
+	attPos = 0,0,0
+	attPos0 = 8.429372E-08,-0.2574692,1.91647E-09
+	rot = 1,-3.224532E-07,2.100497E-07,-1.685876E-07
+	attRot = -0.9999999,0,0,0
+	attRot0 = -1,-7.921481E-15,-5.194887E-09,-1.776399E-14
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294133656
+	attN = top,strutCube_4294133656
+	attN = bottom,strutCube_4294133732
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294133656
+	partName = Part
+	pos = -1.574274,52.11688,6.162792
+	attPos = 0,0,0
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = 3.371752E-07,-5.863561E-07,-6.449065E-07,1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294133618
+	attN = top,strutCube_4294133694
+	attN = bottom,strutCube_4294133618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294133618
+	partName = Part
+	pos = -1.473265,52.17399,5.961883
+	attPos = 0.1010097,0.3145749,-0.200907
+	attPos0 = 1.954707E-07,-0.2574693,-2.511984E-08
+	rot = -1,-5.120614E-13,3.48838E-08,-1.396656E-13
+	attRot = 0.9999999,0,0,0
+	attRot0 = -1,-6.449063E-07,6.086227E-07,-3.371748E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = strutCube_4294133580
+	attN = top,strutCube_4294133580
+	attN = bottom,strutCube_4294133656
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = strutCube_4294133580
+	partName = Part
+	pos = -1.473265,51.91652,5.961883
+	attPos = 2.14155E-07,1.192093E-07,-1.671481E-07
+	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
+	rot = -1.685876E-07,2.84272E-07,3.224537E-07,-1
+	attRot = 0,0,0,1
+	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = mumech.hullcam_4294122450
+	attN = top,strutCube_4294133618
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePaintable
+		isEnabled = True
+		Primary = (0, 0, 1, 0)
+		Secondary = (0, 0, 1, 0)
+		Tertiary = (0, 0, 1, 0)
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 16
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = mumech.hullcam_4294122450
+	partName = Strut
+	pos = -1.470567,51.80652,5.910782
+	attPos = 0,0,0
+	attPos0 = 0.002698897,-0.1100011,-0.05110116
+	rot = -5.660042E-08,0.7071067,0.7071071,7.216267E-07
+	attRot = 0,0,0,1
+	attRot0 = 2.332484E-08,-0.7071068,-0.7071068,-1.995099E-07
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 6
+	dstg = 6
+	sidx = -1
+	sqor = -1
+	sepI = 14
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,strutCube_4294133580
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = MuMechModuleHullCamera
+		isEnabled = True
+		EVENTS
+		{
+			ActivateCamera
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Camera
+				guiName = Activate Camera
+				category = Activate Camera
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			EnableCamera
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable Camera
+				guiName = Disable Camera
+				category = Disable Camera
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ZoomInAction
+			{
+				actionGroup = None
+			}
+			ZoomOutAction
+			{
+				actionGroup = None
+			}
+			ActivateCameraAction
+			{
+				actionGroup = None
+			}
+			DeactivateCameraAction
+			{
+				actionGroup = None
+			}
+			NextCameraAction
+			{
+				actionGroup = None
+			}
+			PreviousCameraAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.FASAApollo.CM.Top_4294244340
+	partName = Part
+	pos = -1.623592,106.3738,2.961337
+	attPos = 0,0,0
+	attPos0 = 0,0.05500031,4.093943E-10
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 3.721745E-09,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 1
+	dstg = 1
+	sidx = 1
+	sqor = 1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = Apollo.radialDrogue_4294233312
+	link = His.FASAApollo.DockingDevice_4294232382
+	attN = top,His.FASAApollo.DockingDevice_4294232382
+	attN = bottom,His.FASAApollo.CM.parachutes_4294245104
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		ejectionForcePercent_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			Decouple
+			{
+				active = True
+				guiActive = True
+				guiIcon = Decouple
+				guiName = Decouple
+				category = Decouple
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ReflectiveShaderModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableDecouple
+		isEnabled = True
+		ejectionForce = 100
+		staged = True
+		ejectionForce_UIFlight
+		{
+			controlEnabled = True
+			minValue = -3.402823E+38
+			maxValue = 3.402823E+38
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleStagingToggle
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			EnableEvent
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Enable Staging
+				guiName = Enable Staging
+				category = Enable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableEvent
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = Apollo.radialDrogue_4294233312
+	partName = Part
+	pos = -2.179757,106.5199,3.285809
+	attPos = 0.09971023,0,0
+	attPos0 = -0.6558753,0.14608,0.3244715
+	rot = 0.1416326,0.8305544,-0.245315,0.4795207
+	attRot = 0,0,0,1
+	attRot0 = 0.1416326,0.8305544,-0.245315,0.4795207
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 2
+	dstg = 3
+	sidx = 10
+	sqor = 2
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	srfN = srfAttach,His.FASAApollo.CM.Top_4294244340
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 300
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		minAirPressureToOpen = 0.02
+		deployAltitude = 7600
+		minAirPressureToOpen_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0.01
+			maxValue = 0.75
+			stepIncrement = 0.01
+		}
+		deployAltitude_UIFlight
+		{
+			controlEnabled = True
+			minValue = 50
+			maxValue = 5000
+			stepIncrement = 50
+		}
+		EVENTS
+		{
+			Deploy
+			{
+				active = True
+				guiActive = True
+				guiIcon = Deploy Chute
+				guiName = Deploy Chute
+				category = Deploy Chute
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			CutParachute
+			{
+				active = True
+				guiActive = True
+				guiIcon = Cut Parachute
+				guiName = Cut Parachute
+				category = Cut Parachute
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+			Repack
+			{
+				active = False
+				guiActive = False
+				guiIcon = Repack Chute
+				guiName = Repack Chute
+				category = Repack Chute
+				guiActiveUnfocused = True
+				unfocusedRange = 4
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			CutAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 18
+			groupName = deploy drogue
+			activated = 0
+			partModule = ModuleParachute
+			actionGuiName = Deploy
+			actionName = DeployAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 19
+			groupName = cut drogue
+			activated = 0
+			partModule = ModuleParachute
+			actionGuiName = Cut Chute
+			actionName = CutAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 18
+			groupName = deploy drogue
+			activated = 0
+			partModule = ModuleParachute
+			actionGuiName = Deploy
+			actionName = DeployAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 19
+			groupName = cut drogue
+			activated = 0
+			partModule = ModuleParachute
+			actionGuiName = Cut Chute
+			actionName = CutAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 18
+			groupName = deploy drogue
+			activated = 0
+			partModule = ModuleParachute
+			actionGuiName = Deploy
+			actionName = DeployAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 19
+			groupName = cut drogue
+			activated = 0
+			partModule = ModuleParachute
+			actionGuiName = Cut Chute
+			actionName = CutAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = MPFix
+		isEnabled = True
+		semiDeploymentSpeed = 2
+		deploymentSpeed = 6
+		semiDeploymentSpeed_UIFlight
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 15
+			stepIncrement = 1
+		}
+		deploymentSpeed_UIFlight
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 15
+			stepIncrement = 1
+		}
+		EVENTS
+		{
+			ResetChute
+			{
+				active = False
+				guiActive = False
+				guiIcon = Reset Chute
+				guiName = Reset Chute
+				category = Reset Chute
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableParachute
+		isEnabled = True
+		deploymentFactor = 1
+		semiDeploymentFactor = 2
+		deploymentFactor_UIFlight
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 20
+			incrementSlide = 1
+		}
+		semiDeploymentFactor_UIFlight
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 20
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.FASAApollo.DockingDevice_4294232382
+	partName = Part
+	pos = -1.623592,106.7838,2.961337
+	attPos = 0,0,0
+	attPos0 = 0,0.409996,1.805908E-16
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
+	istg = 2
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = His.FASAApollo.LES_4294190234
+	attN = bottom,His.FASAApollo.CM.Top_4294244340
+	attN = top,His.FASAApollo.LES_4294190234
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+			Undock
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			UndockSameVessel
+			{
+				active = False
+				guiActive = True
+				guiIcon = Undock
+				guiName = Undock
+				category = Undock
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Decouple
+			{
+				active = False
+				guiActive = True
+				guiIcon = Decouple Node
+				guiName = Decouple Node
+				category = Decouple Node
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			SetAsTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Set as Target
+				guiName = Set as Target
+				category = Set as Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			UnsetTarget
+			{
+				active = True
+				guiActive = False
+				guiIcon = Unset Target
+				guiName = Unset Target
+				category = Unset Target
+				guiActiveUnfocused = True
+				unfocusedRange = 200
+				externalToEVAOnly = False
+			}
+			EnableXFeed
+			{
+				active = False
+				guiActive = False
+				guiIcon = Enable Crossfeed
+				guiName = Enable Crossfeed
+				category = Enable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableXFeed
+			{
+				active = False
+				guiActive = False
+				guiIcon = Disable Crossfeed
+				guiName = Disable Crossfeed
+				category = Disable Crossfeed
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MakeReferenceTransform
+			{
+				active = True
+				guiActive = True
+				guiIcon = Control from Here
+				guiName = Control from Here
+				category = Control from Here
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 4500
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDockingNodeNamed
+		isEnabled = True
+		portName = Apollo CSM Docking Device
+		initialized = True
+		controlTransformName = 
+		EVENTS
+		{
+			renameDockingPort
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = Rename Port
+				guiName = Rename Port
+				category = Rename Port
+				guiActiveUnfocused = True
+				unfocusedRange = 2000
+				externalToEVAOnly = False
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTweakableDockingNode
+		isEnabled = True
+		fuelCrossFeed = True
+		acquireRange = 0.75
+		acquireForce = 0.25
+		acquireTorque = 0.25
+		undockEjectionForce = 1
+		minDistanceToReEngage = 0.75
+		isDecoupled = False
+		fuelCrossFeed_UIFlight
+		{
+			controlEnabled = True
+		}
+		acquireRange_UIFlight
+		{
+			controlEnabled = True
+			minValue = -1
+			maxValue = 3.402823E+38
+			incrementSlide = 1
+		}
+		acquireForce_UIFlight
+		{
+			controlEnabled = True
+			minValue = -1
+			maxValue = 3.402823E+38
+			incrementSlide = 1
+		}
+		acquireTorque_UIFlight
+		{
+			controlEnabled = True
+			minValue = -1
+			maxValue = 3.402823E+38
+			incrementSlide = 1
+		}
+		undockEjectionForce_UIFlight
+		{
+			controlEnabled = True
+			minValue = -1
+			maxValue = 3.402823E+38
+			incrementSlide = 1
+		}
+		minDistanceToReEngage_UIFlight
+		{
+			controlEnabled = True
+			minValue = -1
+			maxValue = 3.402823E+38
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			MakeReferenceTransformAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleStagingToggle
+		isEnabled = True
+		stagingEnabled = False
+		EVENTS
+		{
+			EnableEvent
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Enable Staging
+				guiName = Enable Staging
+				category = Enable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			DisableEvent
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = His.FASAApollo.LES_4294190234
+	partName = Part
+	pos = -1.623592,107.5238,2.961337
+	attPos = 0,0,0
+	attPos0 = 0,0.7399979,-2.01665E-16
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 1
 	dstg = 1
-	sidx = 0
-	sqor = 0
-	sepI = 0
+	sidx = 2
+	sqor = 1
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -21780,7 +28725,7 @@ PART
 		{
 			DecoupleAction
 			{
-				actionGroup = Custom04
+				actionGroup = Custom08
 			}
 		}
 	}
@@ -21850,8 +28795,19 @@ PART
 			}
 			ActivateAction
 			{
-				actionGroup = Abort, Custom04
+				actionGroup = Abort, Custom08
 			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleSeeThroughObject
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 	}
 	MODULE
@@ -21877,6 +28833,244 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21962,7 +29156,7 @@ PART
 {
 	part = His.FASAlaunchTower_4294075546
 	partName = Part
-	pos = 0.07671056,99.72496,-10.21906
+	pos = -1.623593,103.1724,-7.516937
 	attPos = -8.195639E-08,-2.563339,-0.7494526
 	attPos0 = -1.013279E-06,-1.788038,-9.728822
 	rot = -0.01116828,-5.269604E-08,5.885609E-10,-0.9999377
@@ -21970,11 +29164,11 @@ PART
 	attRot0 = -0.01116828,-5.269604E-08,5.885609E-10,-0.9999377
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 21
+	istg = 18
 	dstg = 11
-	sidx = 0
-	sqor = 21
-	sepI = 21
+	sidx = 5
+	sqor = 18
+	sepI = 18
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -21993,8 +29187,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 50.86213
-		height = 101.7244
+		scaleFactor = 52.58587
+		height = 105.1719
 		towerRot = 0.01116828,5.269604E-08,-5.885609E-10,-0.9999377
 		EVENTS
 		{
@@ -22078,6 +29272,24 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
 		name = PartPath
 		isEnabled = True
 		EVENTS
@@ -22093,31 +29305,6 @@ PART
 		isEnabled = True
 		EVENTS
 		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
-		EVENTS
-		{
-			ShowInventory
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiIcon = 
-				guiName = Seat 0 inventory
-				category = 
-				guiActiveUnfocused = True
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -22488,6 +29675,31 @@ PART
 				guiActiveEditor = True
 				guiIcon = 
 				guiName = Seat 15 inventory
+				category = 
+				guiActiveUnfocused = True
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleKISInventory
+		isEnabled = True
+		invName = 
+		helmetEquipped = True
+		EVENTS
+		{
+			ShowInventory
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiIcon = 
+				guiName = 
 				category = 
 				guiActiveUnfocused = True
 				unfocusedRange = 2
