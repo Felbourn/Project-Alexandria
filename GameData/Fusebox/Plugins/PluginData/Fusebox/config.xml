@@ -2,10 +2,10 @@
 <config>
     <string name="version">1.0</string>
     <rect name="mainWin1">
-        <xmin>1280</xmin>
-        <xmax>1400</xmax>
-        <ymin>50</ymin>
-        <ymax>196</ymax>
+        <xmin>1401</xmin>
+        <xmax>1521</xmax>
+        <ymin>43</ymin>
+        <ymax>189</ymax>
     </rect>
     <rect name="filterWin1">
         <xmin>1280</xmin>

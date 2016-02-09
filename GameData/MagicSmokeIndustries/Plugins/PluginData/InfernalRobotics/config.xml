@@ -16,7 +16,7 @@
         <xmin>47</xmin>
         <xmax>349</xmax>
         <ymin>219</ymin>
-        <ymax>425</ymax>
+        <ymax>313</ymax>
     </rect>
     <bool name="useEC">1</bool>
     <bool name="allowFlipHack">0</bool>

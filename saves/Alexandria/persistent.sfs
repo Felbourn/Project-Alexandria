@@ -10,7 +10,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/NASA
-	launchID = 312
+	launchID = 316
 	PARAMETERS
 	{
 		preset = Normal
@@ -520,7 +520,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		lastSeed = 1255122746
+		lastSeed = 1141240630
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -573,6 +573,7 @@ GAME
 			David Scott = M GENERIC GENERIC
 			Donn Eisele = M GENERIC GENERIC
 			Ronnie Walter Cunningham = M GENERIC GENERIC
+			William Anders = M GENERIC GENERIC
 		}
 		ClassSuits
 		{
@@ -589,13 +590,48 @@ GAME
 		scene = 5, 7, 8, 6
 		KACAlarmListStorage
 		{
+			list
+			{
+				Item
+				{
+					VesselID = 73ceab7b-66b8-4467-9e81-c5b919d161d5
+					ID = 5e7e1f18d0a34a44a8da3a25e564d1d6
+					Name = Apollo 8
+					NotesStorage = Apollo 8 - Nearing SOI Change\r\n     Old SOI: Moon\r\n     New SOI: Kerbin
+					TypeOfAlarm = SOIChangeAuto
+					AlarmTimeStorage = 561724502.695205
+					AlarmMarginSecs = 900
+					Enabled = True
+					AlarmAction = Converted
+					AlarmActionConverted = True
+					ManNodesStorage = 
+					XferOriginBodyName = 
+					XferTargetBodyName = 
+					RepeatAlarm = False
+					RepeatAlarmPeriodStorage = 0
+					PlaySound = False
+					TargetObjectStorage = 
+					ContractGUIDStorage = 00000000-0000-0000-0000-000000000000
+					ContractAlarmType = Expire
+					Triggered = True
+					Actioned = True
+					AlarmWindowClosed = True
+					Actions
+					{
+						Warp = KillWarp
+						Message = Yes
+						DeleteWhenDone = False
+						PlaySound = False
+					}
+				}
+			}
 		}
 	}
 	SCENARIO
 	{
 		name = AGextScenario
 		scene = 7
-		LastSave = 1455
+		LastSave = 1505
 	}
 	SCENARIO
 	{
@@ -605,9 +641,9 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.4
-		UT = 561191944.37667
-		activeVessel = 0
-		mapViewFiltering = 8
+		UT = 562047318.795784
+		activeVessel = 8
+		mapViewFiltering = 32
 		VESSEL
 		{
 			pid = d0a75adee62e42dd9c9ebe1c704c9b39
@@ -21788,32 +21824,32 @@ GAME
 			landed = True
 			landedAt = 
 			splashed = False
-			met = 56865643.4499818
+			met = 87390279.9891127
 			lct = 474657038.466672
 			root = 0
-			lat = 5.4702733106655
-			lon = 250.219797246723
-			alt = 12740.037126543
-			hgt = 0.2548508
-			nrm = -0.2521008,0.9442274,-0.2118493
-			rot = -0.5738377,0.4796068,-0.5403047,0.3856923
-			CoM = 1.085231E-05,-0.00151099,1.819619E-06
+			lat = 5.47027209728711
+			lon = -109.78020353182
+			alt = 12740.1139205894
+			hgt = 0.2522472
+			nrm = -0.2527885,0.9441528,-0.211361
+			rot = -0.5738927,0.4795434,-0.5402934,0.385705
+			CoM = 4.999146E-06,-0.001512683,1.687699E-06
 			stg = 2
 			prst = False
 			ref = 1399090651
 			ctrl = True
-			cPch = 
-			cHdg = 
+			cPch = 0.3880003
+			cHdg = 0.988002
 			cMod = 0
 			ORBIT
 			{
 				SMA = NaN
 				ECC = 1
 				INC = NaN
-				LPE = 76.5871863966921
-				LAN = 27.8100536087535
+				LPE = 76.5384668177548
+				LAN = 5.48799164249463
 				MNA = -8.40714670366795
-				EPH = 561191881.69673
+				EPH = 562047318.495785
 				REF = 10
 			}
 			PART
@@ -21839,8 +21875,8 @@ GAME
 				attN = ab1, 1
 				attN = ab2, 2
 				mass = 0.099
-				temp = 309.21433566111
-				tempExt = 308.928667949533
+				temp = 308.953223515566
+				tempExt = 308.58507632184
 				expt = 0.5
 				state = 0
 				connected = False
@@ -22546,7 +22582,7 @@ GAME
 							markUT = 474656858.546844
 							deltaVExpended = 2768.08619032871
 							dragLosses = 0
-							gravityLosses = -2125.41320390722
+							gravityLosses = -2259.6502550933
 							steeringLosses = 5513.28621318048
 							markLatitude = 28.6087752722252
 							markLongitude = -80.5997667945252
@@ -22657,7 +22693,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 2185.09275002191
+					amount = 2184.29328235798
 					maxAmount = 2200
 					flowState = True
 					isTweakable = True
@@ -22686,8 +22722,8 @@ GAME
 				srfN = , -1
 				attN = bottom, 0
 				mass = 0.01
-				temp = 309.650667488345
-				tempExt = 308.727293717228
+				temp = 309.35788338725
+				tempExt = 308.588744074409
 				expt = 0.5
 				state = 1
 				connected = True
@@ -22779,6 +22815,16 @@ GAME
 						actionName = toggleAction
 						custom1 = Inflate
 					}
+					ACTION
+					{
+						group = 5
+						groupName = 
+						activated = 0
+						partModule = FSanimateGeneric
+						actionGuiName = Toggle Airbag
+						actionName = toggleAction
+						custom1 = Inflate
+					}
 				}
 				MODULE
 				{
@@ -22813,8 +22859,8 @@ GAME
 				srfN = , -1
 				attN = bottom, 0
 				mass = 0.01
-				temp = 309.17576677417
-				tempExt = 309.039353639716
+				temp = 308.905993394625
+				tempExt = 308.737443008342
 				expt = 0.5
 				state = 1
 				connected = True
@@ -22906,6 +22952,16 @@ GAME
 						actionName = toggleAction
 						custom1 = Close
 					}
+					ACTION
+					{
+						group = 4
+						groupName = 
+						activated = 1
+						partModule = FSanimateGeneric
+						actionGuiName = Toggle Airbag Cover
+						actionName = toggleAction
+						custom1 = Close
+					}
 				}
 				MODULE
 				{
@@ -22952,12 +23008,12 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0.005924052
-				yaw = -0.007435546
-				roll = -0.0005278544
+				pitch = -0.0009493571
+				yaw = -0.00303334
+				roll = -0.0006202543
 				trimPitch = 0
 				trimYaw = 0
-				trimRoll = 0
+				trimRoll = 0.012
 				mainThrottle = 1
 			}
 		}
@@ -25513,7 +25569,7 @@ GAME
 			landed = True
 			landedAt = 
 			splashed = False
-			met = 46997996.8939783
+			met = 75739911.7078593
 			lct = 486307407.087925
 			root = 0
 			lat = -3.71983404945921
@@ -25522,23 +25578,23 @@ GAME
 			hgt = 0.5467685
 			nrm = -0.0003793233,1,0.0001302675
 			rot = 0.4453685,-0.6449187,0.5901425,-0.1935429
-			CoM = 7.265408E-06,0.0353792,-1.412666E-05
+			CoM = 0.01298505,0.3621568,0.07960423
 			stg = 2
 			prst = False
 			ref = 3096442963
 			ctrl = True
-			cPch = 
-			cHdg = 
+			cPch = 0.2
+			cHdg = 0.3
 			cMod = 0
 			ORBIT
 			{
-				SMA = 874942.628628899
-				ECC = 1
-				INC = NaN
-				LPE = 72.6972000109954
-				LAN = 27.8100536087535
+				SMA = 875218.256239078
+				ECC = 0.999992257618452
+				INC = 3.71983626259018
+				LPE = 90.0000000000107
+				LAN = 355.82834535394
 				MNA = 3.14159265358979
-				EPH = 561191881.69673
+				EPH = 562047318.795784
 				REF = 10
 			}
 			PART
@@ -25564,8 +25620,8 @@ GAME
 				attN = engines, 2
 				attN = top, 3
 				mass = 0.208
-				temp = 155.872683841079
-				tempExt = 157.413474256813
+				temp = 155.874692832238
+				tempExt = 157.469285880005
 				expt = 0.5
 				state = 0
 				connected = True
@@ -25956,6 +26012,20 @@ GAME
 					}
 					TANK
 					{
+						name = Water
+						note = (pressurized)
+						utilization = 1
+						mass = 1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
 						name = LiquidFuel
 						note = (pressurized)
 						utilization = 1
@@ -26021,7 +26091,7 @@ GAME
 						temperature = 300
 						fillable = True
 						techRequired = 
-						amount = 5867.6160269503171
+						amount = 5867.615264685187
 						maxAmount = 5880.0013647386504
 					}
 					TANK
@@ -27223,7 +27293,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 5867.61602695032
+					amount = 5867.61526468519
 					maxAmount = 5880.00136473865
 					flowState = True
 					isTweakable = True
@@ -27253,8 +27323,8 @@ GAME
 				attN = bottom, -1
 				attN = top, 0
 				mass = 0.062
-				temp = 155.885216755722
-				tempExt = 157.147052527706
+				temp = 155.887171523974
+				tempExt = 157.165111043902
 				expt = 0.5
 				state = 0
 				connected = True
@@ -27563,8 +27633,8 @@ GAME
 				srfN = , -1
 				attN = side, 1
 				mass = 0.01
-				temp = 155.877684906987
-				tempExt = 157.252519990842
+				temp = 155.879666770183
+				tempExt = 157.258383069592
 				expt = 0.5
 				state = 0
 				connected = True
@@ -27786,8 +27856,8 @@ GAME
 				srfN = , -1
 				attN = top, 0
 				mass = 0.01
-				temp = 155.861803771458
-				tempExt = 157.408548144655
+				temp = 155.86387501984
+				tempExt = 157.460934911116
 				expt = 0.5
 				state = 0
 				connected = True
@@ -33157,334 +33227,6 @@ GAME
 		}
 		VESSEL
 		{
-			pid = 178f6a0dd27d48d7b94965ec6c2efcba
-			name = Ast. PTI-481
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 559544454.352274
-			lct = 559544454.352274
-			root = 0
-			lat = 2.38215914455432
-			lon = -80.190915726595
-			alt = 148888053586.659
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.4485967,0.8627417,0.2217117,0.07267576
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 150931835600.133
-				ECC = 0.0269504075586806
-				INC = 23.5911080444528
-				LPE = 78.0800353617855
-				LAN = 1.38808924322591
-				MNA = 5.98714729441028
-				EPH = 564184967.291727
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 2060478796
-				mid = 2060478796
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 559544454.352274
-				lifetime = 1711874.65209961
-				refTime = 1728000
-				size = 3
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = 8d8a7c8b342d4a3d921de3c952bf2237
-			name = Ast. DTM-700
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 560436240.424439
-			lct = 560436240.424439
-			root = 0
-			lat = 7.05947534288453
-			lon = -93.8437624665759
-			alt = 148433662543.616
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.1916995,0.2343677,0.6709406,0.6768766
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 614924116.018379
-				ECC = 0.728492682732365
-				INC = 145.388764912653
-				LPE = 153.529882268997
-				LAN = 266.028170715248
-				MNA = 4.4782520124692
-				EPH = 561143735.601127
-				REF = 1
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 880555299
-				mid = 880555299
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 560436240.424439
-				lifetime = 1248826.46484375
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = 83206c5deea54f3b927565e637eeef37
-			name = Ast. AXK-817
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 561087537.391785
-			lct = 561087537.391785
-			root = 0
-			lat = 10.0886445695107
-			lon = -269.367227525692
-			alt = 148023189870.649
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.5819906,0.4145556,-0.6426518,0.2764585
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 401207877.408995
-				ECC = 0.998688844157612
-				INC = 78.9522421440502
-				LPE = 209.612275568522
-				LAN = 261.659621466179
-				MNA = 4.3535464141622
-				EPH = 561125628.391678
-				REF = 1
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 2061967123
-				mid = 2061967123
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 561087537.391785
-				lifetime = 215361.337280273
-				refTime = 1728000
-				size = 3
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
-			pid = 2985d85bd80a4fc0aa64db90e8af5eb1
-			name = Ast. QOH-469
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			landedAt = 
-			splashed = False
-			met = 561122885.121414
-			lct = 561122885.121414
-			root = 0
-			lat = 9.73974543771195
-			lon = -298.103203636555
-			alt = 149529513819.165
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.1318261,-0.4414361,-0.5004762,0.7329936
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			ORBIT
-			{
-				SMA = 151937347915.751
-				ECC = 0.0335730918870521
-				INC = 23.7193317838802
-				LPE = 97.088480137425
-				LAN = 1.30518252664814
-				MNA = 5.78625045553099
-				EPH = 564721931.398269
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1527022160
-				mid = 1527022160
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				temp = -1
-				tempExt = 0
-				expt = 0.1
-				state = 0
-				connected = True
-				attached = True
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 561122885.121414
-				lifetime = 672213.523864746
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-		}
-		VESSEL
-		{
 			pid = 4248511b373c44a98adad6331612893e
 			name = Ast. MRS-733
 			type = SpaceObject
@@ -33729,6 +33471,7530 @@ GAME
 			{
 			}
 		}
+		VESSEL
+		{
+			pid = 73ceab7b66b844679e81c5b919d161d5
+			name = Apollo 8
+			type = Ship
+			sit = SUB_ORBITAL
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 829137.187605977
+			lct = 561218021.548331
+			root = 0
+			lat = 26.8971420185117
+			lon = -28.2670588237773
+			alt = 33995771.278814
+			hgt = -1
+			nrm = -0.4907273,0.6771068,-0.5483733
+			rot = 0.02956963,0.4377925,0.4812005,-0.758887
+			CoM = 0.001000399,-2.054434,-0.000478796
+			stg = 6
+			prst = False
+			ref = 91342068
+			ctrl = True
+			cPch = 0.8359995
+			cHdg = -2.532002
+			cMod = 0
+			ORBIT
+			{
+				SMA = 187888837.795091
+				ECC = 0.965826187526924
+				INC = 27.5852825075112
+				LPE = 213.039266811611
+				LAN = 1.63361731592033
+				MNA = 6.22401755188443
+				EPH = 562047158.775937
+				REF = 1
+			}
+			PART
+			{
+				name = His.FASAApollo.CM
+				cid = 4294249552
+				uid = 91342068
+				mid = 1534618777
+				launchID = 313
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 4
+				dstg = 0
+				sqor = 4
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, 1
+				attN = bottom, 12
+				mass = 3.555
+				temp = 282.774397061962
+				tempExt = 282.844442066275
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.CM (Apollo 8)
+				modCost = 0
+				crew = Frank Borman
+				crew = William Anders
+				crew = James Lovell
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					EVENTS
+					{
+						ToggleFlag
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle Flag
+							guiName = Toggle Flag
+							category = Toggle Flag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = True
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 7440.809
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRCSFX
+					isEnabled = True
+					enableYaw = True
+					enablePitch = True
+					enableRoll = True
+					enableX = True
+					enableY = True
+					enableZ = True
+					rcsEnabled = False
+					enableYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					enablePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableX_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableY_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableZ_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						Disable
+						{
+							active = False
+							guiActive = True
+							guiIcon = Disable RCS Port
+							guiName = Disable RCS Port
+							category = Disable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Enable
+						{
+							active = True
+							guiActive = True
+							guiIcon = Enable RCS Port
+							guiName = Enable RCS Port
+							category = Enable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = Custom10
+						}
+					}
+				}
+				MODULE
+				{
+					name = ReflectiveShaderModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 10
+						groupName = tog CM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 10
+						groupName = tog CM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 10
+						groupName = tog CM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 10
+						groupName = tog CM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 10
+						groupName = tog CM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 10
+						groupName = tog CM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+				}
+				MODULE
+				{
+					name = MechJebCore
+					isEnabled = True
+					running = True
+					running_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OnOrbitProgradeAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRetrogradeAction
+						{
+							actionGroup = None
+						}
+						OnOrbitNormalAction
+						{
+							actionGroup = None
+						}
+						OnOrbitAntinormalAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRadialInAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRadialOutAction
+						{
+							actionGroup = None
+						}
+						OnKillRotationAction
+						{
+							actionGroup = None
+						}
+						OnDeactivateSmartASSAction
+						{
+							actionGroup = None
+						}
+						OnPanicAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronOffAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronKeepVertAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronZeroSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronPlusOneSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronMinusOneSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronToggleHSAction
+						{
+							actionGroup = None
+						}
+					}
+					MechJebLocalSettings
+					{
+						MechJebModuleMenu
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAttitudeAdjustment
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRCSBalancerWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleInfoItems
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSmartRcs
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSettings
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleDebugArrows
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSmartASS
+						{
+							mode = ORBITAL
+							target = OFF
+							advReference = INERTIAL
+							advDirection = FORWARD
+							forceRol = False
+							forcePitch = True
+							forceYaw = True
+							unlockParts = 
+							unlockTechs = 
+							srfHdg
+							{
+								_val = 90
+								_text = 90
+							}
+							srfPit
+							{
+								_val = 90
+								_text = 90
+							}
+							srfRol
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelYaw
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelPit
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelRol
+							{
+								_val = 0
+								_text = 0
+							}
+							rol
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						ModExtensionDemo
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleThrustWindow
+						{
+							autostageSavedState = False
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWarpHelper
+						{
+							unlockParts = 
+							unlockTechs = 
+							phaseAngle
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleCustomWindowEditor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleNodeExecutor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleNodeEditor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleLandingGuidance
+						{
+							landingSiteIdx = 0
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleLandingPredictions
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleTranslatron
+						{
+							trans_spd = 0
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWaypointWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWaypointHelpWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleTargetController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleManeuverPlanner
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleStageStats
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRendezvousGuidance
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleWarpController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSolarPanelController
+						{
+							prev_ShouldOpenSolarPanels = False
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleThrustController
+						{
+							limitThrottle = False
+							unlockParts = 
+							unlockTechs = 
+							maxThrottle
+							{
+								_val = 1
+								_text = 100
+							}
+						}
+						MechJebModuleRCSController
+						{
+							unlockParts = 
+							unlockTechs = 
+							Tf
+							{
+								_val = 1
+								_text = 1
+							}
+						}
+						MechJebModuleRCSBalancer
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAttitudeController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleStagingController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleFlightRecorder
+						{
+							markUT = 561218021.548331
+							deltaVExpended = 30209.9177274398
+							dragLosses = 159.776157456356
+							gravityLosses = 6019.97417001085
+							steeringLosses = 23765.2111216613
+							markLatitude = 28.6573003515083
+							markLongitude = -80.599519879427
+							markAltitude = 141.606311987899
+							markBodyIndex = 1
+							maxDragGees = 0.431646956980349
+							unlockParts = 
+							unlockTechs = 
+						}
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RcsSounds
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+						0 = Flight,Kerbin
+						0 = Suborbit,Kerbin
+						0 = Orbit,Kerbin
+						0 = Escape,Kerbin
+						0 = Flyby,Moon
+						0 = Escape,Moon
+						0 = Orbit,Moon
+						0 = Flyby,Kerbin
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					helmetEquipped = True
+					EVENTS
+					{
+						ShowInventory
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = 
+							guiName = Frank's inventory
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					helmetEquipped = True
+					EVENTS
+					{
+						ShowInventory
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = 
+							guiName = William's inventory
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					helmetEquipped = True
+					EVENTS
+					{
+						ShowInventory
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = 
+							guiName = James's inventory
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 72000
+					maxAmount = 72000
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = MMH (RCS)
+					amount = 29.3548369105048
+					maxAmount = 29.46
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = NTO (RCS)
+					amount = 35.2533750484048
+					maxAmount = 35.38
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.CM.parachutes
+				cid = 4294245104
+				uid = 4177161533
+				mid = 1534618777
+				launchID = 313
+				parent = 0
+				position = 0,0.779998779296875,5.8059130836341E-09
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, 2
+				attN = bottom, 0
+				mass = 0.173
+				temp = 282.773269386671
+				tempExt = 282.824437490923
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.CM.parachutes
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleParachute
+					isEnabled = True
+					persistentState = STOWED
+					minAirPressureToOpen = 0.02
+					deployAltitude = 3000
+					minAirPressureToOpen_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0.01
+						maxValue = 0.75
+						stepIncrement = 0.01
+					}
+					deployAltitude_UIFlight
+					{
+						controlEnabled = True
+						minValue = 50
+						maxValue = 5000
+						stepIncrement = 50
+					}
+					EVENTS
+					{
+						Deploy
+						{
+							active = True
+							guiActive = True
+							guiIcon = Deploy Chute
+							guiName = Deploy Chute
+							category = Deploy Chute
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						CutParachute
+						{
+							active = False
+							guiActive = True
+							guiIcon = Cut Parachute
+							guiName = Cut Parachute
+							category = Cut Parachute
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Repack
+						{
+							active = False
+							guiActive = False
+							guiIcon = Repack Chute
+							guiName = Repack Chute
+							category = Repack Chute
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						CutAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 2200
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = MPFix
+					isEnabled = True
+					semiDeploymentSpeed = 2
+					deploymentSpeed = 6
+					semiDeploymentSpeed_UIFlight
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 15
+						stepIncrement = 1
+					}
+					deploymentSpeed_UIFlight
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 15
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						ResetChute
+						{
+							active = False
+							guiActive = False
+							guiIcon = Reset Chute
+							guiName = Reset Chute
+							category = Reset Chute
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableParachute
+					isEnabled = True
+					deploymentFactor = 1
+					semiDeploymentFactor = 2
+					deploymentFactor_UIFlight
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 20
+						incrementSlide = 0.5
+					}
+					semiDeploymentFactor_UIFlight
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 20
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.CM.Top
+				cid = 4294244340
+				uid = 3497632822
+				mid = 1534618777
+				launchID = 313
+				parent = 1
+				position = 0,0.834999084472656,6.21530737987541E-09
+				rotation = 3.721745E-09,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 1
+				sqor = 0
+				sepI = 0
+				sidx = 1
+				attm = 0
+				srfN = , -1
+				attN = top, 4
+				attN = bottom, 1
+				mass = 0.24
+				temp = 282.760134901232
+				tempExt = 282.735077851773
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.CM.Top
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = False
+					ejectionForcePercent_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 300
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ReflectiveShaderModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableDecouple
+					isEnabled = True
+					ejectionForce = 100
+					staged = True
+					ejectionForce_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 200
+						incrementSlide = 10
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleStagingToggle
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						EnableEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Enable Staging
+							guiName = Enable Staging
+							category = Enable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableEvent
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = Apollo.radialDrogue
+				cid = 4294233312
+				uid = 3131607362
+				mid = 1534618777
+				launchID = 313
+				parent = 2
+				position = -0.556165099143982,0.981094360351563,0.324471950531006
+				rotation = 0.1416326,0.8305544,-0.245315,0.4795207
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 1
+				dstg = 3
+				sqor = 1
+				sepI = 0
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, 2
+				mass = 0.01
+				temp = 282.754897801087
+				tempExt = 282.725060100328
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = Apollo.radialDrogue
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 300
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleParachute
+					isEnabled = True
+					persistentState = STOWED
+					minAirPressureToOpen = 0.02
+					deployAltitude = 7600
+					minAirPressureToOpen_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0.01
+						maxValue = 0.75
+						stepIncrement = 0.01
+					}
+					deployAltitude_UIFlight
+					{
+						controlEnabled = True
+						minValue = 50
+						maxValue = 5000
+						stepIncrement = 50
+					}
+					EVENTS
+					{
+						Deploy
+						{
+							active = True
+							guiActive = True
+							guiIcon = Deploy Chute
+							guiName = Deploy Chute
+							category = Deploy Chute
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						CutParachute
+						{
+							active = False
+							guiActive = True
+							guiIcon = Cut Parachute
+							guiName = Cut Parachute
+							category = Cut Parachute
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+						Repack
+						{
+							active = False
+							guiActive = False
+							guiIcon = Repack Chute
+							guiName = Repack Chute
+							category = Repack Chute
+							guiActiveUnfocused = True
+							unfocusedRange = 4
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						CutAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDragModifier
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 18
+						groupName = deploy drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Deploy
+						actionName = DeployAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 19
+						groupName = cut drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Cut Chute
+						actionName = CutAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 18
+						groupName = deploy drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Deploy
+						actionName = DeployAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 19
+						groupName = cut drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Cut Chute
+						actionName = CutAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 18
+						groupName = deploy drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Deploy
+						actionName = DeployAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 19
+						groupName = cut drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Cut Chute
+						actionName = CutAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 18
+						groupName = deploy drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Deploy
+						actionName = DeployAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 19
+						groupName = cut drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Cut Chute
+						actionName = CutAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 18
+						groupName = deploy drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Deploy
+						actionName = DeployAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 19
+						groupName = cut drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Cut Chute
+						actionName = CutAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 18
+						groupName = deploy drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Deploy
+						actionName = DeployAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 19
+						groupName = cut drogue
+						activated = 0
+						partModule = ModuleParachute
+						actionGuiName = Cut Chute
+						actionName = CutAction
+						custom1 = NA
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = MPFix
+					isEnabled = True
+					semiDeploymentSpeed = 2
+					deploymentSpeed = 6
+					semiDeploymentSpeed_UIFlight
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 15
+						stepIncrement = 1
+					}
+					deploymentSpeed_UIFlight
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 15
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						ResetChute
+						{
+							active = False
+							guiActive = False
+							guiIcon = Reset Chute
+							guiName = Reset Chute
+							category = Reset Chute
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableParachute
+					isEnabled = True
+					deploymentFactor = 1
+					semiDeploymentFactor = 2
+					deploymentFactor_UIFlight
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 20
+						incrementSlide = 0.5
+					}
+					semiDeploymentFactor_UIFlight
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 20
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.DockingDevice
+				cid = 4294232382
+				uid = 1277386016
+				mid = 1534618777
+				launchID = 313
+				parent = 2
+				position = 0,1.2449951171875,9.2671088580687E-09
+				rotation = 3.721745E-09,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 2
+				sqor = 2
+				sepI = 1
+				sidx = 1
+				attm = 0
+				srfN = , -1
+				attN = bottom, 2
+				attN = top, -1
+				mass = 0.036
+				temp = 282.759282653983
+				tempExt = 282.728274813609
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.DockingDevice
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDockingNode
+					isEnabled = True
+					state = Ready
+					dockUId = 0
+					dockNodeIdx = 0
+					EVENTS
+					{
+						Undock
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						UndockSameVessel
+						{
+							active = False
+							guiActive = True
+							guiIcon = Undock
+							guiName = Undock
+							category = Undock
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Decouple
+						{
+							active = False
+							guiActive = True
+							guiIcon = Decouple Node
+							guiName = Decouple Node
+							category = Decouple Node
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						SetAsTarget
+						{
+							active = True
+							guiActive = False
+							guiIcon = Set as Target
+							guiName = Set as Target
+							category = Set as Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						UnsetTarget
+						{
+							active = False
+							guiActive = False
+							guiIcon = Unset Target
+							guiName = Unset Target
+							category = Unset Target
+							guiActiveUnfocused = True
+							unfocusedRange = 200
+							externalToEVAOnly = False
+						}
+						EnableXFeed
+						{
+							active = False
+							guiActive = False
+							guiIcon = Enable Crossfeed
+							guiName = Enable Crossfeed
+							category = Enable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableXFeed
+						{
+							active = False
+							guiActive = False
+							guiIcon = Disable Crossfeed
+							guiName = Disable Crossfeed
+							category = Disable Crossfeed
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						MakeReferenceTransform
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control from Here
+							guiName = Control from Here
+							category = Control from Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						UndockAction
+						{
+							actionGroup = None
+						}
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 4500
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleDockingNodeNamed
+					isEnabled = True
+					portName = Apollo CSM Docking Device
+					initialized = True
+					controlTransformName = 
+					EVENTS
+					{
+						renameDockingPort
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Rename Port
+							guiName = Rename Port
+							category = Rename Port
+							guiActiveUnfocused = True
+							unfocusedRange = 2000
+							externalToEVAOnly = False
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableDockingNode
+					isEnabled = True
+					fuelCrossFeed = True
+					acquireRange = 0.75
+					acquireForce = 0.25
+					acquireTorque = 0.25
+					undockEjectionForce = 1
+					minDistanceToReEngage = 0.75
+					isDecoupled = False
+					fuelCrossFeed_UIFlight
+					{
+						controlEnabled = True
+					}
+					acquireRange_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1.5
+						incrementSlide = 0.1
+					}
+					acquireForce_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 0.5
+						incrementSlide = 0.01
+					}
+					acquireTorque_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 0.5
+						incrementSlide = 0.01
+					}
+					undockEjectionForce_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 2
+						incrementSlide = 0.1
+					}
+					minDistanceToReEngage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1.5
+						incrementSlide = 0.1
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						MakeReferenceTransformAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleStagingToggle
+					isEnabled = True
+					stagingEnabled = False
+					EVENTS
+					{
+						EnableEvent
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Enable Staging
+							guiName = Enable Staging
+							category = Enable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableEvent
+						{
+							active = False
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASA.Apollo.Float.Round
+				cid = 4294240594
+				uid = 2674065597
+				mid = 1534618777
+				launchID = 313
+				parent = 0
+				position = 0,0.577293395996094,0.842978954315186
+				rotation = -0.3535534,0.6123728,-0.3535536,0.6123719
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 1
+				sym = 6
+				sym = 7
+				srfN = srfAttach, 0
+				mass = 0.003
+				temp = 282.774514892626
+				tempExt = 282.795632568337
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASA.Apollo.Float.Round
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					status = Locked
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Deploy
+							category = Toggle
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 150
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableAnimateGeneric
+					isEnabled = True
+					startCompleted = False
+					startCompleted_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASA.Apollo.Float.Round
+				cid = 4294240332
+				uid = 2709768304
+				mid = 1534618777
+				launchID = 313
+				parent = 0
+				position = 0.730043292045593,0.577293395996094,-0.42149019241333
+				rotation = -0.4829631,0.8365161,0.1294094,-0.2241445
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 1
+				attm = 1
+				sym = 5
+				sym = 7
+				srfN = srfAttach, 0
+				mass = 0.003
+				temp = 282.774437943357
+				tempExt = 282.794797874712
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASA.Apollo.Float.Round
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					status = Locked
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Deploy
+							category = Toggle
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 150
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableAnimateGeneric
+					isEnabled = True
+					startCompleted = False
+					startCompleted_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASA.Apollo.Float.Round
+				cid = 4294240270
+				uid = 2362332798
+				mid = 1534618777
+				launchID = 313
+				parent = 0
+				position = -0.730044007301331,0.577293395996094,-0.42149019241333
+				rotation = -0.1294097,0.2241432,0.4829631,-0.8365164
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 2
+				attm = 1
+				sym = 5
+				sym = 6
+				srfN = srfAttach, 0
+				mass = 0.003
+				temp = 282.774548342048
+				tempExt = 282.794736712791
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASA.Apollo.Float.Round
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					status = Locked
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Deploy
+							category = Toggle
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 150
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Round
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableAnimateGeneric
+					isEnabled = True
+					startCompleted = False
+					startCompleted_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASA.Apollo.Float.Ring
+				cid = 4294229776
+				uid = 2302612908
+				mid = 1534618777
+				launchID = 313
+				parent = 0
+				position = -1.26420104503632,-0.992103576660156,1.2641978263855
+				rotation = 0.001726834,0.3826796,0.004168855,0.9238701
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 3
+				attm = 1
+				sym = 9
+				sym = 10
+				sym = 11
+				srfN = srfAttach, 0
+				mass = 0.014
+				temp = 282.774397404998
+				tempExt = 282.801111123916
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASA.Apollo.Float.Ring
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					status = Locked
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Deploy
+							category = Toggle
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 250
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableAnimateGeneric
+					isEnabled = True
+					startCompleted = False
+					startCompleted_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASA.Apollo.Float.Ring
+				cid = 4294227716
+				uid = 3673480306
+				mid = 1534618777
+				launchID = 313
+				parent = 0
+				position = 1.26420116424561,-0.992103576660156,1.2641978263855
+				rotation = 0.004168885,0.9238701,0.00172677,0.3826795
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 4
+				attm = 1
+				sym = 8
+				sym = 10
+				sym = 11
+				srfN = srfAttach, 0
+				mass = 0.014
+				temp = 282.774418932138
+				tempExt = 282.8081063128
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASA.Apollo.Float.Ring
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					status = Locked
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Deploy
+							category = Toggle
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 250
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableAnimateGeneric
+					isEnabled = True
+					startCompleted = False
+					startCompleted_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASA.Apollo.Float.Ring
+				cid = 4294227656
+				uid = 96053090
+				mid = 1534618777
+				launchID = 313
+				parent = 0
+				position = 1.26420116424561,-0.992103576660156,-1.264200091362
+				rotation = 0.004168856,0.9238701,-0.001726835,-0.3826795
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 5
+				attm = 1
+				sym = 8
+				sym = 9
+				sym = 11
+				srfN = srfAttach, 0
+				mass = 0.014
+				temp = 282.774400070078
+				tempExt = 282.804668601832
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASA.Apollo.Float.Ring
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					status = Locked
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Deploy
+							category = Toggle
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 250
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableAnimateGeneric
+					isEnabled = True
+					startCompleted = False
+					startCompleted_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASA.Apollo.Float.Ring
+				cid = 4294227596
+				uid = 3480826184
+				mid = 1534618777
+				launchID = 313
+				parent = 0
+				position = -1.26420104503632,-0.992103576660156,-1.264200091362
+				rotation = 0.00172677,0.3826795,-0.004168884,-0.9238701
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 6
+				attm = 1
+				sym = 8
+				sym = 9
+				sym = 10
+				srfN = srfAttach, 0
+				mass = 0.014
+				temp = 282.774397307945
+				tempExt = 282.802787960084
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASA.Apollo.Float.Ring
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					status = Locked
+					animSwitch = True
+					animTime = 0
+					animSpeed = 1
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Deploy
+							category = Toggle
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 250
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+					ACTION
+					{
+						group = 17
+						groupName = CM floats
+						activated = 0
+						partModule = ModuleAnimateGeneric
+						actionGuiName = Deploy
+						actionName = ToggleAction
+						custom1 = Apollo_Float_Ring
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableAnimateGeneric
+					isEnabled = True
+					startCompleted = False
+					startCompleted_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.CM.HeatShield
+				cid = 4294239590
+				uid = 400681658
+				mid = 1534618777
+				launchID = 313
+				parent = 0
+				position = 0,-1.27500152587891,-9.49046086162753E-09
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 3
+				dstg = 0
+				sqor = 3
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, 0
+				attN = bottom, 13
+				mass = 0.513
+				temp = 282.774398754987
+				tempExt = 282.873771677197
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.CM.HeatShield
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAblator
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 76
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = Ablator
+					amount = 848
+					maxAmount = 848
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.CM.Decoupler
+				cid = 4294239176
+				uid = 35347448
+				mid = 1534618777
+				launchID = 313
+				parent = 12
+				position = 0,-1.11490631103516,-8.29879365227271E-09
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 2
+				dstg = 1
+				sqor = 2
+				sepI = 2
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, 12
+				attN = bottom, 14
+				mass = 1
+				temp = 282.775438221979
+				tempExt = 282.89009778141
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.CM.Decoupler
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleDecouple
+					isEnabled = True
+					ejectionForcePercent = 100
+					isDecoupled = False
+					ejectionForcePercent_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+						Decouple
+						{
+							active = True
+							guiActive = True
+							guiIcon = Decouple
+							guiName = Decouple
+							category = Decouple
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DecoupleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 1000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ReflectiveShaderModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableDecouple
+					isEnabled = True
+					ejectionForce = -100
+					staged = True
+					ejectionForce_UIFlight
+					{
+						controlEnabled = True
+						minValue = -200
+						maxValue = 0
+						incrementSlide = 10
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleStagingToggle
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						EnableEvent
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Enable Staging
+							guiName = Enable Staging
+							category = Enable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DisableEvent
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = KJRDecouplerReinforcementModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.SM
+				cid = 4294238326
+				uid = 1665751007
+				mid = 1534618777
+				launchID = 313
+				parent = 13
+				position = 0,-3.32500457763672,-2.47496370064937E-08
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 8
+				dstg = 2
+				sqor = 8
+				sepI = 2
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, 13
+				attN = apollo13, -1
+				attN = bottom1, 15
+				attN = bottom2, 16
+				mass = 3.287
+				temp = 282.775588566914
+				tempExt = 282.914834652147
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.SM
+				modCost = 12582.29
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					status = Locked
+					animSwitch = True
+					animTime = 1
+					animSpeed = 1
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Close
+							category = Toggle
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleCargoBay
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					EVENTS
+					{
+						ToggleFlag
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle Flag
+							guiName = Toggle Flag
+							category = Toggle Flag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleFuelTanks
+					isEnabled = True
+					type = ServiceModule
+					utilization = 86
+					mass = 3.287
+					volume = 16547.860000000001
+					type_UIEditor
+					{
+						controlEnabled = True
+					}
+					utilization_UIEditor
+					{
+						controlEnabled = True
+						minValue = 1
+						maxValue = 100
+						incrementSlide = 1
+					}
+					EVENTS
+					{
+						HideUI
+						{
+							active = False
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Hide UI
+							guiName = Hide UI
+							category = Hide UI
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ShowUI
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Show UI
+							guiName = Show UI
+							category = Show UI
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Empty
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Remove All Tanks
+							guiName = Remove All Tanks
+							category = Remove All Tanks
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+					TANK
+					{
+						name = LqdOxygen
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 7.9E-05
+						cost = 0
+						loss_rate = 8E-11
+						temperature = 90.15
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Kerosene
+						note = (pressurized)
+						utilization = 1
+						mass = 7.7E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LqdHydrogen
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 6.7E-05
+						cost = 0
+						loss_rate = 5E-10
+						temperature = 20.15
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = NTO
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 2752.4792593666498
+						maxAmount = 7885.3000000000002
+					}
+					TANK
+					{
+						name = UDMH
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Hydrazine
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Aerozine50
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 2773.63251087464
+						maxAmount = 7945.8999999999996
+					}
+					TANK
+					{
+						name = MMH
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = HTP
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Nitrogen
+						note = (pressurized)
+						utilization = 200
+						mass = 9.5E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = LqdAmmonia
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 7.7E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 195.15
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Tonka250
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = AK27
+						note = (pressurized)
+						utilization = 1
+						mass = 8.5E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MON10
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Hydrogen
+						note = (pressurized)
+						utilization = 100
+						mass = 3E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Oxygen
+						note = (pressurized)
+						utilization = 200
+						mass = 3E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Water
+						note = (pressurized)
+						utilization = 1
+						mass = 1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0.011616591029160895
+						maxAmount = 26
+					}
+					TANK
+					{
+						name = LiquidFuel
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Oxidizer
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MonoPropellant
+						note = (pressurized)
+						utilization = 1
+						mass = 7.7E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = XenonGas
+						note = (pressurized)
+						utilization = 100
+						mass = 3E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = ElectricCharge
+						note = (pressurized)
+						utilization = 1000
+						mass = 0.00289
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 4800
+						maxAmount = 4800
+					}
+					TANK
+					{
+						name = LeadBallast
+						note = (pressurized)
+						utilization = 1
+						mass = 6.5E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MMH (RCS)
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 18.7446315129882
+						maxAmount = 58.799999999999997
+					}
+					TANK
+					{
+						name = NTO (RCS)
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 22.570063810948501
+						maxAmount = 70.799999999999997
+					}
+					TANK
+					{
+						name = MMH (L)
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = NTO (L)
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = MMH (R)
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = NTO (R)
+						note = (pressurized)
+						utilization = 1
+						mass = 8.1E-05
+						cost = 0
+						loss_rate = 0
+						temperature = 300
+						fillable = True
+						techRequired = 
+						amount = 0
+						maxAmount = 0
+					}
+					TANK
+					{
+						name = Hydrogen (Fuel Cell)
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 6.7E-05
+						cost = 0
+						loss_rate = 5E-10
+						temperature = 20.15
+						fillable = True
+						techRequired = 
+						amount = 175.44268323193387
+						maxAmount = 372.62
+					}
+					TANK
+					{
+						name = Oxygen (Fuel Cell)
+						note = (has insulation, pressurized)
+						utilization = 1
+						mass = 7.9E-05
+						cost = 0
+						loss_rate = 8E-11
+						temperature = 90.15
+						fillable = True
+						techRequired = 
+						amount = 103.62086118327237
+						maxAmount = 183.63999999999999
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 0
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleSeeThroughObject
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ReflectiveShaderModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceConverter
+					isEnabled = True
+					HeatThrottle = 1
+					HeatThrottleSpeed = 0.05
+					avgHeatThrottle = 1
+					DirtyFlag = True
+					EfficiencyBonus = 1
+					IsActivated = True
+					lastUpdateTime = 562047158.775937
+					EVENTS
+					{
+						StartResourceConverter
+						{
+							active = False
+							guiActive = True
+							guiIcon = Start Converter
+							guiName = Start Fuel Cell 1
+							category = Start Converter
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						StopResourceConverter
+						{
+							active = True
+							guiActive = True
+							guiIcon = Stop Converter
+							guiName = Stop Fuel Cell 1
+							category = Stop Converter
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						StopResourceConverterAction
+						{
+							actionGroup = None
+						}
+						StartResourceConverterAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Not Enough Crew (0/1)
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = MechJebCore
+					isEnabled = True
+					running = True
+					running_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OnOrbitProgradeAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRetrogradeAction
+						{
+							actionGroup = None
+						}
+						OnOrbitNormalAction
+						{
+							actionGroup = None
+						}
+						OnOrbitAntinormalAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRadialInAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRadialOutAction
+						{
+							actionGroup = None
+						}
+						OnKillRotationAction
+						{
+							actionGroup = None
+						}
+						OnDeactivateSmartASSAction
+						{
+							actionGroup = None
+						}
+						OnPanicAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronOffAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronKeepVertAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronZeroSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronPlusOneSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronMinusOneSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronToggleHSAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceConverter
+					isEnabled = True
+					HeatThrottle = 1
+					HeatThrottleSpeed = 0.05
+					avgHeatThrottle = 1
+					DirtyFlag = True
+					EfficiencyBonus = 1
+					IsActivated = True
+					lastUpdateTime = 562047158.775937
+					EVENTS
+					{
+						StartResourceConverter
+						{
+							active = False
+							guiActive = True
+							guiIcon = Start Converter
+							guiName = Start Fuel Cell 2
+							category = Start Converter
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						StopResourceConverter
+						{
+							active = True
+							guiActive = True
+							guiIcon = Stop Converter
+							guiName = Stop Fuel Cell 2
+							category = Stop Converter
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						StopResourceConverterAction
+						{
+							actionGroup = None
+						}
+						StartResourceConverterAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleResourceConverter
+					isEnabled = True
+					HeatThrottle = 1
+					HeatThrottleSpeed = 0.05
+					avgHeatThrottle = 1
+					DirtyFlag = True
+					EfficiencyBonus = 1
+					IsActivated = True
+					lastUpdateTime = 562047158.775937
+					EVENTS
+					{
+						StartResourceConverter
+						{
+							active = False
+							guiActive = True
+							guiIcon = Start Converter
+							guiName = Start Fuel Cell 3
+							category = Start Converter
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						StopResourceConverter
+						{
+							active = True
+							guiActive = True
+							guiIcon = Stop Converter
+							guiName = Stop Fuel Cell 3
+							category = Stop Converter
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						StopResourceConverterAction
+						{
+							actionGroup = None
+						}
+						StartResourceConverterAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableAnimateGeneric
+					isEnabled = True
+					startCompleted = True
+					startCompleted_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = NTO
+					amount = 2752.47925936665
+					maxAmount = 7885.3
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Aerozine50
+					amount = 2773.63251087464
+					maxAmount = 7945.9
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 4800
+					maxAmount = 4800
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = MMH (RCS)
+					amount = 18.7446315129882
+					maxAmount = 58.8
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = NTO (RCS)
+					amount = 22.5700638109485
+					maxAmount = 70.8
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Hydrogen (Fuel Cell)
+					amount = 175.442683231934
+					maxAmount = 372.62
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Oxygen (Fuel Cell)
+					amount = 103.620861183272
+					maxAmount = 183.64
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = Water
+					amount = 0.0116165910291609
+					maxAmount = 26
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.SM.Dish
+				cid = 4294237936
+				uid = 1344946754
+				mid = 1534618777
+				launchID = 313
+				parent = 14
+				position = 1.71000051498413,-5.375,-0.200001046061516
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 7
+				dstg = 2
+				sqor = 7
+				sepI = 2
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, 14
+				mass = 0.02
+				temp = 282.775686184345
+				tempExt = 282.733966215656
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.SM.Dish
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleAnimateGeneric
+					isEnabled = True
+					status = Locked
+					animSwitch = False
+					animTime = 1
+					animSpeed = 1
+					EVENTS
+					{
+						Toggle
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Toggle
+							guiName = Retract
+							category = Toggle
+							guiActiveUnfocused = True
+							unfocusedRange = 5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleDataTransmitter
+					isEnabled = True
+					EVENTS
+					{
+						StartTransmission
+						{
+							active = True
+							guiActive = True
+							guiIcon = Transmit Data
+							guiName = Transmit Data
+							category = Transmit Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						StopTransmission
+						{
+							active = False
+							guiActive = True
+							guiIcon = Stop Transmitting
+							guiName = Stop Transmitting
+							category = Stop Transmitting
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 750
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableAnimateGeneric
+					isEnabled = True
+					startCompleted = False
+					startCompleted_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.SM.Engine
+				cid = 4294237398
+				uid = 1809504531
+				mid = 1534618777
+				launchID = 313
+				parent = 14
+				position = 0,-6.78506469726563,-5.05045605336818E-08
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 3
+				dstg = 2
+				sqor = 3
+				sepI = 2
+				sidx = 0
+				attm = 0
+				srfN = , -1
+				attN = top, -1
+				attN = bottom, 14
+				mass = 0.295
+				temp = 282.775602175458
+				tempExt = 282.773580693451
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.SM.Engine
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleEnginesFX
+					isEnabled = True
+					staged = False
+					flameout = False
+					EngineIgnited = True
+					engineShutdown = False
+					currentThrottle = 0
+					thrustPercentage = 100
+					manuallyOverridden = False
+					thrustPercentage_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 0.5
+					}
+					EVENTS
+					{
+						Activate
+						{
+							active = False
+							guiActive = True
+							guiIcon = Activate Engine
+							guiName = Activate Engine
+							category = Activate Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Shutdown
+						{
+							active = True
+							guiActive = True
+							guiIcon = Shutdown Engine
+							guiName = Shutdown Engine
+							category = Shutdown Engine
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						OnAction
+						{
+							actionGroup = None
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+						}
+						ActivateAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleGimbal
+					isEnabled = True
+					gimbalLock = False
+					gimbalLimiter = 100
+					gimbalLock_UIFlight
+					{
+						controlEnabled = True
+					}
+					gimbalLimiter_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 100
+						stepIncrement = 1
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+						LockAction
+						{
+							actionGroup = None
+						}
+						FreeAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleAnimateHeat
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 12000
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableGimbal
+					isEnabled = True
+					gimbalRange = 4.5
+					reverseGimbalControl = False
+					gimbalRange_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 9
+						incrementSlide = 1
+					}
+					reverseGimbalControl_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionGimbalFlip
+						{
+							actionGroup = None
+						}
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.SM.RCS
+				cid = 4294236506
+				uid = 3644240432
+				mid = 1534618777
+				launchID = 313
+				parent = 14
+				position = -1.40399205684662,-2.45070648193359,1.40399789810181
+				rotation = -1.081773E-07,-0.3826835,-4.480854E-08,0.9238796
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 8
+				dstg = 2
+				sqor = 8
+				sepI = 2
+				sidx = 1
+				attm = 1
+				sym = 18
+				sym = 19
+				sym = 20
+				srfN = srfAttach, 14
+				mass = 0.009
+				temp = 282.775607188044
+				tempExt = 282.790483927321
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.SM.RCS
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleRCSFX
+					isEnabled = True
+					enableYaw = True
+					enablePitch = True
+					enableRoll = True
+					enableX = True
+					enableY = True
+					enableZ = True
+					rcsEnabled = True
+					enableYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					enablePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableX_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableY_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableZ_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						Disable
+						{
+							active = True
+							guiActive = True
+							guiIcon = Disable RCS Port
+							guiName = Disable RCS Port
+							category = Disable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Enable
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable RCS Port
+							guiName = Enable RCS Port
+							category = Enable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = Custom09
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 1750
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RcsSounds
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.SM.RCS
+				cid = 4294235566
+				uid = 2620359341
+				mid = 1534618777
+				launchID = 313
+				parent = 14
+				position = 1.40399217605591,-2.45070648193359,1.40399789810181
+				rotation = -1.081774E-07,0.3826834,4.480853E-08,0.9238796
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 8
+				dstg = 2
+				sqor = 8
+				sepI = 2
+				sidx = 2
+				attm = 1
+				sym = 17
+				sym = 19
+				sym = 20
+				srfN = srfAttach, 14
+				mass = 0.009
+				temp = 282.775640149493
+				tempExt = 282.78035623308
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.SM.RCS
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleRCSFX
+					isEnabled = True
+					enableYaw = True
+					enablePitch = True
+					enableRoll = True
+					enableX = True
+					enableY = True
+					enableZ = True
+					rcsEnabled = True
+					enableYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					enablePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableX_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableY_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableZ_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						Disable
+						{
+							active = True
+							guiActive = True
+							guiIcon = Disable RCS Port
+							guiName = Disable RCS Port
+							category = Disable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Enable
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable RCS Port
+							guiName = Enable RCS Port
+							category = Enable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = Custom09
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 1750
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RcsSounds
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.SM.RCS
+				cid = 4294235432
+				uid = 2188339012
+				mid = 1534618777
+				launchID = 313
+				parent = 14
+				position = 1.40399312973022,-2.45070648193359,-1.4039900302887
+				rotation = -4.480853E-08,0.9238796,1.081774E-07,0.3826835
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 8
+				dstg = 2
+				sqor = 8
+				sepI = 2
+				sidx = 3
+				attm = 1
+				sym = 17
+				sym = 18
+				sym = 20
+				srfN = srfAttach, 14
+				mass = 0.009
+				temp = 282.775567322969
+				tempExt = 282.773303824284
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.SM.RCS
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleRCSFX
+					isEnabled = True
+					enableYaw = True
+					enablePitch = True
+					enableRoll = True
+					enableX = True
+					enableY = True
+					enableZ = True
+					rcsEnabled = True
+					enableYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					enablePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableX_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableY_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableZ_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						Disable
+						{
+							active = True
+							guiActive = True
+							guiIcon = Disable RCS Port
+							guiName = Disable RCS Port
+							category = Disable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Enable
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable RCS Port
+							guiName = Enable RCS Port
+							category = Enable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = Custom09
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 1750
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RcsSounds
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.SM.RCS
+				cid = 4294235298
+				uid = 4041386663
+				mid = 1534618777
+				launchID = 313
+				parent = 14
+				position = -1.40399205684662,-2.45070648193359,-1.4039900302887
+				rotation = 4.480853E-08,0.9238796,1.081774E-07,-0.3826834
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 8
+				dstg = 2
+				sqor = 8
+				sepI = 2
+				sidx = 4
+				attm = 1
+				sym = 17
+				sym = 18
+				sym = 19
+				srfN = srfAttach, 14
+				mass = 0.009
+				temp = 282.775638756061
+				tempExt = 282.772589098356
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.SM.RCS
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleRCSFX
+					isEnabled = True
+					enableYaw = True
+					enablePitch = True
+					enableRoll = True
+					enableX = True
+					enableY = True
+					enableZ = True
+					rcsEnabled = True
+					enableYaw_UIFlight
+					{
+						controlEnabled = True
+					}
+					enablePitch_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableRoll_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableX_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableY_UIFlight
+					{
+						controlEnabled = True
+					}
+					enableZ_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+						Disable
+						{
+							active = True
+							guiActive = True
+							guiIcon = Disable RCS Port
+							guiName = Disable RCS Port
+							category = Disable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Enable
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable RCS Port
+							guiName = Enable RCS Port
+							category = Enable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = Custom09
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 1750
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 0
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+					ACTION
+					{
+						group = 9
+						groupName = tog SM RCS
+						activated = 1
+						partModule = ModuleRCSFX
+						actionGuiName = Toggle RCS Thrust
+						actionName = ToggleAction
+						custom1 = NA
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RcsSounds
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			PART
+			{
+				name = His.FASAApollo.SM.Light
+				cid = 4294234650
+				uid = 3147113933
+				mid = 1534618777
+				launchID = 313
+				parent = 14
+				position = -1.93686807155609,-1.18009948730469,-0.518980026245117
+				rotation = -2.74125E-08,0.6087614,2.103434E-08,0.7933534
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 6
+				dstg = 2
+				sqor = 6
+				sepI = 2
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, 14
+				mass = 0.005
+				temp = 282.793473301818
+				tempExt = 282.914610838733
+				expt = 0.5
+				state = 1
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = His.FASAApollo.SM.Light
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = False
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = TweakScale
+					isEnabled = True
+					currentScale = 100
+					defaultScale = 100
+					defaultTransformScale = (1, 1, 1)
+					DryCost = 100
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 561222827.969947
+				Gear = True, 561619565.474882
+				Light = False, 0
+				RCS = False, 562046905.536235
+				SAS = True, 562046677.559972
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = True, 561218185.048175
+				Custom02 = True, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = True, 0
+				Custom08 = True, 0
+				Custom09 = True, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0.1255088
+				yaw = -0.1422048
+				roll = 0.07751472
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0.5799997
+				mainThrottle = 0
+			}
+		}
+		VESSEL
+		{
+			pid = a15748183da24c5aa34d70382fe0681a
+			name = Ast. QMI-984
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 561258279.651759
+			lct = 561258279.651759
+			root = 0
+			lat = 10.6693379147874
+			lon = -50.1104740558949
+			alt = 149319718986.942
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.6467499,-0.2672883,-0.4444609,0.5592192
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 158534680434.715
+				ECC = 0.068067247687789
+				INC = 23.055914963264
+				LPE = 68.5441848008966
+				LAN = 358.850394600428
+				MNA = 6.10460872274736
+				EPH = 563672366.394923
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 432804911
+				mid = 432804911
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 561258279.651759
+				lifetime = 1236790.66772461
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 26bf6230a72849d6a2aa3414815ea4ed
+			name = Ast. IQU-857
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 561322152.787603
+			lct = 561322152.787603
+			root = 0
+			lat = 10.7610304289783
+			lon = -102.156776472812
+			alt = 149132024820.282
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.2805297,0.3601337,-0.635052,0.6231499
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 533506341.097365
+				ECC = 0.964481019266595
+				INC = 149.097953097313
+				LPE = 158.86332243045
+				LAN = 0.968722992922899
+				MNA = 4.47881875838217
+				EPH = 561818785.544374
+				REF = 1
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1837429393
+				mid = 1837429393
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 561322152.787603
+				lifetime = 1466312.58544922
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 1bafadfe1ffb42ddb93d87a664e711ab
+			name = Ast. QFV-661
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 561690056.099236
+			lct = 561690056.099236
+			root = 0
+			lat = 12.5542102928829
+			lon = -44.4408368221365
+			alt = 149246591017.946
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.3724449,-0.4516912,0.5218653,0.6204165
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 151193165361.668
+				ECC = 0.0271831295485308
+				INC = 23.5070488368149
+				LPE = 106.801820467829
+				LAN = -0.189493171083839
+				MNA = 5.93252449830993
+				EPH = 566207119.514763
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 213284357
+				mid = 213284357
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 561690056.099236
+				lifetime = 657129.803466797
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = 698dd4b9ec2f40a5a76516712af90b5d
+			name = Ast. ZAV-258
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			landedAt = 
+			splashed = False
+			met = 561805033.740022
+			lct = 561805033.740022
+			root = 0
+			lat = 13.2074720018696
+			lon = -139.603162706662
+			alt = 147984991170.204
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.3892084,0.5687028,0.5394877,0.4837842
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			ORBIT
+			{
+				SMA = 152089173518.797
+				ECC = 0.0308124889565614
+				INC = 23.3373254598535
+				LPE = 79.7962185360946
+				LAN = -1.69518931216706
+				MNA = 6.25686284027439
+				EPH = 565455874.731233
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1141240630
+				mid = 1141240630
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				temp = -1
+				tempExt = 0
+				expt = 0.1
+				state = 0
+				connected = True
+				attached = True
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 561805033.740022
+				lifetime = 1065782.48291016
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+		}
+		VESSEL
+		{
+			pid = dd3be353a60c479c988c883c1a24f288
+			name = Untitled Space Craft
+			type = Ship
+			sit = PRELAUNCH
+			landed = True
+			landedAt = KSC_LaunchPad_Platform
+			splashed = False
+			met = 0
+			lct = 562047062.616029
+			root = 0
+			lat = 28.6087794049382
+			lon = -80.5997636037715
+			alt = 83.7606930015609
+			hgt = 0.8139728
+			nrm = 6.832345E-07,1,-1.402343E-06
+			rot = -0.5101995,-0.1122221,-0.01689541,0.8525358
+			CoM = 1.697943E-07,-0.9000002,1.415028E-07
+			stg = 1
+			prst = False
+			ref = 2217790846
+			ctrl = True
+			cPch = 0.2
+			cHdg = 0.3
+			cMod = 0
+			ORBIT
+			{
+				SMA = NaN
+				ECC = 1
+				INC = NaN
+				LPE = 145.247729319446
+				LAN = 5.48799164249463
+				MNA = -8.40714670366795
+				EPH = 562047318.495785
+				REF = 1
+			}
+			PART
+			{
+				name = FASAApollo.CM
+				cid = 4294194888
+				uid = 2217790846
+				mid = 4161056991
+				launchID = 315
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				attN = top, -1
+				attN = bottom, -1
+				mass = 3.7
+				temp = 287.602022963672
+				tempExt = 287.13351749534
+				expt = 0.5
+				state = 0
+				connected = True
+				attached = True
+				flag = Squad/Flags/NASA
+				rTrf = FASAApollo.CM
+				modCost = 0
+				crew = Jebediah Kerman
+				crew = Bill Kerman
+				crew = Bob Kerman
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					EVENTS
+					{
+						ToggleFlag
+						{
+							active = True
+							guiActive = False
+							guiActiveEditor = True
+							guiIcon = Toggle Flag
+							guiName = Toggle Flag
+							category = Toggle Flag
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleLight
+					isEnabled = True
+					isOn = False
+					lightR = 1
+					lightG = 1
+					lightB = 1
+					lightR_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightG_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					lightB_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						stepIncrement = 0.05
+					}
+					EVENTS
+					{
+						LightsOff
+						{
+							active = False
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights Off
+							guiName = Lights Off
+							category = Lights Off
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						LightsOn
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = Lights On
+							guiName = Lights On
+							category = Lights On
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleLightAction
+						{
+							actionGroup = Light
+						}
+						LightOnAction
+						{
+							actionGroup = None
+						}
+						LightOffAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleCommand
+					isEnabled = True
+					controlSrcStatusText = Operational
+					EVENTS
+					{
+						MakeReference
+						{
+							active = True
+							guiActive = True
+							guiIcon = Control From Here
+							guiName = Control From Here
+							category = Control From Here
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						RenameVessel
+						{
+							active = True
+							guiActive = True
+							guiIcon = Rename Vessel
+							guiName = Rename Vessel
+							category = Rename Vessel
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleRCS
+					isEnabled = True
+					rcsEnabled = True
+					EVENTS
+					{
+						Disable
+						{
+							active = True
+							guiActive = True
+							guiIcon = Disable RCS Port
+							guiName = Disable RCS Port
+							category = Disable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						Enable
+						{
+							active = False
+							guiActive = True
+							guiIcon = Enable RCS Port
+							guiName = Enable RCS Port
+							category = Enable RCS Port
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceExperiment
+					isEnabled = True
+					Deployed = False
+					Inoperable = False
+					EVENTS
+					{
+						DeployExperiment
+						{
+							active = True
+							guiActive = True
+							guiIcon = Deploy
+							guiName = Crew Report
+							category = Deploy
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Take Data
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Crew Report
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperiment
+						{
+							active = False
+							guiActive = True
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						DeployExperimentExternal
+						{
+							active = True
+							guiActive = False
+							guiIcon = Deploy
+							guiName = Crew Report
+							category = Deploy
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ResetExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiIcon = Reset
+							guiName = Discard Crew Report
+							category = Reset
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+						CleanUpExperimentExternal
+						{
+							active = False
+							guiActive = False
+							guiIcon = Restore
+							guiName = Restore
+							category = Restore
+							guiActiveUnfocused = True
+							unfocusedRange = 1.5
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+						DeployAction
+						{
+							actionGroup = None
+						}
+						ResetAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleScienceContainer
+					isEnabled = True
+					EVENTS
+					{
+						StoreDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Store Experiments (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						CollectDataExternalEvent
+						{
+							active = False
+							guiActive = False
+							guiIcon = 
+							guiName = Take Data (0)
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						ReviewDataEvent
+						{
+							active = False
+							guiActive = True
+							guiIcon = Review Data
+							guiName = Review Stored Data (0)
+							category = Review Data
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ReflectiveShaderModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = BBModule
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleAGX
+					isEnabled = True
+					placeHolder = Hello World
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = MechJebCore
+					isEnabled = True
+					running = True
+					running_UIFlight
+					{
+						controlEnabled = True
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						OnOrbitProgradeAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRetrogradeAction
+						{
+							actionGroup = None
+						}
+						OnOrbitNormalAction
+						{
+							actionGroup = None
+						}
+						OnOrbitAntinormalAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRadialInAction
+						{
+							actionGroup = None
+						}
+						OnOrbitRadialOutAction
+						{
+							actionGroup = None
+						}
+						OnKillRotationAction
+						{
+							actionGroup = None
+						}
+						OnDeactivateSmartASSAction
+						{
+							actionGroup = None
+						}
+						OnPanicAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronOffAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronKeepVertAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronZeroSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronPlusOneSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronMinusOneSpeedAction
+						{
+							actionGroup = None
+						}
+						OnTranslatronToggleHSAction
+						{
+							actionGroup = None
+						}
+					}
+					MechJebLocalSettings
+					{
+						MechJebModuleMenu
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAttitudeAdjustment
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRCSBalancerWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleInfoItems
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSmartRcs
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSettings
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleDebugArrows
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSmartASS
+						{
+							mode = ORBITAL
+							target = OFF
+							advReference = INERTIAL
+							advDirection = FORWARD
+							forceRol = False
+							forcePitch = True
+							forceYaw = True
+							unlockParts = 
+							unlockTechs = 
+							srfHdg
+							{
+								_val = 90
+								_text = 90
+							}
+							srfPit
+							{
+								_val = 90
+								_text = 90
+							}
+							srfRol
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelYaw
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelPit
+							{
+								_val = 0
+								_text = 0
+							}
+							srfVelRol
+							{
+								_val = 0
+								_text = 0
+							}
+							rol
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						ModExtensionDemo
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleThrustWindow
+						{
+							autostageSavedState = False
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWarpHelper
+						{
+							unlockParts = 
+							unlockTechs = 
+							phaseAngle
+							{
+								_val = 0
+								_text = 0
+							}
+						}
+						MechJebModuleCustomWindowEditor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleNodeExecutor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleNodeEditor
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleLandingGuidance
+						{
+							landingSiteIdx = 0
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleLandingPredictions
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleTranslatron
+						{
+							trans_spd = 0
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWaypointWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleWaypointHelpWindow
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleTargetController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleManeuverPlanner
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleStageStats
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleRendezvousGuidance
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleCustomInfoWindow
+						{
+						}
+						MechJebModuleWarpController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleSolarPanelController
+						{
+							prev_ShouldOpenSolarPanels = False
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleThrustController
+						{
+							limitThrottle = False
+							unlockParts = 
+							unlockTechs = 
+							maxThrottle
+							{
+								_val = 1
+								_text = 100
+							}
+						}
+						MechJebModuleRCSController
+						{
+							unlockParts = 
+							unlockTechs = 
+							Tf
+							{
+								_val = 1
+								_text = 1
+							}
+						}
+						MechJebModuleRCSBalancer
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleAttitudeController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleStagingController
+						{
+							unlockParts = 
+							unlockTechs = 
+						}
+						MechJebModuleFlightRecorder
+						{
+							markUT = 562047062.636029
+							deltaVExpended = 0
+							dragLosses = 0
+							gravityLosses = 0
+							steeringLosses = 0
+							markLatitude = 28.6087794049784
+							markLongitude = -80.5997636031156
+							markAltitude = 82.8606930362061
+							markBodyIndex = 1
+							maxDragGees = 0
+							unlockParts = 
+							unlockTechs = 
+						}
+					}
+				}
+				MODULE
+				{
+					name = PartPath
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = RcsSounds
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableFuelPump
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						EnableFuelPumpAction
+						{
+							actionGroup = None
+						}
+						DisableFuelPumpAction
+						{
+							actionGroup = None
+						}
+						ToggleFuelPumpAction
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTweakableRCS
+					isEnabled = True
+					startEnabled = True
+					thrustLimit = 1
+					startEnabled_UIFlight
+					{
+						controlEnabled = True
+					}
+					thrustLimit_UIFlight
+					{
+						controlEnabled = True
+						minValue = 0
+						maxValue = 1
+						incrementSlide = 0.025
+					}
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ActionEnableThruster
+						{
+							actionGroup = None
+						}
+						ActionDisableThruster
+						{
+							actionGroup = None
+						}
+					}
+				}
+				MODULE
+				{
+					name = ModuleTripLogger
+					isEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					Log
+					{
+						flight = 0
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					helmetEquipped = True
+					EVENTS
+					{
+						ShowInventory
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					helmetEquipped = True
+					EVENTS
+					{
+						ShowInventory
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleKISInventory
+					isEnabled = True
+					invName = 
+					helmetEquipped = True
+					EVENTS
+					{
+						ShowInventory
+						{
+							active = True
+							guiActive = True
+							guiActiveEditor = True
+							guiIcon = 
+							guiName = 
+							category = 
+							guiActiveUnfocused = True
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
+				RESOURCE
+				{
+					name = ElectricCharge
+					amount = 150
+					maxAmount = 150
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+				RESOURCE
+				{
+					name = MonoPropellant
+					amount = 25
+					maxAmount = 25
+					flowState = True
+					isTweakable = True
+					hideFlow = False
+					flowMode = Both
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = True, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0.5
+			}
+		}
 	}
 	ROSTER
 	{
@@ -33741,12 +41007,12 @@ GAME
 			dumb = 0.5
 			badS = True
 			tour = False
-			state = Missing
+			state = Assigned
 			ToD = 7200
 			idx = 0
 			CAREER_LOG
 			{
-				flight = 43
+				flight = 45
 				0 = ExitVessel,Kerbin
 				0 = Land,Kerbin
 				0 = Flight,Kerbin
@@ -33836,11 +41102,14 @@ GAME
 				40 = Die
 				41 = Recover
 				42 = Recover
+				43 = Orbit,Kerbin
+				43 = Spawn
+				43 = Recover
+				44 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 43
-				43 = Orbit,Kerbin
+				flight = 45
 			}
 		}
 		KERBAL
@@ -33852,12 +41121,12 @@ GAME
 			dumb = 0.8
 			badS = False
 			tour = False
-			state = Missing
+			state = Assigned
 			ToD = 7200
 			idx = 1
 			CAREER_LOG
 			{
-				flight = 51
+				flight = 52
 				0 = ExitVessel,Kerbin
 				0 = Land,Kerbin
 				0 = Flight,Kerbin
@@ -33950,11 +41219,13 @@ GAME
 				48 = Die
 				49 = Recover
 				50 = Recover
+				51 = Orbit,Kerbin
+				51 = Spawn
+				51 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 51
-				51 = Orbit,Kerbin
+				flight = 52
 			}
 		}
 		KERBAL
@@ -33966,12 +41237,12 @@ GAME
 			dumb = 0.1
 			badS = False
 			tour = False
-			state = Missing
+			state = Assigned
 			ToD = 7200
 			idx = 2
 			CAREER_LOG
 			{
-				flight = 39
+				flight = 40
 				0 = Recover
 				1 = Recover
 				2 = Recover
@@ -34047,11 +41318,13 @@ GAME
 				36 = Die
 				37 = Recover
 				38 = Recover
+				39 = Orbit,Kerbin
+				39 = Spawn
+				39 = Recover
 			}
 			FLIGHT_LOG
 			{
-				flight = 39
-				39 = Orbit,Kerbin
+				flight = 40
 			}
 		}
 		KERBAL
@@ -34889,9 +42162,9 @@ GAME
 			dumb = 0.08316974
 			badS = False
 			tour = False
-			state = Available
+			state = Assigned
 			ToD = 0
-			idx = -1
+			idx = 0
 			CAREER_LOG
 			{
 				flight = 1
@@ -34905,6 +42178,14 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 1
+				1 = Flight,Kerbin
+				1 = Suborbit,Kerbin
+				1 = Orbit,Kerbin
+				1 = Escape,Kerbin
+				1 = Flyby,Moon
+				1 = Escape,Moon
+				1 = Orbit,Moon
+				1 = Flyby,Kerbin
 			}
 		}
 		KERBAL
@@ -34916,9 +42197,9 @@ GAME
 			dumb = 0.08906379
 			badS = False
 			tour = False
-			state = Available
+			state = Assigned
 			ToD = 0
-			idx = -1
+			idx = 2
 			CAREER_LOG
 			{
 				flight = 1
@@ -34932,6 +42213,14 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 1
+				1 = Flight,Kerbin
+				1 = Suborbit,Kerbin
+				1 = Orbit,Kerbin
+				1 = Escape,Kerbin
+				1 = Flyby,Moon
+				1 = Escape,Moon
+				1 = Orbit,Moon
+				1 = Flyby,Kerbin
 			}
 		}
 		KERBAL
@@ -35044,6 +42333,35 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 2
+			}
+		}
+		KERBAL
+		{
+			name = William Anders
+			gender = Male
+			type = Crew
+			brave = 0.9490428
+			dumb = 0.05828851
+			badS = True
+			tour = False
+			state = Assigned
+			ToD = 0
+			idx = 1
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+				0 = Flight,Kerbin
+				0 = Suborbit,Kerbin
+				0 = Orbit,Kerbin
+				0 = Escape,Kerbin
+				0 = Flyby,Moon
+				0 = Escape,Moon
+				0 = Orbit,Moon
+				0 = Flyby,Kerbin
 			}
 		}
 	}
