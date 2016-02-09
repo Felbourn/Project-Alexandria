@@ -2,7 +2,7 @@ ship = Apollo 8
 version = 1.0.4
 description = 
 type = VAB
-size = 14.66996,121.5196,20.09029
+size = 14.66995,121.5196,20.09029
 PART
 {
 	part = His.FASAApollo.CM_4294249552
@@ -288,6 +288,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 10
+			groupName = tog CM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -910,6 +926,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -1088,6 +1110,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Round
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -1217,6 +1255,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Round
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -1344,6 +1398,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Round
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -1476,6 +1546,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Ring
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -1604,6 +1690,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Ring
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -1736,6 +1838,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Ring
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -1866,6 +1984,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 17
+			groupName = CM floats
+			activated = 0
+			partModule = ModuleAnimateGeneric
+			actionGuiName = Deploy
+			actionName = ToggleAction
+			custom1 = Apollo_Float_Ring
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -1974,6 +2108,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -2113,6 +2253,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -3020,6 +3166,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -3422,6 +3574,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -3627,6 +3785,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -3807,6 +3971,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -3968,6 +4148,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -4133,6 +4329,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -4294,6 +4506,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 9
+			groupName = tog SM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -4458,6 +4686,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -4753,6 +4987,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -5585,6 +5825,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -5767,6 +6013,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -5866,12 +6118,858 @@ PART
 {
 	part = His.FASAApolloAPS2_4294163646
 	partName = Part
-	pos = -3.942905,79.33379,0.6420372
+	pos = -3.942905,79.33379,0.6420369
 	attPos = 0,0,0
 	attPos0 = 0,0.3800011,-3.28
 	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 7
+	dstg = 4
+	sidx = 0
+	sqor = 7
+	sepI = 8
+	attm = 0
+	modCost = 124.686
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = top,His.FASAApalloLFTJ2Plate_4294164836
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		thrustPercentage_UIFlight
+		{
+			controlEnabled = True
+			minValue = 0
+			maxValue = 100
+			stepIncrement = 0.5
+		}
+		EVENTS
+		{
+			Activate
+			{
+				active = True
+				guiActive = True
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = True
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = Custom07
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		rcsEnabled = True
+		enableYaw_UIFlight
+		{
+			controlEnabled = True
+		}
+		enablePitch_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableRoll_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableX_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableY_UIFlight
+		{
+			controlEnabled = True
+		}
+		enableZ_UIFlight
+		{
+			controlEnabled = True
+		}
+		EVENTS
+		{
+			Disable
+			{
+				active = True
+				guiActive = True
+				guiIcon = Disable RCS Port
+				guiName = Disable RCS Port
+				category = Disable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Enable
+			{
+				active = False
+				guiActive = True
+				guiIcon = Enable RCS Port
+				guiName = Enable RCS Port
+				category = Enable RCS Port
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = ModuleFuelTanks
+		isEnabled = True
+		type = ServiceModule
+		utilization = 86
+		mass = 0.075
+		volume = 120.09999999999999
+		type_UIEditor
+		{
+			controlEnabled = True
+		}
+		utilization_UIEditor
+		{
+			controlEnabled = True
+			minValue = 1
+			maxValue = 100
+			incrementSlide = 1
+		}
+		EVENTS
+		{
+			HideUI
+			{
+				active = False
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Hide UI
+				guiName = Hide UI
+				category = Hide UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ShowUI
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Show UI
+				guiName = Show UI
+				category = Show UI
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Empty
+			{
+				active = True
+				guiActive = False
+				guiActiveEditor = True
+				guiIcon = Remove All Tanks
+				guiName = Remove All Tanks
+				category = Remove All Tanks
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT0
+			{
+				active = True
+				guiActive = False
+				guiIcon = 45.37% MMH (RCS) / 54.63% NTO (RCS)
+				guiName = 45.37% MMH (RCS) / 54.63% NTO (RCS)
+				category = 45.37% MMH (RCS) / 54.63% NTO (RCS)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT1
+			{
+				active = True
+				guiActive = False
+				guiIcon = 50.191% Aerozine50 / 49.809% NTO
+				guiName = 50.191% Aerozine50 / 49.809% NTO
+				category = 50.191% Aerozine50 / 49.809% NTO
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT2
+			{
+				active = True
+				guiActive = False
+				guiIcon = 53.622% MMH (R) / 46.378% NTO (R)
+				guiName = 53.622% MMH (R) / 46.378% NTO (R)
+				category = 53.622% MMH (R) / 46.378% NTO (R)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT3
+			{
+				active = True
+				guiActive = False
+				guiIcon = 53.622% MMH (L) / 46.378% NTO (L)
+				guiName = 53.622% MMH (L) / 46.378% NTO (L)
+				category = 53.622% MMH (L) / 46.378% NTO (L)
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT4
+			{
+				active = True
+				guiActive = False
+				guiIcon = 78.472% LqdHydrogen / 21.528% LqdOxygen
+				guiName = 78.472% LqdHydrogen / 21.528% LqdOxygen
+				category = 78.472% LqdHydrogen / 21.528% LqdOxygen
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT5
+			{
+				active = True
+				guiActive = False
+				guiIcon = 75.522% LqdHydrogen / 24.478% LqdOxygen
+				guiName = 75.522% LqdHydrogen / 24.478% LqdOxygen
+				category = 75.522% LqdHydrogen / 24.478% LqdOxygen
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT6
+			{
+				active = True
+				guiActive = False
+				guiIcon = 37.527% Kerosene / 62.473% LqdOxygen
+				guiName = 37.527% Kerosene / 62.473% LqdOxygen
+				category = 37.527% Kerosene / 62.473% LqdOxygen
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT7
+			{
+				active = True
+				guiActive = False
+				guiIcon = 50.173% Aerozine50 / 49.827% NTO
+				guiName = 50.173% Aerozine50 / 49.827% NTO
+				category = 50.173% Aerozine50 / 49.827% NTO
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			MFT8
+			{
+				active = True
+				guiActive = False
+				guiIcon = 50.19% Aerozine50 / 49.81% NTO
+				guiName = 50.19% Aerozine50 / 49.81% NTO
+				category = 50.19% Aerozine50 / 49.81% NTO
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+		TANK
+		{
+			name = LqdOxygen
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 7.9E-05
+			cost = 0
+			loss_rate = 8E-11
+			temperature = 90.15
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Kerosene
+			note = (pressurized)
+			utilization = 1
+			mass = 7.7E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = LqdHydrogen
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 6.7E-05
+			cost = 0
+			loss_rate = 5E-10
+			temperature = 20.15
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = NTO
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = UDMH
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Hydrazine
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Aerozine50
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MMH
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = HTP
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Nitrogen
+			note = (pressurized)
+			utilization = 200
+			mass = 9.5E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = LqdAmmonia
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 7.7E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 195.15
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Tonka250
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = AK27
+			note = (pressurized)
+			utilization = 1
+			mass = 8.5E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MON10
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Hydrogen
+			note = (pressurized)
+			utilization = 100
+			mass = 3E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Oxygen
+			note = (pressurized)
+			utilization = 200
+			mass = 3E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = LiquidFuel
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Oxidizer
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MonoPropellant
+			note = (pressurized)
+			utilization = 1
+			mass = 7.7E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = XenonGas
+			note = (pressurized)
+			utilization = 100
+			mass = 3E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = ElectricCharge
+			note = (pressurized)
+			utilization = 1000
+			mass = 0.00289
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = LeadBallast
+			note = (pressurized)
+			utilization = 1
+			mass = 6.5E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MMH (RCS)
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = NTO (RCS)
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MMH (L)
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = NTO (L)
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = MMH (R)
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 64.400000000000006
+			maxAmount = 64.400000000000006
+		}
+		TANK
+		{
+			name = NTO (R)
+			note = (pressurized)
+			utilization = 1
+			mass = 8.1E-05
+			cost = 0
+			loss_rate = 0
+			temperature = 300
+			fillable = True
+			techRequired = 
+			amount = 55.700000000000003
+			maxAmount = 55.700000000000003
+		}
+		TANK
+		{
+			name = Hydrogen (Fuel Cell)
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 6.7E-05
+			cost = 0
+			loss_rate = 5E-10
+			temperature = 20.15
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+		TANK
+		{
+			name = Oxygen (Fuel Cell)
+			note = (has insulation, pressurized)
+			utilization = 1
+			mass = 7.9E-05
+			cost = 0
+			loss_rate = 8E-11
+			temperature = 90.15
+			fillable = True
+			techRequired = 
+			amount = 0
+			maxAmount = 0
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 375.3141
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = BBModule
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAGX
+		isEnabled = True
+		placeHolder = Hello World
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
+	}
+	MODULE
+	{
+		name = PartPath
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = RcsSounds
+		isEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = MMH (R)
+		amount = 64.4
+		maxAmount = 64.4
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = NTO (R)
+		amount = 55.7
+		maxAmount = 55.7
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		flowMode = Both
+	}
+}
+PART
+{
+	part = His.FASAApolloAPS_4294162468
+	partName = Part
+	pos = 0.6957217,79.33379,5.280643
+	attPos = 0,0,0
+	attPos0 = 0,0.3800011,3.28
+	rot = 1.42425E-09,0.9238796,-3.438444E-09,-0.3826835
+	attRot = 0,0.9999999,0,0
+	attRot0 = 0,1,0,0
 	mir = 1,1,1
 	symMethod = Radial
 	istg = 7
@@ -6527,826 +7625,6 @@ PART
 			temperature = 300
 			fillable = True
 			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = NTO (L)
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = MMH (R)
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 64.400000000000006
-			maxAmount = 64.400000000000006
-		}
-		TANK
-		{
-			name = NTO (R)
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 55.700000000000003
-			maxAmount = 55.700000000000003
-		}
-		TANK
-		{
-			name = Hydrogen (Fuel Cell)
-			note = (has insulation, pressurized)
-			utilization = 1
-			mass = 6.7E-05
-			cost = 0
-			loss_rate = 5E-10
-			temperature = 20.15
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Oxygen (Fuel Cell)
-			note = (has insulation, pressurized)
-			utilization = 1
-			mass = 7.9E-05
-			cost = 0
-			loss_rate = 8E-11
-			temperature = 90.15
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 375.3141
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = BBModule
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAGX
-		isEnabled = True
-		placeHolder = Hello World
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = PartPath
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = RcsSounds
-		isEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = MMH (R)
-		amount = 64.4
-		maxAmount = 64.4
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = NTO (R)
-		amount = 55.7
-		maxAmount = 55.7
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		flowMode = Both
-	}
-}
-PART
-{
-	part = His.FASAApolloAPS_4294162468
-	partName = Part
-	pos = 0.6957213,79.33379,5.280643
-	attPos = 0,0,0
-	attPos0 = 0,0.3800011,3.28
-	rot = 1.42425E-09,0.9238796,-3.438444E-09,-0.3826835
-	attRot = 0,0.9999999,0,0
-	attRot0 = 0,1,0,0
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 7
-	dstg = 4
-	sidx = 0
-	sqor = 7
-	sepI = 8
-	attm = 0
-	modCost = 124.686
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	attN = top,His.FASAApalloLFTJ2Plate_4294164836
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		EVENTS
-		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = Custom07
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		rcsEnabled = True
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
-		EVENTS
-		{
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = ModuleFuelTanks
-		isEnabled = True
-		type = ServiceModule
-		utilization = 86
-		mass = 0.075
-		volume = 120.09999999999999
-		type_UIEditor
-		{
-			controlEnabled = True
-		}
-		utilization_UIEditor
-		{
-			controlEnabled = True
-			minValue = 1
-			maxValue = 100
-			incrementSlide = 1
-		}
-		EVENTS
-		{
-			HideUI
-			{
-				active = False
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Hide UI
-				guiName = Hide UI
-				category = Hide UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ShowUI
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Show UI
-				guiName = Show UI
-				category = Show UI
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Empty
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiIcon = Remove All Tanks
-				guiName = Remove All Tanks
-				category = Remove All Tanks
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT0
-			{
-				active = True
-				guiActive = False
-				guiIcon = 45.37% MMH (RCS) / 54.63% NTO (RCS)
-				guiName = 45.37% MMH (RCS) / 54.63% NTO (RCS)
-				category = 45.37% MMH (RCS) / 54.63% NTO (RCS)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT1
-			{
-				active = True
-				guiActive = False
-				guiIcon = 50.191% Aerozine50 / 49.809% NTO
-				guiName = 50.191% Aerozine50 / 49.809% NTO
-				category = 50.191% Aerozine50 / 49.809% NTO
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT2
-			{
-				active = True
-				guiActive = False
-				guiIcon = 53.622% MMH (R) / 46.378% NTO (R)
-				guiName = 53.622% MMH (R) / 46.378% NTO (R)
-				category = 53.622% MMH (R) / 46.378% NTO (R)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT3
-			{
-				active = True
-				guiActive = False
-				guiIcon = 53.622% MMH (L) / 46.378% NTO (L)
-				guiName = 53.622% MMH (L) / 46.378% NTO (L)
-				category = 53.622% MMH (L) / 46.378% NTO (L)
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT4
-			{
-				active = True
-				guiActive = False
-				guiIcon = 78.472% LqdHydrogen / 21.528% LqdOxygen
-				guiName = 78.472% LqdHydrogen / 21.528% LqdOxygen
-				category = 78.472% LqdHydrogen / 21.528% LqdOxygen
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT5
-			{
-				active = True
-				guiActive = False
-				guiIcon = 75.522% LqdHydrogen / 24.478% LqdOxygen
-				guiName = 75.522% LqdHydrogen / 24.478% LqdOxygen
-				category = 75.522% LqdHydrogen / 24.478% LqdOxygen
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT6
-			{
-				active = True
-				guiActive = False
-				guiIcon = 37.527% Kerosene / 62.473% LqdOxygen
-				guiName = 37.527% Kerosene / 62.473% LqdOxygen
-				category = 37.527% Kerosene / 62.473% LqdOxygen
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT7
-			{
-				active = True
-				guiActive = False
-				guiIcon = 50.173% Aerozine50 / 49.827% NTO
-				guiName = 50.173% Aerozine50 / 49.827% NTO
-				category = 50.173% Aerozine50 / 49.827% NTO
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			MFT8
-			{
-				active = True
-				guiActive = False
-				guiIcon = 50.19% Aerozine50 / 49.81% NTO
-				guiName = 50.19% Aerozine50 / 49.81% NTO
-				category = 50.19% Aerozine50 / 49.81% NTO
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-		TANK
-		{
-			name = LqdOxygen
-			note = (has insulation, pressurized)
-			utilization = 1
-			mass = 7.9E-05
-			cost = 0
-			loss_rate = 8E-11
-			temperature = 90.15
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Kerosene
-			note = (pressurized)
-			utilization = 1
-			mass = 7.7E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = LqdHydrogen
-			note = (has insulation, pressurized)
-			utilization = 1
-			mass = 6.7E-05
-			cost = 0
-			loss_rate = 5E-10
-			temperature = 20.15
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = NTO
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = UDMH
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Hydrazine
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Aerozine50
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = MMH
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = HTP
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Nitrogen
-			note = (pressurized)
-			utilization = 200
-			mass = 9.5E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = LqdAmmonia
-			note = (has insulation, pressurized)
-			utilization = 1
-			mass = 7.7E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 195.15
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Tonka250
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = AK27
-			note = (pressurized)
-			utilization = 1
-			mass = 8.5E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = MON10
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Hydrogen
-			note = (pressurized)
-			utilization = 100
-			mass = 3E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Oxygen
-			note = (pressurized)
-			utilization = 200
-			mass = 3E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = LiquidFuel
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = Oxidizer
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = MonoPropellant
-			note = (pressurized)
-			utilization = 1
-			mass = 7.7E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = XenonGas
-			note = (pressurized)
-			utilization = 100
-			mass = 3E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = ElectricCharge
-			note = (pressurized)
-			utilization = 1000
-			mass = 0.00289
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = LeadBallast
-			note = (pressurized)
-			utilization = 1
-			mass = 6.5E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = MMH (RCS)
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = NTO (RCS)
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
-			amount = 0
-			maxAmount = 0
-		}
-		TANK
-		{
-			name = MMH (L)
-			note = (pressurized)
-			utilization = 1
-			mass = 8.1E-05
-			cost = 0
-			loss_rate = 0
-			temperature = 300
-			fillable = True
-			techRequired = 
 			amount = 64.400000000000006
 			maxAmount = 64.400000000000006
 		}
@@ -7456,6 +7734,32 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 14
+			groupName = tog S3 RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -7685,6 +7989,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -7712,7 +8032,7 @@ PART
 {
 	part = His.s3.ullage_4294160878
 	partName = Part
-	pos = 0.6744987,79.9538,0.6632481
+	pos = 0.6744989,79.9538,0.6632481
 	attPos = 0,0,0
 	attPos0 = 3.25,1,2.980232E-08
 	rot = -1.42425E-09,0.9238797,-3.438444E-09,0.3826835
@@ -7891,6 +8211,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -7947,8 +8283,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEnginesRF
 		isEnabled = True
+		ignitions = -1
 		staged = False
 		flameout = False
 		EngineIgnited = False
@@ -7965,7 +8302,7 @@ PART
 		}
 		EVENTS
 		{
-			Activate
+			vActivate
 			{
 				active = True
 				guiActive = True
@@ -7976,7 +8313,7 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Shutdown
+			vShutdown
 			{
 				active = False
 				guiActive = True
@@ -7987,21 +8324,61 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
+			Activate
+			{
+				active = False
+				guiActive = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
+			vOnAction
+			{
+				actionGroup = None
+			}
+			vShutdownAction
+			{
+				actionGroup = None
+			}
+			vActivateAction
+			{
+				actionGroup = None
+			}
 			OnAction
 			{
-				actionGroup = Custom06
+				actionGroup = None
+				active = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
+				active = False
 			}
+		}
+		Ullage
+		{
 		}
 	}
 	MODULE
@@ -8052,7 +8429,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -8140,6 +8517,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 6
+			groupName = tog S3 engine
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -8443,6 +8836,32 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 5
+			groupName = S2 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -9079,6 +9498,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -9253,6 +9678,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -9375,7 +9806,7 @@ PART
 {
 	part = His.FASAApolloLFEJ2_4294146604
 	partName = Part
-	pos = 0.2148815,51.43382,4.799802
+	pos = 0.2148818,51.43382,4.799802
 	attPos = 0,0,0
 	attPos0 = 0,-3.82,2.6
 	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
@@ -9407,8 +9838,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEnginesRF
 		isEnabled = True
+		ignitions = -1
 		staged = False
 		flameout = False
 		EngineIgnited = False
@@ -9425,7 +9857,7 @@ PART
 		}
 		EVENTS
 		{
-			Activate
+			vActivate
 			{
 				active = True
 				guiActive = True
@@ -9436,7 +9868,7 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Shutdown
+			vShutdown
 			{
 				active = False
 				guiActive = True
@@ -9447,21 +9879,61 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
+			Activate
+			{
+				active = False
+				guiActive = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
+			vOnAction
+			{
+				actionGroup = None
+			}
+			vShutdownAction
+			{
+				actionGroup = None
+			}
+			vActivateAction
+			{
+				actionGroup = None
+			}
 			OnAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ActivateAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
+				active = False
 			}
+		}
+		Ullage
+		{
 		}
 	}
 	MODULE
@@ -9512,7 +9984,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -9600,6 +10072,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -9710,8 +10198,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEnginesRF
 		isEnabled = True
+		ignitions = -1
 		staged = False
 		flameout = False
 		EngineIgnited = False
@@ -9728,7 +10217,7 @@ PART
 		}
 		EVENTS
 		{
-			Activate
+			vActivate
 			{
 				active = True
 				guiActive = True
@@ -9739,7 +10228,7 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Shutdown
+			vShutdown
 			{
 				active = False
 				guiActive = True
@@ -9750,21 +10239,61 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
+			Activate
+			{
+				active = False
+				guiActive = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
+			vOnAction
+			{
+				actionGroup = None
+			}
+			vShutdownAction
+			{
+				actionGroup = None
+			}
+			vActivateAction
+			{
+				actionGroup = None
+			}
 			OnAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ActivateAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
+				active = False
 			}
+		}
+		Ullage
+		{
 		}
 	}
 	MODULE
@@ -9815,7 +10344,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -9903,6 +10432,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -10013,8 +10558,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEnginesRF
 		isEnabled = True
+		ignitions = -1
 		staged = False
 		flameout = False
 		EngineIgnited = False
@@ -10031,7 +10577,7 @@ PART
 		}
 		EVENTS
 		{
-			Activate
+			vActivate
 			{
 				active = True
 				guiActive = True
@@ -10042,7 +10588,7 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Shutdown
+			vShutdown
 			{
 				active = False
 				guiActive = True
@@ -10053,21 +10599,61 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
+			Activate
+			{
+				active = False
+				guiActive = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
+			vOnAction
+			{
+				actionGroup = None
+			}
+			vShutdownAction
+			{
+				actionGroup = None
+			}
+			vActivateAction
+			{
+				actionGroup = None
+			}
 			OnAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ActivateAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
+				active = False
 			}
+		}
+		Ullage
+		{
 		}
 	}
 	MODULE
@@ -10118,7 +10704,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -10206,6 +10792,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -10316,8 +10918,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEnginesRF
 		isEnabled = True
+		ignitions = -1
 		staged = False
 		flameout = False
 		EngineIgnited = False
@@ -10334,7 +10937,7 @@ PART
 		}
 		EVENTS
 		{
-			Activate
+			vActivate
 			{
 				active = True
 				guiActive = True
@@ -10345,7 +10948,7 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Shutdown
+			vShutdown
 			{
 				active = False
 				guiActive = True
@@ -10356,21 +10959,61 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
+			Activate
+			{
+				active = False
+				guiActive = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
+			vOnAction
+			{
+				actionGroup = None
+			}
+			vShutdownAction
+			{
+				actionGroup = None
+			}
+			vActivateAction
+			{
+				actionGroup = None
+			}
 			OnAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ActivateAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
+				active = False
 			}
+		}
+		Ullage
+		{
 		}
 	}
 	MODULE
@@ -10421,7 +11064,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -10509,6 +11152,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -10616,8 +11275,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleEnginesRF
 		isEnabled = True
+		ignitions = -1
 		staged = False
 		flameout = False
 		EngineIgnited = False
@@ -10634,7 +11294,7 @@ PART
 		}
 		EVENTS
 		{
-			Activate
+			vActivate
 			{
 				active = True
 				guiActive = True
@@ -10645,7 +11305,7 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
-			Shutdown
+			vShutdown
 			{
 				active = False
 				guiActive = True
@@ -10656,21 +11316,61 @@ PART
 				unfocusedRange = 2
 				externalToEVAOnly = True
 			}
+			Activate
+			{
+				active = False
+				guiActive = False
+				guiIcon = Activate Engine
+				guiName = Activate Engine
+				category = Activate Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			Shutdown
+			{
+				active = False
+				guiActive = False
+				guiIcon = Shutdown Engine
+				guiName = Shutdown Engine
+				category = Shutdown Engine
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
 		}
 		ACTIONS
 		{
+			vOnAction
+			{
+				actionGroup = None
+			}
+			vShutdownAction
+			{
+				actionGroup = None
+			}
+			vActivateAction
+			{
+				actionGroup = None
+			}
 			OnAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 			}
 			ActivateAction
 			{
-				actionGroup = Custom03
+				actionGroup = None
+				active = False
 			}
+		}
+		Ullage
+		{
 		}
 	}
 	MODULE
@@ -10721,7 +11421,7 @@ PART
 				active = False
 				guiActive = False
 				guiIcon = Jettison
-				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
+				guiName = Jettison(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)(DEPRECATED)
 				category = Jettison
 				guiActiveUnfocused = False
 				unfocusedRange = 2
@@ -10809,6 +11509,32 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 3
+			groupName = S2 ignite
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 16
+			groupName = J2 shutdown
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -11123,6 +11849,32 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 4
+			groupName = interstage
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -11794,6 +12546,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -12019,6 +12787,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -12141,7 +12915,7 @@ PART
 {
 	part = His.FASAStrF1Fairing_4294120144
 	partName = Part
-	pos = -5.123734,14.11381,6.461486
+	pos = -5.123734,14.11381,6.461485
 	attPos = 0,0,0
 	attPos0 = -4.95,-1.34,0
 	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
@@ -12321,6 +13095,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -12532,6 +13322,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -12559,7 +13365,7 @@ PART
 {
 	part = His.FASAStrF1Fairing_4294119616
 	partName = Part
-	pos = 1.876554,14.11381,-0.538806
+	pos = 1.876553,14.11381,-0.5388055
 	attPos = 0,0,0
 	attPos0 = 4.95,-1.34,0
 	rot = 1.42425E-09,0.9238796,-3.438444E-09,-0.3826835
@@ -12741,6 +13547,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -12768,7 +13590,7 @@ PART
 {
 	part = His.FASAStrF1Fairing_4294119484
 	partName = Part
-	pos = -5.123761,14.11381,-0.5388176
+	pos = -5.123762,14.11381,-0.5388174
 	attPos = 0,0,0
 	attPos0 = 0,-1.34,-4.95
 	rot = 3.438444E-09,0.3826832,-1.424249E-09,-0.9238797
@@ -12950,6 +13772,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 2
+			groupName = S1 separate
+			activated = 0
+			partModule = ModuleEnginesRF
+			actionGuiName = Activate Engine
+			actionName = vActivateAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -12977,7 +13815,7 @@ PART
 {
 	part = His.FASAApolloLFEF1_4294117918
 	partName = Part
-	pos = 1.770488,11.0338,-0.4327359
+	pos = 1.770488,11.0338,-0.4327354
 	attPos = 0,0,0
 	attPos0 = 4.8,-4.419998,0
 	rot = -3.438444E-09,0.3826835,-1.42425E-09,0.9238796
@@ -13188,6 +14026,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -13233,7 +14077,7 @@ PART
 {
 	part = FASAlaunchClampApollo_4294098600
 	partName = Part
-	pos = 4.369869,5.524414,-3.032129
+	pos = 4.369869,5.524414,-3.032128
 	attPos = 0,0,0
 	attPos0 = 3.676123,-5.509384,5.960464E-08
 	rot = 0.008803779,-0.3826659,0.003646645,0.9238378
@@ -13383,6 +14227,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -13411,7 +14261,7 @@ PART
 {
 	part = His.FASAApolloLFEF1_4294117110
 	partName = Part
-	pos = -5.017699,11.0338,-0.432749
+	pos = -5.017699,11.0338,-0.4327493
 	attPos = 0,0,0
 	attPos0 = 0,-4.419998,-4.8
 	rot = -1.424249E-09,0.9238797,-3.438444E-09,0.3826832
@@ -13622,6 +14472,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -13670,7 +14526,7 @@ PART
 	pos = -7.617105,5.524414,-3.032154
 	attPos = 0,0,0
 	attPos0 = 3.676124,-5.509384,8.432546E-08
-	rot = 0.008803776,0.3826661,-0.003646641,0.9238377
+	rot = 0.008803776,0.3826661,-0.00364664,0.9238377
 	attRot = 0,0,0,1
 	attRot0 = 0.006738126,-0.7070748,0.006738127,0.7070747
 	mir = 1,1,1
@@ -13817,6 +14673,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -13845,7 +14707,7 @@ PART
 {
 	part = His.FASAApolloLFEF1_4294117016
 	partName = Part
-	pos = -5.017672,11.0338,6.355414
+	pos = -5.017672,11.0338,6.355413
 	attPos = 0,0,0
 	attPos0 = -4.8,-4.419998,0
 	rot = 1.42425E-09,0.9238796,-3.438444E-09,-0.3826835
@@ -14056,6 +14918,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -14101,10 +14969,10 @@ PART
 {
 	part = FASAlaunchClampApollo_4294098780
 	partName = Part
-	pos = -7.617054,5.524414,8.954794
+	pos = -7.617054,5.524414,8.954793
 	attPos = 0,0,0
 	attPos0 = 3.676123,-5.509384,8.295827E-08
-	rot = 0.00364664,0.9238378,-0.008803802,0.3826658
+	rot = 0.00364664,0.9238378,-0.008803803,0.3826658
 	attRot = 0,0,0,1
 	attRot0 = 0.006738125,-0.7070747,0.006738126,0.7070746
 	mir = 1,1,1
@@ -14137,7 +15005,7 @@ PART
 		isEnabled = True
 		scaleFactor = 23.09751
 		height = 5.774368
-		towerRot = -0.00364664,-0.9238377,0.008803801,0.3826658
+		towerRot = -0.00364664,-0.9238377,0.008803802,0.3826658
 		EVENTS
 		{
 			Release
@@ -14251,6 +15119,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -14279,7 +15153,7 @@ PART
 {
 	part = His.FASAApolloLFEF1_4294116922
 	partName = Part
-	pos = 1.770508,11.0338,6.355427
+	pos = 1.770509,11.0338,6.355427
 	attPos = 0,0,0
 	attPos0 = 0,-4.419998,4.8
 	rot = 3.438444E-09,0.3826832,-1.424249E-09,-0.9238797
@@ -14490,6 +15364,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -14683,6 +15563,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -14920,6 +15806,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 1
+			groupName = F1 shutdown
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Shutdown Engine
+			actionName = ShutdownAction
+			custom1 = F1
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -14965,7 +15867,7 @@ PART
 {
 	part = His.FASAUmbilicalTower_4293981124
 	partName = Part
-	pos = -5.151357,44.70416,-6.102995
+	pos = -5.151358,44.70416,-6.102995
 	attPos = 0,0,0
 	attPos0 = 3.914993,11.18035,-8.903997
 	rot = 4.620448E-07,-0.2651355,3.807472E-08,-0.9642113
@@ -14998,7 +15900,7 @@ PART
 		isEnabled = True
 		scaleFactor = 23.35208
 		height = 46.70416
-		towerRot = -4.620448E-07,0.2651355,-3.807471E-08,-0.9642112
+		towerRot = -4.620447E-07,0.2651354,-3.807472E-08,-0.9642112
 		EVENTS
 		{
 			Release
@@ -15088,6 +15990,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -15118,10 +16026,10 @@ PART
 {
 	part = His.FASAUmbilicalTower_4293980716
 	partName = Part
-	pos = -3.891867,68.2505,-6.434323
+	pos = -3.891868,68.2505,-6.434323
 	attPos = 0,0,0
 	attPos0 = 5.039865,3.156704,-8.247667
-	rot = 3.076808E-07,-0.2164394,6.821143E-08,-0.9762962
+	rot = 3.076808E-07,-0.2164394,6.821145E-08,-0.9762962
 	attRot = 0,0.2164396,0,0.9762961
 	attRot0 = 2.55108E-07,0.1736481,1.786285E-07,-0.9848078
 	mir = 1,1,1
@@ -15151,7 +16059,7 @@ PART
 		isEnabled = True
 		scaleFactor = 35.12525
 		height = 70.2505
-		towerRot = -3.076808E-07,0.2164393,-6.821142E-08,-0.9762961
+		towerRot = -3.076808E-07,0.2164393,-6.821144E-08,-0.9762961
 		EVENTS
 		{
 			Release
@@ -15243,6 +16151,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -15271,7 +16185,7 @@ PART
 {
 	part = His.FASAUmbilicalTower_4293980322
 	partName = Part
-	pos = -2.54454,86.57711,-5.175706
+	pos = -2.54454,86.57711,-5.175705
 	attPos = 0,0,0
 	attPos0 = 0.506027,0.9733124,-8.173373
 	rot = 1.628374E-07,-0.08715579,-1.359769E-08,-0.9961947
@@ -15394,6 +16308,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -15605,6 +16525,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -16343,6 +17269,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -16567,6 +17499,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -16702,6 +17640,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -16902,6 +17846,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -17708,6 +18658,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -18010,6 +18966,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -18178,6 +19140,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -18339,6 +19317,22 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -18504,6 +19498,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -18667,6 +19677,22 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 15
+			groupName = tog LM RCS
+			activated = 0
+			partModule = ModuleRCSFX
+			actionGuiName = Toggle RCS Thrust
+			actionName = ToggleAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -18705,8 +19731,8 @@ PART
 	symMethod = Radial
 	istg = 6
 	dstg = 6
-	sidx = -1
-	sqor = -1
+	sidx = 1
+	sqor = 6
 	sepI = 3
 	attm = 0
 	modCost = 0
@@ -18867,6 +19893,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -19167,6 +20199,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -19340,6 +20378,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -19517,6 +20561,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -19692,6 +20742,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -19709,10 +20765,10 @@ PART
 {
 	part = hc.booster_4294156668
 	partName = Part
-	pos = -6.637351,24.42184,2.961333
+	pos = -6.637352,24.42184,2.961333
 	attPos = 0,0,0
 	attPos0 = -3.545266,-9.101936,-3.545266
-	rot = 1.187753E-07,-1,3.721732E-09,1.662566E-07
+	rot = 1.187753E-07,-1,3.721732E-09,1.610617E-07
 	attRot = 0,0,0,1
 	attRot0 = 1.097341E-07,-0.9238796,4.545333E-08,-0.3826833
 	mir = 1,1,1
@@ -19872,6 +20928,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -19889,10 +20951,10 @@ PART
 {
 	part = strutCube_4294136696
 	partName = Part
-	pos = -1.574271,57.00881,6.16279
+	pos = -1.57427,57.00881,6.16279
 	attPos = -1.272122,-0.08126831,2.02443
 	attPos0 = -0.9567782,-8.003738,0.2742165
-	rot = 1,3.224532E-07,-1.365677E-07,1.685874E-07
+	rot = 1,3.224532E-07,-1.14301E-07,1.685874E-07
 	attRot = 0,0,0,1
 	attRot0 = 0.9238797,2.348165E-07,0.3826832,2.757135E-07
 	mir = 1,1,1
@@ -19938,6 +21000,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -19986,10 +21054,10 @@ PART
 {
 	part = strutCube_4294136180
 	partName = Part
-	pos = -1.574271,56.75134,6.16279
+	pos = -1.57427,56.75134,6.16279
 	attPos = 0,0,0
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
-	rot = 1.365579E-13,5.715049E-08,-6.51968E-14,1
+	rot = 1.52101E-13,5.492315E-08,-8.199673E-14,1
 	attRot = 0,0,0,1
 	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
 	mir = 1,1,1
@@ -20035,6 +21103,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -20083,10 +21157,10 @@ PART
 {
 	part = strutCube_4294135684
 	partName = Part
-	pos = -1.574271,56.49387,6.16279
+	pos = -1.57427,56.49387,6.16279
 	attPos = 0,0,0
 	attPos0 = 8.429372E-08,-0.2574692,1.91647E-09
-	rot = -1,4.041802E-14,8.461207E-08,3.019849E-14
+	rot = -1,3.023456E-14,8.461207E-08,2.908827E-14
 	attRot = -0.9999999,0,0,0
 	attRot0 = -1,-7.921481E-15,-5.194887E-09,-1.776399E-14
 	mir = 1,1,1
@@ -20132,6 +21206,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -20180,10 +21260,10 @@ PART
 {
 	part = strutCube_4294135648
 	partName = Part
-	pos = -1.574271,56.23639,6.16279
+	pos = -1.57427,56.23639,6.16279
 	attPos = 0,0,0
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
-	rot = -1.685875E-07,2.84272E-07,3.224534E-07,-1
+	rot = -1.685875E-07,2.894669E-07,3.224534E-07,-1
 	attRot = 0,0,0,1
 	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
 	mir = 1,1,1
@@ -20229,6 +21309,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -20277,10 +21363,10 @@ PART
 {
 	part = strutCube_4294135158
 	partName = Part
-	pos = -1.574271,55.97893,6.16279
+	pos = -1.57427,55.97893,6.16279
 	attPos = 0,0,0
 	attPos0 = 2.056466E-07,-0.2574693,1.333938E-07
-	rot = 1,1.896271E-14,-8.461207E-08,-6.661761E-15
+	rot = 1,2.585835E-14,-8.461207E-08,1.532066E-14
 	attRot = 0.9999999,0,0,0
 	attRot0 = -1,-3.224532E-07,3.139609E-07,-1.685874E-07
 	mir = 1,1,1
@@ -20326,6 +21412,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -20374,10 +21466,10 @@ PART
 {
 	part = strutCube_4294135122
 	partName = Part
-	pos = -1.574271,55.72146,6.16279
+	pos = -1.57427,55.72146,6.16279
 	attPos = 0,0,0
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
-	rot = 1.685874E-07,-2.620054E-07,-3.224533E-07,1
+	rot = 1.685874E-07,-2.397387E-07,-3.224534E-07,1
 	attRot = 0,0,0,1
 	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
 	mir = 1,1,1
@@ -20423,6 +21515,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -20471,10 +21569,10 @@ PART
 {
 	part = strutCube_4294135084
 	partName = Part
-	pos = -1.574271,55.46399,6.16279
+	pos = -1.57427,55.46399,6.16279
 	attPos = 0,0,0
 	attPos0 = 8.429372E-08,-0.2574692,1.91647E-09
-	rot = -1,3.224534E-07,-2.345438E-07,1.685874E-07
+	rot = -1,3.224534E-07,-2.397387E-07,1.685874E-07
 	attRot = -0.9999999,0,0,0
 	attRot0 = -1,-7.921481E-15,-5.194887E-09,-1.776399E-14
 	mir = 1,1,1
@@ -20520,6 +21618,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -20568,7 +21672,7 @@ PART
 {
 	part = strutCube_4294135046
 	partName = Part
-	pos = -1.574271,55.20652,6.16279
+	pos = -1.57427,55.20652,6.16279
 	attPos = 0,0,0
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
 	rot = -3.371753E-07,5.292056E-07,6.449069E-07,-1
@@ -20619,6 +21723,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -20665,10 +21775,10 @@ PART
 {
 	part = strutCube_4294134548
 	partName = Part
-	pos = -1.574271,54.94904,6.16279
+	pos = -1.57427,54.94904,6.16279
 	attPos = 0,0,0
 	attPos0 = 1.954707E-07,-0.2574693,-2.511984E-08
-	rot = 1,1.763923E-13,1.929914E-08,2.768892E-13
+	rot = 1,1.598105E-13,2.449403E-08,2.888796E-13
 	attRot = 0.9999999,0,0,0
 	attRot0 = -1,-6.449063E-07,6.086227E-07,-3.371748E-07
 	mir = 1,1,1
@@ -20714,6 +21824,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -20762,7 +21878,7 @@ PART
 {
 	part = strutCube_4294134512
 	partName = Part
-	pos = -1.574271,54.69158,6.16279
+	pos = -1.57427,54.69158,6.16279
 	attPos = 0,0,0
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
 	rot = 1.685874E-07,-2.100497E-07,-3.224536E-07,1
@@ -20813,6 +21929,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -20859,10 +21981,10 @@ PART
 {
 	part = strutCube_4294134474
 	partName = Part
-	pos = -1.574271,54.43411,6.16279
+	pos = -1.57427,54.43411,6.16279
 	attPos = 0,0,0
 	attPos0 = 8.429372E-08,-0.2574692,1.91647E-09
-	rot = -1,3.224534E-07,-2.345438E-07,1.685874E-07
+	rot = -1,3.224534E-07,-2.397387E-07,1.685874E-07
 	attRot = -0.9999999,0,0,0
 	attRot0 = -1,-7.921481E-15,-5.194887E-09,-1.776399E-14
 	mir = 1,1,1
@@ -20908,6 +22030,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -20959,7 +22087,7 @@ PART
 	pos = -1.574272,54.17664,6.16279
 	attPos = 0,0,0
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
-	rot = -3.371752E-07,5.292056E-07,6.449065E-07,-1
+	rot = -3.371753E-07,5.292056E-07,6.449064E-07,-1
 	attRot = 0,0,0,1
 	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
 	mir = 1,1,1
@@ -21005,6 +22133,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21056,7 +22190,7 @@ PART
 	pos = -1.574272,53.91918,6.16279
 	attPos = 0,0,0
 	attPos0 = 2.056466E-07,-0.2574693,1.333938E-07
-	rot = 1,-3.224536E-07,2.84272E-07,-1.685873E-07
+	rot = 1,-3.224537E-07,2.894669E-07,-1.685873E-07
 	attRot = 0.9999999,0,0,0
 	attRot0 = -1,-3.224532E-07,3.139609E-07,-1.685874E-07
 	mir = 1,1,1
@@ -21102,6 +22236,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21153,7 +22293,7 @@ PART
 	pos = -1.574272,53.66171,6.16279
 	attPos = 0,0,0
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
-	rot = 3.371751E-07,-5.292056E-07,-6.449064E-07,1
+	rot = 3.371752E-07,-5.292056E-07,-6.449064E-07,1
 	attRot = 0,0,0,1
 	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
 	mir = 1,1,1
@@ -21199,6 +22339,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21250,7 +22396,7 @@ PART
 	pos = -1.574272,53.40423,6.16279
 	attPos = 0,0,0
 	attPos0 = 8.429372E-08,-0.2574692,1.91647E-09
-	rot = -1,6.449065E-07,-5.588945E-07,3.371751E-07
+	rot = -1,6.449065E-07,-5.588945E-07,3.371752E-07
 	attRot = -0.9999999,0,0,0
 	attRot0 = -1,-7.921481E-15,-5.194887E-09,-1.776399E-14
 	mir = 1,1,1
@@ -21296,6 +22442,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21344,10 +22496,10 @@ PART
 {
 	part = strutCube_4294134284
 	partName = Part
-	pos = -1.574273,53.14676,6.16279
+	pos = -1.574273,53.14676,6.162789
 	attPos = 0,0,0
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
-	rot = -5.05763E-07,8.483615E-07,9.673604E-07,-1
+	rot = -5.05763E-07,8.535563E-07,9.673605E-07,-1
 	attRot = 0,0,0,1
 	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
 	mir = 1,1,1
@@ -21393,6 +22545,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21441,10 +22599,10 @@ PART
 {
 	part = strutCube_4294133770
 	partName = Part
-	pos = -1.574273,52.88929,6.16279
+	pos = -1.574273,52.88929,6.162789
 	attPos = 0,0,0
 	attPos0 = 2.3834E-07,-0.2574695,5.824825E-08
-	rot = -1,-5.69122E-14,5.194888E-09,-2.167151E-13
+	rot = -1,4.665664E-14,5.194888E-09,-2.61124E-13
 	attRot = -0.9999999,0,0,0
 	attRot0 = 1,9.673595E-07,-8.980896E-07,5.057622E-07
 	mir = 1,1,1
@@ -21490,6 +22648,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21538,10 +22702,10 @@ PART
 {
 	part = strutCube_4294133732
 	partName = Part
-	pos = -1.574273,52.63183,6.16279
+	pos = -1.574273,52.63183,6.162789
 	attPos = 0,0,0
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
-	rot = -1.685877E-07,2.100497E-07,3.224536E-07,-1
+	rot = -1.685878E-07,2.100497E-07,3.224537E-07,-1
 	attRot = 0,0,0,1
 	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
 	mir = 1,1,1
@@ -21587,6 +22751,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21635,10 +22805,10 @@ PART
 {
 	part = strutCube_4294133694
 	partName = Part
-	pos = -1.574273,52.37436,6.16279
+	pos = -1.574273,52.37436,6.162789
 	attPos = 0,0,0
 	attPos0 = 8.429372E-08,-0.2574692,1.91647E-09
-	rot = 1,-3.224532E-07,1.877831E-07,-1.685876E-07
+	rot = 1,-3.224532E-07,1.803608E-07,-1.685876E-07
 	attRot = -0.9999999,0,0,0
 	attRot0 = -1,-7.921481E-15,-5.194887E-09,-1.776399E-14
 	mir = 1,1,1
@@ -21684,6 +22854,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21732,10 +22908,10 @@ PART
 {
 	part = strutCube_4294133656
 	partName = Part
-	pos = -1.574273,52.11688,6.16279
+	pos = -1.574273,52.11688,6.162789
 	attPos = 0,0,0
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
-	rot = 3.371752E-07,-5.863561E-07,-6.449064E-07,1
+	rot = 3.371753E-07,-5.885834E-07,-6.449064E-07,1
 	attRot = 0,0,0,1
 	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
 	mir = 1,1,1
@@ -21781,6 +22957,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21832,7 +23014,7 @@ PART
 	pos = -1.473264,52.17399,5.961882
 	attPos = 0.1010097,0.3145749,-0.200907
 	attPos0 = 1.954707E-07,-0.2574693,-2.511984E-08
-	rot = -1,-6.988441E-13,8.461207E-08,-2.391416E-13
+	rot = -1,-7.082502E-13,8.461207E-08,-2.70894E-13
 	attRot = 0.9999999,0,0,0
 	attRot0 = -1,-6.449063E-07,6.086227E-07,-3.371748E-07
 	mir = 1,1,1
@@ -21878,6 +23060,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -21929,7 +23117,7 @@ PART
 	pos = -1.473264,51.91652,5.961882
 	attPos = 2.14155E-07,1.192093E-07,-1.671481E-07
 	attPos0 = -3.960295E-08,0.2574692,4.274878E-08
-	rot = -1.685876E-07,2.84272E-07,3.22454E-07,-1
+	rot = -1.685877E-07,2.894669E-07,3.224542E-07,-1
 	attRot = 0,0,0,1
 	attRot0 = -1,-3.224532E-07,2.998567E-07,1.685874E-07
 	mir = 1,1,1
@@ -21974,6 +23162,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -22025,7 +23219,7 @@ PART
 	pos = -1.470566,51.80652,5.91078
 	attPos = 0,0,0
 	attPos0 = 0.002698897,-0.1100011,-0.05110116
-	rot = -3.062262E-08,0.7071067,0.7071071,6.733823E-07
+	rot = -5.511664E-08,0.7071068,0.7071072,6.978763E-07
 	attRot = 0,0,0,1
 	attRot0 = 2.332484E-08,-0.7071068,-0.7071068,-1.995099E-07
 	mir = 1,1,1
@@ -22126,6 +23320,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -22256,6 +23456,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -22486,6 +23692,32 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 18
+			groupName = deploy drogue
+			activated = 0
+			partModule = ModuleParachute
+			actionGuiName = Deploy
+			actionName = DeployAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 19
+			groupName = cut drogue
+			activated = 0
+			partModule = ModuleParachute
+			actionGuiName = Cut Chute
+			actionName = CutAction
+			custom1 = NA
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -22578,8 +23810,8 @@ PART
 	symMethod = Radial
 	istg = 2
 	dstg = 2
-	sidx = -1
-	sqor = -1
+	sidx = 1
+	sqor = 2
 	sepI = 1
 	attm = 0
 	modCost = 0
@@ -22742,6 +23974,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -23065,6 +24303,82 @@ PART
 		ACTIONS
 		{
 		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 7
+			groupName = tog S3 ullage
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 11
+			groupName = open petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 12
+			groupName = jettison petals
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 13
+			groupName = tog SPS
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Toggle Engine
+			actionName = OnAction
+			custom1 = Engine
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleDecouple
+			actionGuiName = Decouple
+			actionName = DecoupleAction
+			custom1 = NA
+		}
+		ACTION
+		{
+			group = 8
+			groupName = jettison LET
+			activated = 0
+			partModule = ModuleEnginesFX
+			actionGuiName = Activate Engine
+			actionName = ActivateAction
+			custom1 = Engine
+		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -23156,11 +24470,11 @@ PART
 	attRot0 = -0.01116828,-5.269604E-08,5.885609E-10,-0.9999377
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 14
+	istg = 16
 	dstg = 11
-	sidx = 7
-	sqor = 14
-	sepI = 14
+	sidx = 0
+	sqor = 16
+	sepI = 16
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -23271,6 +24585,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -23900,6 +25220,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -24114,6 +25440,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
@@ -24332,6 +25664,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -24548,6 +25886,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -24568,7 +25912,7 @@ PART
 	pos = -1.59035,93.84363,2.961337
 	attPos = 1.298137E-07,0.1814927,0
 	attPos0 = -2.278775E-06,-2.87375,-2.029999
-	rot = 8.854595E-08,-4.495197E-11,-0.008725941,0.999962
+	rot = 7.416829E-08,1.563411E-08,-0.008725926,0.9999619
 	attRot = 0,0,0,1
 	attRot0 = -0.4999999,0.5000002,-0.5000002,0.4999999
 	mir = 1,1,1
@@ -24679,6 +26023,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -24768,10 +26118,10 @@ PART
 {
 	part = His.IR.StrutDecoupler.Small_4293706020
 	partName = StrutConnector
-	pos = -3.743743,99.5177,2.961356
+	pos = -3.743742,99.5177,2.961356
 	attPos = 0,0,0
 	attPos0 = -2.252087,5.635535,1.192093E-07
-	rot = 8.365732E-08,4.237419E-07,-0.07414612,0.9972475
+	rot = 1.018466E-07,4.441325E-07,-0.0741461,0.9972474
 	attRot = 0,0,0,1
 	attRot0 = -2.477105E-08,3.84198E-07,-0.06544126,0.9978564
 	mir = 1,1,1
@@ -24785,7 +26135,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 2.456103,0.7221603,-0.02315048; dir: 0.9593509,0.2820709,-0.00904265
+	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 1.723531,0.506754,-0.01624667; dir: 0.9593509,0.2820709,-0.00904265
 	sym = His.IR.StrutDecoupler.Small_4292036404
 	sym = His.IR.StrutDecoupler.Small_4292036244
 	sym = His.IR.StrutDecoupler.Small_4292036084
@@ -24892,6 +26242,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -24979,10 +26335,10 @@ PART
 {
 	part = His.FASAStrFairing3m4x_4292036502
 	partName = Part
-	pos = -1.623592,93.84362,2.928089
+	pos = -1.623592,93.84362,2.928088
 	attPos = 1.786006E-07,0.1814927,0
 	attPos0 = -2.495334E-06,-2.873751,-2.029999
-	rot = -0.006170806,0.7070799,-0.006170819,0.7070799
+	rot = -0.006170805,0.7070799,-0.00617086,0.7070799
 	attRot = 0,0,0,1
 	attRot0 = -0.4999999,0.5000002,-0.5000002,0.4999999
 	mir = 1,1,1
@@ -25093,6 +26449,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -25185,7 +26547,7 @@ PART
 	pos = -1.623575,99.5177,5.081473
 	attPos = 0,0,0
 	attPos0 = -2.252087,5.635535,1.192093E-07
-	rot = -0.05242984,0.7051607,-0.05242987,0.7051601
+	rot = -0.05242986,0.7051607,-0.05242989,0.7051601
 	attRot = 0,0,0,1
 	attRot0 = -2.477105E-08,3.84198E-07,-0.06544126,0.9978564
 	mir = 1,1,1
@@ -25199,7 +26561,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 2.456102,0.722151,-0.02314951; dir: 0.9593509,0.2820709,-0.00904265
+	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 1.723514,0.5067549,-0.01624666; dir: 0.9593509,0.2820709,-0.00904265
 	sym = His.IR.StrutDecoupler.Small_4293706020
 	sym = His.IR.StrutDecoupler.Small_4292036244
 	sym = His.IR.StrutDecoupler.Small_4292036084
@@ -25306,6 +26668,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -25393,10 +26761,10 @@ PART
 {
 	part = His.FASAStrFairing3m4x_4292036342
 	partName = Part
-	pos = -1.656835,93.84363,2.961336
+	pos = -1.656836,93.84363,2.961336
 	attPos = 2.69377E-08,0.1814924,0
 	attPos0 = -1.862258E-06,-2.87375,-2.029999
-	rot = -0.008725822,0.999962,-6.582151E-09,8.938697E-08
+	rot = -0.008725837,0.999962,-2.135273E-08,1.044176E-07
 	attRot = 0,0,0,1
 	attRot0 = -0.4999999,0.5000002,-0.5000002,0.4999999
 	mir = 1,1,1
@@ -25507,6 +26875,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -25596,10 +26970,10 @@ PART
 {
 	part = His.IR.StrutDecoupler.Small_4292036244
 	partName = StrutConnector
-	pos = 0.4965597,99.5177,2.961319
+	pos = 0.4965585,99.5177,2.96132
 	attPos = 0,0,0
 	attPos0 = -2.252087,5.635535,1.192093E-07
-	rot = -0.074146,0.9972475,-7.715823E-09,-3.292276E-07
+	rot = -0.07414603,0.9972475,-7.715824E-09,-3.292276E-07
 	attRot = 0,0,0,1
 	attRot0 = -2.477105E-08,3.84198E-07,-0.06544126,0.9978564
 	mir = 1,1,1
@@ -25613,7 +26987,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: His.FASAApollo.SM.Dish_17; pos: 1.165428,0.3426691,-0.01098484; dir: 0.9593509,0.2820709,-0.00904265
+	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 1.723533,0.5067546,-0.01624658; dir: 0.9593509,0.2820709,-0.00904265
 	sym = His.IR.StrutDecoupler.Small_4293706020
 	sym = His.IR.StrutDecoupler.Small_4292036404
 	sym = His.IR.StrutDecoupler.Small_4292036084
@@ -25720,6 +27094,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -25807,10 +27187,10 @@ PART
 {
 	part = His.FASAStrFairing3m4x_4292036182
 	partName = Part
-	pos = -1.623592,93.84362,2.994586
+	pos = -1.623592,93.84362,2.994587
 	attPos = -2.135323E-10,0.1814925,0
 	attPos0 = -1.780079E-06,-2.873751,-2.029999
-	rot = -0.006170813,0.7070799,0.0061708,-0.7070799
+	rot = -0.006170771,0.7070799,0.006170799,-0.7070799
 	attRot = 0,0,0,1
 	attRot0 = -0.4999999,0.5000002,-0.5000002,0.4999999
 	mir = 1,1,1
@@ -25921,6 +27301,12 @@ PART
 		ACTIONS
 		{
 		}
+		TOGGLE
+		{
+		}
+		HOLD
+		{
+		}
 	}
 	MODULE
 	{
@@ -26010,10 +27396,10 @@ PART
 {
 	part = His.IR.StrutDecoupler.Small_4292036084
 	partName = StrutConnector
-	pos = -1.62361,99.5177,0.8412027
+	pos = -1.62361,99.5177,0.8412035
 	attPos = 0,0,0
 	attPos0 = -2.252087,5.635535,1.192093E-07
-	rot = -0.05242986,0.7051601,0.05242983,-0.7051607
+	rot = -0.05242988,0.7051601,0.05242985,-0.7051607
 	attRot = 0,0,0,1
 	attRot0 = -2.477105E-08,3.84198E-07,-0.06544126,0.9978564
 	mir = 1,1,1
@@ -26027,7 +27413,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 2.456103,0.722159,-0.02314939; dir: 0.9593509,0.2820709,-0.00904265
+	cData = tgt: His.FASAApollo.SM.Engine_18; pos: 1.723512,0.5067554,-0.01624594; dir: 0.9593509,0.2820709,-0.00904265
 	sym = His.IR.StrutDecoupler.Small_4293706020
 	sym = His.IR.StrutDecoupler.Small_4292036404
 	sym = His.IR.StrutDecoupler.Small_4292036244
@@ -26132,6 +27518,12 @@ PART
 		{
 		}
 		ACTIONS
+		{
+		}
+		TOGGLE
+		{
+		}
+		HOLD
 		{
 		}
 	}
