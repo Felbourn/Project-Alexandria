@@ -71,33 +71,51 @@ Saturn V	SA-503	Apollo 8	21-Dec-1968	39A
 	first human crew to leave low Earth orbit, first manned lunar orbit, and first piloted lunar return reentry.
 
 
-during some testing and practice during free time, jim lovell  accidentally erased the computer's position informatoin
-and had to manually realign the craft
-remember that fact for when we do the 1970 history episode
-frank borman read from the bible, whujch casued some controvery about religious diversity, and future nasa missions
-shied away from doing anything religious in space
-anyway, they took some video, picturtes, sent audio back to earth, 
-wished everyone a merry xmas, ortbited 10 times, and then headed home
-and that closes out 1968
-untilk next time
-
-
 1969
 
+January 5, 1969, 06:28:08 UTC
+Venera 5
+
+10 January 1969, 05:51:52 UTC
+Venera 6
+both were like V4 but made it lower in atmo first; crushed instead of power loss - smaller chute
+
 Soyuz 4 and 5 perform the first docking of piloted spacecraft; two crew transfer by EVA from Soyuz 5 to 4.
+
 A launch failure ends a Soviet attempt to land the first automatic rover on the Moon.
+
 In February, the Soviet Union attempts a test launch of its N1 rocket, unsuccessfully due to stage 1 failure.
+
 The Soviet Union attempts the first automated lunar sample return, unsuccessfully due to launch failure.
+
 In March, Apollo 9 performs the first piloted test flight of the lunar module in Earth orbit.
+
 In May, Apollo 10 tests the lunar module in lunar orbit, descending to within 15,000 meters of the surface.
+
 A second test of the Soviet N1 rocket results in an explosion on the launch pad, causing extensive damage.
+
+July 17, 1969: The New York Times prints correction about Goddard
+
+July 20, 1969: Neil Armstrong and Buzz Aldrin of Apollo 11 land on the Earth's moon, while astronaut Michael Collins orbits above. 
 Apollo 11 performs the first lunar landing by astronauts Neil Armstrong and Edwin Aldrin on July 20. They stay 21 hours, 36 minutes on the surface, conduct a 151 minute EVA, and collect 22 kilograms of rock and soil samples.
+
+September 1969: Vice President Spiro Agnew's Space Task Force submits three options for America's future goals in space:
+1. An 8 to 10 billion dollar a year plan, to build an orbiting space station with a crew of 50, a manned Mars mission, and a reusable space shuttle to service the station and Mars mission.
+2. An 8 billion dollar a year plan, for a mission to Mars, serviced by available boosters.
+3. A 5.7 billion dollar a year plan, for a space station. serviced by a reusable space shuttle.
+March 1970: The Nixon Administration announces that the president has decided to support the least ambitious of the three space program options presented by Agnew's Space Task Force: a reusable space shuttle. A further restriction is announced, that work on the space station will be delayed, until it is seen how well the development of the shuttle proceeds.
+
 Luna 15, the third Soviet attempt to retrieve lunar samples, crashes into the moon on July 21.
+
 Soyuz 6, 7 and 8 perform the first triple rendezvous.
+
 Apollo 12 performs the second manned lunar landing touching down within sight of their target, Surveyor 3.
+
 first:  West Germany	Azur[11]		Germany	United States Scout B	United States Vandenberg	8 November 1969
 German Aerospace Center founded
+
 Indian Space Research Organisation founded
+
 
 1970
 
