@@ -1,0 +1,9 @@
+WME:
+node_attach: 0.0, -0.1560628, 0.0, 0.0, -1.0, 0.0
+node_plug: 0.1658605, 0.105496, 0.0, 1.0, 0.0, 0.0
+
+the animation name is weatherExperiment
+
+PSE:
+node_attach: -0.01, 0.0, 0.0, 0.0, 1.0, 0.0
+node_plug: 0.1659912, 0.105496, 0.0, 1.0, 0.0, 0.0
