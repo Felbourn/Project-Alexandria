@@ -7,16 +7,16 @@
         <ymax>709</ymax>
     </rect>
     <rect name="TransferPosition">
-        <xmin>57</xmin>
-        <xmax>679</xmax>
+        <xmin>389</xmin>
+        <xmax>1011</xmax>
         <ymin>233</ymin>
         <ymax>701</ymax>
     </rect>
     <rect name="RosterPosition">
-        <xmin>814</xmin>
-        <xmax>1137</xmax>
-        <ymin>198</ymin>
-        <ymax>298</ymax>
+        <xmin>435</xmin>
+        <xmax>758</xmax>
+        <ymin>240</ymin>
+        <ymax>340</ymax>
     </rect>
     <rect name="SettingsPosition">
         <xmin>0</xmin>
